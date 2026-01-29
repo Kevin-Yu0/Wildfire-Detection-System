@@ -49,6 +49,7 @@ from typing import Optional, Dict, Any
 SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_KEY"]
 
+# !!! let the user set these variables via command line env vars, use argparse library
 TABLE = os.environ.get("TABLE_NAME", "Wildfire_Sensor_Data")
 
 PORT = os.environ.get("LORA_PORT", "COM5")
@@ -67,11 +68,12 @@ SESSION = requests.Session()
 # Helper functions
 # =======================
 
+# !!! supabase can auto-fill created_at timestamp if you send None
 def iso_utc_now() -> str:
     """UTC timestamp for created_at (ISO-8601)."""
     return datetime.now(timezone.utc).isoformat()
 
-
+# !!! checksum replaces this
 def local_time_hhmmss() -> str:
     """local time formatted as HH:MM:SS."""
     return datetime.now().strftime("%H:%M:%S")
@@ -95,12 +97,46 @@ def supabase_insert_row(row: Dict[str, Any]) -> Any:
     return resp.json()
 
 
+# !!! change to watch for checksum, if invalid ignore and resend???
 def parse_payload_csv(payload: str) -> Dict[str, Any]:
     """
     parse CSV payload into a supabase row
     eexpected CSV:
       Long,Lat,Temperature,Humidity,Pressure,CO,CO2,Timestamp,Fire
     """
+    """
+    import csv
+    from io import StringIO
+
+    def to_float(x):
+        x = x.strip()
+        if x == "" or x.lower() == "null":
+            return None
+        return float(x)
+
+    reader = csv.reader(StringIO(payload))
+    fields = next(reader)
+
+    if len(fields) != 9:
+        raise ValueError(f"Expected 9 fields, got {len(fields)}")
+
+    (
+        lon,
+        lat,
+        temp,
+        hum,
+        pres,
+        co,
+        co2,
+        ts,
+        device_id
+    ) = fields
+
+    lon, lat, temp, hum, pres, co, co2 = map(to_float, [
+        lon, lat, temp, hum, pres, co, co2
+    ])
+    """
+
     fields = [x.strip() for x in payload.split(",")]
     if len(fields) != 9:
         raise ValueError(f"Expected 9 CSV fields, got {len(fields)}: {payload}")
@@ -114,15 +150,18 @@ def parse_payload_csv(payload: str) -> Dict[str, Any]:
     co2 = float(fields[6])
 
     ts = fields[7]
+
+    # !!! checksum replaces this
     if not ts or len(ts) < 5:
         ts = local_time_hhmmss()
 
+    # !!! leave this comment, we will change this portion later based off of our model
     fire = fields[8].lower()
     if fire not in ("true", "false"):
         fire = "false"
 
     return {
-        "created_at": iso_utc_now(),
+        "created_at": iso_utc_now(), # !!! None for supabase to auto-fill
         "Long": lon,
         "Lat": lat,
         "Temperature": temp,
@@ -134,7 +173,7 @@ def parse_payload_csv(payload: str) -> Dict[str, Any]:
         "Fire": fire,
     }
 
-
+# !!! see if chatgpt has a cleaner way to do this
 def parse_rcv_line(line: str) -> Optional[Dict[str, Any]]:
     """
     extract payload from a RYLR998 +RCV line and convert to supabase row
