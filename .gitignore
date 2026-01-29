@@ -1,0 +1,11 @@
+# Node / Next.js
+node_modules/
+.next/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Mac junk
+.DS_Store
