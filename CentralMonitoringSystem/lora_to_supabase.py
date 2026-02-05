@@ -41,6 +41,10 @@ import os
 import time
 import serial
 import requests
+import argparse  # !!! CHANGED: use argparse so user can set options via command line
+import csv       # !!! CHANGED: robust CSV parsing (handles edge cases)
+from io import StringIO  # !!! CHANGED: csv.reader expects a file-like object
+import hashlib   # !!! CHANGED: checksum verification
 from datetime import datetime, timezone
 from typing import Optional, Dict, Any
 
@@ -49,14 +53,12 @@ from typing import Optional, Dict, Any
 SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_KEY"]
 
-# !!! let the user set these variables via command line env vars, use argparse library
+# !!! CHANGED: user can set TABLE/PORT/BAUD/PRINT_RAW/DRY_RUN via argparse; env vars remain as defaults
 TABLE = os.environ.get("TABLE_NAME", "Wildfire_Sensor_Data")
-
 PORT = os.environ.get("LORA_PORT", "COM5")
 BAUD = int(os.environ.get("LORA_BAUD", "115200"))
-
 PRINT_RAW = os.environ.get("PRINT_RAW", "1") == "1"
-DRY_RUN = os.environ.get("DRY_RUN", "0") == "1" #MAKE COMMAND LINE VARIABLE
+DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"  #MAKE COMMAND LINE VARIABLE
 
 OPEN_SERIAL_RETRY_SEC = 2
 NETWORK_RETRY_SEC = 2
@@ -68,12 +70,12 @@ SESSION = requests.Session()
 # Helper functions
 # =======================
 
-# !!! supabase can auto-fill created_at timestamp if you send None
+# !!! CHANGED: if created_at is omitted, Supabase can auto-fill it (so we no longer need this)
 def iso_utc_now() -> str:
     """UTC timestamp for created_at (ISO-8601)."""
     return datetime.now(timezone.utc).isoformat()
 
-# !!! checksum replaces this
+# !!! CHANGED: timestamp fallback removed; checksum will be used for validation instead
 def local_time_hhmmss() -> str:
     """local time formatted as HH:MM:SS."""
     return datetime.now().strftime("%H:%M:%S")
@@ -97,7 +99,31 @@ def supabase_insert_row(row: Dict[str, Any]) -> Any:
     return resp.json()
 
 
-# !!! change to watch for checksum, if invalid ignore and resend???
+# !!! CHANGED: payload now includes checksum; invalid payload is ignored (no insert)
+# Expected formats:
+#   <CSV_FIELDS>|<checksum>
+# Where checksum = first 8 hex chars of SHA256(CSV_FIELDS) (you can change this convention later).
+def verify_checksum(payload_with_checksum: str) -> str:
+    """
+    Returns the CSV portion if checksum is valid; raises ValueError if invalid.
+
+    payload_with_checksum:
+      "Long,Lat,Temperature,Humidity,Pressure,CO,CO2,Timestamp,Fire|abcd1234"
+    """
+    if "|" not in payload_with_checksum:
+        raise ValueError("Missing checksum delimiter '|' in payload")
+
+    csv_part, checksum = payload_with_checksum.rsplit("|", 1)
+    csv_part = csv_part.strip()
+    checksum = checksum.strip().lower()
+
+    computed = hashlib.sha256(csv_part.encode("utf-8")).hexdigest()[:8]
+    if computed != checksum:
+        raise ValueError(f"Checksum mismatch (expected={checksum}, computed={computed})")
+
+    return csv_part
+
+
 def parse_payload_csv(payload: str) -> Dict[str, Any]:
     """
     parse CSV payload into a supabase row
@@ -137,9 +163,17 @@ def parse_payload_csv(payload: str) -> Dict[str, Any]:
     ])
     """
 
-    fields = [x.strip() for x in payload.split(",")]
+    # !!! CHANGED: verify checksum and then parse CSV robustly (csv.reader handles quoting/whitespace)
+    payload_csv = verify_checksum(payload)
+
+    reader = csv.reader(StringIO(payload_csv))
+    fields = next(reader, None)
+    if fields is None:
+        raise ValueError("Empty CSV payload after checksum verification")
+
+    fields = [x.strip() for x in fields]
     if len(fields) != 9:
-        raise ValueError(f"Expected 9 CSV fields, got {len(fields)}: {payload}")
+        raise ValueError(f"Expected 9 CSV fields, got {len(fields)}: {payload_csv}")
 
     lon = float(fields[0])
     lat = float(fields[1])
@@ -151,9 +185,9 @@ def parse_payload_csv(payload: str) -> Dict[str, Any]:
 
     ts = fields[7]
 
-    # !!! checksum replaces this
+    # !!! CHANGED: removed local timestamp fallback; payload must be valid (checksum already enforced)
     if not ts or len(ts) < 5:
-        ts = local_time_hhmmss()
+        raise ValueError(f"Invalid Timestamp field: {ts!r}")
 
     # !!! leave this comment, we will change this portion later based off of our model
     fire = fields[8].lower()
@@ -161,7 +195,7 @@ def parse_payload_csv(payload: str) -> Dict[str, Any]:
         fire = "false"
 
     return {
-        "created_at": iso_utc_now(), # !!! None for supabase to auto-fill
+        # !!! CHANGED: omit created_at so Supabase can auto-fill it
         "Long": lon,
         "Lat": lat,
         "Temperature": temp,
@@ -173,7 +207,7 @@ def parse_payload_csv(payload: str) -> Dict[str, Any]:
         "Fire": fire,
     }
 
-# !!! see if chatgpt has a cleaner way to do this
+# !!! CHANGED: cleaner parsing by explicitly extracting payload slice and handling rssi/snr stripping
 def parse_rcv_line(line: str) -> Optional[Dict[str, Any]]:
     """
     extract payload from a RYLR998 +RCV line and convert to supabase row
@@ -191,14 +225,12 @@ def parse_rcv_line(line: str) -> Optional[Dict[str, Any]]:
     if len(parts) < 3:
         raise ValueError(f"Malformed +RCV line: {line}")
 
-    rest = parts[2]
+    rest = parts[2].strip()
 
-    #remove RSSI/SNR if present (payload itself contains commas)
-    rest_parts = rest.rsplit(",", 2)
-    if len(rest_parts) == 3:
-        payload = rest_parts[0]
-    else:
-        payload = rest
+    # remove RSSI/SNR if present (payload itself may contain commas)
+    # payload is everything except the last two comma-separated tokens (rssi,snr)
+    maybe = rest.rsplit(",", 2)
+    payload = maybe[0].strip() if len(maybe) == 3 else rest
 
     return parse_payload_csv(payload)
 
@@ -216,7 +248,28 @@ def open_serial_forever() -> serial.Serial:
             time.sleep(OPEN_SERIAL_RETRY_SEC)
 
 
+# !!! CHANGED: argparse wiring for TABLE/PORT/BAUD/PRINT_RAW/DRY_RUN
+def parse_args():
+    parser = argparse.ArgumentParser(description="LoRa RX (RYLR998) -> Supabase bridge")
+    parser.add_argument("--port", default=PORT, help="Serial port (e.g., COM5 or /dev/tty.usbserial-XXXX)")
+    parser.add_argument("--baud", type=int, default=BAUD, help="Serial baud rate (default 115200)")
+    parser.add_argument("--table", default=TABLE, help="Supabase table name")
+    parser.add_argument("--print-raw", action="store_true", default=PRINT_RAW, help="Print raw serial lines")
+    parser.add_argument("--no-print-raw", action="store_false", dest="print_raw", help="Disable printing raw lines")
+    parser.add_argument("--dry-run", action="store_true", default=DRY_RUN, help="Parse but do not insert into Supabase")
+    return parser.parse_args()
+
+
 def main() -> None:
+    global PORT, BAUD, TABLE, PRINT_RAW, DRY_RUN  # !!! CHANGED: update runtime config from argparse
+
+    args = parse_args()
+    PORT = args.port
+    BAUD = args.baud
+    TABLE = args.table
+    PRINT_RAW = args.print_raw
+    DRY_RUN = args.dry_run
+
     print("[INFO] Starting LoRa → Supabase bridge")
     print(f"[INFO] PORT={PORT} BAUD={BAUD} TABLE={TABLE} DRY_RUN={DRY_RUN}")
 
