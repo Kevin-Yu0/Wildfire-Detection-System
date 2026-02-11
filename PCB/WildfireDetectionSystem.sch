@@ -724,30 +724,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="CC0402JRNPO9BN200" prefix="C">
-<description>CAPACITOR CERAMIC 20PF 50V, C0G, 0402; Dielectric Characteristic:C0G / NP0; Capacitance:20pF; Capacitance Tolerance:± 5%; Voltage Rating:50V; Capacitor Case Style:0402; Capacitor Mounting:SMD</description>
-<gates>
-<gate name="G$1" symbol="CAPACITOR" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="CAPC1005X55N">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value=" 20pF ±5% 50V Ceramic Capacitor C0G, NP0 0402 _1005 Metric_ "/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="311-1417-1-ND"/>
-<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/yageo/CC0402JRNPO9BN200/311-1417-1-ND/2833723?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol"/>
-<attribute name="MF" value="Yageo"/>
-<attribute name="MP" value="CC0402JRNPO9BN200"/>
-<attribute name="PACKAGE" value="0402 Yageo"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ABLS-8.000MHZ-B2-T" prefix="Y">
 <description>Crystal 8MHz Â±20ppm (Tol) Â±50ppm (Stability) 18pF FUND 80Ohm 2-Pin HC-49/US SMD T/R</description>
 <gates>
@@ -2123,84 +2099,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 </deviceset>
 </devicesets>
 </library>
-<library name="24AA32A-I_MS">
-<packages>
-<package name="SOP65P490X110-8N">
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="1.534" x2="1.5" y2="1.534" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-1.534" x2="-1.5" y2="-1.534" width="0.127" layer="21"/>
-<wire x1="-3.11" y1="1.75" x2="3.11" y2="1.75" width="0.05" layer="39"/>
-<wire x1="3.11" y1="1.75" x2="3.11" y2="-1.75" width="0.05" layer="39"/>
-<wire x1="3.11" y1="-1.75" x2="-3.11" y2="-1.75" width="0.05" layer="39"/>
-<wire x1="-3.11" y1="-1.75" x2="-3.11" y2="1.75" width="0.05" layer="39"/>
-<circle x="-3.4" y="1.3" radius="0.1" width="0.2" layer="21"/>
-<circle x="-3.4" y="1.3" radius="0.1" width="0.2" layer="51"/>
-<text x="-3.1" y="1.94" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.1" y="-3.2" size="1.27" layer="27">&gt;VALUE</text>
-<smd name="1" x="-2.105" y="0.975" dx="1.5" dy="0.49" layer="1" roundness="50"/>
-<smd name="2" x="-2.105" y="0.325" dx="1.5" dy="0.49" layer="1" roundness="50"/>
-<smd name="3" x="-2.105" y="-0.325" dx="1.5" dy="0.49" layer="1" roundness="50"/>
-<smd name="4" x="-2.105" y="-0.975" dx="1.5" dy="0.49" layer="1" roundness="50"/>
-<smd name="5" x="2.105" y="-0.975" dx="1.5" dy="0.49" layer="1" roundness="50"/>
-<smd name="6" x="2.105" y="-0.325" dx="1.5" dy="0.49" layer="1" roundness="50"/>
-<smd name="7" x="2.105" y="0.325" dx="1.5" dy="0.49" layer="1" roundness="50"/>
-<smd name="8" x="2.105" y="0.975" dx="1.5" dy="0.49" layer="1" roundness="50"/>
-</package>
-</packages>
-<symbols>
-<symbol name="24AA32A-I/MS">
-<wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.41" layer="94"/>
-<wire x1="12.7" y1="17.78" x2="12.7" y2="-17.78" width="0.41" layer="94"/>
-<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.41" layer="94"/>
-<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="17.78" width="0.41" layer="94"/>
-<text x="-12.7" y="18.78" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-12.7" y="-21.78" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-<pin name="SCL" x="-17.78" y="10.16" length="middle" direction="in"/>
-<pin name="WP" x="-17.78" y="7.62" length="middle" direction="in"/>
-<pin name="A0" x="-17.78" y="2.54" length="middle"/>
-<pin name="A1" x="-17.78" y="0" length="middle"/>
-<pin name="A2" x="-17.78" y="-2.54" length="middle"/>
-<pin name="SDA" x="-17.78" y="-7.62" length="middle"/>
-<pin name="VCC" x="17.78" y="15.24" length="middle" direction="pwr" rot="R180"/>
-<pin name="VSS" x="17.78" y="-12.7" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="24AA32A-I/MS" prefix="U">
-<gates>
-<gate name="A" symbol="24AA32A-I/MS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOP65P490X110-8N">
-<connects>
-<connect gate="A" pin="A0" pad="1"/>
-<connect gate="A" pin="A1" pad="2"/>
-<connect gate="A" pin="A2" pad="3"/>
-<connect gate="A" pin="SCL" pad="6"/>
-<connect gate="A" pin="SDA" pad="5"/>
-<connect gate="A" pin="VCC" pad="8"/>
-<connect gate="A" pin="VSS" pad="4"/>
-<connect gate="A" pin="WP" pad="7"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/24AA32A-I/MS/Microchip+Technology/view-part/?ref=eda"/>
-<attribute name="DESCRIPTION" value="                                                      32K, 4K X 8 1.8V SERIAL EE IND | Microchip Technology Inc. 24AA32A-I/MS                                              "/>
-<attribute name="DIGIKEY_PART_NUMBER" value="24AA32A-I/MS-ND"/>
-<attribute name="MF" value="Microchip"/>
-<attribute name="MP" value="24AA32A-I/MS"/>
-<attribute name="PACKAGE" value="MSOP-8 Microchip"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/24AA32A-I/MS/Microchip+Technology/view-part/?ref=snap"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="MLZ2012P220WT000">
 <packages>
 <package name="INDC2012X145N">
@@ -2545,6 +2443,236 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 </deviceset>
 </devicesets>
 </library>
+<library name="24LC32AT-I_SN">
+<packages>
+<package name="SOIC127P794X203-8N">
+<wire x1="-2.6924" y1="1.651" x2="-2.6924" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="-2.6924" y1="2.159" x2="-4.1148" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="-4.1148" y1="2.159" x2="-4.1148" y2="1.651" width="0.1524" layer="51"/>
+<wire x1="-4.1148" y1="1.651" x2="-2.6924" y2="1.651" width="0.1524" layer="51"/>
+<wire x1="-2.6924" y1="0.381" x2="-2.6924" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="-2.6924" y1="0.889" x2="-4.1148" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="-4.1148" y1="0.889" x2="-4.1148" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-4.1148" y1="0.381" x2="-2.6924" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="-2.6924" y1="-0.889" x2="-2.6924" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-2.6924" y1="-0.381" x2="-4.1148" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="-4.1148" y1="-0.381" x2="-4.1148" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="-4.1148" y1="-0.889" x2="-2.6924" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="-2.6924" y1="-2.159" x2="-2.6924" y2="-1.651" width="0.1524" layer="51"/>
+<wire x1="-2.6924" y1="-1.651" x2="-4.1148" y2="-1.651" width="0.1524" layer="51"/>
+<wire x1="-4.1148" y1="-1.651" x2="-4.1148" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="-4.1148" y1="-2.159" x2="-2.6924" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="2.6924" y1="-1.651" x2="2.6924" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="2.6924" y1="-2.159" x2="4.1148" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="4.1148" y1="-2.159" x2="4.1148" y2="-1.651" width="0.1524" layer="51"/>
+<wire x1="4.1148" y1="-1.651" x2="2.6924" y2="-1.651" width="0.1524" layer="51"/>
+<wire x1="2.6924" y1="-0.381" x2="2.6924" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="2.6924" y1="-0.889" x2="4.1148" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="4.1148" y1="-0.889" x2="4.1148" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="4.1148" y1="-0.381" x2="2.6924" y2="-0.381" width="0.1524" layer="51"/>
+<wire x1="2.6924" y1="0.889" x2="2.6924" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="2.6924" y1="0.381" x2="4.1148" y2="0.381" width="0.1524" layer="51"/>
+<wire x1="4.1148" y1="0.381" x2="4.1148" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="4.1148" y1="0.889" x2="2.6924" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="2.6924" y1="2.159" x2="2.6924" y2="1.651" width="0.1524" layer="51"/>
+<wire x1="2.6924" y1="1.651" x2="4.1148" y2="1.651" width="0.1524" layer="51"/>
+<wire x1="4.1148" y1="1.651" x2="4.1148" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="4.1148" y1="2.159" x2="2.6924" y2="2.159" width="0.1524" layer="51"/>
+<wire x1="-2.6924" y1="-2.667" x2="2.6924" y2="-2.667" width="0.1524" layer="51"/>
+<wire x1="2.6924" y1="-2.667" x2="2.6924" y2="2.667" width="0.1524" layer="51"/>
+<wire x1="2.6924" y1="2.667" x2="0.3048" y2="2.667" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="2.667" x2="-0.3048" y2="2.667" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="2.667" x2="-2.6924" y2="2.667" width="0.1524" layer="51"/>
+<wire x1="-2.6924" y1="2.667" x2="-2.6924" y2="-2.667" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="2.667" x2="-0.3048" y2="2.667" width="0" layer="51" curve="-180"/>
+<text x="-4.57626875" y="2.33898125" size="1.271190625" layer="51" ratio="6" rot="SR0">*</text>
+<wire x1="2.6924" y1="2.286" x2="2.6924" y2="2.667" width="0.1524" layer="21"/>
+<wire x1="2.6924" y1="1.016" x2="2.6924" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="2.6924" y1="-0.254" x2="2.6924" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="2.6924" y1="-1.524" x2="2.6924" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-2.6924" y1="-2.286" x2="-2.6924" y2="-2.667" width="0.1524" layer="21"/>
+<wire x1="-2.6924" y1="-1.016" x2="-2.6924" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="-2.6924" y1="0.254" x2="-2.6924" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-2.6924" y1="-2.667" x2="2.6924" y2="-2.667" width="0.1524" layer="21"/>
+<wire x1="2.6924" y1="-2.667" x2="2.6924" y2="-2.286" width="0.1524" layer="21"/>
+<wire x1="2.6924" y1="2.667" x2="0.3048" y2="2.667" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="2.667" x2="-0.3048" y2="2.667" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="2.667" x2="-2.6924" y2="2.667" width="0.1524" layer="21"/>
+<wire x1="-2.6924" y1="2.667" x2="-2.6924" y2="2.286" width="0.1524" layer="21"/>
+<wire x1="-2.6924" y1="1.524" x2="-2.6924" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="2.667" x2="-0.3048" y2="2.667" width="0" layer="21" curve="-180"/>
+<text x="-4.578590625" y="2.34016875" size="1.27183125" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-4.623590625" y="3.175540625" size="2.083159375" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.446209375" y="-5.29351875" size="2.08686875" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<smd name="1" x="-3.7592" y="1.905" dx="1.4732" dy="0.5588" layer="1"/>
+<smd name="2" x="-3.7592" y="0.635" dx="1.4732" dy="0.5588" layer="1"/>
+<smd name="3" x="-3.7592" y="-0.635" dx="1.4732" dy="0.5588" layer="1"/>
+<smd name="4" x="-3.7592" y="-1.905" dx="1.4732" dy="0.5588" layer="1"/>
+<smd name="5" x="3.7592" y="-1.905" dx="1.4732" dy="0.5588" layer="1"/>
+<smd name="6" x="3.7592" y="-0.635" dx="1.4732" dy="0.5588" layer="1"/>
+<smd name="7" x="3.7592" y="0.635" dx="1.4732" dy="0.5588" layer="1"/>
+<smd name="8" x="3.7592" y="1.905" dx="1.4732" dy="0.5588" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="24LC32AT-I/SN">
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-20.32" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="12.7" y2="-20.32" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="12.7" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.4064" layer="94"/>
+<text x="-5.33971875" y="14.9004" size="2.08503125" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-6.48611875" y="-23.0702" size="2.08573125" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="VCC" x="-17.78" y="7.62" length="middle" direction="pwr"/>
+<pin name="SCL" x="-17.78" y="2.54" length="middle" direction="in"/>
+<pin name="WP" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="A0" x="-17.78" y="-5.08" length="middle" direction="in"/>
+<pin name="A1" x="-17.78" y="-7.62" length="middle" direction="in"/>
+<pin name="A2" x="-17.78" y="-10.16" length="middle" direction="in"/>
+<pin name="VSS" x="-17.78" y="-15.24" length="middle" direction="pas"/>
+<pin name="SDA" x="17.78" y="7.62" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="24LC32AT-I/SN">
+<gates>
+<gate name="A" symbol="24LC32AT-I/SN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC127P794X203-8N">
+<connects>
+<connect gate="A" pin="A0" pad="1"/>
+<connect gate="A" pin="A1" pad="2"/>
+<connect gate="A" pin="A2" pad="3"/>
+<connect gate="A" pin="SCL" pad="6"/>
+<connect gate="A" pin="SDA" pad="5"/>
+<connect gate="A" pin="VCC" pad="8"/>
+<connect gate="A" pin="VSS" pad="4"/>
+<connect gate="A" pin="WP" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/24LC32AT-I/SN/Microchip+Technology/view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value="                                                      32K, 4K X 8, 2.5V SER EE IND8 SOIC 3.90mm(.150in) T/R | Microchip Technology Inc. 24LC32AT-I/SN                                              "/>
+<attribute name="DIGIKEY_PART_NUMBER" value="24LC32AT-I/SNCT-ND"/>
+<attribute name="MF" value="Microchip Technology"/>
+<attribute name="MP" value="24LC32AT-I/SN"/>
+<attribute name="PACKAGE" value="SOIC-8 Microchip"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/24LC32AT-I/SN/Microchip+Technology/view-part/?ref=snap"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="CL05B104KO5NNNC">
+<packages>
+<package name="CAPC1005X55N">
+<text x="-0.95" y="-0.63" size="0.5" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-0.95" y="0.63" size="0.5" layer="25">&gt;NAME</text>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="-0.5" y2="0.25" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="0.5" y2="0.25" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.127" layer="51"/>
+<wire x1="-0.952" y1="-0.55" x2="0.952" y2="-0.55" width="0.05" layer="39"/>
+<wire x1="-0.952" y1="0.55" x2="0.952" y2="0.55" width="0.05" layer="39"/>
+<wire x1="-0.952" y1="-0.55" x2="-0.952" y2="0.55" width="0.05" layer="39"/>
+<wire x1="0.952" y1="-0.55" x2="0.952" y2="0.55" width="0.05" layer="39"/>
+<smd name="1" x="-0.432" y="0" dx="0.54" dy="0.6" layer="1" roundness="25"/>
+<smd name="2" x="0.432" y="0" dx="0.54" dy="0.6" layer="1" roundness="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CL05B104KO5NNNC">
+<text x="0" y="3.81093125" size="1.77843125" layer="95">&gt;NAME</text>
+<text x="0" y="-5.08848125" size="1.78096875" layer="96">&gt;VALUE</text>
+<rectangle x1="0" y1="-1.906859375" x2="0.635" y2="1.905" layer="94"/>
+<rectangle x1="1.90685" y1="-1.90685" x2="2.54" y2="1.905" layer="94"/>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CL05B104KO5NNNC" prefix="C">
+<gates>
+<gate name="G$1" symbol="CL05B104KO5NNNC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAPC1005X55N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/CL05B104KO5NNNC/Samsung/view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value="                                                      0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)                                              "/>
+<attribute name="DIGIKEY_PART_NUMBER" value="1276-1001-1-ND"/>
+<attribute name="MF" value="Samsung"/>
+<attribute name="MP" value="CL05B104KO5NNNC"/>
+<attribute name="PACKAGE" value="SMD-2 Samsung"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/CL05B104KO5NNNC/Samsung/view-part/?ref=snap"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="CL10C200JB8NNNC">
+<packages>
+<package name="CAPC1608X90N">
+<text x="-1.46" y="-0.8" size="0.5" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-1.46" y="0.8" size="0.5" layer="25">&gt;NAME</text>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-1.465" y1="-0.715" x2="1.465" y2="-0.715" width="0.05" layer="39"/>
+<wire x1="-1.465" y1="0.715" x2="1.465" y2="0.715" width="0.05" layer="39"/>
+<wire x1="-1.465" y1="-0.715" x2="-1.465" y2="0.715" width="0.05" layer="39"/>
+<wire x1="1.465" y1="-0.715" x2="1.465" y2="0.715" width="0.05" layer="39"/>
+<smd name="1" x="-0.78" y="0" dx="0.87" dy="0.93" layer="1" roundness="25"/>
+<smd name="2" x="0.78" y="0" dx="0.87" dy="0.93" layer="1" roundness="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CL10C200JB8NNNC">
+<text x="0" y="3.81093125" size="1.77843125" layer="95">&gt;NAME</text>
+<text x="0" y="-5.08848125" size="1.78096875" layer="96">&gt;VALUE</text>
+<rectangle x1="0" y1="-1.906859375" x2="0.635" y2="1.905" layer="94"/>
+<rectangle x1="1.90685" y1="-1.90685" x2="2.54" y2="1.905" layer="94"/>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CL10C200JB8NNNC" prefix="C">
+<gates>
+<gate name="G$1" symbol="CL10C200JB8NNNC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAPC1608X90N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/CL10C200JB8NNNC/Samsung/view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value="                                                      20 pF ±5% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)                                              "/>
+<attribute name="DIGIKEY_PART_NUMBER" value="1276-1187-1-ND"/>
+<attribute name="MF" value="Samsung"/>
+<attribute name="MP" value="CL10C200JB8NNNC"/>
+<attribute name="PACKAGE" value="SMD-2 Samsung"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/CL10C200JB8NNNC/Samsung/view-part/?ref=snap"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2556,7 +2684,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 </classes>
 <parts>
 <part name="U2" library="ce-capstone" deviceset="LD39050PU33R" device=""/>
-<part name="C2" library="ce-capstone" deviceset="CC0402KRX7R7BB104" device=""/>
 <part name="C3" library="ce-capstone" deviceset="CC0402KRX7R7BB104" device=""/>
 <part name="C4" library="ce-capstone" deviceset="CC0603KRX5R7BB105" device=""/>
 <part name="C5" library="ce-capstone" deviceset="CC0603KRX5R7BB105" device=""/>
@@ -2567,22 +2694,10 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C6" library="ce-capstone" deviceset="CC0402JRNPO9BN200" device=""/>
-<part name="C7" library="ce-capstone" deviceset="CC0402JRNPO9BN200" device=""/>
-<part name="C8" library="ce-capstone" deviceset="CC0402JRNPO9BN200" device=""/>
-<part name="C9" library="ce-capstone" deviceset="CC0402JRNPO9BN200" device=""/>
 <part name="Y1" library="ce-capstone" deviceset="ABLS-8.000MHZ-B2-T" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FB1" library="ce-capstone" deviceset="BK1608HS601-T" device=""/>
 <part name="C10" library="ce-capstone" deviceset="CC0603KRX5R7BB105" device=""/>
-<part name="C11" library="ce-capstone" deviceset="CC0402KRX7R7BB104" device=""/>
-<part name="C12" library="ce-capstone" deviceset="CC0402KRX7R7BB104" device=""/>
-<part name="C13" library="ce-capstone" deviceset="CC0402KRX7R7BB104" device=""/>
-<part name="C14" library="ce-capstone" deviceset="CC0402KRX7R7BB104" device=""/>
-<part name="C15" library="ce-capstone" deviceset="CC0402KRX7R7BB104" device=""/>
-<part name="C16" library="ce-capstone" deviceset="CC0402KRX7R7BB104" device=""/>
-<part name="C17" library="ce-capstone" deviceset="CC0402KRX7R7BB104" device=""/>
-<part name="C18" library="ce-capstone" deviceset="CC0402KRX7R7BB104" device=""/>
 <part name="C19" library="ce-capstone" deviceset="TAJA105K016RNJ" device=""/>
 <part name="C20" library="ce-capstone" deviceset="TAJA105K016RNJ" device=""/>
 <part name="SW1" library="ce-capstone" deviceset="1825910-6" device=""/>
@@ -2591,7 +2706,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R8" library="ce-capstone" deviceset="RC0402FR-0710KL" device=""/>
-<part name="C21" library="ce-capstone" deviceset="CC0402KRX7R7BB104" device=""/>
 <part name="R3" library="ce-capstone" deviceset="RC0402FR-071KL" device=""/>
 <part name="R4" library="ce-capstone" deviceset="RC0402FR-071KL" device=""/>
 <part name="R5" library="ce-capstone" deviceset="RC0402FR-071KL" device=""/>
@@ -2612,7 +2726,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <part name="R10" library="ce-capstone" deviceset="RC0402FR-071KL" device=""/>
 <part name="BT1" library="MS621FE-FL11E" deviceset="MS621FE-FL11E" device=""/>
 <part name="D4" library="ce-capstone" deviceset="SML-P12VTT86" device=""/>
-<part name="U4" library="24AA32A-I_MS" deviceset="24AA32A-I/MS" device=""/>
 <part name="L1" library="MLZ2012P220WT000" deviceset="MLZ2012P220WT000" device=""/>
 <part name="R12" library="SMD-RES-22R-1_-1_16W_0402_" deviceset="SMD-RES-22R-1%-1/16W(0402)" device=""/>
 <part name="ANTENNA" library="discrete" library_urn="urn:adsk.eagle:library:211" deviceset="ANTENNA" device="" package3d_urn="urn:adsk.eagle:package:12928/1"/>
@@ -2625,6 +2738,21 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <part name="J3" library="B4B-XH-A" deviceset="B4B-XH-A" device=""/>
 <part name="J4" library="B5B-XH-A" deviceset="B5B-XH-A" device=""/>
 <part name="D5" library="ce-capstone" deviceset="SML-P12MTT86" device=""/>
+<part name="U$1" library="24LC32AT-I_SN" deviceset="24LC32AT-I/SN" device=""/>
+<part name="C1" library="CL05B104KO5NNNC" deviceset="CL05B104KO5NNNC" device=""/>
+<part name="C23" library="CL05B104KO5NNNC" deviceset="CL05B104KO5NNNC" device=""/>
+<part name="C2" library="CL10C200JB8NNNC" deviceset="CL10C200JB8NNNC" device=""/>
+<part name="C21" library="CL10C200JB8NNNC" deviceset="CL10C200JB8NNNC" device=""/>
+<part name="C24" library="CL10C200JB8NNNC" deviceset="CL10C200JB8NNNC" device=""/>
+<part name="C25" library="CL10C200JB8NNNC" deviceset="CL10C200JB8NNNC" device=""/>
+<part name="C6" library="CL05B104KO5NNNC" deviceset="CL05B104KO5NNNC" device=""/>
+<part name="C7" library="CL05B104KO5NNNC" deviceset="CL05B104KO5NNNC" device=""/>
+<part name="C8" library="CL05B104KO5NNNC" deviceset="CL05B104KO5NNNC" device=""/>
+<part name="C9" library="CL05B104KO5NNNC" deviceset="CL05B104KO5NNNC" device=""/>
+<part name="C11" library="CL05B104KO5NNNC" deviceset="CL05B104KO5NNNC" device=""/>
+<part name="C12" library="CL05B104KO5NNNC" deviceset="CL05B104KO5NNNC" device=""/>
+<part name="C13" library="CL05B104KO5NNNC" deviceset="CL05B104KO5NNNC" device=""/>
+<part name="C14" library="CL05B104KO5NNNC" deviceset="CL05B104KO5NNNC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2638,9 +2766,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <instance part="U2" gate="G$1" x="-63.5" y="116.84" smashed="yes">
 <attribute name="NAME" x="-73.66" y="125.46" size="1.778" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="-73.66" y="105.22" size="1.778" layer="96" ratio="10" rot="SR0"/>
-</instance>
-<instance part="C2" gate="G$1" x="-88.9" y="111.76" smashed="yes">
-<attribute name="NAME" x="-87.376" y="112.141" size="1.778" layer="95"/>
 </instance>
 <instance part="C3" gate="G$1" x="-33.02" y="119.38" smashed="yes">
 <attribute name="NAME" x="-31.496" y="119.761" size="1.778" layer="95"/>
@@ -2672,18 +2797,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <instance part="GND5" gate="1" x="-53.34" y="76.2" smashed="yes">
 <attribute name="VALUE" x="-55.88" y="73.66" size="1.778" layer="96"/>
 </instance>
-<instance part="C6" gate="G$1" x="-71.12" y="86.36" smashed="yes" rot="R90">
-<attribute name="NAME" x="-71.501" y="87.884" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C7" gate="G$1" x="-71.12" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="-71.501" y="80.264" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C8" gate="G$1" x="-71.12" y="68.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="-71.501" y="70.104" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C9" gate="G$1" x="-71.12" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="-71.501" y="62.484" size="1.778" layer="95" rot="R90"/>
-</instance>
 <instance part="Y1" gate="G$1" x="-86.36" y="83.82" smashed="yes" rot="R90">
 <attribute name="NAME" x="-88.646509375" y="78.73886875" size="1.7784" layer="95" rot="R90"/>
 </instance>
@@ -2696,30 +2809,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 </instance>
 <instance part="C10" gate="G$1" x="-76.2" y="43.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="-76.581" y="44.704" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C11" gate="G$1" x="-76.2" y="35.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="-76.581" y="37.084" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C12" gate="G$1" x="-76.2" y="27.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="-76.581" y="29.464" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C13" gate="G$1" x="-76.2" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="-76.581" y="21.844" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C14" gate="G$1" x="-76.2" y="12.7" smashed="yes" rot="R90">
-<attribute name="NAME" x="-76.581" y="14.224" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C15" gate="G$1" x="-76.2" y="5.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="-76.581" y="6.604" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C16" gate="G$1" x="-76.2" y="-2.54" smashed="yes" rot="R90">
-<attribute name="NAME" x="-76.581" y="-1.016" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C17" gate="G$1" x="-76.2" y="-10.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="-76.581" y="-8.636" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C18" gate="G$1" x="-76.2" y="-27.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="-76.581" y="-26.416" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="C19" gate="G$1" x="-76.2" y="-17.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="-76.835" y="-16.764" size="1.778" layer="95" rot="R90"/>
@@ -2746,9 +2835,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 </instance>
 <instance part="R8" gate="G$1" x="220.98" y="119.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="219.4814" y="115.57" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="C21" gate="G$1" x="203.2" y="99.06" smashed="yes" rot="R180">
-<attribute name="NAME" x="201.676" y="98.679" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="R3" gate="G$1" x="33.02" y="96.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="31.9786" y="102.87" size="1.778" layer="95" rot="R270"/>
@@ -2813,10 +2899,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <instance part="D4" gate="G$1" x="215.9" y="-2.54" smashed="yes">
 <attribute name="NAME" x="219.456" y="-7.112" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="U4" gate="A" x="165.1" y="20.32" smashed="yes">
-<attribute name="NAME" x="152.4" y="39.1" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="152.4" y="-1.46" size="2.0828" layer="96" ratio="10" rot="SR0"/>
-</instance>
 <instance part="L1" gate="G$1" x="231.14" y="-51.054" smashed="yes" rot="R90">
 <attribute name="NAME" x="228.6" y="-53.594" size="1.778" layer="95" rot="R90"/>
 </instance>
@@ -2849,6 +2931,52 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 </instance>
 <instance part="D5" gate="G$1" x="228.6" y="-33.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="233.172" y="-29.464" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="U$1" gate="A" x="162.56" y="20.32" smashed="yes">
+<attribute name="NAME" x="157.22028125" y="35.2204" size="2.08503125" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="156.07388125" y="-2.7502" size="2.08573125" layer="96" ratio="10" rot="SR0"/>
+</instance>
+<instance part="C1" gate="G$1" x="203.2" y="101.6" smashed="yes" rot="R270">
+<attribute name="NAME" x="205.74" y="100.33093125" size="1.77843125" layer="95"/>
+</instance>
+<instance part="C23" gate="G$1" x="-88.9" y="111.76" smashed="yes" rot="R270">
+<attribute name="NAME" x="-86.36" y="110.49093125" size="1.77843125" layer="95"/>
+</instance>
+<instance part="C2" gate="G$1" x="-71.12" y="86.36" smashed="yes">
+<attribute name="NAME" x="-71.12" y="90.17093125" size="1.77843125" layer="95"/>
+</instance>
+<instance part="C21" gate="G$1" x="-71.12" y="78.74" smashed="yes">
+<attribute name="NAME" x="-76.2" y="74.93093125" size="1.77843125" layer="95"/>
+</instance>
+<instance part="C24" gate="G$1" x="-71.12" y="68.58" smashed="yes">
+<attribute name="NAME" x="-76.2" y="69.85093125" size="1.77843125" layer="95"/>
+</instance>
+<instance part="C25" gate="G$1" x="-71.12" y="60.96" smashed="yes">
+<attribute name="NAME" x="-71.12" y="54.61093125" size="1.77843125" layer="95"/>
+</instance>
+<instance part="C6" gate="G$1" x="-76.2" y="35.56" smashed="yes">
+<attribute name="NAME" x="-76.2" y="39.37093125" size="1.77843125" layer="95"/>
+</instance>
+<instance part="C7" gate="G$1" x="-76.2" y="27.94" smashed="yes">
+<attribute name="NAME" x="-76.2" y="31.75093125" size="1.77843125" layer="95"/>
+</instance>
+<instance part="C8" gate="G$1" x="-76.2" y="20.32" smashed="yes">
+<attribute name="NAME" x="-76.2" y="24.13093125" size="1.77843125" layer="95"/>
+</instance>
+<instance part="C9" gate="G$1" x="-76.2" y="12.7" smashed="yes">
+<attribute name="NAME" x="-76.2" y="16.51093125" size="1.77843125" layer="95"/>
+</instance>
+<instance part="C11" gate="G$1" x="-76.2" y="5.08" smashed="yes">
+<attribute name="NAME" x="-76.2" y="8.89093125" size="1.77843125" layer="95"/>
+</instance>
+<instance part="C12" gate="G$1" x="-76.2" y="-2.54" smashed="yes">
+<attribute name="NAME" x="-76.2" y="1.27093125" size="1.77843125" layer="95"/>
+</instance>
+<instance part="C13" gate="G$1" x="-76.2" y="-10.16" smashed="yes">
+<attribute name="NAME" x="-76.2" y="-6.34906875" size="1.77843125" layer="95"/>
+</instance>
+<instance part="C14" gate="G$1" x="-76.2" y="-27.94" smashed="yes">
+<attribute name="NAME" x="-76.2" y="-24.12906875" size="1.77843125" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -3006,7 +3134,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <wire x1="-91.44" y1="30.48" x2="-106.68" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-91.44" y="30.48"/>
 <wire x1="-91.44" y1="30.48" x2="-83.82" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="-83.82" y1="30.48" x2="-83.82" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="35.56" x2="-78.74" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="30.48" x2="-83.82" y2="27.94" width="0.1524" layer="91"/>
@@ -3015,21 +3142,22 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <wire x1="-83.82" y1="12.7" x2="-83.82" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="5.08" x2="-83.82" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="-83.82" y="30.48"/>
-<pinref part="C16" gate="G$1" pin="1"/>
 <wire x1="-78.74" y1="-2.54" x2="-83.82" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="1"/>
 <wire x1="-78.74" y1="5.08" x2="-83.82" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-83.82" y="5.08"/>
-<pinref part="C14" gate="G$1" pin="1"/>
 <wire x1="-78.74" y1="12.7" x2="-83.82" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-83.82" y="12.7"/>
-<pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="-78.74" y1="20.32" x2="-83.82" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-83.82" y="20.32"/>
-<pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="-78.74" y1="27.94" x2="-83.82" y2="27.94" width="0.1524" layer="91"/>
 <junction x="-83.82" y="27.94"/>
 <label x="-106.68" y="30.48" size="1.778" layer="95"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
@@ -3123,9 +3251,9 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <pinref part="D4" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="VCC"/>
-<wire x1="182.88" y1="35.56" x2="195.58" y2="35.56" width="0.1524" layer="91"/>
-<label x="185.42" y="35.56" size="1.778" layer="95"/>
+<pinref part="U$1" gate="A" pin="VCC"/>
+<wire x1="144.78" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
+<label x="134.62" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3134,10 +3262,10 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="-99.06" y1="106.68" x2="-99.06" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="104.14" x2="-93.98" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="-93.98" y1="104.14" x2="-88.9" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="-88.9" y1="104.14" x2="-88.9" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-93.98" y="104.14"/>
+<pinref part="C23" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="GND"/>
@@ -3157,19 +3285,19 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <junction x="-33.02" y="106.68"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="-66.04" y1="86.36" x2="-66.04" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="78.74" x2="-53.34" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="C21" gate="G$1" pin="2"/>
 <junction x="-66.04" y="78.74"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="-66.04" y1="68.58" x2="-66.04" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="60.96" x2="-53.34" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<pinref part="C25" gate="G$1" pin="2"/>
 <junction x="-66.04" y="60.96"/>
 </segment>
 <segment>
@@ -3177,7 +3305,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <wire x1="-71.12" y1="43.18" x2="-60.96" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="-60.96" y1="43.18" x2="-60.96" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="-60.96" y1="35.56" x2="-60.96" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="27.94" x2="-60.96" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="20.32" x2="-60.96" y2="12.7" width="0.1524" layer="91"/>
@@ -3190,43 +3317,44 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <wire x1="-60.96" y1="-35.56" x2="-60.96" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="35.56" x2="-60.96" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-60.96" y="35.56"/>
-<pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="-71.12" y1="27.94" x2="-60.96" y2="27.94" width="0.1524" layer="91"/>
 <junction x="-60.96" y="27.94"/>
-<pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="-60.96" y1="20.32" x2="-71.12" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-60.96" y="20.32"/>
-<pinref part="C14" gate="G$1" pin="2"/>
 <wire x1="-71.12" y1="12.7" x2="-60.96" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-60.96" y="12.7"/>
-<pinref part="C15" gate="G$1" pin="2"/>
 <wire x1="-60.96" y1="5.08" x2="-71.12" y2="5.08" width="0.1524" layer="91"/>
 <junction x="-60.96" y="5.08"/>
-<pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="-71.12" y1="-2.54" x2="-60.96" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="-60.96" y="-2.54"/>
 <pinref part="C19" gate="G$1" pin="-"/>
 <wire x1="-71.12" y1="-17.78" x2="-60.96" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="-60.96" y="-17.78"/>
-<pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="-71.12" y1="-10.16" x2="-60.96" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-60.96" y="-10.16"/>
-<pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="-71.12" y1="-27.94" x2="-60.96" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="-60.96" y="-27.94"/>
 <pinref part="C20" gate="G$1" pin="-"/>
 <wire x1="-60.96" y1="-35.56" x2="-71.12" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="-60.96" y="-35.56"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<pinref part="C14" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="SW1" gate="G$1" pin="4"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="C21" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="96.52" x2="203.2" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="91.44" x2="220.98" y2="91.44" width="0.1524" layer="91"/>
 <junction x="220.98" y="91.44"/>
 <pinref part="SW1" gate="G$1" pin="3"/>
 <wire x1="220.98" y1="91.44" x2="226.06" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="96.52" x2="203.2" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="GND"/>
@@ -3338,22 +3466,22 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <label x="236.22" y="-20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="A1"/>
-<wire x1="147.32" y1="20.32" x2="137.16" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="U4" gate="A" pin="A0"/>
-<wire x1="147.32" y1="22.86" x2="147.32" y2="20.32" width="0.1524" layer="91"/>
-<junction x="147.32" y="20.32"/>
-<pinref part="U4" gate="A" pin="A2"/>
-<wire x1="147.32" y1="17.78" x2="147.32" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="U4" gate="A" pin="WP"/>
-<wire x1="147.32" y1="27.94" x2="147.32" y2="22.86" width="0.1524" layer="91"/>
-<junction x="147.32" y="22.86"/>
-<label x="139.7" y="20.32" size="1.778" layer="95"/>
+<pinref part="U$1" gate="A" pin="VSS"/>
+<wire x1="144.78" y1="5.08" x2="132.08" y2="5.08" width="0.1524" layer="91"/>
+<label x="134.62" y="5.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="VSS"/>
-<wire x1="182.88" y1="7.62" x2="195.58" y2="7.62" width="0.1524" layer="91"/>
-<label x="185.42" y="7.62" size="1.778" layer="95"/>
+<pinref part="U$1" gate="A" pin="WP"/>
+<pinref part="U$1" gate="A" pin="A0"/>
+<wire x1="144.78" y1="20.32" x2="144.78" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="A" pin="A1"/>
+<wire x1="144.78" y1="15.24" x2="144.78" y2="12.7" width="0.1524" layer="91"/>
+<junction x="144.78" y="15.24"/>
+<pinref part="U$1" gate="A" pin="A2"/>
+<wire x1="144.78" y1="12.7" x2="144.78" y2="10.16" width="0.1524" layer="91"/>
+<junction x="144.78" y="12.7"/>
+<wire x1="144.78" y1="12.7" x2="137.16" y2="12.7" width="0.1524" layer="91"/>
+<label x="137.16" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3373,13 +3501,13 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <wire x1="-78.74" y1="116.84" x2="-88.9" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="-88.9" y1="116.84" x2="-99.06" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="116.84" x2="-99.06" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="-88.9" y1="114.3" x2="-88.9" y2="116.84" width="0.1524" layer="91"/>
 <junction x="-88.9" y="116.84"/>
 <wire x1="-88.9" y1="121.92" x2="-88.9" y2="116.84" width="0.1524" layer="91"/>
 <junction x="-88.9" y="121.92"/>
 <wire x1="-88.9" y1="121.92" x2="-88.9" y2="129.54" width="0.1524" layer="91"/>
 <label x="-88.9" y="129.54" size="1.778" layer="95"/>
+<pinref part="C23" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="3"/>
@@ -3406,12 +3534,12 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 </net>
 <net name="PC14-OSC32-IN" class="0">
 <segment>
-<pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="-73.66" y1="68.58" x2="-86.36" y2="68.58" width="0.1524" layer="91"/>
 <label x="-111.76" y="68.58" size="1.778" layer="95"/>
 <pinref part="Y2" gate="G$1" pin="2"/>
 <wire x1="-86.36" y1="68.58" x2="-111.76" y2="68.58" width="0.1524" layer="91"/>
 <junction x="-86.36" y="68.58"/>
+<pinref part="C24" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-11.43" y1="33.02" x2="10.16" y2="33.02" width="0.1524" layer="91"/>
@@ -3421,7 +3549,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 </net>
 <net name="PC15-OSC32-OUT" class="0">
 <segment>
-<pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="-73.66" y1="60.96" x2="-83.82" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="60.96" x2="-83.82" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="58.42" x2="-86.36" y2="58.42" width="0.1524" layer="91"/>
@@ -3429,6 +3556,7 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <pinref part="Y2" gate="G$1" pin="1"/>
 <wire x1="-86.36" y1="58.42" x2="-111.76" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-86.36" y="58.42"/>
+<pinref part="C25" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-11.43" y1="30.48" x2="10.16" y2="30.48" width="0.1524" layer="91"/>
@@ -3438,7 +3566,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 </net>
 <net name="PH0-OSC-IN" class="0">
 <segment>
-<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="-73.66" y1="86.36" x2="-83.82" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="86.36" x2="-83.82" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="Y1" gate="G$1" pin="2"/>
@@ -3446,6 +3573,7 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <wire x1="-86.36" y1="88.9" x2="-111.76" y2="88.9" width="0.1524" layer="91"/>
 <junction x="-86.36" y="88.9"/>
 <label x="-111.76" y="88.9" size="1.778" layer="95"/>
+<pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-11.43" y1="27.94" x2="10.16" y2="27.94" width="0.1524" layer="91"/>
@@ -3455,12 +3583,12 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 </net>
 <net name="PH1-OSC-OUT" class="0">
 <segment>
-<pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="Y1" gate="G$1" pin="1"/>
 <wire x1="-73.66" y1="78.74" x2="-86.36" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="78.74" x2="-111.76" y2="78.74" width="0.1524" layer="91"/>
 <junction x="-86.36" y="78.74"/>
 <label x="-111.76" y="78.74" size="1.778" layer="95"/>
+<pinref part="C21" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-11.43" y1="25.4" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
@@ -3480,7 +3608,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <junction x="-91.44" y="-15.24"/>
 <wire x1="-91.44" y1="-15.24" x2="-83.82" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="-15.24" x2="-83.82" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="1"/>
 <wire x1="-83.82" y1="-10.16" x2="-78.74" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="C19" gate="G$1" pin="+"/>
 <wire x1="-78.74" y1="-17.78" x2="-83.82" y2="-17.78" width="0.1524" layer="91"/>
@@ -3491,12 +3618,13 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <wire x1="-83.82" y1="-35.56" x2="-91.44" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="-91.44" y1="-35.56" x2="-101.6" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="-91.44" y="-35.56"/>
-<pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="-78.74" y1="-27.94" x2="-83.82" y2="-27.94" width="0.1524" layer="91"/>
 <wire x1="-83.82" y1="-27.94" x2="-83.82" y2="-35.56" width="0.1524" layer="91"/>
 <junction x="-83.82" y="-35.56"/>
 <label x="-106.68" y="-35.56" size="1.778" layer="95"/>
 <wire x1="-91.44" y1="-15.24" x2="-91.44" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<pinref part="C14" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="NRST" class="0">
@@ -3507,12 +3635,12 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="114.3" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
 <junction x="220.98" y="111.76"/>
-<pinref part="C21" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="104.14" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="111.76" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="111.76" x2="195.58" y2="111.76" width="0.1524" layer="91"/>
-<junction x="203.2" y="111.76"/>
+<wire x1="195.58" y1="111.76" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
 <label x="195.58" y="111.76" size="1.778" layer="95"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="111.76" x2="220.98" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="104.14" x2="203.2" y2="111.76" width="0.1524" layer="91"/>
+<junction x="203.2" y="111.76"/>
 </segment>
 <segment>
 <wire x1="-11.43" y1="22.86" x2="10.16" y2="22.86" width="0.1524" layer="91"/>
@@ -3658,9 +3786,9 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <label x="200.66" y="-40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="SCL"/>
-<wire x1="147.32" y1="30.48" x2="132.08" y2="30.48" width="0.1524" layer="91"/>
-<label x="134.62" y="30.48" size="1.778" layer="95"/>
+<pinref part="U$1" gate="A" pin="SCL"/>
+<wire x1="144.78" y1="22.86" x2="132.08" y2="22.86" width="0.1524" layer="91"/>
+<label x="134.62" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPS_SDA" class="0">
@@ -3670,9 +3798,9 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <label x="200.66" y="-43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U4" gate="A" pin="SDA"/>
-<wire x1="147.32" y1="12.7" x2="132.08" y2="12.7" width="0.1524" layer="91"/>
-<label x="134.62" y="12.7" size="1.778" layer="95"/>
+<pinref part="U$1" gate="A" pin="SDA"/>
+<wire x1="180.34" y1="27.94" x2="195.58" y2="27.94" width="0.1524" layer="91"/>
+<label x="182.88" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$8" class="0">
