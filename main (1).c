@@ -1,0 +1,601 @@
+#include "main.h"
+#include "gpio.h"
+#include "usart.h"
+#include "i2c.h"
+#include "adc.h"
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+/* ======== configuration ======== */
+#define SEND_PERIOD_MS       10000   /* 10 s between transmissions          */
+
+/* SenseAir S88 (UART1 Modbus RTU) */
+#define S88_BAUD_RATE        9600
+#define S88_MODBUS_ADDR      0xFE
+#define S88_READ_INPUT_REG   0x04
+#define S88_CO2_REG          0x0003
+#define S88_DIR_GPIO_Port    GPIOB
+#define S88_DIR_Pin          GPIO_PIN_8
+
+/* LoRa (UART2) */
+#define LORA_CMD_TIMEOUT_MS  500
+#define LORA_ACK_TIMEOUT_MS  3000    /* wait up to 3 s for ACK             */
+#define LORA_MAX_RETRIES     5       /* retransmit up to 5 times           */
+#define LORA_BAND_MHZ        915
+#define LORA_NETWORK_ID      3
+#define LORA_ADDRESS         1       /* this node                          */
+#define LORA_DEST_ADDRESS    0       /* hub                                */
+#define LORA_RF_POWER        14
+
+/* BME280 (I2C1) */
+#define BME280_I2C_ADDR      (0x77 << 1)
+#define BME280_REG_ID         0xD0
+#define BME280_REG_RESET      0xE0
+#define BME280_REG_CTRL_HUM   0xF2
+#define BME280_REG_CTRL_MEAS  0xF4
+#define BME280_REG_CONFIG     0xF5
+#define BME280_REG_PRESS_MSB  0xF7
+
+/* DFRobot SEN0466 Gravity Gas Sensor (I2C2) */
+#define GAS_I2C_ADDR              (0x74 << 1)
+#define CMD_CHANGE_GET_METHOD      0x78
+#define CMD_GET_GAS_CONCENTRATION  0x86
+#define MODE_PASSIVITY             0x04
+#define GAS_TYPE_CO                0x04
+
+/* ======== protocol ======== */
+/*
+ * Payload format (node -> hub):
+ *   D,<node_id>,<seq>,<temp_i>,<hum_i>,<press_i>,<co_i>,<co2_i>
+ *
+ * All sensor values are multiplied by 100 and sent as integers.
+ * seq alternates 0/1 each successful delivery (alternating-bit protocol).
+ *
+ * Hub replies:
+ *   A,<node_id>,<seq>   -- ACK: received OK, seq matches
+ *   N,<node_id>,<seq>   -- NACK: received but could not parse
+ */
+#define PKT_TYPE_DATA  'D'
+#define PKT_TYPE_ACK   'A'
+#define PKT_TYPE_NACK  'N'
+
+/* ======== BME280 calibration ======== */
+typedef struct {
+    uint16_t dig_T1; int16_t  dig_T2; int16_t  dig_T3;
+    uint16_t dig_P1; int16_t  dig_P2; int16_t  dig_P3;
+    int16_t  dig_P4; int16_t  dig_P5; int16_t  dig_P6;
+    int16_t  dig_P7; int16_t  dig_P8; int16_t  dig_P9;
+    uint8_t  dig_H1; int16_t  dig_H2; uint8_t  dig_H3;
+    int16_t  dig_H4; int16_t  dig_H5; int8_t   dig_H6;
+} BME280_Calib;
+
+static BME280_Calib g_bme_calib;
+static int32_t      g_bme_t_fine = 0;
+
+/* ======== global sensor state ======== */
+static float    g_temperature_c = 0.0f;
+static float    g_humidity_rh   = 0.0f;
+static float    g_pressure_pa   = 0.0f;
+static float    g_co_ppm        = 0.0f;
+static uint16_t g_co2_ppm       = 0;
+static uint8_t  g_bme_ready     = 0;
+static uint8_t  g_gas_ready     = 0;
+static uint8_t  g_s88_ready     = 0;
+
+/* alternating-bit sequence number, 0 or 1 */
+static uint8_t g_seq_bit = 0;
+
+/* ======== SenseAir S88 Modbus helpers ======== */
+static uint16_t s88_crc16(const uint8_t *data, uint8_t len)
+{
+    uint16_t crc = 0xFFFF;
+    for (uint8_t i = 0; i < len; i++) {
+        crc ^= data[i];
+        for (uint8_t b = 0; b < 8; b++) {
+            if (crc & 0x0001) crc = (crc >> 1) ^ 0xA001;
+            else               crc >>= 1;
+        }
+    }
+    return crc;
+}
+
+static void s88_set_tx(void) { HAL_GPIO_WritePin(S88_DIR_GPIO_Port, S88_DIR_Pin, GPIO_PIN_SET);   }
+static void s88_set_rx(void) { HAL_GPIO_WritePin(S88_DIR_GPIO_Port, S88_DIR_Pin, GPIO_PIN_RESET); }
+
+static void s88_uart_clear_errors(void)
+{
+    __HAL_UART_CLEAR_OREFLAG(&huart1);
+    __HAL_UART_CLEAR_FEFLAG(&huart1);
+    __HAL_UART_CLEAR_NEFLAG(&huart1);
+    __HAL_UART_CLEAR_PEFLAG(&huart1);
+}
+
+static uint8_t s88_read_co2(uint16_t *co2_ppm)
+{
+    uint8_t cmd[8], rx[7];
+    cmd[0] = S88_MODBUS_ADDR; cmd[1] = S88_READ_INPUT_REG;
+    cmd[2] = (uint8_t)(S88_CO2_REG >> 8); cmd[3] = (uint8_t)(S88_CO2_REG & 0xFF);
+    cmd[4] = 0x00; cmd[5] = 0x01;
+    uint16_t crc = s88_crc16(cmd, 6);
+    cmd[6] = (uint8_t)(crc & 0xFF); cmd[7] = (uint8_t)((crc >> 8) & 0xFF);
+
+    s88_uart_clear_errors();
+    __HAL_UART_FLUSH_DRREGISTER(&huart1);
+    s88_set_tx();
+    if (HAL_UART_Transmit(&huart1, cmd, 8, 200) != HAL_OK) { s88_set_rx(); return 0; }
+    HAL_Delay(2);
+    s88_set_rx();
+    if (HAL_UART_Receive(&huart1, rx, 7, 200) != HAL_OK) return 0;
+    if (rx[0] != S88_MODBUS_ADDR || rx[1] != S88_READ_INPUT_REG || rx[2] != 0x02) return 0;
+
+    uint16_t crc_calc = s88_crc16(rx, 5);
+    uint16_t crc_recv = (uint16_t)rx[5] | ((uint16_t)rx[6] << 8);
+    if (crc_calc != crc_recv) return 0;
+
+    *co2_ppm = (uint16_t)((rx[3] << 8) | rx[4]);
+    return 1;
+}
+
+static uint8_t s88_init(void)
+{
+    uint16_t tmp = 0;
+    HAL_Delay(100);
+    s88_set_rx();
+    g_s88_ready = s88_read_co2(&tmp) ? 1 : 0;
+    return g_s88_ready;
+}
+
+/* ======== DFRobot gas sensor helpers ======== */
+static uint8_t gas_checksum(uint8_t *data, uint8_t len)
+{
+    uint8_t sum = 0;
+    for (uint8_t i = 1; i < (uint8_t)(len - 1); i++) sum += data[i];
+    return (uint8_t)((~sum) + 1);
+}
+
+static void gas_pack_cmd(uint8_t *buf, uint8_t cmd, uint8_t *params, uint8_t param_len)
+{
+    buf[0] = 0xFF; buf[1] = 0x01; buf[2] = cmd;
+    for (uint8_t i = 0; i < 6; i++)
+        buf[3 + i] = (params && i < param_len) ? params[i] : 0x00;
+    buf[9] = gas_checksum(buf, 10);
+}
+
+static int gas_write(uint8_t *data, uint8_t len)
+{
+    return (HAL_I2C_Master_Transmit(&hi2c2, GAS_I2C_ADDR, data, len, 100) == HAL_OK) ? 0 : -1;
+}
+
+static int gas_read(uint8_t *data, uint8_t len)
+{
+    return (HAL_I2C_Master_Receive(&hi2c2, GAS_I2C_ADDR, data, len, 100) == HAL_OK) ? 0 : -1;
+}
+
+static uint8_t gas_init_co_only(void)
+{
+    if (HAL_I2C_IsDeviceReady(&hi2c2, GAS_I2C_ADDR, 3, 100) != HAL_OK) return 0;
+    uint8_t cmd[10];
+    uint8_t params[6] = {MODE_PASSIVITY, 0, 0, 0, 0, 0};
+    gas_pack_cmd(cmd, CMD_CHANGE_GET_METHOD, params, 1);
+    if (gas_write(cmd, 10) != 0) return 0;
+    HAL_Delay(50);
+    return 1;
+}
+
+static uint8_t gas_read_co_ppm(float *co_ppm)
+{
+    uint8_t cmd[10], resp[9];
+    gas_pack_cmd(cmd, CMD_GET_GAS_CONCENTRATION, NULL, 0);
+    if (gas_write(cmd, 10) != 0) return 0;
+    HAL_Delay(50);
+    if (gas_read(resp, 9) != 0) return 0;
+    if (resp[8] != gas_checksum(resp, 9)) return 0;
+
+    uint16_t raw            = (uint16_t)((resp[2] << 8) | resp[3]);
+    uint8_t  gas_type_code  = resp[4];
+    uint8_t  decimal_digits = resp[5];
+    if (gas_type_code != GAS_TYPE_CO) return 0;
+
+    float v = (float)raw;
+    if      (decimal_digits == 1) v *= 0.1f;
+    else if (decimal_digits == 2) v *= 0.01f;
+    *co_ppm = v;
+    return 1;
+}
+
+/* ======== BME280 helpers ======== */
+static int bme280_read_regs(uint8_t reg, uint8_t *data, uint16_t len)
+{
+    if (HAL_I2C_Master_Transmit(&hi2c1, BME280_I2C_ADDR, &reg, 1, 100) != HAL_OK) return -1;
+    if (HAL_I2C_Master_Receive (&hi2c1, BME280_I2C_ADDR, data, len, 100) != HAL_OK) return -1;
+    return 0;
+}
+
+static int bme280_write_reg(uint8_t reg, uint8_t value)
+{
+    uint8_t buf[2] = {reg, value};
+    return (HAL_I2C_Master_Transmit(&hi2c1, BME280_I2C_ADDR, buf, 2, 100) == HAL_OK) ? 0 : -1;
+}
+
+static uint8_t bme280_read_calibration(void)
+{
+    uint8_t buf1[26], buf2[7];
+    if (bme280_read_regs(0x88, buf1, 26) != 0) return 0;
+    if (bme280_read_regs(0xE1, buf2,  7) != 0) return 0;
+
+    g_bme_calib.dig_T1 = (uint16_t)((buf1[1] << 8) | buf1[0]);
+    g_bme_calib.dig_T2 = (int16_t) ((buf1[3] << 8) | buf1[2]);
+    g_bme_calib.dig_T3 = (int16_t) ((buf1[5] << 8) | buf1[4]);
+    g_bme_calib.dig_P1 = (uint16_t)((buf1[7] << 8) | buf1[6]);
+    g_bme_calib.dig_P2 = (int16_t) ((buf1[9] << 8) | buf1[8]);
+    g_bme_calib.dig_P3 = (int16_t) ((buf1[11]<< 8) | buf1[10]);
+    g_bme_calib.dig_P4 = (int16_t) ((buf1[13]<< 8) | buf1[12]);
+    g_bme_calib.dig_P5 = (int16_t) ((buf1[15]<< 8) | buf1[14]);
+    g_bme_calib.dig_P6 = (int16_t) ((buf1[17]<< 8) | buf1[16]);
+    g_bme_calib.dig_P7 = (int16_t) ((buf1[19]<< 8) | buf1[18]);
+    g_bme_calib.dig_P8 = (int16_t) ((buf1[21]<< 8) | buf1[20]);
+    g_bme_calib.dig_P9 = (int16_t) ((buf1[23]<< 8) | buf1[22]);
+
+    uint8_t h1 = 0;
+    if (bme280_read_regs(0xA1, &h1, 1) != 0) return 0;
+    g_bme_calib.dig_H1 = h1;
+    g_bme_calib.dig_H2 = (int16_t)((buf2[1] << 8) | buf2[0]);
+    g_bme_calib.dig_H3 = buf2[2];
+    g_bme_calib.dig_H4 = (int16_t)((buf2[3] << 4) |  (buf2[4] & 0x0F));
+    g_bme_calib.dig_H5 = (int16_t)((buf2[5] << 4) |  (buf2[4] >> 4));
+    g_bme_calib.dig_H6 = (int8_t)  buf2[6];
+    return 1;
+}
+
+static uint8_t bme280_init(void)
+{
+    uint8_t id = 0;
+    if (bme280_read_regs(BME280_REG_ID, &id, 1) != 0) return 0;
+    if (id != 0x60) return 0;
+    if (bme280_write_reg(BME280_REG_RESET, 0xB6) != 0) return 0;
+    HAL_Delay(5);
+    if (!bme280_read_calibration()) return 0;
+    if (bme280_write_reg(BME280_REG_CTRL_HUM,  0x01) != 0) return 0;
+    if (bme280_write_reg(BME280_REG_CONFIG,    0xA0) != 0) return 0;
+    if (bme280_write_reg(BME280_REG_CTRL_MEAS, 0x27) != 0) return 0;
+    return 1;
+}
+
+static uint8_t bme280_read(float *t_c, float *h_rh, float *p_pa)
+{
+    uint8_t  data[8];
+    int32_t  adc_T, adc_P, adc_H;
+    int32_t  var1, var2, T;
+    int64_t  var1_p, var2_p, p;
+    int32_t  v_x1_u32r;
+
+    if (bme280_read_regs(BME280_REG_PRESS_MSB, data, 8) != 0) return 0;
+
+    adc_P = (int32_t)(((uint32_t)data[0] << 12) | ((uint32_t)data[1] << 4) | (data[2] >> 4));
+    adc_T = (int32_t)(((uint32_t)data[3] << 12) | ((uint32_t)data[4] << 4) | (data[5] >> 4));
+    adc_H = (int32_t)(((uint32_t)data[6] <<  8) |  (uint32_t)data[7]);
+
+    if (adc_T == 0x800000 || adc_P == 0x800000 || adc_H == 0x8000) return 0;
+
+    var1 = ((((adc_T >> 3) - ((int32_t)g_bme_calib.dig_T1 << 1)))
+             * ((int32_t)g_bme_calib.dig_T2)) >> 11;
+    var2 = (((((adc_T >> 4) - (int32_t)g_bme_calib.dig_T1)
+              * ((adc_T >> 4) - (int32_t)g_bme_calib.dig_T1)) >> 12)
+             * (int32_t)g_bme_calib.dig_T3) >> 14;
+    g_bme_t_fine = var1 + var2;
+    T = (g_bme_t_fine * 5 + 128) >> 8;
+
+    var1_p = ((int64_t)g_bme_t_fine) - 128000;
+    var2_p = var1_p * var1_p * (int64_t)g_bme_calib.dig_P6;
+    var2_p = var2_p + ((var1_p * (int64_t)g_bme_calib.dig_P5) << 17);
+    var2_p = var2_p + (((int64_t)g_bme_calib.dig_P4) << 35);
+    var1_p = ((var1_p * var1_p * (int64_t)g_bme_calib.dig_P3) >> 8)
+           + ((var1_p * (int64_t)g_bme_calib.dig_P2) << 12);
+    var1_p = (((((int64_t)1) << 47) + var1_p) * (int64_t)g_bme_calib.dig_P1) >> 33;
+    if (var1_p == 0) return 0;
+    p = 1048576 - adc_P;
+    p = (((p << 31) - var2_p) * 3125) / var1_p;
+    var1_p = ((int64_t)g_bme_calib.dig_P9 * (p >> 13) * (p >> 13)) >> 25;
+    var2_p = ((int64_t)g_bme_calib.dig_P8 * p) >> 19;
+    p = ((p + var1_p + var2_p) >> 8) + (((int64_t)g_bme_calib.dig_P7) << 4);
+
+    v_x1_u32r = g_bme_t_fine - (int32_t)76800;
+    v_x1_u32r = (((((adc_H << 14)
+                    - (((int32_t)g_bme_calib.dig_H4) << 20)
+                    - (((int32_t)g_bme_calib.dig_H5) * v_x1_u32r))
+                   + (int32_t)16384) >> 15)
+                 * (((((((v_x1_u32r * (int32_t)g_bme_calib.dig_H6) >> 10)
+                        * (((v_x1_u32r * (int32_t)g_bme_calib.dig_H3) >> 11)
+                           + (int32_t)32768)) >> 10)
+                      + (int32_t)2097152)
+                     * (int32_t)g_bme_calib.dig_H2 + 8192) >> 14));
+    v_x1_u32r = v_x1_u32r
+              - (((((v_x1_u32r >> 15) * (v_x1_u32r >> 15)) >> 7)
+                  * (int32_t)g_bme_calib.dig_H1) >> 4);
+    if (v_x1_u32r < 0)         v_x1_u32r = 0;
+    if (v_x1_u32r > 419430400) v_x1_u32r = 419430400;
+
+    if (t_c)  *t_c  = (float)T / 100.0f;
+    if (p_pa) *p_pa = (float)p / 256.0f;
+    if (h_rh) *h_rh = ((float)(v_x1_u32r >> 12)) / 1024.0f;
+    return 1;
+}
+
+/* ======== LoRa helpers ======== */
+
+/* Send a raw AT command string and drain any response (used at startup). */
+static void lora_cmd(const char *cmd, uint32_t timeout_ms)
+{
+    char line[128];
+    snprintf(line, sizeof(line), "%s\r\n", cmd);
+    HAL_UART_Transmit(&huart2, (uint8_t *)line, (uint16_t)strlen(line), timeout_ms);
+    uint8_t rx[128]; size_t i = 0;
+    uint32_t t0 = HAL_GetTick();
+    while ((HAL_GetTick() - t0) < timeout_ms && i < sizeof(rx) - 1) {
+        uint8_t c;
+        if (HAL_UART_Receive(&huart2, &c, 1, 10) == HAL_OK) rx[i++] = c;
+    }
+}
+
+/*
+ * Read one CRLF-terminated line from UART2 within the remaining budget.
+ * Returns the number of characters stored (0 = timeout / empty line).
+ */
+static uint16_t lora_readline(char *buf, uint16_t buf_size, uint32_t timeout_ms)
+{
+    uint16_t idx = 0;
+    uint32_t t0  = HAL_GetTick();
+    while ((HAL_GetTick() - t0) < timeout_ms && idx < buf_size - 1) {
+        uint8_t b;
+        if (HAL_UART_Receive(&huart2, &b, 1, 5) != HAL_OK) continue;
+        if (b == '\n') {
+            if (idx > 0 && buf[idx - 1] == '\r') idx--; /* strip CR */
+            break;
+        }
+        buf[idx++] = (char)b;
+    }
+    buf[idx] = '\0';
+    return idx;
+}
+
+/*
+ * Transmit a payload string and wait for ACK from the hub.
+ *
+ * Alternating-bit protocol:
+ *   - g_seq_bit is embedded in every outgoing DATA packet
+ *   - ACK with matching seq  -> success, flip g_seq_bit
+ *   - ACK with wrong seq     -> stale duplicate ACK, keep waiting
+ *   - NACK                   -> hub got garbage, retry immediately
+ *   - Timeout                -> retry after short back-off
+ *
+ * Returns 1 on confirmed delivery, 0 if all retries exhausted.
+ */
+static uint8_t lora_send_with_ack(const char *payload)
+{
+    char    cmd[256];
+    char    rx_line[128];
+
+    for (uint8_t attempt = 0; attempt < LORA_MAX_RETRIES; attempt++) {
+
+        /* --- transmit --- */
+        snprintf(cmd, sizeof(cmd), "AT+SEND=%d,%d,%s\r\n",
+                 LORA_DEST_ADDRESS, (int)strlen(payload), payload);
+        HAL_UART_Transmit(&huart2, (uint8_t *)cmd, (uint16_t)strlen(cmd), LORA_CMD_TIMEOUT_MS);
+
+        /* --- listen for hub reply within ACK window --- */
+        uint32_t t0 = HAL_GetTick();
+
+        while ((HAL_GetTick() - t0) < (uint32_t)LORA_ACK_TIMEOUT_MS) {
+
+            uint32_t remaining = LORA_ACK_TIMEOUT_MS - (HAL_GetTick() - t0);
+            if (remaining == 0) break;
+
+            memset(rx_line, 0, sizeof(rx_line));
+            lora_readline(rx_line, sizeof(rx_line), remaining);
+            /* len == 0 just means a quiet gap — keep looping until wall-clock
+               timeout; do NOT break early here */
+
+            /* Only process +RCV lines; ignore +OK, ERR, empty lines, etc. */
+            if (strncmp(rx_line, "+RCV=", 5) != 0) continue;
+
+            /*
+             * +RCV=<src_addr>,<len>,<payload...>,<RSSI>,<SNR>
+             *
+             * The payload itself contains commas ("A,1,0"), so we cannot
+             * split on a fixed count.  Collect ALL tokens; RSSI is
+             * second-to-last, SNR is last, payload spans tokens[2..n-3].
+             *
+             * Example line after stripping "+RCV=":
+             *   0,5,A,1,0,-8,10
+             *   tokens: [0]="0" [1]="5" [2]="A" [3]="1" [4]="0" [5]="-8" [6]="10"
+             *   payload tokens = [2]..[4]  →  "A,1,0"
+             *   RSSI = tokens[5], SNR = tokens[6]
+             */
+            char    tmp[128];
+            strncpy(tmp, rx_line + 5, sizeof(tmp) - 1);
+            tmp[sizeof(tmp) - 1] = '\0';
+
+            char   *tokens[16];
+            uint8_t nt  = 0;
+            char   *tok = strtok(tmp, ",");
+            while (tok && nt < 16) { tokens[nt++] = tok; tok = strtok(NULL, ","); }
+            /* need at least: src_addr, len, type, node, seq, RSSI, SNR = 7 */
+            if (nt < 7) continue;
+
+            /*
+             * Reconstruct the payload string from tokens[2] through tokens[nt-3].
+             * (tokens[nt-2] = RSSI, tokens[nt-1] = SNR)
+             */
+            char rcv_payload[64];
+            rcv_payload[0] = '\0';
+            for (uint8_t ti = 2; ti <= nt - 3; ti++) {
+                if (ti > 2) strncat(rcv_payload, ",", sizeof(rcv_payload) - strlen(rcv_payload) - 1);
+                strncat(rcv_payload, tokens[ti], sizeof(rcv_payload) - strlen(rcv_payload) - 1);
+            }
+
+            /* rcv_payload should now be e.g. "A,1,0" */
+            if (rcv_payload[0] != PKT_TYPE_ACK &&
+                rcv_payload[0] != PKT_TYPE_NACK) continue;
+
+            char type = rcv_payload[0];
+
+            /* parse node and seq from "A,<node>,<seq>" */
+            char *p = strtok(rcv_payload + 2, ",");
+            if (!p) continue;
+            int rcv_node = atoi(p);
+            p = strtok(NULL, ",");
+            if (!p) continue;
+            int rcv_seq = atoi(p);
+
+            if (rcv_node != LORA_ADDRESS) continue; /* not addressed to us */
+
+            if (type == PKT_TYPE_ACK && rcv_seq == (int)g_seq_bit) {
+                g_seq_bit ^= 1u; /* flip for next packet */
+                return 1;        /* confirmed delivery   */
+            }
+
+            if (type == PKT_TYPE_NACK) {
+                break; /* hub signalled bad parse -> retry transmit now */
+            }
+
+            /* Wrong-seq ACK: stale leftover from a previous exchange, ignore */
+        }
+
+        HAL_Delay(200); /* brief pause before retry */
+    }
+
+    return 0; /* failed after all retries */
+}
+
+/*
+ * Build and send one telemetry packet.
+ *
+ * Format:  D,<node_id>,<seq>,<temp*100>,<hum*100>,<press*100>,<co*100>,<co2*100>
+ */
+static void send_telemetry(float temp_c, float hum_rh, float press_hpa,
+                            float co_ppm, uint16_t co2_ppm)
+{
+    int32_t temp_i  = (int32_t)(temp_c    * 100.0f);
+    int32_t hum_i   = (int32_t)(hum_rh    * 100.0f);
+    int32_t press_i = (int32_t)(press_hpa * 100.0f);
+    int32_t co_i    = (int32_t)(co_ppm    * 100.0f);
+
+    char payload[128];
+    snprintf(payload, sizeof(payload),
+             "D,%d,%d,%ld,%ld,%ld,%ld,%u",
+             LORA_ADDRESS, (int)g_seq_bit,
+             temp_i, hum_i, press_i, co_i, (unsigned)co2_ppm);
+
+    lora_send_with_ack(payload);
+}
+
+/* ======== clock ======== */
+void SystemClock_Config(void)
+{
+    RCC_OscInitTypeDef o = {0};
+    RCC_ClkInitTypeDef c = {0};
+
+    HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1);
+    o.OscillatorType      = RCC_OSCILLATORTYPE_HSI;
+    o.HSIState            = RCC_HSI_ON;
+    o.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+    o.PLL.PLLState        = RCC_PLL_NONE;
+    HAL_RCC_OscConfig(&o);
+
+    c.ClockType      = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
+                     | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+    c.SYSCLKSource   = RCC_SYSCLKSOURCE_HSI;
+    c.AHBCLKDivider  = RCC_SYSCLK_DIV1;
+    c.APB1CLKDivider = RCC_HCLK_DIV1;
+    c.APB2CLKDivider = RCC_HCLK_DIV1;
+    HAL_RCC_ClockConfig(&c, FLASH_LATENCY_0);
+}
+
+/* ======== main ======== */
+int main(void)
+{
+    HAL_Init();
+    SystemClock_Config();
+    MX_GPIO_Init();
+    MX_USART2_UART_Init();
+    MX_USART1_UART_Init();
+    MX_USART3_UART_Init();
+    MX_ADC1_Init();
+    MX_I2C1_Init();
+    MX_I2C2_Init();
+
+    /* ---- USART1: SenseAir S88 Modbus RTU ---- */
+    HAL_UART_DeInit(&huart1);
+    huart1.Instance          = USART1;
+    huart1.Init.BaudRate     = S88_BAUD_RATE;
+    huart1.Init.WordLength   = UART_WORDLENGTH_8B;
+    huart1.Init.StopBits     = UART_STOPBITS_1;
+    huart1.Init.Parity       = UART_PARITY_NONE;
+    huart1.Init.Mode         = UART_MODE_TX_RX;
+    huart1.Init.HwFlowCtl    = UART_HWCONTROL_NONE;
+    huart1.Init.OverSampling = UART_OVERSAMPLING_16;
+    huart1.Init.OneBitSampling        = UART_ONE_BIT_SAMPLE_DISABLE;
+    huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+    HAL_UART_Init(&huart1);
+
+    /* ---- USART2: LoRa module ---- */
+    HAL_UART_DeInit(&huart2);
+    huart2.Instance          = USART2;
+    huart2.Init.BaudRate     = 115200;
+    huart2.Init.WordLength   = UART_WORDLENGTH_8B;
+    huart2.Init.StopBits     = UART_STOPBITS_1;
+    huart2.Init.Parity       = UART_PARITY_NONE;
+    huart2.Init.Mode         = UART_MODE_TX_RX;
+    huart2.Init.HwFlowCtl    = UART_HWCONTROL_NONE;
+    huart2.Init.OverSampling = UART_OVERSAMPLING_16;
+    huart2.Init.OneBitSampling        = UART_ONE_BIT_SAMPLE_DISABLE;
+    huart2.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+    HAL_UART_Init(&huart2);
+
+    HAL_Delay(1000);
+
+    /* ---- LoRa configuration ---- */
+    char tmp[64];
+    lora_cmd("AT", 500);
+    lora_cmd("AT+MODE=0", 500);
+    snprintf(tmp, sizeof(tmp), "AT+BAND=%d000000", LORA_BAND_MHZ);   lora_cmd(tmp, 500);
+    snprintf(tmp, sizeof(tmp), "AT+NETWORKID=%d",  LORA_NETWORK_ID); lora_cmd(tmp, 500);
+    snprintf(tmp, sizeof(tmp), "AT+ADDRESS=%d",    LORA_ADDRESS);    lora_cmd(tmp, 500);
+    lora_cmd("AT+PARAMETER=9,7,1,12", 500);
+    snprintf(tmp, sizeof(tmp), "AT+CRFOP=%d",      LORA_RF_POWER);   lora_cmd(tmp, 500);
+
+    /* ---- sensor initialisation ---- */
+    g_bme_ready = bme280_init();
+    g_gas_ready = gas_init_co_only();
+    g_s88_ready = s88_init();
+
+    /* ---- main loop ---- */
+    uint32_t last = HAL_GetTick();
+
+    while (1) {
+        if ((HAL_GetTick() - last) >= SEND_PERIOD_MS) {
+            last += SEND_PERIOD_MS;
+
+            uint8_t ok_bme = 0, ok_co = 0, ok_co2 = 0;
+            if (g_bme_ready) ok_bme = bme280_read(&g_temperature_c, &g_humidity_rh, &g_pressure_pa);
+            if (g_gas_ready) ok_co  = gas_read_co_ppm(&g_co_ppm);
+                             ok_co2 = s88_read_co2(&g_co2_ppm);
+
+            float    out_temp_c    = ok_bme ? g_temperature_c          : 0.0f;
+            float    out_hum_rh    = ok_bme ? g_humidity_rh            : 0.0f;
+            float    out_press_hpa = ok_bme ? (g_pressure_pa / 100.0f) : 0.0f;
+            float    out_co_ppm    = ok_co  ? g_co_ppm                 : 0.0f;
+            uint16_t out_co2_ppm   = ok_co2 ? g_co2_ppm               : 0;
+
+            send_telemetry(out_temp_c, out_hum_rh, out_press_hpa,
+                           out_co_ppm, out_co2_ppm);
+        }
+    }
+}
+
+void Error_Handler(void)
+{
+    __disable_irq();
+    while (1) {}
+}
