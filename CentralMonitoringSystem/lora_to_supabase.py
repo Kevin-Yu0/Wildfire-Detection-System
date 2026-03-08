@@ -1,62 +1,64 @@
 """
 lora_to_supabase.py
 
-base station bridge program:
+Base station bridge program:
 LoRa RX module (RYLR998) -> UART -> RYLS135 (USB-UART) -> Python -> Supabase REST -> Database
 
-What this program dos:
-*opens the serial port connected to your RYLR998 receiver (via RYLS135)
-*watches for incoming lines that look like: +RCV=... (our standardized CSV format)
-*extracts the payload from te CSV sensor packet
-* maps payload fields to your supabase table columns
-* inserts each packet as a new row into supabase
-*keeps running forever (reconnects on serial disconnect & retries on network errors)
+This version ONLY supports the NEW packet structure:
+- fixed-width binary fields packed into 25 bytes
+- transported as readable HEX ASCII (50 hex chars) inside the RYLR998 +RCV line
 
-required env vars: (you set these before yhou run this program)
+RYLR998 RX line formats supported:
+  +RCV=<src_addr>,<len>,<payload>,<rssi>,<snr>
+  +RCV=<src_addr>,<len>,<payload>
+
+Required env vars:
   SUPABASE_URL
   SUPABASE_KEY
 
-optional env vars:
-  LORA_PORT   (e.g. "COM5" on windows, "/dev/tty.usbserial-XXXX" on macos, "/dev/ttyUSB0" on linux)
+Optional env vars:
+  LORA_PORT   (e.g. "COM5" on Windows, "/dev/tty.usbserial-XXXX" on macOS, "/dev/ttyUSB0" on Linux)
   LORA_BAUD   (default 115200)
   TABLE_NAME  (default "Wildfire_Sensor_Data")
   PRINT_RAW   ("1" to print every raw serial line, default "1")
   DRY_RUN     ("1" to parse but NOT insert into Supabase, default "0")
-  STORE_META  ("1" to include rssi/snr/src_addr if your table has those columns, default "0")
+  STORE_META  ("1" to include src_addr/rssi/snr if your table has those columns, default "0")
 
-look at "DB Pipeline & Standardized Payload Format (CSV)" on shared drive for CSV format
-standardized payload format expected (CSV):
-  Long,Lat,Temperature,Humidity,Pressure,CO,CO2,Timestamp,Fire
-
-example payload:
-  -119.8431,34.4140,30.6,30.2,1030.3,3.1,512.0,12:34:56,false
-
-common RYLR998 RX line formats supported:
-  +RCV=<src_addr>,<len>,<payload>,<rssi>,<snr>
-  +RCV=<src_addr>,<len>,<payload>
-if the module prints slightly different then adjust `parse_rcv_line()`.
+Packet (25 bytes total), scaling back to floats:
+  int32 lon_scaled  = lon * 100000
+  int32 lat_scaled  = lat * 100000
+  int16 temp_scaled = temp * 100
+  int16 hum_scaled  = hum  * 100
+  int32 pres_scaled = pres * 100
+  int32 co_scaled   = co   * 100
+  int32 co2_scaled  = co2  * 100
+  uint8 fire        = 0 or 1
 """
 
 import os
 import time
 import serial
 import requests
-from datetime import datetime, timezone
-from typing import Optional, Dict, Any
+import argparse
+import re
+import struct
+from datetime import datetime
+from typing import Optional, Dict, Any, Tuple
 
 
-#configuration env vars. add these before you run this program or you wont have permission from supabase
+# =======================
+# Configuration (env defaults; CLI overrides)
+# =======================
+
 SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_KEY = os.environ["SUPABASE_KEY"]
 
-# !!! let the user set these variables via command line env vars, use argparse library
 TABLE = os.environ.get("TABLE_NAME", "Wildfire_Sensor_Data")
-
 PORT = os.environ.get("LORA_PORT", "COM5")
 BAUD = int(os.environ.get("LORA_BAUD", "115200"))
-
 PRINT_RAW = os.environ.get("PRINT_RAW", "1") == "1"
-DRY_RUN = os.environ.get("DRY_RUN", "0") == "1" #MAKE COMMAND LINE VARIABLE
+DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
+STORE_META = os.environ.get("STORE_META", "0") == "1"
 
 OPEN_SERIAL_RETRY_SEC = 2
 NETWORK_RETRY_SEC = 2
@@ -65,103 +67,85 @@ SESSION = requests.Session()
 
 
 # =======================
+# PACKED payload config (HEX ASCII carrying fixed-width binary fields)
+# =======================
+
+PACKED_LEN_BYTES = 25
+PACKED_LEN_HEX = PACKED_LEN_BYTES * 2  # 50 hex chars
+
+#STM32 is little-endian. If you pack big-endian, change '<' to '>'.
+PACKED_STRUCT_FMT = "<ii h h i i i B"
+
+_HEX_RE = re.compile(r"^[0-9a-fA-F]+$")
+
+
+# =======================
 # Helper functions
 # =======================
 
-# !!! supabase can auto-fill created_at timestamp if you send None
-def iso_utc_now() -> str:
-    """UTC timestamp for created_at (ISO-8601)."""
-    return datetime.now(timezone.utc).isoformat()
-
-# !!! checksum replaces this
 def local_time_hhmmss() -> str:
-    """local time formatted as HH:MM:SS."""
+    """Local time formatted as HH:MM:SS."""
     return datetime.now().strftime("%H:%M:%S")
 
 
-def supabase_insert_row(row: Dict[str, Any]) -> Any:
-    """insert a single row into supabase via REST API."""
+def supabase_insert_row(row: Dict[str, Any]) -> None:
+    """Insert a single row into Supabase via REST API."""
     url = f"{SUPABASE_URL}/rest/v1/{TABLE}"
     headers = {
         "apikey": SUPABASE_KEY,
         "Authorization": f"Bearer {SUPABASE_KEY}",
         "Content-Type": "application/json",
-        "Prefer": "return=representation",
+        # Smaller/faster since we don't need the inserted row back
+        "Prefer": "return=minimal",
     }
 
     resp = SESSION.post(url, headers=headers, json=row, timeout=15)
     if not resp.ok:
-        raise RuntimeError(
-            f"Supabase insert failed ({resp.status_code}): {resp.text}"
+        raise RuntimeError(f"Supabase insert failed ({resp.status_code}): {resp.text}")
+
+
+# =======================
+#Packed HEX payload parsing
+# =======================
+
+def parse_payload_packed_hex(payload_hex: str) -> Dict[str, Any]:
+    """
+    Parse fixed-width packed payload carried as HEX ASCII (50 hex chars = 25 bytes).
+
+    Unpacked layout (25 bytes):
+      int32 lon_i, int32 lat_i,
+      int16 temp_i, int16 hum_i,
+      int32 pres_i, int32 co_i, int32 co2_i,
+      uint8 fire_u8
+    """
+    s = payload_hex.strip()
+    if s.startswith(("0x", "0X")):
+        s = s[2:]
+
+    if len(s) != PACKED_LEN_HEX or not _HEX_RE.match(s):
+        raise ValueError(
+            f"Packed payload must be exactly {PACKED_LEN_HEX} hex chars (got {len(s)}): {payload_hex!r}"
         )
-    return resp.json()
 
+    b = bytes.fromhex(s)
+    if len(b) != PACKED_LEN_BYTES:
+        raise ValueError(f"Packed payload must be {PACKED_LEN_BYTES} bytes (got {len(b)})")
 
-# !!! change to watch for checksum, if invalid ignore and resend???
-def parse_payload_csv(payload: str) -> Dict[str, Any]:
-    """
-    parse CSV payload into a supabase row
-    eexpected CSV:
-      Long,Lat,Temperature,Humidity,Pressure,CO,CO2,Timestamp,Fire
-    """
-    """
-    import csv
-    from io import StringIO
+    lon_i, lat_i, temp_i, hum_i, pres_i, co_i, co2_i, fire_u8 = struct.unpack(PACKED_STRUCT_FMT, b)
 
-    def to_float(x):
-        x = x.strip()
-        if x == "" or x.lower() == "null":
-            return None
-        return float(x)
+    lon = lon_i / 100000.0
+    lat = lat_i / 100000.0
+    temp = temp_i / 100.0
+    hum = hum_i / 100.0
+    pres = pres_i / 100.0
+    co = co_i / 100.0
+    co2 = co2_i / 100.0
+    fire = bool(fire_u8)
 
-    reader = csv.reader(StringIO(payload))
-    fields = next(reader)
-
-    if len(fields) != 9:
-        raise ValueError(f"Expected 9 fields, got {len(fields)}")
-
-    (
-        lon,
-        lat,
-        temp,
-        hum,
-        pres,
-        co,
-        co2,
-        ts,
-        device_id
-    ) = fields
-
-    lon, lat, temp, hum, pres, co, co2 = map(to_float, [
-        lon, lat, temp, hum, pres, co, co2
-    ])
-    """
-
-    fields = [x.strip() for x in payload.split(",")]
-    if len(fields) != 9:
-        raise ValueError(f"Expected 9 CSV fields, got {len(fields)}: {payload}")
-
-    lon = float(fields[0])
-    lat = float(fields[1])
-    temp = float(fields[2])
-    hum = float(fields[3])
-    pres = float(fields[4])
-    co = float(fields[5])
-    co2 = float(fields[6])
-
-    ts = fields[7]
-
-    # !!! checksum replaces this
-    if not ts or len(ts) < 5:
-        ts = local_time_hhmmss()
-
-    # !!! leave this comment, we will change this portion later based off of our model
-    fire = fields[8].lower()
-    if fire not in ("true", "false"):
-        fire = "false"
+    #Your new packet doesn’t include timestamp; populate locally (or rely on Supabase created_at).
+    ts = local_time_hhmmss()
 
     return {
-        "created_at": iso_utc_now(), # !!! None for supabase to auto-fill
         "Long": lon,
         "Lat": lat,
         "Temperature": temp,
@@ -173,13 +157,21 @@ def parse_payload_csv(payload: str) -> Dict[str, Any]:
         "Fire": fire,
     }
 
-# !!! see if chatgpt has a cleaner way to do this
-def parse_rcv_line(line: str) -> Optional[Dict[str, Any]]:
+
+# =======================
+#+RCV parsing
+# =======================
+
+def parse_rcv_line(line: str) -> Optional[Tuple[Dict[str, Any], Dict[str, Any]]]:
     """
-    extract payload from a RYLR998 +RCV line and convert to supabase row
-    supported formats:
+    Extract packed-HEX payload and metadata from a RYLR998 +RCV line.
+
+    Supported:
       +RCV=<src_addr>,<len>,<payload>,<rssi>,<snr>
       +RCV=<src_addr>,<len>,<payload>
+
+    Returns:
+      (row_dict, meta_dict) or None if not a +RCV line
     """
     line = line.strip()
     if not line.startswith("+RCV="):
@@ -187,24 +179,62 @@ def parse_rcv_line(line: str) -> Optional[Dict[str, Any]]:
 
     body = line[len("+RCV="):]
 
+    # Split into: src_addr, len, rest (payload + optional ,rssi,snr)
     parts = body.split(",", 2)
     if len(parts) < 3:
         raise ValueError(f"Malformed +RCV line: {line}")
 
-    rest = parts[2]
+    src_addr_s = parts[0].strip()
+    length_s = parts[1].strip()
+    rest = parts[2].strip()
 
-    #remove RSSI/SNR if present (payload itself contains commas)
-    rest_parts = rest.rsplit(",", 2)
-    if len(rest_parts) == 3:
-        payload = rest_parts[0]
+    meta: Dict[str, Any] = {"src_addr": None, "rssi": None, "snr": None, "declared_len": None}
+
+    try:
+        meta["src_addr"] = int(src_addr_s)
+    except Exception:
+        meta["src_addr"] = src_addr_s
+
+    try:
+        meta["declared_len"] = int(length_s)
+    except Exception:
+        meta["declared_len"] = None
+
+    #If RSSI/SNR present, they are last two comma-separated tokens.
+    #Payload itself is HEX (no commas), but we keep rsplit for compatibility.
+    maybe = rest.rsplit(",", 2)
+    if len(maybe) == 3:
+        payload = maybe[0].strip()
+        rssi_s = maybe[1].strip()
+        snr_s = maybe[2].strip()
+        try:
+            meta["rssi"] = int(rssi_s)
+        except Exception:
+            meta["rssi"] = rssi_s
+        try:
+            meta["snr"] = int(snr_s)
+        except Exception:
+            meta["snr"] = snr_s
     else:
         payload = rest
 
-    return parse_payload_csv(payload)
+    row = parse_payload_packed_hex(payload)
 
+    #Optional sanity check: declared_len should be 25 for this packet type
+    if meta["declared_len"] is not None and meta["declared_len"] != PACKED_LEN_BYTES:
+        #Not fatal; some modules report length differently depending on encoding.
+        #Keep permissive so we don’t drop real data.
+        pass
+
+    return row, meta
+
+
+# =======================
+#Serial open/retry
+# =======================
 
 def open_serial_forever() -> serial.Serial:
-    """open serial port with retry loop."""
+    """Open serial port with retry loop."""
     while True:
         try:
             ser = serial.Serial(PORT, BAUD, timeout=1)
@@ -216,30 +246,71 @@ def open_serial_forever() -> serial.Serial:
             time.sleep(OPEN_SERIAL_RETRY_SEC)
 
 
+# =======================
+#CLI args
+# =======================
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="LoRa RX (RYLR998) -> Supabase bridge (packed HEX payload)")
+    parser.add_argument("--port", default=PORT, help="Serial port (e.g., COM5 or /dev/tty.usbserial-XXXX)")
+    parser.add_argument("--baud", type=int, default=BAUD, help="Serial baud rate (default 115200)")
+    parser.add_argument("--table", default=TABLE, help="Supabase table name")
+    parser.add_argument("--print-raw", action="store_true", default=PRINT_RAW, help="Print raw serial lines")
+    parser.add_argument("--no-print-raw", action="store_false", dest="print_raw", help="Disable printing raw lines")
+    parser.add_argument("--dry-run", action="store_true", default=DRY_RUN, help="Parse but do not insert into Supabase")
+    parser.add_argument("--store-meta", action="store_true", default=STORE_META, help="Include src_addr/rssi/snr in row (DB must have columns)")
+    return parser.parse_args()
+
+
+# =======================
+#Main loop
+# =======================
+
 def main() -> None:
-    print("[INFO] Starting LoRa → Supabase bridge")
-    print(f"[INFO] PORT={PORT} BAUD={BAUD} TABLE={TABLE} DRY_RUN={DRY_RUN}")
+    global PORT, BAUD, TABLE, PRINT_RAW, DRY_RUN, STORE_META
+
+    args = parse_args()
+    PORT = args.port
+    BAUD = args.baud
+    TABLE = args.table
+    PRINT_RAW = args.print_raw
+    DRY_RUN = args.dry_run
+    STORE_META = args.store_meta
+
+    print("[INFO] Starting LoRa → Supabase bridge (packed HEX payload only)")
+    print(f"[INFO] PORT={PORT} BAUD={BAUD} TABLE={TABLE} DRY_RUN={DRY_RUN} STORE_META={STORE_META}")
 
     ser = open_serial_forever()
 
     while True:
         try:
-            raw = ser.readline().decode("utf-8", errors="ignore").strip()
-            if not raw:
+            raw_line = ser.readline().decode("utf-8", errors="ignore").strip()
+            if not raw_line:
                 continue
 
             if PRINT_RAW:
-                print(f"[RX] {raw}")
+                print(f"[RX] {raw_line}")
 
-            row = parse_rcv_line(raw)
-            if row is None:
+            parsed = parse_rcv_line(raw_line)
+            if parsed is None:
                 continue
+
+            row, meta = parsed
+
+            if STORE_META:
+                # Only add these if your Supabase table has matching columns
+                if meta.get("src_addr") is not None:
+                    row["src_addr"] = meta["src_addr"]
+                if meta.get("rssi") is not None:
+                    row["rssi"] = meta["rssi"]
+                if meta.get("snr") is not None:
+                    row["snr"] = meta["snr"]
 
             if DRY_RUN:
                 print(f"[PARSED] {row}")
                 continue
 
-            inserted = supabase_insert_row(row)
+            supabase_insert_row(row)
             print("[DB] Inserted row")
 
         except (serial.SerialException, OSError) as e:
@@ -253,6 +324,11 @@ def main() -> None:
         except requests.RequestException as e:
             print(f"[ERR] Supabase/network error: {e}. Retrying...")
             time.sleep(NETWORK_RETRY_SEC)
+
+        except ValueError as e:
+            # Expected drop cases: malformed +RCV line, wrong hex length, non-hex payload, etc.
+            print(f"[DROP] {e}")
+            time.sleep(0.05)
 
         except Exception as e:
             print(f"[ERR] {e}")
