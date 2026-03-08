@@ -145,6 +145,13 @@ def parse_payload_packed_hex(payload_hex: str) -> Dict[str, Any]:
     #Your new packet doesn’t include timestamp; populate locally (or rely on Supabase created_at).
     ts = local_time_hhmmss()
 
+    # !!! leave this comment, we will change this portion later based off of our model
+    #fire = fields[8].lower()
+    # if fire not in ("true", "false"):
+    #     fire = "false"
+    fire = 0.0
+    
+
     return {
         "Long": lon,
         "Lat": lat,
