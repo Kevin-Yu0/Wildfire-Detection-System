@@ -12420,6 +12420,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C3" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="22UF/6.3V" value="22uF"/>
 <part name="L5" library="JLC PCB Basic Parts_loc" deviceset="L_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="4R7"/>
 <part name="L6" library="JLC PCB Basic Parts_loc" deviceset="L_" device="_0805" package3d_urn="urn:adsk.eagle:package:23553/2" technology="2R2"/>
+<part name="L2" library="JLC PCB Basic Parts_loc" deviceset="L_" device="_0805" package3d_urn="urn:adsk.eagle:package:23553/2" technology="1R0"/>
 </parts>
 <sheets>
 <sheet>
@@ -12804,6 +12805,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="L6" gate="L1" x="342.9" y="96.52" smashed="yes">
 <attribute name="NAME" x="341.4014" y="92.71" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="346.202" y="92.71" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="L2" gate="L1" x="347.98" y="86.36" smashed="yes" rot="R270">
+<attribute name="NAME" x="344.17" y="87.8586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="344.17" y="83.058" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -14185,10 +14190,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="C29" gate="C1" pin="1"/>
 <wire x1="350.52" y1="104.14" x2="347.98" y2="104.14" width="0.1524" layer="91"/>
 <label x="353.06" y="99.06" size="1.778" layer="95"/>
-<pinref part="L6" gate="L1" pin="2"/>
-<wire x1="342.9" y1="91.44" x2="347.98" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="91.44" x2="347.98" y2="99.06" width="0.1524" layer="91"/>
 <junction x="347.98" y="99.06"/>
+<pinref part="L2" gate="L1" pin="1"/>
+<wire x1="353.06" y1="86.36" x2="353.06" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="91.44" x2="347.98" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -14240,6 +14246,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="L5" gate="L1" pin="2"/>
 <pinref part="L6" gate="L1" pin="1"/>
 <wire x1="342.9" y1="104.14" x2="342.9" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="L6" gate="L1" pin="2"/>
+<pinref part="L2" gate="L1" pin="2"/>
+<wire x1="342.9" y1="91.44" x2="342.9" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
