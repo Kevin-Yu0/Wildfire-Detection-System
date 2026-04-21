@@ -2575,11 +2575,7 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 <technologies>
 <technology name="">
 <attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/24LC32AT-I/SN/Microchip+Technology/view-part/?ref=eda"/>
-<attribute name="DESCRIPTION" value="
-                        
-                            32K, 4K X 8, 2.5V SER EE IND8 SOIC 3.90mm(.150in) T/R | Microchip Technology Inc. 24LC32AT-I/SN
-                        
-                    "/>
+<attribute name="DESCRIPTION" value="                                                      32K, 4K X 8, 2.5V SER EE IND8 SOIC 3.90mm(.150in) T/R | Microchip Technology Inc. 24LC32AT-I/SN                                              "/>
 <attribute name="DIGIKEY_PART_NUMBER" value="24LC32AT-I/SNCT-ND"/>
 <attribute name="MF" value="Microchip Technology"/>
 <attribute name="MP" value="24LC32AT-I/SN"/>
@@ -4178,1568 +4174,6 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 &lt;/tr&gt;
 &lt;/table&gt;</description>
 <packages>
-<package name="C0402" urn="urn:adsk.eagle:footprint:23121/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
-<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
-<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="C0504" urn="urn:adsk.eagle:footprint:23122/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.294" y1="0.559" x2="0.294" y2="0.559" width="0.1016" layer="51"/>
-<wire x1="-0.294" y1="-0.559" x2="0.294" y2="-0.559" width="0.1016" layer="51"/>
-<smd name="1" x="-0.7" y="0" dx="1" dy="1.3" layer="1"/>
-<smd name="2" x="0.7" y="0" dx="1" dy="1.3" layer="1"/>
-<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.6604" y1="-0.6223" x2="-0.2804" y2="0.6276" layer="51"/>
-<rectangle x1="0.2794" y1="-0.6223" x2="0.6594" y2="0.6276" layer="51"/>
-<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
-</package>
-<package name="C0603" urn="urn:adsk.eagle:footprint:23123/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="C0805" urn="urn:adsk.eagle:footprint:23124/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
-<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
-<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
-</package>
-<package name="C1206" urn="urn:adsk.eagle:footprint:23125/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-<package name="C1210" urn="urn:adsk.eagle:footprint:23126/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="-0.9652" y1="1.2446" x2="0.9652" y2="1.2446" width="0.1016" layer="51"/>
-<wire x1="-0.9652" y1="-1.2446" x2="0.9652" y2="-1.2446" width="0.1016" layer="51"/>
-<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="2.7" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="2.7" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-1.2954" x2="-0.9517" y2="1.3045" layer="51"/>
-<rectangle x1="0.9517" y1="-1.3045" x2="1.7018" y2="1.2954" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-<package name="C1310" urn="urn:adsk.eagle:footprint:23127/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.294" y1="0.559" x2="0.294" y2="0.559" width="0.1016" layer="51"/>
-<wire x1="-0.294" y1="-0.559" x2="0.294" y2="-0.559" width="0.1016" layer="51"/>
-<smd name="1" x="-0.7" y="0" dx="1" dy="1.3" layer="1"/>
-<smd name="2" x="0.7" y="0" dx="1" dy="1.3" layer="1"/>
-<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.6604" y1="-0.6223" x2="-0.2804" y2="0.6276" layer="51"/>
-<rectangle x1="0.2794" y1="-0.6223" x2="0.6594" y2="0.6276" layer="51"/>
-<rectangle x1="-0.1001" y1="-0.3" x2="0.1001" y2="0.3" layer="35"/>
-</package>
-<package name="C1608" urn="urn:adsk.eagle:footprint:23128/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="C1812" urn="urn:adsk.eagle:footprint:23129/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-2.973" y1="1.983" x2="2.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="2.973" y1="-1.983" x2="-2.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-2.973" y1="-1.983" x2="-2.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="-1.4732" y1="1.6002" x2="1.4732" y2="1.6002" width="0.1016" layer="51"/>
-<wire x1="-1.4478" y1="-1.6002" x2="1.4732" y2="-1.6002" width="0.1016" layer="51"/>
-<wire x1="2.973" y1="1.983" x2="2.973" y2="-1.983" width="0.0508" layer="39"/>
-<smd name="1" x="-1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
-<smd name="2" x="1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
-<text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.3876" y1="-1.651" x2="-1.4376" y2="1.649" layer="51"/>
-<rectangle x1="1.4478" y1="-1.651" x2="2.3978" y2="1.649" layer="51"/>
-<rectangle x1="-0.3" y1="-0.4001" x2="0.3" y2="0.4001" layer="35"/>
-</package>
-<package name="C1825" urn="urn:adsk.eagle:footprint:23130/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-2.973" y1="3.483" x2="2.973" y2="3.483" width="0.0508" layer="39"/>
-<wire x1="2.973" y1="-3.483" x2="-2.973" y2="-3.483" width="0.0508" layer="39"/>
-<wire x1="-2.973" y1="-3.483" x2="-2.973" y2="3.483" width="0.0508" layer="39"/>
-<wire x1="-1.4986" y1="3.2766" x2="1.4732" y2="3.2766" width="0.1016" layer="51"/>
-<wire x1="-1.4732" y1="-3.2766" x2="1.4986" y2="-3.2766" width="0.1016" layer="51"/>
-<wire x1="2.973" y1="3.483" x2="2.973" y2="-3.483" width="0.0508" layer="39"/>
-<smd name="1" x="-1.95" y="0" dx="1.9" dy="6.8" layer="1"/>
-<smd name="2" x="1.95" y="0" dx="1.9" dy="6.8" layer="1"/>
-<text x="-1.905" y="3.81" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.413" y1="-3.3528" x2="-1.463" y2="3.3472" layer="51"/>
-<rectangle x1="1.4478" y1="-3.3528" x2="2.3978" y2="3.3472" layer="51"/>
-<rectangle x1="-0.7" y1="-0.7" x2="0.7" y2="0.7" layer="35"/>
-</package>
-<package name="C2012" urn="urn:adsk.eagle:footprint:23131/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
-<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
-<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
-</package>
-<package name="C3216" urn="urn:adsk.eagle:footprint:23132/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-<rectangle x1="-0.3" y1="-0.5001" x2="0.3" y2="0.5001" layer="35"/>
-</package>
-<package name="C3225" urn="urn:adsk.eagle:footprint:23133/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="-0.9652" y1="1.2446" x2="0.9652" y2="1.2446" width="0.1016" layer="51"/>
-<wire x1="-0.9652" y1="-1.2446" x2="0.9652" y2="-1.2446" width="0.1016" layer="51"/>
-<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="2.7" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="2.7" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-1.2954" x2="-0.9517" y2="1.3045" layer="51"/>
-<rectangle x1="0.9517" y1="-1.3045" x2="1.7018" y2="1.2954" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
-</package>
-<package name="C4532" urn="urn:adsk.eagle:footprint:23134/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-2.973" y1="1.983" x2="2.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="2.973" y1="-1.983" x2="-2.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-2.973" y1="-1.983" x2="-2.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="-1.4732" y1="1.6002" x2="1.4732" y2="1.6002" width="0.1016" layer="51"/>
-<wire x1="-1.4478" y1="-1.6002" x2="1.4732" y2="-1.6002" width="0.1016" layer="51"/>
-<wire x1="2.973" y1="1.983" x2="2.973" y2="-1.983" width="0.0508" layer="39"/>
-<smd name="1" x="-1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
-<smd name="2" x="1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
-<text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.3876" y1="-1.651" x2="-1.4376" y2="1.649" layer="51"/>
-<rectangle x1="1.4478" y1="-1.651" x2="2.3978" y2="1.649" layer="51"/>
-<rectangle x1="-0.4001" y1="-0.7" x2="0.4001" y2="0.7" layer="35"/>
-</package>
-<package name="C4564" urn="urn:adsk.eagle:footprint:23135/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-2.973" y1="3.483" x2="2.973" y2="3.483" width="0.0508" layer="39"/>
-<wire x1="2.973" y1="-3.483" x2="-2.973" y2="-3.483" width="0.0508" layer="39"/>
-<wire x1="-2.973" y1="-3.483" x2="-2.973" y2="3.483" width="0.0508" layer="39"/>
-<wire x1="-1.4986" y1="3.2766" x2="1.4732" y2="3.2766" width="0.1016" layer="51"/>
-<wire x1="-1.4732" y1="-3.2766" x2="1.4986" y2="-3.2766" width="0.1016" layer="51"/>
-<wire x1="2.973" y1="3.483" x2="2.973" y2="-3.483" width="0.0508" layer="39"/>
-<smd name="1" x="-1.95" y="0" dx="1.9" dy="6.8" layer="1"/>
-<smd name="2" x="1.95" y="0" dx="1.9" dy="6.8" layer="1"/>
-<text x="-1.905" y="3.81" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.413" y1="-3.3528" x2="-1.463" y2="3.3472" layer="51"/>
-<rectangle x1="1.4478" y1="-3.3528" x2="2.3978" y2="3.3472" layer="51"/>
-<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
-</package>
-<package name="C025-024X044" urn="urn:adsk.eagle:footprint:23136/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 2.5 mm, outline 2.4 x 4.4 mm</description>
-<wire x1="-2.159" y1="-0.635" x2="-2.159" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-2.159" y1="0.635" x2="-1.651" y2="1.143" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.159" y1="-0.635" x2="-1.651" y2="-1.143" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.651" y1="1.143" x2="-1.651" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-0.635" x2="2.159" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.651" y1="-1.143" x2="-1.651" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="1.651" y1="1.143" x2="2.159" y2="0.635" width="0.1524" layer="21" curve="-90"/>
-<wire x1="1.651" y1="-1.143" x2="2.159" y2="-0.635" width="0.1524" layer="21" curve="90"/>
-<wire x1="-0.3048" y1="0.762" x2="-0.3048" y2="-0.762" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0.762" x2="0.3302" y2="-0.762" width="0.3048" layer="21"/>
-<wire x1="1.27" y1="0" x2="0.3302" y2="0" width="0.1524" layer="51"/>
-<wire x1="-1.27" y1="0" x2="-0.3048" y2="0" width="0.1524" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.778" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.778" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C025-025X050" urn="urn:adsk.eagle:footprint:23137/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 2.5 mm, outline 2.5 x 5 mm</description>
-<wire x1="-2.159" y1="1.27" x2="2.159" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-1.27" x2="-2.159" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="1.016" x2="2.413" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="1.016" x2="-2.413" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="1.27" x2="2.413" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.413" y1="1.016" x2="-2.159" y2="1.27" width="0.1524" layer="21" curve="-90"/>
-<wire x1="2.159" y1="-1.27" x2="2.413" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="-2.413" y1="-1.016" x2="-2.159" y2="-1.27" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.762" y1="0" x2="0.381" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.381" y1="0" x2="0.254" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="0.762" width="0.254" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0.762" x2="-0.254" y2="0" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.381" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.381" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.286" y="1.524" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.286" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C025-030X050" urn="urn:adsk.eagle:footprint:23138/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 2.5 mm, outline 3 x 5 mm</description>
-<wire x1="-2.159" y1="1.524" x2="2.159" y2="1.524" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-1.524" x2="-2.159" y2="-1.524" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="1.27" x2="2.413" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="1.27" x2="-2.413" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="1.524" x2="2.413" y2="1.27" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.413" y1="1.27" x2="-2.159" y2="1.524" width="0.1524" layer="21" curve="-90"/>
-<wire x1="2.159" y1="-1.524" x2="2.413" y2="-1.27" width="0.1524" layer="21" curve="90"/>
-<wire x1="-2.413" y1="-1.27" x2="-2.159" y2="-1.524" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.762" y1="0" x2="0.381" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.381" y1="0" x2="0.254" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="0.762" width="0.254" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0.762" x2="-0.254" y2="0" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.381" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.381" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.286" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.286" y="-3.048" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C025-040X050" urn="urn:adsk.eagle:footprint:23139/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 2.5 mm, outline 4 x 5 mm</description>
-<wire x1="-2.159" y1="1.905" x2="2.159" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-1.905" x2="-2.159" y2="-1.905" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="1.651" x2="2.413" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="1.651" x2="-2.413" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="1.905" x2="2.413" y2="1.651" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.413" y1="1.651" x2="-2.159" y2="1.905" width="0.1524" layer="21" curve="-90"/>
-<wire x1="2.159" y1="-1.905" x2="2.413" y2="-1.651" width="0.1524" layer="21" curve="90"/>
-<wire x1="-2.413" y1="-1.651" x2="-2.159" y2="-1.905" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.762" y1="0" x2="0.381" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.381" y1="0" x2="0.254" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="0.762" width="0.254" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0.762" x2="-0.254" y2="0" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.381" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.381" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.286" y="2.159" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.286" y="-3.429" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C025-050X050" urn="urn:adsk.eagle:footprint:23140/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 2.5 mm, outline 5 x 5 mm</description>
-<wire x1="-2.159" y1="2.286" x2="2.159" y2="2.286" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-2.286" x2="-2.159" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="2.032" x2="2.413" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="2.032" x2="-2.413" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="2.286" x2="2.413" y2="2.032" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.413" y1="2.032" x2="-2.159" y2="2.286" width="0.1524" layer="21" curve="-90"/>
-<wire x1="2.159" y1="-2.286" x2="2.413" y2="-2.032" width="0.1524" layer="21" curve="90"/>
-<wire x1="-2.413" y1="-2.032" x2="-2.159" y2="-2.286" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.762" y1="0" x2="0.381" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.381" y1="0" x2="0.254" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="0.762" width="0.254" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0.762" x2="-0.254" y2="0" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.381" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.381" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.286" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.286" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C025-060X050" urn="urn:adsk.eagle:footprint:23141/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 2.5 mm, outline 6 x 5 mm</description>
-<wire x1="-2.159" y1="2.794" x2="2.159" y2="2.794" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-2.794" x2="-2.159" y2="-2.794" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="2.54" x2="2.413" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="2.54" x2="-2.413" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="2.794" x2="2.413" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.413" y1="2.54" x2="-2.159" y2="2.794" width="0.1524" layer="21" curve="-90"/>
-<wire x1="2.159" y1="-2.794" x2="2.413" y2="-2.54" width="0.1524" layer="21" curve="90"/>
-<wire x1="-2.413" y1="-2.54" x2="-2.159" y2="-2.794" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.762" y1="0" x2="0.381" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.381" y1="0" x2="0.254" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="0.762" width="0.254" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0.762" x2="-0.254" y2="0" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.381" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.381" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.286" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.032" y="-2.413" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C025_050-024X070" urn="urn:adsk.eagle:footprint:23142/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 2.5 mm + 5 mm, outline 2.4 x 7 mm</description>
-<wire x1="-2.159" y1="-0.635" x2="-2.159" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="-2.159" y1="0.635" x2="-1.651" y2="1.143" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.159" y1="-0.635" x2="-1.651" y2="-1.143" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.651" y1="1.143" x2="-1.651" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-0.635" x2="2.159" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="1.651" y1="-1.143" x2="-1.651" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="1.651" y1="1.143" x2="2.159" y2="0.635" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.191" y1="-1.143" x2="-3.9624" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="-4.191" y1="1.143" x2="-3.9624" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="-4.699" y1="-0.635" x2="-4.191" y2="-1.143" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.651" y1="-1.143" x2="2.159" y2="-0.635" width="0.1524" layer="21" curve="90"/>
-<wire x1="-4.699" y1="0.635" x2="-4.191" y2="1.143" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.699" y1="-0.635" x2="-4.699" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-3.429" y1="1.143" x2="-2.5654" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="-3.429" y1="-1.143" x2="-2.5654" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="-0.3048" y1="0.762" x2="-0.3048" y2="-0.762" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0.762" x2="0.3302" y2="-0.762" width="0.3048" layer="21"/>
-<wire x1="1.27" y1="0" x2="0.3302" y2="0" width="0.1524" layer="51"/>
-<wire x1="-1.27" y1="0" x2="-0.3048" y2="0" width="0.1524" layer="51"/>
-<pad name="1" x="-3.81" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="3" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-3.81" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C025_050-025X075" urn="urn:adsk.eagle:footprint:23143/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 2.5 + 5 mm, outline 2.5 x 7.5 mm</description>
-<wire x1="-2.159" y1="1.27" x2="2.159" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-1.27" x2="-2.159" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="1.016" x2="-2.413" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="1.27" x2="2.413" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.413" y1="1.016" x2="-2.159" y2="1.27" width="0.1524" layer="21" curve="-90"/>
-<wire x1="2.159" y1="-1.27" x2="2.413" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="-2.413" y1="-1.016" x2="-2.159" y2="-1.27" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.381" y1="0" x2="0.254" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="0.762" width="0.254" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0.762" x2="-0.254" y2="0" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.381" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.381" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<wire x1="4.953" y1="1.016" x2="4.953" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="4.699" y1="1.27" x2="4.953" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="4.699" y1="-1.27" x2="4.953" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.794" y1="1.27" x2="4.699" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="4.699" y1="-1.27" x2="2.794" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="1.016" x2="2.413" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="-0.762" x2="2.413" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="0.254" x2="2.413" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="1.778" y1="0" x2="2.286" y2="0" width="0.1524" layer="51"/>
-<wire x1="2.286" y1="0" x2="2.794" y2="0" width="0.1524" layer="21"/>
-<wire x1="2.794" y1="0" x2="3.302" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.762" y1="0" x2="0.381" y2="0" width="0.1524" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="3" x="3.81" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.159" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.159" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C025_050-035X075" urn="urn:adsk.eagle:footprint:23144/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 2.5 + 5 mm, outline 3.5 x 7.5 mm</description>
-<wire x1="-2.159" y1="1.778" x2="2.159" y2="1.778" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-1.778" x2="-2.159" y2="-1.778" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="1.524" x2="-2.413" y2="-1.524" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="1.778" x2="2.413" y2="1.524" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.413" y1="1.524" x2="-2.159" y2="1.778" width="0.1524" layer="21" curve="-90"/>
-<wire x1="2.159" y1="-1.778" x2="2.413" y2="-1.524" width="0.1524" layer="21" curve="90"/>
-<wire x1="-2.413" y1="-1.524" x2="-2.159" y2="-1.778" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.381" y1="0" x2="0.254" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="0.762" width="0.254" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0.762" x2="-0.254" y2="0" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.381" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.381" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<wire x1="4.953" y1="1.524" x2="4.953" y2="-1.524" width="0.1524" layer="21"/>
-<wire x1="4.699" y1="1.778" x2="4.953" y2="1.524" width="0.1524" layer="21" curve="-90"/>
-<wire x1="4.699" y1="-1.778" x2="4.953" y2="-1.524" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.794" y1="1.778" x2="4.699" y2="1.778" width="0.1524" layer="21"/>
-<wire x1="4.699" y1="-1.778" x2="2.794" y2="-1.778" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="1.524" x2="2.413" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="-1.016" x2="2.413" y2="-1.524" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="0.508" x2="2.413" y2="-0.508" width="0.1524" layer="21"/>
-<wire x1="0.381" y1="0" x2="0.762" y2="0" width="0.1524" layer="51"/>
-<wire x1="2.286" y1="0" x2="2.794" y2="0" width="0.1524" layer="21"/>
-<wire x1="2.794" y1="0" x2="3.302" y2="0" width="0.1524" layer="51"/>
-<wire x1="2.286" y1="0" x2="1.778" y2="0" width="0.1524" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="3" x="3.81" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.286" y="2.159" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.286" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C025_050-045X075" urn="urn:adsk.eagle:footprint:23145/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 2.5 + 5 mm, outline 4.5 x 7.5 mm</description>
-<wire x1="-2.159" y1="2.286" x2="2.159" y2="2.286" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-2.286" x2="-2.159" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="2.032" x2="-2.413" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="2.286" x2="2.413" y2="2.032" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.413" y1="2.032" x2="-2.159" y2="2.286" width="0.1524" layer="21" curve="-90"/>
-<wire x1="2.159" y1="-2.286" x2="2.413" y2="-2.032" width="0.1524" layer="21" curve="90"/>
-<wire x1="-2.413" y1="-2.032" x2="-2.159" y2="-2.286" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.381" y1="0" x2="0.254" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="0.762" width="0.254" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0.762" x2="-0.254" y2="0" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.381" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.381" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<wire x1="4.953" y1="2.032" x2="4.953" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="4.699" y1="2.286" x2="4.953" y2="2.032" width="0.1524" layer="21" curve="-90"/>
-<wire x1="4.699" y1="-2.286" x2="4.953" y2="-2.032" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.794" y1="2.286" x2="4.699" y2="2.286" width="0.1524" layer="21"/>
-<wire x1="4.699" y1="-2.286" x2="2.794" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="2.032" x2="2.413" y2="1.397" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="-1.397" x2="2.413" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="0.762" x2="2.413" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="2.286" y1="0" x2="2.794" y2="0" width="0.1524" layer="21"/>
-<wire x1="2.794" y1="0" x2="3.302" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.381" y1="0" x2="0.762" y2="0" width="0.1524" layer="51"/>
-<wire x1="2.286" y1="0" x2="1.778" y2="0" width="0.1524" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="3" x="3.81" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.286" y="2.667" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.286" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C025_050-055X075" urn="urn:adsk.eagle:footprint:23146/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 2.5 + 5 mm, outline 5.5 x 7.5 mm</description>
-<wire x1="-2.159" y1="2.794" x2="2.159" y2="2.794" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-2.794" x2="-2.159" y2="-2.794" width="0.1524" layer="21"/>
-<wire x1="-2.413" y1="2.54" x2="-2.413" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="2.794" x2="2.413" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.413" y1="2.54" x2="-2.159" y2="2.794" width="0.1524" layer="21" curve="-90"/>
-<wire x1="2.159" y1="-2.794" x2="2.413" y2="-2.54" width="0.1524" layer="21" curve="90"/>
-<wire x1="-2.413" y1="-2.54" x2="-2.159" y2="-2.794" width="0.1524" layer="21" curve="90"/>
-<wire x1="0.381" y1="0" x2="0.254" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="0.762" width="0.254" layer="21"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0.762" x2="-0.254" y2="0" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.254" y2="-0.762" width="0.254" layer="21"/>
-<wire x1="-0.254" y1="0" x2="-0.381" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.381" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<wire x1="4.953" y1="2.54" x2="4.953" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="4.699" y1="2.794" x2="4.953" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<wire x1="4.699" y1="-2.794" x2="4.953" y2="-2.54" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.794" y1="2.794" x2="4.699" y2="2.794" width="0.1524" layer="21"/>
-<wire x1="4.699" y1="-2.794" x2="2.794" y2="-2.794" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="2.54" x2="2.413" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="-2.032" x2="2.413" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="2.413" y1="0.762" x2="2.413" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="1.778" y1="0" x2="2.286" y2="0" width="0.1524" layer="51"/>
-<wire x1="2.286" y1="0" x2="2.794" y2="0" width="0.1524" layer="21"/>
-<wire x1="2.794" y1="0" x2="3.302" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.381" y1="0" x2="0.762" y2="0" width="0.1524" layer="51"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="3" x="3.81" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.286" y="3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.032" y="-2.286" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C050-024X044" urn="urn:adsk.eagle:footprint:23147/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 5 mm, outline 2.4 x 4.4 mm</description>
-<wire x1="-2.159" y1="-0.635" x2="-2.159" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="-2.159" y1="0.635" x2="-1.651" y2="1.143" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.159" y1="-0.635" x2="-1.651" y2="-1.143" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.651" y1="1.143" x2="-1.651" y2="1.143" width="0.1524" layer="21"/>
-<wire x1="2.159" y1="-0.635" x2="2.159" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="1.651" y1="-1.143" x2="-1.651" y2="-1.143" width="0.1524" layer="21"/>
-<wire x1="1.651" y1="1.143" x2="2.159" y2="0.635" width="0.1524" layer="21" curve="-90"/>
-<wire x1="1.651" y1="-1.143" x2="2.159" y2="-0.635" width="0.1524" layer="21" curve="90"/>
-<wire x1="-0.3048" y1="0.762" x2="-0.3048" y2="0" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="0" x2="-0.3048" y2="-0.762" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0.762" x2="0.3302" y2="0" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0" x2="0.3302" y2="-0.762" width="0.3048" layer="21"/>
-<wire x1="1.27" y1="0" x2="0.3302" y2="0" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0" x2="-0.3048" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-2.159" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.159" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="2.159" y1="-0.381" x2="2.54" y2="0.381" layer="51"/>
-<rectangle x1="-2.54" y1="-0.381" x2="-2.159" y2="0.381" layer="51"/>
-</package>
-<package name="C050-025X075" urn="urn:adsk.eagle:footprint:23148/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 5 mm, outline 2.5 x 7.5 mm</description>
-<wire x1="-0.3048" y1="0.635" x2="-0.3048" y2="0" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="0" x2="-0.3048" y2="-0.635" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="0" x2="-1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.3302" y1="0.635" x2="0.3302" y2="0" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0" x2="0.3302" y2="-0.635" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="-3.683" y1="1.016" x2="-3.683" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-3.429" y1="-1.27" x2="3.429" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.683" y1="-1.016" x2="3.683" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="1.27" x2="-3.429" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="1.27" x2="3.683" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="3.429" y1="-1.27" x2="3.683" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="-1.016" x2="-3.429" y2="-1.27" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="1.016" x2="-3.429" y2="1.27" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-3.429" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.429" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C050-045X075" urn="urn:adsk.eagle:footprint:23149/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 5 mm, outline 4.5 x 7.5 mm</description>
-<wire x1="-0.3048" y1="0.635" x2="-0.3048" y2="0" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="0" x2="-0.3048" y2="-0.635" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="0" x2="-1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.3302" y1="0.635" x2="0.3302" y2="0" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0" x2="0.3302" y2="-0.635" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="-3.683" y1="2.032" x2="-3.683" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="-3.429" y1="-2.286" x2="3.429" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="3.683" y1="-2.032" x2="3.683" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="2.286" x2="-3.429" y2="2.286" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="2.286" x2="3.683" y2="2.032" width="0.1524" layer="21" curve="-90"/>
-<wire x1="3.429" y1="-2.286" x2="3.683" y2="-2.032" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="-2.032" x2="-3.429" y2="-2.286" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="2.032" x2="-3.429" y2="2.286" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-3.556" y="2.667" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.556" y="-3.81" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C050-030X075" urn="urn:adsk.eagle:footprint:23150/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 5 mm, outline 3 x 7.5 mm</description>
-<wire x1="-0.3048" y1="0.635" x2="-0.3048" y2="0" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="0" x2="-0.3048" y2="-0.635" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="0" x2="-1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.3302" y1="0.635" x2="0.3302" y2="0" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0" x2="0.3302" y2="-0.635" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="-3.683" y1="1.27" x2="-3.683" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-3.429" y1="-1.524" x2="3.429" y2="-1.524" width="0.1524" layer="21"/>
-<wire x1="3.683" y1="-1.27" x2="3.683" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="1.524" x2="-3.429" y2="1.524" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="1.524" x2="3.683" y2="1.27" width="0.1524" layer="21" curve="-90"/>
-<wire x1="3.429" y1="-1.524" x2="3.683" y2="-1.27" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="-1.27" x2="-3.429" y2="-1.524" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="1.27" x2="-3.429" y2="1.524" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-3.556" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.556" y="-3.048" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C050-050X075" urn="urn:adsk.eagle:footprint:23151/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 5 mm, outline 5 x 7.5 mm</description>
-<wire x1="-0.3048" y1="0.635" x2="-0.3048" y2="0" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="0" x2="-0.3048" y2="-0.635" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="0" x2="-1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.3302" y1="0.635" x2="0.3302" y2="0" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0" x2="0.3302" y2="-0.635" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="-3.683" y1="2.286" x2="-3.683" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="-3.429" y1="-2.54" x2="3.429" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="3.683" y1="-2.286" x2="3.683" y2="2.286" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="2.54" x2="-3.429" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="2.54" x2="3.683" y2="2.286" width="0.1524" layer="21" curve="-90"/>
-<wire x1="3.429" y1="-2.54" x2="3.683" y2="-2.286" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="-2.286" x2="-3.429" y2="-2.54" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="2.286" x2="-3.429" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-3.429" y="2.921" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.175" y="-2.159" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C050-055X075" urn="urn:adsk.eagle:footprint:23152/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 5 mm, outline 5.5 x 7.5 mm</description>
-<wire x1="-0.3048" y1="0.635" x2="-0.3048" y2="0" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="0" x2="-0.3048" y2="-0.635" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="0" x2="-1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.3302" y1="0.635" x2="0.3302" y2="0" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0" x2="0.3302" y2="-0.635" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="-3.683" y1="2.54" x2="-3.683" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-3.429" y1="-2.794" x2="3.429" y2="-2.794" width="0.1524" layer="21"/>
-<wire x1="3.683" y1="-2.54" x2="3.683" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="2.794" x2="-3.429" y2="2.794" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="2.794" x2="3.683" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<wire x1="3.429" y1="-2.794" x2="3.683" y2="-2.54" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="-2.54" x2="-3.429" y2="-2.794" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="2.54" x2="-3.429" y2="2.794" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-3.429" y="3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.302" y="-2.286" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C050-075X075" urn="urn:adsk.eagle:footprint:23153/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 5 mm, outline 7.5 x 7.5 mm</description>
-<wire x1="-1.524" y1="0" x2="-0.4572" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.4572" y1="0" x2="-0.4572" y2="0.762" width="0.4064" layer="21"/>
-<wire x1="-0.4572" y1="0" x2="-0.4572" y2="-0.762" width="0.4064" layer="21"/>
-<wire x1="0.4318" y1="0.762" x2="0.4318" y2="0" width="0.4064" layer="21"/>
-<wire x1="0.4318" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.4318" y1="0" x2="0.4318" y2="-0.762" width="0.4064" layer="21"/>
-<wire x1="-3.683" y1="3.429" x2="-3.683" y2="-3.429" width="0.1524" layer="21"/>
-<wire x1="-3.429" y1="-3.683" x2="3.429" y2="-3.683" width="0.1524" layer="21"/>
-<wire x1="3.683" y1="-3.429" x2="3.683" y2="3.429" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="3.683" x2="-3.429" y2="3.683" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="3.683" x2="3.683" y2="3.429" width="0.1524" layer="21" curve="-90"/>
-<wire x1="3.429" y1="-3.683" x2="3.683" y2="-3.429" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="-3.429" x2="-3.429" y2="-3.683" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="3.429" x2="-3.429" y2="3.683" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-3.429" y="4.064" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.175" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C050H075X075" urn="urn:adsk.eagle:footprint:23154/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-Horizontal, grid 5 mm, outline 7.5 x 7.5 mm</description>
-<wire x1="-3.683" y1="7.112" x2="-3.683" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="-3.683" y1="0.508" x2="-3.302" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="-3.302" y1="0.508" x2="-1.778" y2="0.508" width="0.1524" layer="51"/>
-<wire x1="-1.778" y1="0.508" x2="1.778" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="1.778" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="51"/>
-<wire x1="3.302" y1="0.508" x2="3.683" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="3.683" y1="0.508" x2="3.683" y2="7.112" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="7.62" x2="-3.175" y2="7.62" width="0.1524" layer="21"/>
-<wire x1="-0.3048" y1="2.413" x2="-0.3048" y2="1.778" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="1.778" x2="-0.3048" y2="1.143" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="1.778" x2="-1.651" y2="1.778" width="0.1524" layer="21"/>
-<wire x1="0.3302" y1="2.413" x2="0.3302" y2="1.778" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="1.778" x2="0.3302" y2="1.143" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="1.778" x2="1.651" y2="1.778" width="0.1524" layer="21"/>
-<wire x1="-3.683" y1="7.112" x2="-3.175" y2="7.62" width="0.1524" layer="21" curve="-90"/>
-<wire x1="3.175" y1="7.62" x2="3.683" y2="7.112" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="0.254" width="0.508" layer="51"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="0.254" width="0.508" layer="51"/>
-<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-3.302" y="8.001" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.175" y="3.175" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-2.794" y1="0.127" x2="-2.286" y2="0.508" layer="51"/>
-<rectangle x1="2.286" y1="0.127" x2="2.794" y2="0.508" layer="51"/>
-</package>
-<package name="C075-032X103" urn="urn:adsk.eagle:footprint:23155/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 7.5 mm, outline 3.2 x 10.3 mm</description>
-<wire x1="4.826" y1="1.524" x2="-4.826" y2="1.524" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-4.826" y1="-1.524" x2="4.826" y2="-1.524" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-1.27" x2="5.08" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="4.826" y1="1.524" x2="5.08" y2="1.27" width="0.1524" layer="21" curve="-90"/>
-<wire x1="4.826" y1="-1.524" x2="5.08" y2="-1.27" width="0.1524" layer="21" curve="90"/>
-<wire x1="-5.08" y1="-1.27" x2="-4.826" y2="-1.524" width="0.1524" layer="21" curve="90"/>
-<wire x1="-5.08" y1="1.27" x2="-4.826" y2="1.524" width="0.1524" layer="21" curve="-90"/>
-<wire x1="0.508" y1="0" x2="2.54" y2="0" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="0" x2="-0.508" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="0.889" x2="-0.508" y2="0" width="0.4064" layer="21"/>
-<wire x1="-0.508" y1="0" x2="-0.508" y2="-0.889" width="0.4064" layer="21"/>
-<wire x1="0.508" y1="0.889" x2="0.508" y2="0" width="0.4064" layer="21"/>
-<wire x1="0.508" y1="0" x2="0.508" y2="-0.889" width="0.4064" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="0.9144" shape="octagon"/>
-<pad name="2" x="3.81" y="0" drill="0.9144" shape="octagon"/>
-<text x="-4.826" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-4.826" y="-3.048" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C075-042X103" urn="urn:adsk.eagle:footprint:23156/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 7.5 mm, outline 4.2 x 10.3 mm</description>
-<wire x1="4.826" y1="2.032" x2="-4.826" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="1.778" x2="-5.08" y2="-1.778" width="0.1524" layer="21"/>
-<wire x1="-4.826" y1="-2.032" x2="4.826" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-1.778" x2="5.08" y2="1.778" width="0.1524" layer="21"/>
-<wire x1="4.826" y1="2.032" x2="5.08" y2="1.778" width="0.1524" layer="21" curve="-90"/>
-<wire x1="4.826" y1="-2.032" x2="5.08" y2="-1.778" width="0.1524" layer="21" curve="90"/>
-<wire x1="-5.08" y1="-1.778" x2="-4.826" y2="-2.032" width="0.1524" layer="21" curve="90"/>
-<wire x1="-5.08" y1="1.778" x2="-4.826" y2="2.032" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.27" y1="0" x2="2.667" y2="0" width="0.1524" layer="21"/>
-<wire x1="-2.667" y1="0" x2="-2.159" y2="0" width="0.1524" layer="21"/>
-<wire x1="-2.159" y1="1.27" x2="-2.159" y2="0" width="0.4064" layer="21"/>
-<wire x1="-2.159" y1="0" x2="-2.159" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.4064" layer="21"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.4064" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="0.9144" shape="octagon"/>
-<pad name="2" x="3.81" y="0" drill="0.9144" shape="octagon"/>
-<text x="-4.699" y="2.413" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-0.635" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C075-052X106" urn="urn:adsk.eagle:footprint:23157/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 7.5 mm, outline 5.2 x 10.6 mm</description>
-<wire x1="4.953" y1="2.54" x2="-4.953" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-5.207" y1="2.286" x2="-5.207" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="-4.953" y1="-2.54" x2="4.953" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="5.207" y1="-2.286" x2="5.207" y2="2.286" width="0.1524" layer="21"/>
-<wire x1="4.953" y1="2.54" x2="5.207" y2="2.286" width="0.1524" layer="21" curve="-90"/>
-<wire x1="4.953" y1="-2.54" x2="5.207" y2="-2.286" width="0.1524" layer="21" curve="90"/>
-<wire x1="-5.207" y1="-2.286" x2="-4.953" y2="-2.54" width="0.1524" layer="21" curve="90"/>
-<wire x1="-5.207" y1="2.286" x2="-4.953" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.27" y1="0" x2="2.667" y2="0" width="0.1524" layer="21"/>
-<wire x1="-2.667" y1="0" x2="-2.159" y2="0" width="0.1524" layer="21"/>
-<wire x1="-2.159" y1="1.27" x2="-2.159" y2="0" width="0.4064" layer="21"/>
-<wire x1="-2.159" y1="0" x2="-2.159" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.4064" layer="21"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.4064" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="0.9144" shape="octagon"/>
-<pad name="2" x="3.81" y="0" drill="0.9144" shape="octagon"/>
-<text x="-4.826" y="2.921" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-0.635" y="-2.032" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C102-043X133" urn="urn:adsk.eagle:footprint:23158/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 10.2 mm, outline 4.3 x 13.3 mm</description>
-<wire x1="-3.175" y1="1.27" x2="-3.175" y2="0" width="0.4064" layer="21"/>
-<wire x1="-2.286" y1="1.27" x2="-2.286" y2="0" width="0.4064" layer="21"/>
-<wire x1="3.81" y1="0" x2="-2.286" y2="0" width="0.1524" layer="21"/>
-<wire x1="-2.286" y1="0" x2="-2.286" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-3.81" y1="0" x2="-3.175" y2="0" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="0" x2="-3.175" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-6.096" y1="2.032" x2="6.096" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="6.604" y1="1.524" x2="6.604" y2="-1.524" width="0.1524" layer="21"/>
-<wire x1="6.096" y1="-2.032" x2="-6.096" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="-6.604" y1="-1.524" x2="-6.604" y2="1.524" width="0.1524" layer="21"/>
-<wire x1="6.096" y1="2.032" x2="6.604" y2="1.524" width="0.1524" layer="21" curve="-90"/>
-<wire x1="6.096" y1="-2.032" x2="6.604" y2="-1.524" width="0.1524" layer="21" curve="90"/>
-<wire x1="-6.604" y1="-1.524" x2="-6.096" y2="-2.032" width="0.1524" layer="21" curve="90"/>
-<wire x1="-6.604" y1="1.524" x2="-6.096" y2="2.032" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-5.08" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="5.08" y="0" drill="1.016" shape="octagon"/>
-<text x="-6.096" y="2.413" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.524" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C102-054X133" urn="urn:adsk.eagle:footprint:23159/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 10.2 mm, outline 5.4 x 13.3 mm</description>
-<wire x1="-3.175" y1="1.27" x2="-3.175" y2="0" width="0.4064" layer="21"/>
-<wire x1="-2.286" y1="1.27" x2="-2.286" y2="0" width="0.4064" layer="21"/>
-<wire x1="3.81" y1="0" x2="-2.286" y2="0" width="0.1524" layer="21"/>
-<wire x1="-2.286" y1="0" x2="-2.286" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-3.81" y1="0" x2="-3.175" y2="0" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="0" x2="-3.175" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-6.096" y1="2.54" x2="6.096" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="6.604" y1="2.032" x2="6.604" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="6.096" y1="-2.54" x2="-6.096" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-6.604" y1="-2.032" x2="-6.604" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="6.096" y1="2.54" x2="6.604" y2="2.032" width="0.1524" layer="21" curve="-90"/>
-<wire x1="6.096" y1="-2.54" x2="6.604" y2="-2.032" width="0.1524" layer="21" curve="90"/>
-<wire x1="-6.604" y1="-2.032" x2="-6.096" y2="-2.54" width="0.1524" layer="21" curve="90"/>
-<wire x1="-6.604" y1="2.032" x2="-6.096" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-5.08" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="5.08" y="0" drill="1.016" shape="octagon"/>
-<text x="-6.096" y="2.921" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.524" y="-1.905" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C102-064X133" urn="urn:adsk.eagle:footprint:23160/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 10.2 mm, outline 6.4 x 13.3 mm</description>
-<wire x1="-3.175" y1="1.27" x2="-3.175" y2="0" width="0.4064" layer="21"/>
-<wire x1="-2.286" y1="1.27" x2="-2.286" y2="0" width="0.4064" layer="21"/>
-<wire x1="3.81" y1="0" x2="-2.286" y2="0" width="0.1524" layer="21"/>
-<wire x1="-2.286" y1="0" x2="-2.286" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-3.81" y1="0" x2="-3.175" y2="0" width="0.1524" layer="21"/>
-<wire x1="-3.175" y1="0" x2="-3.175" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-6.096" y1="3.048" x2="6.096" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="6.604" y1="2.54" x2="6.604" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="6.096" y1="-3.048" x2="-6.096" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="-6.604" y1="-2.54" x2="-6.604" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="6.096" y1="3.048" x2="6.604" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<wire x1="6.096" y1="-3.048" x2="6.604" y2="-2.54" width="0.1524" layer="21" curve="90"/>
-<wire x1="-6.604" y1="-2.54" x2="-6.096" y2="-3.048" width="0.1524" layer="21" curve="90"/>
-<wire x1="-6.604" y1="2.54" x2="-6.096" y2="3.048" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-5.08" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="5.08" y="0" drill="1.016" shape="octagon"/>
-<text x="-6.096" y="3.429" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.524" y="-2.032" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C102_152-062X184" urn="urn:adsk.eagle:footprint:23161/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 10.2 mm + 15.2 mm, outline 6.2 x 18.4 mm</description>
-<wire x1="-2.286" y1="1.27" x2="-2.286" y2="0" width="0.4064" layer="21"/>
-<wire x1="-2.286" y1="0" x2="-2.286" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-3.175" y1="1.27" x2="-3.175" y2="0" width="0.4064" layer="21"/>
-<wire x1="-3.175" y1="0" x2="-3.175" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-3.683" y1="0" x2="-3.175" y2="0" width="0.1524" layer="21"/>
-<wire x1="-2.286" y1="0" x2="3.683" y2="0" width="0.1524" layer="21"/>
-<wire x1="6.477" y1="0" x2="8.636" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.096" y1="3.048" x2="6.223" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="6.223" y1="-3.048" x2="-6.096" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="-6.604" y1="-2.54" x2="-6.604" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="6.223" y1="3.048" x2="6.731" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<wire x1="6.223" y1="-3.048" x2="6.731" y2="-2.54" width="0.1524" layer="21" curve="90"/>
-<wire x1="-6.604" y1="-2.54" x2="-6.096" y2="-3.048" width="0.1524" layer="21" curve="90"/>
-<wire x1="-6.604" y1="2.54" x2="-6.096" y2="3.048" width="0.1524" layer="21" curve="-90"/>
-<wire x1="6.731" y1="2.54" x2="6.731" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="11.176" y1="3.048" x2="11.684" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<wire x1="11.176" y1="-3.048" x2="11.684" y2="-2.54" width="0.1524" layer="21" curve="90"/>
-<wire x1="11.176" y1="-3.048" x2="7.112" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="7.112" y1="3.048" x2="11.176" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="11.684" y1="2.54" x2="11.684" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="1" x="-5.08" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="5.08" y="0" drill="1.016" shape="octagon"/>
-<pad name="3" x="10.033" y="0" drill="1.016" shape="octagon"/>
-<text x="-5.969" y="3.429" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.524" y="-2.286" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C150-054X183" urn="urn:adsk.eagle:footprint:23162/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 15 mm, outline 5.4 x 18.3 mm</description>
-<wire x1="-5.08" y1="1.27" x2="-5.08" y2="0" width="0.4064" layer="21"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="1.27" x2="-4.191" y2="0" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="0" x2="-4.191" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="0" x2="6.096" y2="0" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0" x2="-6.096" y2="0" width="0.1524" layer="21"/>
-<wire x1="9.017" y1="2.032" x2="9.017" y2="-2.032" width="0.1524" layer="21"/>
-<wire x1="8.509" y1="-2.54" x2="-8.509" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="-9.017" y1="-2.032" x2="-9.017" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="-8.509" y1="2.54" x2="8.509" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="8.509" y1="2.54" x2="9.017" y2="2.032" width="0.1524" layer="21" curve="-90"/>
-<wire x1="8.509" y1="-2.54" x2="9.017" y2="-2.032" width="0.1524" layer="21" curve="90"/>
-<wire x1="-9.017" y1="-2.032" x2="-8.509" y2="-2.54" width="0.1524" layer="21" curve="90"/>
-<wire x1="-9.017" y1="2.032" x2="-8.509" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-7.493" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="7.493" y="0" drill="1.016" shape="octagon"/>
-<text x="-8.382" y="2.921" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.429" y="-2.032" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C150-064X183" urn="urn:adsk.eagle:footprint:23163/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 15 mm, outline 6.4 x 18.3 mm</description>
-<wire x1="-5.08" y1="1.27" x2="-5.08" y2="0" width="0.4064" layer="21"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="1.27" x2="-4.191" y2="0" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="0" x2="-4.191" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="0" x2="6.096" y2="0" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0" x2="-6.096" y2="0" width="0.1524" layer="21"/>
-<wire x1="9.017" y1="2.54" x2="9.017" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="8.509" y1="-3.048" x2="-8.509" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="-9.017" y1="-2.54" x2="-9.017" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-8.509" y1="3.048" x2="8.509" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="8.509" y1="3.048" x2="9.017" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<wire x1="8.509" y1="-3.048" x2="9.017" y2="-2.54" width="0.1524" layer="21" curve="90"/>
-<wire x1="-9.017" y1="-2.54" x2="-8.509" y2="-3.048" width="0.1524" layer="21" curve="90"/>
-<wire x1="-9.017" y1="2.54" x2="-8.509" y2="3.048" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-7.493" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="7.493" y="0" drill="1.016" shape="octagon"/>
-<text x="-8.509" y="3.429" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.429" y="-2.032" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C150-072X183" urn="urn:adsk.eagle:footprint:23164/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 15 mm, outline 7.2 x 18.3 mm</description>
-<wire x1="-5.08" y1="1.27" x2="-5.08" y2="0" width="0.4064" layer="21"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="1.27" x2="-4.191" y2="0" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="0" x2="-4.191" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="0" x2="6.096" y2="0" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0" x2="-6.096" y2="0" width="0.1524" layer="21"/>
-<wire x1="9.017" y1="3.048" x2="9.017" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="8.509" y1="-3.556" x2="-8.509" y2="-3.556" width="0.1524" layer="21"/>
-<wire x1="-9.017" y1="-3.048" x2="-9.017" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="-8.509" y1="3.556" x2="8.509" y2="3.556" width="0.1524" layer="21"/>
-<wire x1="8.509" y1="3.556" x2="9.017" y2="3.048" width="0.1524" layer="21" curve="-90"/>
-<wire x1="8.509" y1="-3.556" x2="9.017" y2="-3.048" width="0.1524" layer="21" curve="90"/>
-<wire x1="-9.017" y1="-3.048" x2="-8.509" y2="-3.556" width="0.1524" layer="21" curve="90"/>
-<wire x1="-9.017" y1="3.048" x2="-8.509" y2="3.556" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-7.493" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="7.493" y="0" drill="1.016" shape="octagon"/>
-<text x="-8.509" y="3.937" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.429" y="-2.286" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C150-084X183" urn="urn:adsk.eagle:footprint:23165/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 15 mm, outline 8.4 x 18.3 mm</description>
-<wire x1="-5.08" y1="1.27" x2="-5.08" y2="0" width="0.4064" layer="21"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="1.27" x2="-4.191" y2="0" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="0" x2="-4.191" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="0" x2="6.096" y2="0" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0" x2="-6.096" y2="0" width="0.1524" layer="21"/>
-<wire x1="9.017" y1="3.556" x2="9.017" y2="-3.556" width="0.1524" layer="21"/>
-<wire x1="8.509" y1="-4.064" x2="-8.509" y2="-4.064" width="0.1524" layer="21"/>
-<wire x1="-9.017" y1="-3.556" x2="-9.017" y2="3.556" width="0.1524" layer="21"/>
-<wire x1="-8.509" y1="4.064" x2="8.509" y2="4.064" width="0.1524" layer="21"/>
-<wire x1="8.509" y1="4.064" x2="9.017" y2="3.556" width="0.1524" layer="21" curve="-90"/>
-<wire x1="8.509" y1="-4.064" x2="9.017" y2="-3.556" width="0.1524" layer="21" curve="90"/>
-<wire x1="-9.017" y1="-3.556" x2="-8.509" y2="-4.064" width="0.1524" layer="21" curve="90"/>
-<wire x1="-9.017" y1="3.556" x2="-8.509" y2="4.064" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-7.493" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="7.493" y="0" drill="1.016" shape="octagon"/>
-<text x="-8.509" y="4.445" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.429" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C150-091X182" urn="urn:adsk.eagle:footprint:23166/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 15 mm, outline 9.1 x 18.2 mm</description>
-<wire x1="-5.08" y1="1.27" x2="-5.08" y2="0" width="0.4064" layer="21"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="1.27" x2="-4.191" y2="0" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="0" x2="-4.191" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-4.191" y1="0" x2="6.096" y2="0" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="0" x2="-6.096" y2="0" width="0.1524" layer="21"/>
-<wire x1="9.017" y1="3.937" x2="9.017" y2="-3.937" width="0.1524" layer="21"/>
-<wire x1="8.509" y1="-4.445" x2="-8.509" y2="-4.445" width="0.1524" layer="21"/>
-<wire x1="-9.017" y1="-3.937" x2="-9.017" y2="3.937" width="0.1524" layer="21"/>
-<wire x1="-8.509" y1="4.445" x2="8.509" y2="4.445" width="0.1524" layer="21"/>
-<wire x1="8.509" y1="4.445" x2="9.017" y2="3.937" width="0.1524" layer="21" curve="-90"/>
-<wire x1="8.509" y1="-4.445" x2="9.017" y2="-3.937" width="0.1524" layer="21" curve="90"/>
-<wire x1="-9.017" y1="-3.937" x2="-8.509" y2="-4.445" width="0.1524" layer="21" curve="90"/>
-<wire x1="-9.017" y1="3.937" x2="-8.509" y2="4.445" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-7.493" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="7.493" y="0" drill="1.016" shape="octagon"/>
-<text x="-8.509" y="4.826" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.429" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C225-062X268" urn="urn:adsk.eagle:footprint:23167/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 22.5 mm, outline 6.2 x 26.8 mm</description>
-<wire x1="-12.827" y1="3.048" x2="12.827" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="13.335" y1="2.54" x2="13.335" y2="-2.54" width="0.1524" layer="21"/>
-<wire x1="12.827" y1="-3.048" x2="-12.827" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="-13.335" y1="-2.54" x2="-13.335" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="12.827" y1="3.048" x2="13.335" y2="2.54" width="0.1524" layer="21" curve="-90"/>
-<wire x1="12.827" y1="-3.048" x2="13.335" y2="-2.54" width="0.1524" layer="21" curve="90"/>
-<wire x1="-13.335" y1="-2.54" x2="-12.827" y2="-3.048" width="0.1524" layer="21" curve="90"/>
-<wire x1="-13.335" y1="2.54" x2="-12.827" y2="3.048" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-9.652" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="9.652" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-11.303" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="11.303" y="0" drill="1.016" shape="octagon"/>
-<text x="-12.7" y="3.429" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C225-074X268" urn="urn:adsk.eagle:footprint:23168/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 22.5 mm, outline 7.4 x 26.8 mm</description>
-<wire x1="-12.827" y1="3.556" x2="12.827" y2="3.556" width="0.1524" layer="21"/>
-<wire x1="13.335" y1="3.048" x2="13.335" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="12.827" y1="-3.556" x2="-12.827" y2="-3.556" width="0.1524" layer="21"/>
-<wire x1="-13.335" y1="-3.048" x2="-13.335" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="12.827" y1="3.556" x2="13.335" y2="3.048" width="0.1524" layer="21" curve="-90"/>
-<wire x1="12.827" y1="-3.556" x2="13.335" y2="-3.048" width="0.1524" layer="21" curve="90"/>
-<wire x1="-13.335" y1="-3.048" x2="-12.827" y2="-3.556" width="0.1524" layer="21" curve="90"/>
-<wire x1="-13.335" y1="3.048" x2="-12.827" y2="3.556" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-9.652" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="9.652" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-11.303" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="11.303" y="0" drill="1.016" shape="octagon"/>
-<text x="-12.827" y="3.937" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C225-087X268" urn="urn:adsk.eagle:footprint:23169/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 22.5 mm, outline 8.7 x 26.8 mm</description>
-<wire x1="-12.827" y1="4.318" x2="12.827" y2="4.318" width="0.1524" layer="21"/>
-<wire x1="13.335" y1="3.81" x2="13.335" y2="-3.81" width="0.1524" layer="21"/>
-<wire x1="12.827" y1="-4.318" x2="-12.827" y2="-4.318" width="0.1524" layer="21"/>
-<wire x1="-13.335" y1="-3.81" x2="-13.335" y2="3.81" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="12.827" y1="4.318" x2="13.335" y2="3.81" width="0.1524" layer="21" curve="-90"/>
-<wire x1="12.827" y1="-4.318" x2="13.335" y2="-3.81" width="0.1524" layer="21" curve="90"/>
-<wire x1="-13.335" y1="-3.81" x2="-12.827" y2="-4.318" width="0.1524" layer="21" curve="90"/>
-<wire x1="-13.335" y1="3.81" x2="-12.827" y2="4.318" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-9.652" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="9.652" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-11.303" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="11.303" y="0" drill="1.016" shape="octagon"/>
-<text x="-12.827" y="4.699" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C225-108X268" urn="urn:adsk.eagle:footprint:23170/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 22.5 mm, outline 10.8 x 26.8 mm</description>
-<wire x1="-12.827" y1="5.334" x2="12.827" y2="5.334" width="0.1524" layer="21"/>
-<wire x1="13.335" y1="4.826" x2="13.335" y2="-4.826" width="0.1524" layer="21"/>
-<wire x1="12.827" y1="-5.334" x2="-12.827" y2="-5.334" width="0.1524" layer="21"/>
-<wire x1="-13.335" y1="-4.826" x2="-13.335" y2="4.826" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="12.827" y1="5.334" x2="13.335" y2="4.826" width="0.1524" layer="21" curve="-90"/>
-<wire x1="12.827" y1="-5.334" x2="13.335" y2="-4.826" width="0.1524" layer="21" curve="90"/>
-<wire x1="-13.335" y1="-4.826" x2="-12.827" y2="-5.334" width="0.1524" layer="21" curve="90"/>
-<wire x1="-13.335" y1="4.826" x2="-12.827" y2="5.334" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-9.652" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="9.652" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-11.303" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="11.303" y="0" drill="1.016" shape="octagon"/>
-<text x="-12.954" y="5.715" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C225-113X268" urn="urn:adsk.eagle:footprint:23171/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 22.5 mm, outline 11.3 x 26.8 mm</description>
-<wire x1="-12.827" y1="5.588" x2="12.827" y2="5.588" width="0.1524" layer="21"/>
-<wire x1="13.335" y1="5.08" x2="13.335" y2="-5.08" width="0.1524" layer="21"/>
-<wire x1="12.827" y1="-5.588" x2="-12.827" y2="-5.588" width="0.1524" layer="21"/>
-<wire x1="-13.335" y1="-5.08" x2="-13.335" y2="5.08" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="12.827" y1="5.588" x2="13.335" y2="5.08" width="0.1524" layer="21" curve="-90"/>
-<wire x1="12.827" y1="-5.588" x2="13.335" y2="-5.08" width="0.1524" layer="21" curve="90"/>
-<wire x1="-13.335" y1="-5.08" x2="-12.827" y2="-5.588" width="0.1524" layer="21" curve="90"/>
-<wire x1="-13.335" y1="5.08" x2="-12.827" y2="5.588" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-9.652" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="9.652" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-11.303" y="0" drill="1.016" shape="octagon"/>
-<pad name="2" x="11.303" y="0" drill="1.016" shape="octagon"/>
-<text x="-12.954" y="5.969" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C275-093X316" urn="urn:adsk.eagle:footprint:23172/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 27.5 mm, outline 9.3 x 31.6 mm</description>
-<wire x1="-15.24" y1="4.572" x2="15.24" y2="4.572" width="0.1524" layer="21"/>
-<wire x1="15.748" y1="4.064" x2="15.748" y2="-4.064" width="0.1524" layer="21"/>
-<wire x1="15.24" y1="-4.572" x2="-15.24" y2="-4.572" width="0.1524" layer="21"/>
-<wire x1="-15.748" y1="-4.064" x2="-15.748" y2="4.064" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="15.24" y1="4.572" x2="15.748" y2="4.064" width="0.1524" layer="21" curve="-90"/>
-<wire x1="15.24" y1="-4.572" x2="15.748" y2="-4.064" width="0.1524" layer="21" curve="90"/>
-<wire x1="-15.748" y1="-4.064" x2="-15.24" y2="-4.572" width="0.1524" layer="21" curve="90"/>
-<wire x1="-15.748" y1="4.064" x2="-15.24" y2="4.572" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-11.557" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="11.557" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-13.716" y="0" drill="1.1938" shape="octagon"/>
-<pad name="2" x="13.716" y="0" drill="1.1938" shape="octagon"/>
-<text x="-15.24" y="4.953" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C275-113X316" urn="urn:adsk.eagle:footprint:23173/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 27.5 mm, outline 11.3 x 31.6 mm</description>
-<wire x1="-15.24" y1="5.588" x2="15.24" y2="5.588" width="0.1524" layer="21"/>
-<wire x1="15.748" y1="5.08" x2="15.748" y2="-5.08" width="0.1524" layer="21"/>
-<wire x1="15.24" y1="-5.588" x2="-15.24" y2="-5.588" width="0.1524" layer="21"/>
-<wire x1="-15.748" y1="-5.08" x2="-15.748" y2="5.08" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="15.24" y1="5.588" x2="15.748" y2="5.08" width="0.1524" layer="21" curve="-90"/>
-<wire x1="15.24" y1="-5.588" x2="15.748" y2="-5.08" width="0.1524" layer="21" curve="90"/>
-<wire x1="-15.748" y1="-5.08" x2="-15.24" y2="-5.588" width="0.1524" layer="21" curve="90"/>
-<wire x1="-15.748" y1="5.08" x2="-15.24" y2="5.588" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-11.557" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="11.557" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-13.716" y="0" drill="1.1938" shape="octagon"/>
-<pad name="2" x="13.716" y="0" drill="1.1938" shape="octagon"/>
-<text x="-15.24" y="5.969" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C275-134X316" urn="urn:adsk.eagle:footprint:23174/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 27.5 mm, outline 13.4 x 31.6 mm</description>
-<wire x1="-15.24" y1="6.604" x2="15.24" y2="6.604" width="0.1524" layer="21"/>
-<wire x1="15.748" y1="6.096" x2="15.748" y2="-6.096" width="0.1524" layer="21"/>
-<wire x1="15.24" y1="-6.604" x2="-15.24" y2="-6.604" width="0.1524" layer="21"/>
-<wire x1="-15.748" y1="-6.096" x2="-15.748" y2="6.096" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="15.24" y1="6.604" x2="15.748" y2="6.096" width="0.1524" layer="21" curve="-90"/>
-<wire x1="15.24" y1="-6.604" x2="15.748" y2="-6.096" width="0.1524" layer="21" curve="90"/>
-<wire x1="-15.748" y1="-6.096" x2="-15.24" y2="-6.604" width="0.1524" layer="21" curve="90"/>
-<wire x1="-15.748" y1="6.096" x2="-15.24" y2="6.604" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-11.557" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="11.557" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-13.716" y="0" drill="1.1938" shape="octagon"/>
-<pad name="2" x="13.716" y="0" drill="1.1938" shape="octagon"/>
-<text x="-15.24" y="6.985" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C275-205X316" urn="urn:adsk.eagle:footprint:23175/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 27.5 mm, outline 20.5 x 31.6 mm</description>
-<wire x1="-15.24" y1="10.16" x2="15.24" y2="10.16" width="0.1524" layer="21"/>
-<wire x1="15.748" y1="9.652" x2="15.748" y2="-9.652" width="0.1524" layer="21"/>
-<wire x1="15.24" y1="-10.16" x2="-15.24" y2="-10.16" width="0.1524" layer="21"/>
-<wire x1="-15.748" y1="-9.652" x2="-15.748" y2="9.652" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="15.24" y1="10.16" x2="15.748" y2="9.652" width="0.1524" layer="21" curve="-90"/>
-<wire x1="15.24" y1="-10.16" x2="15.748" y2="-9.652" width="0.1524" layer="21" curve="90"/>
-<wire x1="-15.748" y1="-9.652" x2="-15.24" y2="-10.16" width="0.1524" layer="21" curve="90"/>
-<wire x1="-15.748" y1="9.652" x2="-15.24" y2="10.16" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-11.557" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="11.557" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-13.716" y="0" drill="1.1938" shape="octagon"/>
-<pad name="2" x="13.716" y="0" drill="1.1938" shape="octagon"/>
-<text x="-15.24" y="10.541" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-4.318" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C325-137X374" urn="urn:adsk.eagle:footprint:23176/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 32.5 mm, outline 13.7 x 37.4 mm</description>
-<wire x1="-14.2748" y1="0" x2="-12.7" y2="0" width="0.1524" layer="21"/>
-<wire x1="-12.7" y1="1.905" x2="-12.7" y2="0" width="0.4064" layer="21"/>
-<wire x1="-11.811" y1="1.905" x2="-11.811" y2="0" width="0.4064" layer="21"/>
-<wire x1="-11.811" y1="0" x2="14.2748" y2="0" width="0.1524" layer="21"/>
-<wire x1="-11.811" y1="0" x2="-11.811" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-12.7" y1="0" x2="-12.7" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="18.542" y1="6.731" x2="18.542" y2="-6.731" width="0.1524" layer="21"/>
-<wire x1="-18.542" y1="6.731" x2="-18.542" y2="-6.731" width="0.1524" layer="21"/>
-<wire x1="-18.542" y1="-6.731" x2="18.542" y2="-6.731" width="0.1524" layer="21"/>
-<wire x1="18.542" y1="6.731" x2="-18.542" y2="6.731" width="0.1524" layer="21"/>
-<pad name="1" x="-16.256" y="0" drill="1.1938" shape="octagon"/>
-<pad name="2" x="16.256" y="0" drill="1.1938" shape="octagon"/>
-<text x="-18.2372" y="7.0612" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-10.8458" y="-2.8702" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C325-162X374" urn="urn:adsk.eagle:footprint:23177/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 32.5 mm, outline 16.2 x 37.4 mm</description>
-<wire x1="-14.2748" y1="0" x2="-12.7" y2="0" width="0.1524" layer="21"/>
-<wire x1="-12.7" y1="1.905" x2="-12.7" y2="0" width="0.4064" layer="21"/>
-<wire x1="-11.811" y1="1.905" x2="-11.811" y2="0" width="0.4064" layer="21"/>
-<wire x1="-11.811" y1="0" x2="14.2748" y2="0" width="0.1524" layer="21"/>
-<wire x1="-11.811" y1="0" x2="-11.811" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-12.7" y1="0" x2="-12.7" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="18.542" y1="8.001" x2="18.542" y2="-8.001" width="0.1524" layer="21"/>
-<wire x1="-18.542" y1="8.001" x2="-18.542" y2="-8.001" width="0.1524" layer="21"/>
-<wire x1="-18.542" y1="-8.001" x2="18.542" y2="-8.001" width="0.1524" layer="21"/>
-<wire x1="18.542" y1="8.001" x2="-18.542" y2="8.001" width="0.1524" layer="21"/>
-<pad name="1" x="-16.256" y="0" drill="1.1938" shape="octagon"/>
-<pad name="2" x="16.256" y="0" drill="1.1938" shape="octagon"/>
-<text x="-18.3642" y="8.3312" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-10.8458" y="-2.8702" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C325-182X374" urn="urn:adsk.eagle:footprint:23178/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 32.5 mm, outline 18.2 x 37.4 mm</description>
-<wire x1="-14.2748" y1="0" x2="-12.7" y2="0" width="0.1524" layer="21"/>
-<wire x1="-12.7" y1="1.905" x2="-12.7" y2="0" width="0.4064" layer="21"/>
-<wire x1="-11.811" y1="1.905" x2="-11.811" y2="0" width="0.4064" layer="21"/>
-<wire x1="-11.811" y1="0" x2="14.2748" y2="0" width="0.1524" layer="21"/>
-<wire x1="-11.811" y1="0" x2="-11.811" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-12.7" y1="0" x2="-12.7" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="18.542" y1="9.017" x2="18.542" y2="-9.017" width="0.1524" layer="21"/>
-<wire x1="-18.542" y1="9.017" x2="-18.542" y2="-9.017" width="0.1524" layer="21"/>
-<wire x1="-18.542" y1="-9.017" x2="18.542" y2="-9.017" width="0.1524" layer="21"/>
-<wire x1="18.542" y1="9.017" x2="-18.542" y2="9.017" width="0.1524" layer="21"/>
-<pad name="1" x="-16.256" y="0" drill="1.1938" shape="octagon"/>
-<pad name="2" x="16.256" y="0" drill="1.1938" shape="octagon"/>
-<text x="-18.3642" y="9.3472" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-10.8458" y="-2.8702" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C375-192X418" urn="urn:adsk.eagle:footprint:23179/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 37.5 mm, outline 19.2 x 41.8 mm</description>
-<wire x1="-20.32" y1="8.509" x2="20.32" y2="8.509" width="0.1524" layer="21"/>
-<wire x1="20.828" y1="8.001" x2="20.828" y2="-8.001" width="0.1524" layer="21"/>
-<wire x1="20.32" y1="-8.509" x2="-20.32" y2="-8.509" width="0.1524" layer="21"/>
-<wire x1="-20.828" y1="-8.001" x2="-20.828" y2="8.001" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="20.32" y1="8.509" x2="20.828" y2="8.001" width="0.1524" layer="21" curve="-90"/>
-<wire x1="20.32" y1="-8.509" x2="20.828" y2="-8.001" width="0.1524" layer="21" curve="90"/>
-<wire x1="-20.828" y1="-8.001" x2="-20.32" y2="-8.509" width="0.1524" layer="21" curve="90"/>
-<wire x1="-20.828" y1="8.001" x2="-20.32" y2="8.509" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-16.002" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="16.002" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-18.796" y="0" drill="1.3208" shape="octagon"/>
-<pad name="2" x="18.796" y="0" drill="1.3208" shape="octagon"/>
-<text x="-20.447" y="8.89" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C375-203X418" urn="urn:adsk.eagle:footprint:23180/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 37.5 mm, outline 20.3 x 41.8 mm</description>
-<wire x1="-20.32" y1="10.16" x2="20.32" y2="10.16" width="0.1524" layer="21"/>
-<wire x1="20.828" y1="9.652" x2="20.828" y2="-9.652" width="0.1524" layer="21"/>
-<wire x1="20.32" y1="-10.16" x2="-20.32" y2="-10.16" width="0.1524" layer="21"/>
-<wire x1="-20.828" y1="-9.652" x2="-20.828" y2="9.652" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="20.32" y1="10.16" x2="20.828" y2="9.652" width="0.1524" layer="21" curve="-90"/>
-<wire x1="20.32" y1="-10.16" x2="20.828" y2="-9.652" width="0.1524" layer="21" curve="90"/>
-<wire x1="-20.828" y1="-9.652" x2="-20.32" y2="-10.16" width="0.1524" layer="21" curve="90"/>
-<wire x1="-20.828" y1="9.652" x2="-20.32" y2="10.16" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-16.002" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="16.002" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-18.796" y="0" drill="1.3208" shape="octagon"/>
-<pad name="2" x="18.796" y="0" drill="1.3208" shape="octagon"/>
-<text x="-20.32" y="10.541" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C050-035X075" urn="urn:adsk.eagle:footprint:23181/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 5 mm, outline 3.5 x 7.5 mm</description>
-<wire x1="-0.3048" y1="0.635" x2="-0.3048" y2="0" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="0" x2="-0.3048" y2="-0.635" width="0.3048" layer="21"/>
-<wire x1="-0.3048" y1="0" x2="-1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.3302" y1="0.635" x2="0.3302" y2="0" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0" x2="0.3302" y2="-0.635" width="0.3048" layer="21"/>
-<wire x1="0.3302" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
-<wire x1="-3.683" y1="1.524" x2="-3.683" y2="-1.524" width="0.1524" layer="21"/>
-<wire x1="-3.429" y1="-1.778" x2="3.429" y2="-1.778" width="0.1524" layer="21"/>
-<wire x1="3.683" y1="-1.524" x2="3.683" y2="1.524" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="1.778" x2="-3.429" y2="1.778" width="0.1524" layer="21"/>
-<wire x1="3.429" y1="1.778" x2="3.683" y2="1.524" width="0.1524" layer="21" curve="-90"/>
-<wire x1="3.429" y1="-1.778" x2="3.683" y2="-1.524" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="-1.524" x2="-3.429" y2="-1.778" width="0.1524" layer="21" curve="90"/>
-<wire x1="-3.683" y1="1.524" x2="-3.429" y2="1.778" width="0.1524" layer="21" curve="-90"/>
-<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-3.556" y="2.159" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.556" y="-3.429" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C375-155X418" urn="urn:adsk.eagle:footprint:23182/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 37.5 mm, outline 15.5 x 41.8 mm</description>
-<wire x1="-20.32" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="21"/>
-<wire x1="20.828" y1="7.112" x2="20.828" y2="-7.112" width="0.1524" layer="21"/>
-<wire x1="20.32" y1="-7.62" x2="-20.32" y2="-7.62" width="0.1524" layer="21"/>
-<wire x1="-20.828" y1="-7.112" x2="-20.828" y2="7.112" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="20.32" y1="7.62" x2="20.828" y2="7.112" width="0.1524" layer="21" curve="-90"/>
-<wire x1="20.32" y1="-7.62" x2="20.828" y2="-7.112" width="0.1524" layer="21" curve="90"/>
-<wire x1="-20.828" y1="-7.112" x2="-20.32" y2="-7.62" width="0.1524" layer="21" curve="90"/>
-<wire x1="-20.828" y1="7.112" x2="-20.32" y2="7.62" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-16.002" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="16.002" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-18.796" y="0" drill="1.3208" shape="octagon"/>
-<pad name="2" x="18.796" y="0" drill="1.3208" shape="octagon"/>
-<text x="-20.447" y="8.001" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C075-063X106" urn="urn:adsk.eagle:footprint:23183/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 7.5 mm, outline 6.3 x 10.6 mm</description>
-<wire x1="4.953" y1="3.048" x2="-4.953" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="-5.207" y1="2.794" x2="-5.207" y2="-2.794" width="0.1524" layer="21"/>
-<wire x1="-4.953" y1="-3.048" x2="4.953" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="5.207" y1="-2.794" x2="5.207" y2="2.794" width="0.1524" layer="21"/>
-<wire x1="4.953" y1="3.048" x2="5.207" y2="2.794" width="0.1524" layer="21" curve="-90"/>
-<wire x1="4.953" y1="-3.048" x2="5.207" y2="-2.794" width="0.1524" layer="21" curve="90"/>
-<wire x1="-5.207" y1="-2.794" x2="-4.953" y2="-3.048" width="0.1524" layer="21" curve="90"/>
-<wire x1="-5.207" y1="2.794" x2="-4.953" y2="3.048" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.27" y1="0" x2="2.667" y2="0" width="0.1524" layer="21"/>
-<wire x1="-2.667" y1="0" x2="-2.159" y2="0" width="0.1524" layer="21"/>
-<wire x1="-2.159" y1="1.27" x2="-2.159" y2="0" width="0.4064" layer="21"/>
-<wire x1="-2.159" y1="0" x2="-2.159" y2="-1.27" width="0.4064" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.4064" layer="21"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.4064" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="0.9144" shape="octagon"/>
-<pad name="2" x="3.81" y="0" drill="0.9144" shape="octagon"/>
-<text x="-4.826" y="3.429" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-0.635" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C275-154X316" urn="urn:adsk.eagle:footprint:23184/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 27.5 mm, outline 15.4 x 31.6 mm</description>
-<wire x1="-15.24" y1="7.62" x2="15.24" y2="7.62" width="0.1524" layer="21"/>
-<wire x1="15.748" y1="7.112" x2="15.748" y2="-7.112" width="0.1524" layer="21"/>
-<wire x1="15.24" y1="-7.62" x2="-15.24" y2="-7.62" width="0.1524" layer="21"/>
-<wire x1="-15.748" y1="-7.112" x2="-15.748" y2="7.112" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="15.24" y1="7.62" x2="15.748" y2="7.112" width="0.1524" layer="21" curve="-90"/>
-<wire x1="15.24" y1="-7.62" x2="15.748" y2="-7.112" width="0.1524" layer="21" curve="90"/>
-<wire x1="-15.748" y1="-7.112" x2="-15.24" y2="-7.62" width="0.1524" layer="21" curve="90"/>
-<wire x1="-15.748" y1="7.112" x2="-15.24" y2="7.62" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-11.557" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="11.557" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-13.716" y="0" drill="1.1938" shape="octagon"/>
-<pad name="2" x="13.716" y="0" drill="1.1938" shape="octagon"/>
-<text x="-15.24" y="8.001" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C275-173X316" urn="urn:adsk.eagle:footprint:23185/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-grid 27.5 mm, outline 17.3 x 31.6 mm</description>
-<wire x1="-15.24" y1="8.509" x2="15.24" y2="8.509" width="0.1524" layer="21"/>
-<wire x1="15.748" y1="8.001" x2="15.748" y2="-8.001" width="0.1524" layer="21"/>
-<wire x1="15.24" y1="-8.509" x2="-15.24" y2="-8.509" width="0.1524" layer="21"/>
-<wire x1="-15.748" y1="-8.001" x2="-15.748" y2="8.001" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="1.905" x2="-6.731" y2="0" width="0.4064" layer="21"/>
-<wire x1="-6.731" y1="0" x2="-6.731" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="1.905" x2="-7.62" y2="0" width="0.4064" layer="21"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-1.905" width="0.4064" layer="21"/>
-<wire x1="15.24" y1="8.509" x2="15.748" y2="8.001" width="0.1524" layer="21" curve="-90"/>
-<wire x1="15.24" y1="-8.509" x2="15.748" y2="-8.001" width="0.1524" layer="21" curve="90"/>
-<wire x1="-15.748" y1="-8.001" x2="-15.24" y2="-8.509" width="0.1524" layer="21" curve="90"/>
-<wire x1="-15.748" y1="8.001" x2="-15.24" y2="8.509" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-11.557" y1="0" x2="-7.62" y2="0" width="0.1524" layer="21"/>
-<wire x1="-6.731" y1="0" x2="11.557" y2="0" width="0.1524" layer="21"/>
-<pad name="1" x="-13.716" y="0" drill="1.1938" shape="octagon"/>
-<pad name="2" x="13.716" y="0" drill="1.1938" shape="octagon"/>
-<text x="-15.24" y="8.89" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-2.54" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="C0402K" urn="urn:adsk.eagle:footprint:23186/1" library_version="11">
-<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0204 reflow solder&lt;/b&gt;&lt;p&gt;
-Metric Code Size 1005</description>
-<wire x1="-0.425" y1="0.2" x2="0.425" y2="0.2" width="0.1016" layer="51"/>
-<wire x1="0.425" y1="-0.2" x2="-0.425" y2="-0.2" width="0.1016" layer="51"/>
-<smd name="1" x="-0.6" y="0" dx="0.925" dy="0.74" layer="1"/>
-<smd name="2" x="0.6" y="0" dx="0.925" dy="0.74" layer="1"/>
-<text x="-0.5" y="0.425" size="1.016" layer="25">&gt;NAME</text>
-<text x="-0.5" y="-1.45" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.5" y1="-0.25" x2="-0.225" y2="0.25" layer="51"/>
-<rectangle x1="0.225" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
-</package>
-<package name="C0603K" urn="urn:adsk.eagle:footprint:23187/1" library_version="11">
-<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0603 reflow solder&lt;/b&gt;&lt;p&gt;
-Metric Code Size 1608</description>
-<wire x1="-0.725" y1="0.35" x2="0.725" y2="0.35" width="0.1016" layer="51"/>
-<wire x1="0.725" y1="-0.35" x2="-0.725" y2="-0.35" width="0.1016" layer="51"/>
-<smd name="1" x="-0.875" y="0" dx="1.05" dy="1.08" layer="1"/>
-<smd name="2" x="0.875" y="0" dx="1.05" dy="1.08" layer="1"/>
-<text x="-0.8" y="0.65" size="1.016" layer="25">&gt;NAME</text>
-<text x="-0.8" y="-1.65" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.8" y1="-0.4" x2="-0.45" y2="0.4" layer="51"/>
-<rectangle x1="0.45" y1="-0.4" x2="0.8" y2="0.4" layer="51"/>
-</package>
-<package name="C0805K" urn="urn:adsk.eagle:footprint:23188/1" library_version="11">
-<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0805 reflow solder&lt;/b&gt;&lt;p&gt;
-Metric Code Size 2012</description>
-<wire x1="-0.925" y1="0.6" x2="0.925" y2="0.6" width="0.1016" layer="51"/>
-<wire x1="0.925" y1="-0.6" x2="-0.925" y2="-0.6" width="0.1016" layer="51"/>
-<smd name="1" x="-1" y="0" dx="1.3" dy="1.6" layer="1"/>
-<smd name="2" x="1" y="0" dx="1.3" dy="1.6" layer="1"/>
-<text x="-1" y="0.875" size="1.016" layer="25">&gt;NAME</text>
-<text x="-1" y="-1.9" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-1" y1="-0.65" x2="-0.5" y2="0.65" layer="51"/>
-<rectangle x1="0.5" y1="-0.65" x2="1" y2="0.65" layer="51"/>
-</package>
-<package name="C1206K" urn="urn:adsk.eagle:footprint:23189/1" library_version="11">
-<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 1206 reflow solder&lt;/b&gt;&lt;p&gt;
-Metric Code Size 3216</description>
-<wire x1="-1.525" y1="0.75" x2="1.525" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="1.525" y1="-0.75" x2="-1.525" y2="-0.75" width="0.1016" layer="51"/>
-<smd name="1" x="-1.5" y="0" dx="1.5" dy="2" layer="1"/>
-<smd name="2" x="1.5" y="0" dx="1.5" dy="2" layer="1"/>
-<text x="-1.6" y="1.1" size="1.016" layer="25">&gt;NAME</text>
-<text x="-1.6" y="-2.1" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6" y1="-0.8" x2="-1.1" y2="0.8" layer="51"/>
-<rectangle x1="1.1" y1="-0.8" x2="1.6" y2="0.8" layer="51"/>
-</package>
-<package name="C1210K" urn="urn:adsk.eagle:footprint:23190/1" library_version="11">
-<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 1210 reflow solder&lt;/b&gt;&lt;p&gt;
-Metric Code Size 3225</description>
-<wire x1="-1.525" y1="1.175" x2="1.525" y2="1.175" width="0.1016" layer="51"/>
-<wire x1="1.525" y1="-1.175" x2="-1.525" y2="-1.175" width="0.1016" layer="51"/>
-<smd name="1" x="-1.5" y="0" dx="1.5" dy="2.9" layer="1"/>
-<smd name="2" x="1.5" y="0" dx="1.5" dy="2.9" layer="1"/>
-<text x="-1.6" y="1.55" size="1.016" layer="25">&gt;NAME</text>
-<text x="-1.6" y="-2.575" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6" y1="-1.25" x2="-1.1" y2="1.25" layer="51"/>
-<rectangle x1="1.1" y1="-1.25" x2="1.6" y2="1.25" layer="51"/>
-</package>
-<package name="C1812K" urn="urn:adsk.eagle:footprint:23191/1" library_version="11">
-<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 1812 reflow solder&lt;/b&gt;&lt;p&gt;
-Metric Code Size 4532</description>
-<wire x1="-2.175" y1="1.525" x2="2.175" y2="1.525" width="0.1016" layer="51"/>
-<wire x1="2.175" y1="-1.525" x2="-2.175" y2="-1.525" width="0.1016" layer="51"/>
-<smd name="1" x="-2.05" y="0" dx="1.8" dy="3.7" layer="1"/>
-<smd name="2" x="2.05" y="0" dx="1.8" dy="3.7" layer="1"/>
-<text x="-2.25" y="1.95" size="1.016" layer="25">&gt;NAME</text>
-<text x="-2.25" y="-2.975" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.25" y1="-1.6" x2="-1.65" y2="1.6" layer="51"/>
-<rectangle x1="1.65" y1="-1.6" x2="2.25" y2="1.6" layer="51"/>
-</package>
-<package name="C1825K" urn="urn:adsk.eagle:footprint:23192/1" library_version="11">
-<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 1825 reflow solder&lt;/b&gt;&lt;p&gt;
-Metric Code Size 4564</description>
-<wire x1="-1.525" y1="3.125" x2="1.525" y2="3.125" width="0.1016" layer="51"/>
-<wire x1="1.525" y1="-3.125" x2="-1.525" y2="-3.125" width="0.1016" layer="51"/>
-<smd name="1" x="-1.5" y="0" dx="1.8" dy="6.9" layer="1"/>
-<smd name="2" x="1.5" y="0" dx="1.8" dy="6.9" layer="1"/>
-<text x="-1.6" y="3.55" size="1.016" layer="25">&gt;NAME</text>
-<text x="-1.6" y="-4.625" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6" y1="-3.2" x2="-1.1" y2="3.2" layer="51"/>
-<rectangle x1="1.1" y1="-3.2" x2="1.6" y2="3.2" layer="51"/>
-</package>
-<package name="C2220K" urn="urn:adsk.eagle:footprint:23193/1" library_version="11">
-<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 2220 reflow solder&lt;/b&gt;&lt;p&gt;Metric Code Size 5650</description>
-<wire x1="-2.725" y1="2.425" x2="2.725" y2="2.425" width="0.1016" layer="51"/>
-<wire x1="2.725" y1="-2.425" x2="-2.725" y2="-2.425" width="0.1016" layer="51"/>
-<smd name="1" x="-2.55" y="0" dx="1.85" dy="5.5" layer="1"/>
-<smd name="2" x="2.55" y="0" dx="1.85" dy="5.5" layer="1"/>
-<text x="-2.8" y="2.95" size="1.016" layer="25">&gt;NAME</text>
-<text x="-2.8" y="-3.975" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.8" y1="-2.5" x2="-2.2" y2="2.5" layer="51"/>
-<rectangle x1="2.2" y1="-2.5" x2="2.8" y2="2.5" layer="51"/>
-</package>
-<package name="C2225K" urn="urn:adsk.eagle:footprint:23194/1" library_version="11">
-<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 2225 reflow solder&lt;/b&gt;&lt;p&gt;Metric Code Size 5664</description>
-<wire x1="-2.725" y1="3.075" x2="2.725" y2="3.075" width="0.1016" layer="51"/>
-<wire x1="2.725" y1="-3.075" x2="-2.725" y2="-3.075" width="0.1016" layer="51"/>
-<smd name="1" x="-2.55" y="0" dx="1.85" dy="6.8" layer="1"/>
-<smd name="2" x="2.55" y="0" dx="1.85" dy="6.8" layer="1"/>
-<text x="-2.8" y="3.6" size="1.016" layer="25">&gt;NAME</text>
-<text x="-2.8" y="-4.575" size="1.016" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.8" y1="-3.15" x2="-2.2" y2="3.15" layer="51"/>
-<rectangle x1="2.2" y1="-3.15" x2="2.8" y2="3.15" layer="51"/>
-</package>
-<package name="C0201" urn="urn:adsk.eagle:footprint:23196/1" library_version="11">
-<description>Source: http://www.avxcorp.com/docs/catalogs/cx5r.pdf</description>
-<smd name="1" x="-0.25" y="0" dx="0.25" dy="0.35" layer="1"/>
-<smd name="2" x="0.25" y="0" dx="0.25" dy="0.35" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.3" y1="-0.15" x2="-0.15" y2="0.15" layer="51"/>
-<rectangle x1="0.15" y1="-0.15" x2="0.3" y2="0.15" layer="51"/>
-<rectangle x1="-0.15" y1="0.1" x2="0.15" y2="0.15" layer="51"/>
-<rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="-0.1" layer="51"/>
-</package>
-<package name="C1808" urn="urn:adsk.eagle:footprint:23197/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-Source: AVX .. aphvc.pdf</description>
-<wire x1="-1.4732" y1="0.9502" x2="1.4732" y2="0.9502" width="0.1016" layer="51"/>
-<wire x1="-1.4478" y1="-0.9502" x2="1.4732" y2="-0.9502" width="0.1016" layer="51"/>
-<smd name="1" x="-1.95" y="0" dx="1.6" dy="2.2" layer="1"/>
-<smd name="2" x="1.95" y="0" dx="1.6" dy="2.2" layer="1"/>
-<text x="-2.233" y="1.827" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.233" y="-2.842" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.275" y1="-1.015" x2="-1.225" y2="1.015" layer="51"/>
-<rectangle x1="1.225" y1="-1.015" x2="2.275" y2="1.015" layer="51"/>
-</package>
-<package name="C3640" urn="urn:adsk.eagle:footprint:23198/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-Source: AVX .. aphvc.pdf</description>
-<wire x1="-3.8322" y1="5.0496" x2="3.8322" y2="5.0496" width="0.1016" layer="51"/>
-<wire x1="-3.8322" y1="-5.0496" x2="3.8322" y2="-5.0496" width="0.1016" layer="51"/>
-<smd name="1" x="-4.267" y="0" dx="2.6" dy="10.7" layer="1"/>
-<smd name="2" x="4.267" y="0" dx="2.6" dy="10.7" layer="1"/>
-<text x="-4.647" y="6.465" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.647" y="-7.255" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-4.57" y1="-5.1" x2="-3.05" y2="5.1" layer="51"/>
-<rectangle x1="3.05" y1="-5.1" x2="4.5688" y2="5.1" layer="51"/>
-</package>
-<package name="C01005" urn="urn:adsk.eagle:footprint:23199/1" library_version="11">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<rectangle x1="-0.2" y1="-0.1" x2="-0.075" y2="0.1" layer="51"/>
-<rectangle x1="0.075" y1="-0.1" x2="0.2" y2="0.1" layer="51"/>
-<rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
-<rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
-<smd name="1" x="-0.1625" y="0" dx="0.2" dy="0.25" layer="1"/>
-<smd name="2" x="0.1625" y="0" dx="0.2" dy="0.25" layer="1"/>
-<text x="-0.4" y="0.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.4" y="-1.6" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="R0402" urn="urn:adsk.eagle:footprint:23043/3" library_version="11">
 <description>&lt;b&gt;Chip RESISTOR 0402 EIA (1005 Metric)&lt;/b&gt;</description>
 <wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
@@ -7287,1543 +5721,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
 <rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
 </package>
-<package name="L2012C" urn="urn:adsk.eagle:footprint:22978/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;</description>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.864" y1="0.54" x2="0.864" y2="0.54" width="0.1016" layer="51"/>
-<wire x1="-0.864" y1="-0.553" x2="0.864" y2="-0.553" width="0.1016" layer="51"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-1" y="0" dx="1" dy="1" layer="1"/>
-<smd name="2" x="1" y="0" dx="1" dy="1" layer="1"/>
-<text x="-1.905" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.143" y1="-0.6096" x2="-0.843" y2="0.5903" layer="51"/>
-<rectangle x1="0.8382" y1="-0.6096" x2="1.1382" y2="0.5903" layer="51"/>
-<rectangle x1="-0.3" y1="-0.4001" x2="0.3" y2="0.4001" layer="35"/>
-</package>
-<package name="L2825P" urn="urn:adsk.eagle:footprint:22979/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-precision wire wound</description>
-<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="-0.762" y1="1.2" x2="0.762" y2="1.2" width="0.1016" layer="51"/>
-<wire x1="-0.762" y1="-1.213" x2="0.762" y2="-1.213" width="0.1016" layer="51"/>
-<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="1.34" y1="-0.965" x2="1.34" y2="0.965" width="0.1016" layer="51"/>
-<wire x1="-1.34" y1="0.965" x2="-1.34" y2="-0.965" width="0.1016" layer="51"/>
-<circle x="0" y="0" radius="0.6604" width="0.1524" layer="51"/>
-<smd name="1" x="-1.2" y="0" dx="1.4" dy="2.4" layer="1"/>
-<smd name="2" x="1.2" y="0" dx="1.4" dy="2.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="0.7366" y1="-1.27" x2="1.3208" y2="1.27" layer="51"/>
-<rectangle x1="-1.3208" y1="-1.27" x2="-0.7366" y2="1.27" layer="51"/>
-<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
-</package>
-<package name="L3216C" urn="urn:adsk.eagle:footprint:22980/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;</description>
-<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="-1.27" y1="0.896" x2="1.27" y2="0.896" width="0.1016" layer="51"/>
-<wire x1="-1.27" y1="-0.883" x2="1.27" y2="-0.883" width="0.1016" layer="51"/>
-<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
-<smd name="1" x="-1.5" y="0" dx="1.2" dy="1.6" layer="1"/>
-<smd name="2" x="1.5" y="0" dx="1.2" dy="1.6" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7526" y1="-0.9525" x2="-1.2525" y2="0.9474" layer="51"/>
-<rectangle x1="1.2446" y1="-0.9525" x2="1.7447" y2="0.9474" layer="51"/>
-<rectangle x1="-0.4001" y1="-0.5999" x2="0.4001" y2="0.5999" layer="35"/>
-</package>
-<package name="L3225M" urn="urn:adsk.eagle:footprint:22981/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-molded</description>
-<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-1.575" y1="1.27" x2="1.575" y2="1.27" width="0.1524" layer="51"/>
-<wire x1="1.575" y1="1.27" x2="1.575" y2="-1.27" width="0.1524" layer="51"/>
-<wire x1="1.575" y1="-1.27" x2="-1.575" y2="-1.27" width="0.1524" layer="51"/>
-<wire x1="-1.575" y1="-1.27" x2="-1.575" y2="1.27" width="0.1524" layer="51"/>
-<wire x1="-1.651" y1="0.94" x2="-1.651" y2="-0.94" width="0.1524" layer="51"/>
-<wire x1="1.651" y1="0.94" x2="1.651" y2="-0.94" width="0.1524" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="2.2" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="2.2" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.3" y1="-1" x2="0.3" y2="1" layer="35"/>
-</package>
-<package name="L3225P" urn="urn:adsk.eagle:footprint:22982/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-precision wire wound</description>
-<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="-1.676" y1="0.845" x2="1.676" y2="0.845" width="0.1524" layer="51"/>
-<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-1.676" y1="0.838" x2="-1.676" y2="-0.838" width="0.1524" layer="51"/>
-<wire x1="-1.168" y1="0.838" x2="-1.168" y2="-0.838" width="0.1524" layer="51"/>
-<wire x1="1.168" y1="0.838" x2="1.168" y2="-0.838" width="0.1524" layer="51"/>
-<wire x1="1.676" y1="0.838" x2="1.676" y2="-0.838" width="0.1524" layer="51"/>
-<wire x1="1.676" y1="-0.845" x2="-1.676" y2="-0.845" width="0.1524" layer="51"/>
-<circle x="0" y="0" radius="0.7117" width="0.1524" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.8" dy="2" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.8" dy="2" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
-</package>
-<package name="L3230M" urn="urn:adsk.eagle:footprint:22983/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-molded</description>
-<wire x1="-2.473" y1="1.483" x2="2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-1.483" x2="-2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-1.483" x2="-2.473" y2="1.483" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="1.483" x2="2.473" y2="-1.483" width="0.0508" layer="39"/>
-<wire x1="-1.575" y1="1.27" x2="1.575" y2="1.27" width="0.1524" layer="51"/>
-<wire x1="1.575" y1="1.27" x2="1.575" y2="-1.27" width="0.1524" layer="51"/>
-<wire x1="1.575" y1="-1.27" x2="-1.575" y2="-1.27" width="0.1524" layer="51"/>
-<wire x1="-1.575" y1="-1.27" x2="-1.575" y2="1.27" width="0.1524" layer="51"/>
-<wire x1="-1.651" y1="0.94" x2="-1.651" y2="-0.94" width="0.1524" layer="51"/>
-<wire x1="1.651" y1="0.94" x2="1.651" y2="-0.94" width="0.1524" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="2.2" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="2.2" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.3" y1="-1" x2="0.3" y2="1" layer="35"/>
-</package>
-<package name="L4035M" urn="urn:adsk.eagle:footprint:22984/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-molded</description>
-<wire x1="-2.973" y1="1.983" x2="2.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="2.973" y1="-1.983" x2="-2.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-2.973" y1="-1.983" x2="-2.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="2.973" y1="1.983" x2="2.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-2.083" y1="0.686" x2="-2.083" y2="-0.686" width="0.1524" layer="51"/>
-<wire x1="2.083" y1="0.686" x2="2.083" y2="-0.686" width="0.1524" layer="51"/>
-<wire x1="-1.981" y1="1.524" x2="-1.981" y2="-1.524" width="0.1524" layer="51"/>
-<wire x1="-1.981" y1="-1.524" x2="1.981" y2="-1.524" width="0.1524" layer="51"/>
-<wire x1="1.981" y1="-1.524" x2="1.981" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="1.981" y1="1.524" x2="-1.981" y2="1.524" width="0.1524" layer="51"/>
-<smd name="1" x="-1.6" y="0" dx="2.2" dy="1.4" layer="1"/>
-<smd name="2" x="1.6" y="0" dx="2.2" dy="1.4" layer="1"/>
-<text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
-</package>
-<package name="L4516C" urn="urn:adsk.eagle:footprint:22985/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;</description>
-<wire x1="-2.973" y1="0.983" x2="2.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.973" y1="-0.983" x2="-2.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.973" y1="-0.983" x2="-2.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-1.626" y1="0.54" x2="1.626" y2="0.54" width="0.1016" layer="51"/>
-<wire x1="-1.626" y1="-0.527" x2="1.626" y2="-0.527" width="0.1016" layer="51"/>
-<wire x1="2.973" y1="0.983" x2="2.973" y2="-0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-2.1" y="0" dx="1" dy="1.6" layer="1"/>
-<smd name="2" x="2.1" y="0" dx="1" dy="1.6" layer="1"/>
-<text x="-1.905" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.4003" y1="-0.5969" x2="-1.6002" y2="0.603" layer="51"/>
-<rectangle x1="1.6002" y1="-0.603" x2="2.4003" y2="0.5969" layer="51"/>
-<rectangle x1="-0.7" y1="-0.3" x2="0.7" y2="0.3" layer="35"/>
-</package>
-<package name="L4532M" urn="urn:adsk.eagle:footprint:22986/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-molded</description>
-<wire x1="-3.473" y1="1.983" x2="3.473" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="3.473" y1="-1.983" x2="-3.473" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-3.473" y1="-1.983" x2="-3.473" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="3.473" y1="1.983" x2="3.473" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-2.21" y1="-1.626" x2="2.21" y2="-1.626" width="0.1524" layer="51"/>
-<wire x1="2.21" y1="1.626" x2="-2.21" y2="1.626" width="0.1524" layer="51"/>
-<wire x1="-2.337" y1="1.041" x2="-2.337" y2="-1.041" width="0.1524" layer="51"/>
-<wire x1="2.337" y1="1.041" x2="2.337" y2="-1.041" width="0.1524" layer="51"/>
-<wire x1="-2.21" y1="1.626" x2="-2.21" y2="-1.626" width="0.1524" layer="51"/>
-<wire x1="2.21" y1="1.626" x2="2.21" y2="-1.626" width="0.1524" layer="51"/>
-<smd name="1" x="-1.9" y="0" dx="2" dy="2.4" layer="1"/>
-<smd name="2" x="1.9" y="0" dx="2" dy="2.4" layer="1"/>
-<text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
-</package>
-<package name="L4532P" urn="urn:adsk.eagle:footprint:22987/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-precision wire wound</description>
-<wire x1="-2.973" y1="1.983" x2="2.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="2.973" y1="-1.983" x2="-2.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-2.973" y1="-1.983" x2="-2.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="-2.311" y1="1.675" x2="2.311" y2="1.675" width="0.1524" layer="51"/>
-<wire x1="2.973" y1="1.983" x2="2.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-2.311" y1="-1.653" x2="2.311" y2="-1.653" width="0.1524" layer="51"/>
-<wire x1="-2.311" y1="1.626" x2="-2.311" y2="-1.626" width="0.1524" layer="51"/>
-<wire x1="2.311" y1="1.675" x2="2.311" y2="-1.626" width="0.1524" layer="51"/>
-<wire x1="-1.448" y1="1.651" x2="-1.448" y2="-1.626" width="0.1524" layer="51"/>
-<wire x1="1.448" y1="1.626" x2="1.448" y2="-1.626" width="0.1524" layer="51"/>
-<circle x="0" y="0" radius="1.3211" width="0.1524" layer="51"/>
-<smd name="1" x="-2" y="0" dx="1.8" dy="3.6" layer="1"/>
-<smd name="2" x="2" y="0" dx="1.8" dy="3.6" layer="1"/>
-<text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
-</package>
-<package name="L5038P" urn="urn:adsk.eagle:footprint:22988/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-precision wire wound</description>
-<wire x1="-2.973" y1="1.983" x2="2.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="2.973" y1="-1.983" x2="-2.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-2.973" y1="-1.983" x2="-2.973" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="-2.286" y1="1.853" x2="2.311" y2="1.853" width="0.1016" layer="51"/>
-<wire x1="2.973" y1="1.983" x2="2.973" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-2.286" y1="-1.856" x2="2.311" y2="-1.856" width="0.1016" layer="51"/>
-<wire x1="2.389" y1="-1.27" x2="2.389" y2="1.27" width="0.1016" layer="51"/>
-<wire x1="-2.386" y1="-1.27" x2="-2.386" y2="1.27" width="0.1016" layer="51"/>
-<wire x1="1.602" y1="-1.854" x2="1.602" y2="1.854" width="0.1016" layer="51"/>
-<wire x1="-1.624" y1="-1.854" x2="-1.624" y2="1.854" width="0.1016" layer="51"/>
-<wire x1="-2.31" y1="-1.854" x2="-2.31" y2="1.854" width="0.1016" layer="51"/>
-<wire x1="2.313" y1="-1.854" x2="2.313" y2="1.854" width="0.1016" layer="51"/>
-<circle x="0" y="0" radius="1.4732" width="0.1524" layer="51"/>
-<smd name="1" x="-2.2" y="0" dx="1.4" dy="2.8" layer="1"/>
-<smd name="2" x="2.2" y="0" dx="1.4" dy="2.8" layer="1"/>
-<text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
-</package>
-<package name="L5650M" urn="urn:adsk.eagle:footprint:22989/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-molded</description>
-<wire x1="-3.973" y1="2.983" x2="3.973" y2="2.983" width="0.0508" layer="39"/>
-<wire x1="3.973" y1="-2.983" x2="-3.973" y2="-2.983" width="0.0508" layer="39"/>
-<wire x1="-3.973" y1="-2.983" x2="-3.973" y2="2.983" width="0.0508" layer="39"/>
-<wire x1="3.973" y1="2.983" x2="3.973" y2="-2.983" width="0.0508" layer="39"/>
-<wire x1="-2.108" y1="-2.591" x2="2.083" y2="-2.591" width="0.1524" layer="51"/>
-<wire x1="2.083" y1="2.591" x2="-2.108" y2="2.591" width="0.1524" layer="51"/>
-<wire x1="2.184" y1="2.032" x2="2.184" y2="-2.032" width="0.1524" layer="51"/>
-<wire x1="-2.21" y1="2.032" x2="-2.21" y2="-2.032" width="0.1524" layer="51"/>
-<wire x1="-2.108" y1="2.591" x2="-2.108" y2="-2.591" width="0.1524" layer="51"/>
-<wire x1="2.083" y1="2.591" x2="2.083" y2="-2.591" width="0.1524" layer="51"/>
-<smd name="1" x="-2.5" y="0" dx="1.8" dy="4" layer="1"/>
-<smd name="2" x="2.5" y="0" dx="1.8" dy="4" layer="1"/>
-<text x="-1.905" y="3.175" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
-</package>
-<package name="L8530M" urn="urn:adsk.eagle:footprint:22990/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-molded</description>
-<wire x1="-5.473" y1="1.983" x2="5.473" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="5.473" y1="-1.983" x2="-5.473" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-5.473" y1="-1.983" x2="-5.473" y2="1.983" width="0.0508" layer="39"/>
-<wire x1="5.473" y1="1.983" x2="5.473" y2="-1.983" width="0.0508" layer="39"/>
-<wire x1="-4.191" y1="-1.524" x2="-4.191" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="4.191" y1="1.524" x2="-4.191" y2="1.524" width="0.1524" layer="51"/>
-<wire x1="4.191" y1="-1.524" x2="-4.191" y2="-1.524" width="0.1524" layer="51"/>
-<wire x1="-4.293" y1="-0.66" x2="-4.293" y2="0.66" width="0.1524" layer="51"/>
-<wire x1="4.293" y1="-0.66" x2="4.293" y2="0.66" width="0.1524" layer="51"/>
-<wire x1="4.191" y1="-1.524" x2="4.191" y2="1.524" width="0.1524" layer="51"/>
-<smd name="1" x="-3.7" y="0" dx="2.4" dy="1.4" layer="1"/>
-<smd name="2" x="3.7" y="0" dx="2.4" dy="1.4" layer="1"/>
-<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
-</package>
-<package name="L1812" urn="urn:adsk.eagle:footprint:23000/1" library_version="11">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-chip</description>
-<wire x1="-1.4732" y1="1.6002" x2="1.4732" y2="1.6002" width="0.1016" layer="51"/>
-<wire x1="-1.4478" y1="-1.6002" x2="1.4732" y2="-1.6002" width="0.1016" layer="51"/>
-<smd name="1" x="-1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
-<smd name="2" x="1.95" y="0" dx="1.9" dy="3.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.3876" y1="-1.651" x2="-1.4376" y2="1.649" layer="51"/>
-<rectangle x1="1.4478" y1="-1.651" x2="2.3978" y2="1.649" layer="51"/>
-</package>
-<package name="TJ3-U1" urn="urn:adsk.eagle:footprint:23001/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<wire x1="-3.65" y1="8.15" x2="3.65" y2="8.15" width="0.2032" layer="21"/>
-<wire x1="3.65" y1="-8.15" x2="-3.65" y2="-8.15" width="0.2032" layer="21"/>
-<wire x1="-3.65" y1="-8.15" x2="-3.65" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-3.65" y1="-1.1" x2="-3.65" y2="1.1" width="0.2032" layer="51"/>
-<wire x1="-3.65" y1="1.1" x2="-3.65" y2="8.15" width="0.2032" layer="21"/>
-<wire x1="3.65" y1="8.15" x2="3.65" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="3.65" y1="1.1" x2="3.65" y2="-1.1" width="0.2032" layer="51"/>
-<wire x1="3.65" y1="-1.1" x2="3.65" y2="-8.15" width="0.2032" layer="21"/>
-<pad name="1" x="-3.3" y="0" drill="0.9"/>
-<pad name="2" x="3.3" y="0" drill="0.9"/>
-<text x="-0.635" y="-5.08" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="1.905" y="-5.08" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-<package name="TJ3-U2" urn="urn:adsk.eagle:footprint:23002/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<circle x="0" y="0" radius="8.3" width="0.2032" layer="27"/>
-<pad name="1" x="-7.35" y="0" drill="0.9"/>
-<pad name="2" x="7.35" y="0" drill="0.9"/>
-<text x="-5.08" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="TJ4-U1" urn="urn:adsk.eagle:footprint:23003/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<wire x1="-4.95" y1="11.05" x2="4.95" y2="11.05" width="0.2032" layer="21"/>
-<wire x1="4.95" y1="11.05" x2="4.95" y2="-11.05" width="0.2032" layer="21"/>
-<wire x1="4.95" y1="-11.05" x2="-4.95" y2="-11.05" width="0.2032" layer="21"/>
-<wire x1="-4.95" y1="-11.05" x2="-4.95" y2="11.05" width="0.2032" layer="21"/>
-<pad name="1" x="-3.935" y="0" drill="0.9"/>
-<pad name="2" x="3.935" y="0" drill="0.9"/>
-<text x="-0.635" y="-5.08" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="1.905" y="-5.08" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-<package name="TJ4-U2" urn="urn:adsk.eagle:footprint:23004/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<circle x="0" y="0" radius="11.1" width="0.2032" layer="27"/>
-<pad name="1" x="-9.9" y="0" drill="0.9"/>
-<pad name="2" x="9.9" y="0" drill="0.9"/>
-<text x="-5.08" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="TJ5-U1" urn="urn:adsk.eagle:footprint:23005/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<wire x1="-5.55" y1="12.55" x2="5.55" y2="12.55" width="0.2032" layer="21"/>
-<wire x1="5.55" y1="12.55" x2="5.55" y2="-12.55" width="0.2032" layer="21"/>
-<wire x1="5.55" y1="-12.55" x2="-5.55" y2="-12.55" width="0.2032" layer="21"/>
-<wire x1="-5.55" y1="-12.55" x2="-5.55" y2="12.55" width="0.2032" layer="21"/>
-<pad name="1" x="-4.7" y="0" drill="0.9"/>
-<pad name="2" x="4.7" y="0" drill="0.9"/>
-<text x="-0.635" y="-5.08" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="1.905" y="-5.08" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-<package name="TJ5-U2" urn="urn:adsk.eagle:footprint:23006/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<circle x="0" y="0" radius="12.6" width="0.2032" layer="27"/>
-<pad name="1" x="-11.45" y="0" drill="0.9"/>
-<pad name="2" x="11.45" y="0" drill="0.9"/>
-<text x="-5.08" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="TJ6-U1" urn="urn:adsk.eagle:footprint:23007/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<wire x1="-10.95" y1="17.45" x2="10.95" y2="17.45" width="0.2032" layer="21"/>
-<wire x1="10.95" y1="17.45" x2="10.95" y2="-17.45" width="0.2032" layer="21"/>
-<wire x1="10.95" y1="-17.45" x2="-10.95" y2="-17.45" width="0.2032" layer="21"/>
-<wire x1="-10.95" y1="-17.45" x2="-10.95" y2="17.45" width="0.2032" layer="21"/>
-<pad name="1" x="-9.25" y="0" drill="1.3"/>
-<pad name="2" x="9.25" y="0" drill="1.3"/>
-<text x="-0.635" y="-5.08" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="1.905" y="-5.08" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-<package name="TJ6-U2" urn="urn:adsk.eagle:footprint:23008/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<circle x="0" y="0" radius="17.5" width="0.2032" layer="27"/>
-<pad name="1" x="-15.5" y="0" drill="1.3"/>
-<pad name="2" x="15.5" y="0" drill="1.3"/>
-<text x="-5.08" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="TJ7-U1" urn="urn:adsk.eagle:footprint:23009/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<wire x1="-9.45" y1="20.85" x2="9.43" y2="20.85" width="0.2032" layer="21"/>
-<wire x1="9.43" y1="20.85" x2="9.45" y2="-20.85" width="0.2032" layer="21"/>
-<wire x1="9.45" y1="-20.85" x2="-9.45" y2="-20.85" width="0.2032" layer="21"/>
-<wire x1="-9.45" y1="-20.85" x2="-9.45" y2="20.85" width="0.2032" layer="21"/>
-<pad name="1" x="-7.9" y="0" drill="1.3"/>
-<pad name="2" x="7.9" y="0" drill="1.3"/>
-<text x="-0.635" y="-5.08" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="1.905" y="-5.08" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-<package name="TJ7-U2" urn="urn:adsk.eagle:footprint:23010/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<circle x="0" y="0" radius="20.9" width="0.2032" layer="27"/>
-<pad name="1" x="-18.8" y="0" drill="1.3"/>
-<pad name="2" x="18.8" y="0" drill="1.3"/>
-<text x="-5.08" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="TJ8-U1" urn="urn:adsk.eagle:footprint:23011/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<wire x1="-12.55" y1="24.25" x2="12.55" y2="24.25" width="0.2032" layer="21"/>
-<wire x1="12.55" y1="24.25" x2="12.55" y2="-24.25" width="0.2032" layer="21"/>
-<wire x1="12.55" y1="-24.25" x2="-12.55" y2="-24.25" width="0.2032" layer="21"/>
-<wire x1="-12.55" y1="-24.25" x2="-12.55" y2="24.25" width="0.2032" layer="21"/>
-<pad name="1" x="-10.4" y="0" drill="1.5"/>
-<pad name="2" x="10.4" y="0" drill="1.5"/>
-<text x="-0.635" y="-5.08" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="1.905" y="-5.08" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-<package name="TJ8-U2" urn="urn:adsk.eagle:footprint:23012/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<circle x="0" y="0" radius="24.6" width="0.2032" layer="27"/>
-<pad name="1" x="-22.35" y="0" drill="1.5"/>
-<pad name="2" x="22.35" y="0" drill="1.5"/>
-<text x="-5.08" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="TJ9-U1" urn="urn:adsk.eagle:footprint:23013/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<wire x1="-17.95" y1="33.75" x2="17.95" y2="33.75" width="0.2032" layer="21"/>
-<wire x1="17.95" y1="33.75" x2="17.95" y2="-33.75" width="0.2032" layer="21"/>
-<wire x1="17.95" y1="-33.75" x2="-17.95" y2="-33.75" width="0.2032" layer="21"/>
-<wire x1="-17.95" y1="-33.75" x2="-17.95" y2="33.75" width="0.2032" layer="21"/>
-<pad name="1" x="-15.9" y="0" drill="1.8"/>
-<pad name="2" x="15.9" y="0" drill="1.8"/>
-<text x="-0.635" y="-5.08" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="1.905" y="-5.08" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-<package name="TJ9-U2" urn="urn:adsk.eagle:footprint:23014/1" library_version="11">
-<description>&lt;b&gt;Inductor&lt;/b&gt;&lt;p&gt;
-Source: TJ-Serie Vishay.pdf</description>
-<circle x="0" y="0" radius="34.5" width="0.2032" layer="27"/>
-<pad name="1" x="-31.6" y="0" drill="1.8"/>
-<pad name="2" x="31.6" y="0" drill="1.8"/>
-<text x="-5.08" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="POWER-CHOKE_WE-TPC" urn="urn:adsk.eagle:footprint:25524/1" library_version="11">
-<description>&lt;b&gt;POWER-CHOKE WE-TPC&lt;/b&gt;&lt;p&gt;
-Würth Elektronik, Partnumber: 744053220&lt;br&gt;
-Source: WE-TPC 744053220.pdf</description>
-<wire x1="-2.8" y1="2.3" x2="-2.3" y2="2.8" width="0.2" layer="51" curve="-90"/>
-<wire x1="-2.3" y1="2.8" x2="2.3" y2="2.8" width="0.2" layer="51"/>
-<wire x1="2.3" y1="2.8" x2="2.8" y2="2.3" width="0.2" layer="51" curve="-90"/>
-<wire x1="2.8" y1="2.3" x2="2.8" y2="-2.3" width="0.2" layer="51"/>
-<wire x1="2.8" y1="-2.3" x2="2.3" y2="-2.8" width="0.2" layer="51" curve="-90"/>
-<wire x1="2.3" y1="-2.8" x2="-2.3" y2="-2.8" width="0.2" layer="51"/>
-<wire x1="-2.3" y1="-2.8" x2="-2.8" y2="-2.3" width="0.2" layer="51" curve="-90"/>
-<wire x1="-2.8" y1="-2.3" x2="-2.8" y2="2.3" width="0.2" layer="51"/>
-<wire x1="-2.8" y1="0.65" x2="-2.8" y2="-0.65" width="0.2" layer="21"/>
-<wire x1="-2" y1="0.65" x2="-2" y2="-0.65" width="0.2" layer="21" curve="36.008323"/>
-<wire x1="2.8" y1="-0.65" x2="2.8" y2="0.65" width="0.2" layer="21"/>
-<wire x1="2" y1="-0.65" x2="2" y2="0.65" width="0.2" layer="21" curve="36.008323"/>
-<circle x="0" y="0" radius="2.1" width="0.2" layer="51"/>
-<smd name="1" x="0" y="2.05" dx="6.3" dy="2.2" layer="1" roundness="25"/>
-<smd name="2" x="0" y="-2.05" dx="6.3" dy="2.2" layer="1" roundness="25" rot="R180"/>
-<text x="-3.5" y="3.5" size="1.778" layer="25">&gt;NAME</text>
-<text x="-3.5" y="-5.3" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="CEP125" urn="urn:adsk.eagle:footprint:25528/1" library_version="11">
-<description>&lt;b&gt;POWER INDUCTORS&lt;/b&gt; (SMT Type)&lt;p&gt;
-Source: www.sumida.com/products/pdf/CEP125.pdf</description>
-<wire x1="-1.5796" y1="6.3448" x2="-1.5533" y2="6.3448" width="0.2032" layer="21"/>
-<wire x1="-1.5533" y1="6.3448" x2="-1.29" y2="6.0815" width="0.2032" layer="21"/>
-<wire x1="-1.29" y1="6.0815" x2="-1.1584" y2="6.0816" width="0.2032" layer="21"/>
-<wire x1="-1.1584" y1="6.0816" x2="-1.1584" y2="6.2922" width="0.2032" layer="21"/>
-<wire x1="-1.1584" y1="6.2922" x2="-1.1583" y2="6.2922" width="0.2032" layer="21"/>
-<wire x1="-1.1583" y1="6.2922" x2="-1.1057" y2="6.3448" width="0.2032" layer="21"/>
-<wire x1="-1.1057" y1="6.3448" x2="1.1057" y2="6.3448" width="0.2032" layer="21"/>
-<wire x1="1.1057" y1="6.3448" x2="1.1057" y2="6.0815" width="0.2032" layer="21"/>
-<wire x1="1.1057" y1="6.0815" x2="1.211" y2="6.0815" width="0.2032" layer="21"/>
-<wire x1="1.211" y1="6.0815" x2="1.4217" y2="6.3448" width="0.2032" layer="21"/>
-<wire x1="1.4217" y1="6.3448" x2="6.1079" y2="6.3448" width="0.2032" layer="51"/>
-<wire x1="6.1079" y1="6.3448" x2="6.3448" y2="6.1079" width="0.2032" layer="21" curve="-96.645912"/>
-<wire x1="6.3448" y1="6.1079" x2="6.3448" y2="1.8166" width="0.2032" layer="21"/>
-<wire x1="6.3448" y1="1.8166" x2="6.2658" y2="1.7376" width="0.2032" layer="21"/>
-<wire x1="6.2658" y1="1.7376" x2="6.2658" y2="-1.7376" width="0.2032" layer="21"/>
-<wire x1="6.2658" y1="-1.7376" x2="6.3448" y2="-1.8166" width="0.2032" layer="21"/>
-<wire x1="6.3448" y1="-1.8166" x2="6.3448" y2="-6.0289" width="0.2032" layer="21"/>
-<wire x1="6.3448" y1="-6.0289" x2="6.0289" y2="-6.3448" width="0.2032" layer="21" curve="-91.024745"/>
-<wire x1="6.0289" y1="-6.3448" x2="-6.0289" y2="-6.3448" width="0.2032" layer="51"/>
-<wire x1="-6.3448" y1="-6.0289" x2="-6.3448" y2="6.1342" width="0.2032" layer="21"/>
-<wire x1="-6.3448" y1="6.1342" x2="-6.1342" y2="6.3448" width="0.2032" layer="21" curve="-83.297108"/>
-<wire x1="-6.1342" y1="6.3448" x2="-1.5533" y2="6.3448" width="0.2032" layer="51"/>
-<wire x1="-6.2395" y1="5.7393" x2="-2.0535" y2="5.7393" width="0.2032" layer="51"/>
-<wire x1="-2.0535" y1="5.7393" x2="-1.5534" y2="3.9754" width="0.2032" layer="51"/>
-<wire x1="-1.5534" y1="3.9754" x2="1.527" y2="3.9754" width="0.2032" layer="21"/>
-<wire x1="1.527" y1="3.9754" x2="2.0535" y2="5.7393" width="0.2032" layer="51"/>
-<wire x1="2.0535" y1="5.7393" x2="6.2395" y2="5.7393" width="0.2032" layer="51"/>
-<wire x1="6.2395" y1="-3.4752" x2="-6.2658" y2="-3.4752" width="0.2032" layer="21"/>
-<wire x1="-5.6077" y1="-3.5805" x2="-5.6077" y2="-6.2395" width="0.2032" layer="21"/>
-<wire x1="-4.8968" y1="-6.2395" x2="-4.8968" y2="-3.5805" width="0.2032" layer="21"/>
-<wire x1="-4.7915" y1="-6.0552" x2="-2.2115" y2="-6.0552" width="0.2032" layer="21"/>
-<wire x1="-2.9486" y1="-5.9499" x2="-2.9223" y2="-5.9499" width="0.2032" layer="21"/>
-<wire x1="-2.9223" y1="-5.9499" x2="-2.9223" y2="-3.5805" width="0.2032" layer="21"/>
-<wire x1="-2.1588" y1="-6.2395" x2="-2.1588" y2="-3.8701" width="0.2032" layer="21"/>
-<wire x1="2.1325" y1="-6.2395" x2="2.1325" y2="-3.8701" width="0.2032" layer="21"/>
-<wire x1="2.2378" y1="-6.0289" x2="4.8968" y2="-6.0289" width="0.2032" layer="21"/>
-<wire x1="4.8968" y1="-3.5805" x2="4.8968" y2="-6.2395" width="0.2032" layer="21"/>
-<wire x1="2.9486" y1="-5.9236" x2="2.9486" y2="-3.5805" width="0.2032" layer="21"/>
-<wire x1="5.5813" y1="-6.2395" x2="5.5813" y2="-3.5805" width="0.2032" layer="21"/>
-<wire x1="2.5011" y1="-3.5805" x2="-2.4747" y2="-3.5805" width="0.2032" layer="51" curve="-63.906637"/>
-<wire x1="1.1057" y1="6.0815" x2="-1.1584" y2="6.0815" width="0.2032" layer="21"/>
-<wire x1="-1.7902" y1="5.1601" x2="1.7376" y2="5.1863" width="0.2032" layer="21" curve="-37.134171"/>
-<wire x1="-6.0289" y1="-6.3448" x2="-6.3448" y2="-6.0289" width="0.2032" layer="21" curve="-90.91408"/>
-<smd name="1" x="-3.5" y="5.375" dx="3" dy="2.75" layer="1"/>
-<smd name="2" x="3.5" y="5.375" dx="3" dy="2.75" layer="1"/>
-<smd name="3" x="0" y="-5.48" dx="3" dy="2.55" layer="1"/>
-<text x="-5.08" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5.08" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="L0201" urn="urn:adsk.eagle:footprint:23020/1" library_version="11">
-<description>&lt;b&gt;NIS02 Chip Inductor&lt;/b&gt;&lt;p&gt;
-Source: http://www.niccomp.com/Catalog/nis.pdf</description>
-<smd name="1" x="-0.275" y="0" dx="0.25" dy="0.35" layer="1"/>
-<smd name="2" x="0.275" y="0" dx="0.25" dy="0.35" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.3" y1="-0.15" x2="-0.15" y2="0.15" layer="51"/>
-<rectangle x1="0.15" y1="-0.15" x2="0.3" y2="0.15" layer="51"/>
-<rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.15" layer="51"/>
-<rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="-0.05" layer="51"/>
-</package>
-<package name="PIS2816" urn="urn:adsk.eagle:footprint:23021/1" library_version="11">
-<description>&lt;b&gt;PIS 2826&lt;/b&gt; Inductor&lt;p&gt;
-Source: http://www.stetco.com/products/inductors/pdf/PIS2816.pdf</description>
-<wire x1="-3.65" y1="-3.65" x2="3.65" y2="-3.65" width="0.2032" layer="51"/>
-<wire x1="3.65" y1="-3.65" x2="3.65" y2="3.65" width="0.2032" layer="21"/>
-<wire x1="3.65" y1="3.65" x2="-3.65" y2="3.65" width="0.2032" layer="51"/>
-<wire x1="-3.65" y1="3.65" x2="-3.65" y2="-3.65" width="0.2032" layer="21"/>
-<wire x1="2.75" y1="1.125" x2="-2.875" y2="-0.625" width="0.1016" layer="21"/>
-<wire x1="-2.75" y1="-1.125" x2="2.875" y2="0.625" width="0.1016" layer="21"/>
-<wire x1="-2.875" y1="-0.625" x2="2.75" y2="1.125" width="0.1016" layer="51" curve="-169.840784"/>
-<wire x1="2.875" y1="0.625" x2="-2.75" y2="-1.125" width="0.1016" layer="51" curve="-169.840784"/>
-<wire x1="-2.875" y1="-0.625" x2="-1.375" y2="2.6" width="0.1016" layer="21" curve="-74.384165"/>
-<wire x1="2.75" y1="1.125" x2="1.275" y2="2.675" width="0.1016" layer="21" curve="42.122709"/>
-<wire x1="2.875" y1="0.625" x2="1.375" y2="-2.6" width="0.1016" layer="21" curve="-74.384165"/>
-<wire x1="-2.75" y1="-1.125" x2="-1.275" y2="-2.675" width="0.1016" layer="21" curve="42.122709"/>
-<wire x1="-1.35" y1="3.65" x2="-3.65" y2="3.65" width="0.2032" layer="21"/>
-<wire x1="-3.65" y1="-3.65" x2="-1.35" y2="-3.65" width="0.2032" layer="21"/>
-<wire x1="1.35" y1="-3.65" x2="3.65" y2="-3.65" width="0.2032" layer="21"/>
-<wire x1="3.65" y1="3.65" x2="1.35" y2="3.65" width="0.2032" layer="21"/>
-<circle x="1.5" y="1.375" radius="0.25" width="0" layer="21"/>
-<smd name="1" x="0" y="3.2" dx="2.2" dy="1.6" layer="1"/>
-<smd name="2" x="0" y="-3.2" dx="2.2" dy="1.6" layer="1"/>
-<text x="-3.625" y="4.5" size="1.778" layer="25">&gt;NAME</text>
-<text x="-3.625" y="-6.25" size="1.778" layer="27">&gt;VALUE</text>
-</package>
-<package name="IR-2" urn="urn:adsk.eagle:footprint:23022/1" library_version="11">
-<description>&lt;B&gt;Vishay Dale Inductor&lt;/b&gt;&lt;p&gt;
-Source: www.vishay.com .. ir.pdf</description>
-<wire x1="5.08" y1="0" x2="4.064" y2="0" width="0.6096" layer="51"/>
-<wire x1="-5.08" y1="0" x2="-4.064" y2="0" width="0.6096" layer="51"/>
-<wire x1="-3.175" y1="1.164" x2="-2.9" y2="1.425" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.175" y1="-1.164" x2="-2.925" y2="-1.425" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.925" y1="-1.425" x2="3.175" y2="-1.164" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.925" y1="1.425" x2="3.175" y2="1.164" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.175" y1="-1.164" x2="-3.175" y2="1.164" width="0.1524" layer="21"/>
-<wire x1="2.925" y1="1.425" x2="-2.9" y2="1.425" width="0.1524" layer="21"/>
-<wire x1="2.925" y1="-1.425" x2="-2.925" y2="-1.425" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="-1.164" x2="3.175" y2="1.164" width="0.1524" layer="21"/>
-<pad name="1" x="-5.08" y="0" drill="1" diameter="1.6764"/>
-<pad name="2" x="5.08" y="0" drill="1" diameter="1.6764"/>
-<text x="-3.175" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.2606" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="3.175" y1="-0.3048" x2="4.0386" y2="0.3048" layer="21"/>
-<rectangle x1="-4.0386" y1="-0.3048" x2="-3.175" y2="0.3048" layer="21"/>
-</package>
-<package name="IR-4" urn="urn:adsk.eagle:footprint:23023/1" library_version="11">
-<description>&lt;B&gt;Vishay Dale Inductor&lt;/b&gt;&lt;p&gt;
-Source: www.vishay.com .. ir.pdf</description>
-<wire x1="6.73" y1="0" x2="5.714" y2="0" width="0.6096" layer="51"/>
-<wire x1="-6.705" y1="0" x2="-5.689" y2="0" width="0.6096" layer="51"/>
-<wire x1="-4.8" y1="1.939" x2="-4.525" y2="2.2" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.8" y1="-1.939" x2="-4.55" y2="-2.2" width="0.1524" layer="21" curve="90"/>
-<wire x1="4.575" y1="-2.2" x2="4.825" y2="-1.939" width="0.1524" layer="21" curve="90"/>
-<wire x1="4.575" y1="2.2" x2="4.825" y2="1.939" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.8" y1="-1.939" x2="-4.8" y2="1.939" width="0.1524" layer="21"/>
-<wire x1="4.575" y1="2.2" x2="-4.525" y2="2.2" width="0.1524" layer="21"/>
-<wire x1="4.575" y1="-2.2" x2="-4.55" y2="-2.2" width="0.1524" layer="21"/>
-<wire x1="4.825" y1="-1.939" x2="4.825" y2="1.939" width="0.1524" layer="21"/>
-<pad name="1" x="-6.705" y="0" drill="1" diameter="1.6764"/>
-<pad name="2" x="6.73" y="0" drill="1" diameter="1.6764"/>
-<text x="-3.81" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="4.825" y1="-0.3048" x2="5.6886" y2="0.3048" layer="21"/>
-<rectangle x1="-5.6636" y1="-0.3048" x2="-4.8" y2="0.3048" layer="21"/>
-</package>
-<package name="IRF-1" urn="urn:adsk.eagle:footprint:23024/1" library_version="11">
-<description>&lt;B&gt;Vishay Dale Inductor&lt;/b&gt;&lt;p&gt;
-Source: www.vishay.com .. irf.pdf</description>
-<wire x1="5.715" y1="0" x2="4.064" y2="0" width="0.6096" layer="51"/>
-<wire x1="-5.715" y1="0" x2="-4.064" y2="0" width="0.6096" layer="51"/>
-<wire x1="-3.175" y1="1.164" x2="-2.9" y2="1.425" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.175" y1="-1.164" x2="-2.925" y2="-1.425" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.925" y1="-1.425" x2="3.175" y2="-1.164" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.925" y1="1.425" x2="3.175" y2="1.164" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.175" y1="-1.164" x2="-3.175" y2="1.164" width="0.1524" layer="21"/>
-<wire x1="2.925" y1="1.425" x2="-2.9" y2="1.425" width="0.1524" layer="21"/>
-<wire x1="2.925" y1="-1.425" x2="-2.925" y2="-1.425" width="0.1524" layer="21"/>
-<wire x1="3.175" y1="-1.164" x2="3.175" y2="1.164" width="0.1524" layer="21"/>
-<pad name="1" x="-5.715" y="0" drill="1" diameter="1.6764"/>
-<pad name="2" x="5.715" y="0" drill="1" diameter="1.6764"/>
-<text x="-3.175" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.2606" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="3.175" y1="-0.3048" x2="4.2" y2="0.3048" layer="21"/>
-<rectangle x1="-4.2" y1="-0.3048" x2="-3.175" y2="0.3048" layer="21"/>
-</package>
-<package name="IRF-3" urn="urn:adsk.eagle:footprint:23025/1" library_version="11">
-<description>&lt;B&gt;Vishay Dale Inductor&lt;/b&gt;&lt;p&gt;
-Source: www.vishay.com .. irf.pdf</description>
-<wire x1="6.73" y1="0" x2="5.2" y2="0" width="0.6096" layer="51"/>
-<wire x1="-6.705" y1="0" x2="-5.225" y2="0" width="0.6096" layer="51"/>
-<wire x1="-4.8" y1="1.739" x2="-4.525" y2="2" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.8" y1="-1.764" x2="-4.55" y2="-2.025" width="0.1524" layer="21" curve="90"/>
-<wire x1="4.575" y1="-2.025" x2="4.825" y2="-1.764" width="0.1524" layer="21" curve="90"/>
-<wire x1="4.575" y1="2" x2="4.825" y2="1.739" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.8" y1="-1.764" x2="-4.8" y2="1.739" width="0.1524" layer="21"/>
-<wire x1="4.575" y1="2" x2="-4.525" y2="2" width="0.1524" layer="21"/>
-<wire x1="4.575" y1="-2.025" x2="-4.55" y2="-2.025" width="0.1524" layer="21"/>
-<wire x1="4.825" y1="-1.764" x2="4.825" y2="1.739" width="0.1524" layer="21"/>
-<pad name="1" x="-6.705" y="0" drill="1" diameter="1.6764"/>
-<pad name="2" x="6.73" y="0" drill="1" diameter="1.6764"/>
-<text x="-3.81" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="4.825" y1="-0.3048" x2="5.2" y2="0.3048" layer="21"/>
-<rectangle x1="-5.2" y1="-0.3048" x2="-4.8" y2="0.3048" layer="21"/>
-</package>
-<package name="IRF24" urn="urn:adsk.eagle:footprint:23026/1" library_version="11">
-<description>&lt;B&gt;Vishay Dale Inductor&lt;/b&gt;&lt;p&gt;
-Source: www.vishay.com .. irf24.pdf</description>
-<wire x1="5.825" y1="0" x2="6.985" y2="0" width="0.6096" layer="51"/>
-<wire x1="-5.915" y1="0" x2="-6.985" y2="0" width="0.6096" layer="51"/>
-<wire x1="-1.925" y1="1.164" x2="-1.65" y2="1.425" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.925" y1="-1.164" x2="-1.675" y2="-1.425" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.675" y1="-1.425" x2="1.925" y2="-1.164" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.675" y1="1.425" x2="1.925" y2="1.164" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.925" y1="-1.164" x2="-5.725" y2="0" width="0.1524" layer="21"/>
-<wire x1="-5.725" y1="0" x2="-1.925" y2="1.164" width="0.1524" layer="21"/>
-<wire x1="1.675" y1="1.425" x2="-1.65" y2="1.425" width="0.1524" layer="21"/>
-<wire x1="1.675" y1="-1.425" x2="-1.675" y2="-1.425" width="0.1524" layer="21"/>
-<wire x1="1.925" y1="-1.164" x2="5.725" y2="0" width="0.1524" layer="21"/>
-<wire x1="5.725" y1="0" x2="1.925" y2="1.164" width="0.1524" layer="21"/>
-<pad name="1" x="-6.985" y="0" drill="1" diameter="1.6764"/>
-<pad name="2" x="6.985" y="0" drill="1" diameter="1.6764"/>
-<text x="-3.175" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.2606" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="5" y1="-0.3048" x2="5.825" y2="0.3048" layer="21"/>
-<rectangle x1="-5.85" y1="-0.3048" x2="-5" y2="0.3048" layer="21"/>
-</package>
-<package name="IRF36" urn="urn:adsk.eagle:footprint:23027/1" library_version="11">
-<description>&lt;B&gt;Vishay Dale Inductor&lt;/b&gt;&lt;p&gt;
-Source: www.vishay.com .. irf36.pdf</description>
-<wire x1="7.825" y1="0" x2="8.89" y2="0" width="0.6096" layer="51"/>
-<wire x1="-7.915" y1="0" x2="-8.89" y2="0" width="0.6096" layer="51"/>
-<wire x1="-2.925" y1="1.639" x2="-2.65" y2="1.9" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.925" y1="-1.664" x2="-2.675" y2="-1.925" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.675" y1="-1.925" x2="2.925" y2="-1.664" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.675" y1="1.9" x2="2.925" y2="1.639" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.925" y1="-1.664" x2="-7.95" y2="0" width="0.1524" layer="21"/>
-<wire x1="-7.95" y1="0" x2="-2.925" y2="1.639" width="0.1524" layer="21"/>
-<wire x1="2.675" y1="1.9" x2="-2.65" y2="1.9" width="0.1524" layer="21"/>
-<wire x1="2.675" y1="-1.925" x2="-2.675" y2="-1.925" width="0.1524" layer="21"/>
-<wire x1="2.925" y1="-1.664" x2="7.95" y2="0" width="0.1524" layer="21"/>
-<wire x1="7.95" y1="0" x2="2.925" y2="1.639" width="0.1524" layer="21"/>
-<pad name="1" x="-8.89" y="0" drill="1" diameter="1.6764"/>
-<pad name="2" x="8.89" y="0" drill="1" diameter="1.6764"/>
-<text x="-3.175" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="7" y1="-0.3048" x2="8.05" y2="0.3048" layer="21"/>
-<rectangle x1="-8.05" y1="-0.3048" x2="-7" y2="0.3048" layer="21"/>
-</package>
-<package name="IRF46" urn="urn:adsk.eagle:footprint:23028/1" library_version="11">
-<description>&lt;B&gt;Vishay Dale Inductor&lt;/b&gt;&lt;p&gt;
-Source: www.vishay.com .. irf46.pdf</description>
-<wire x1="5.715" y1="0" x2="4.445" y2="0" width="0.6096" layer="51"/>
-<wire x1="-5.715" y1="0" x2="-4.445" y2="0" width="0.6096" layer="51"/>
-<wire x1="-2.925" y1="2.164" x2="-2.65" y2="2.425" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.925" y1="-2.164" x2="-2.675" y2="-2.425" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.675" y1="-2.425" x2="2.925" y2="-2.164" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.675" y1="2.425" x2="2.925" y2="2.164" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.925" y1="-2.164" x2="-2.925" y2="2.164" width="0.1524" layer="21"/>
-<wire x1="2.675" y1="2.425" x2="-2.65" y2="2.425" width="0.1524" layer="21"/>
-<wire x1="2.675" y1="-2.425" x2="-2.675" y2="-2.425" width="0.1524" layer="21"/>
-<wire x1="2.925" y1="-2.164" x2="2.925" y2="2.164" width="0.1524" layer="21"/>
-<pad name="1" x="-5.715" y="0" drill="1" diameter="1.6764"/>
-<pad name="2" x="5.715" y="0" drill="1" diameter="1.6764"/>
-<text x="-3.81" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="2.925" y1="-0.3048" x2="4.9" y2="0.3048" layer="21"/>
-<rectangle x1="-4.925" y1="-0.3048" x2="-2.925" y2="0.3048" layer="21"/>
-</package>
-<package name="LAL02" urn="urn:adsk.eagle:footprint:23029/1" library_version="11">
-<description>&lt;b&gt;TAYO YUDEN Inductor&lt;/b&gt;&lt;p&gt;
-Source: je999f5.pdf</description>
-<wire x1="2.54" y1="0" x2="1.905" y2="0" width="0.508" layer="51"/>
-<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.508" layer="51"/>
-<wire x1="-1.615" y1="0.812" x2="-1.361" y2="1.066" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.615" y1="-0.812" x2="-1.361" y2="-1.066" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.361" y1="-1.066" x2="1.615" y2="-0.812" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.361" y1="1.066" x2="1.615" y2="0.812" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.615" y1="-0.812" x2="-1.615" y2="0.812" width="0.1524" layer="21"/>
-<wire x1="-1.361" y1="1.066" x2="-0.98" y2="1.066" width="0.1524" layer="21"/>
-<wire x1="-0.853" y1="0.939" x2="-0.98" y2="1.066" width="0.1524" layer="21"/>
-<wire x1="-1.361" y1="-1.066" x2="-0.98" y2="-1.066" width="0.1524" layer="21"/>
-<wire x1="-0.853" y1="-0.939" x2="-0.98" y2="-1.066" width="0.1524" layer="21"/>
-<wire x1="0.853" y1="0.939" x2="0.98" y2="1.066" width="0.1524" layer="21"/>
-<wire x1="0.853" y1="0.939" x2="-0.853" y2="0.939" width="0.1524" layer="21"/>
-<wire x1="0.853" y1="-0.939" x2="0.98" y2="-1.066" width="0.1524" layer="21"/>
-<wire x1="0.853" y1="-0.939" x2="-0.853" y2="-0.939" width="0.1524" layer="21"/>
-<wire x1="1.361" y1="1.066" x2="0.98" y2="1.066" width="0.1524" layer="21"/>
-<wire x1="1.361" y1="-1.066" x2="0.98" y2="-1.066" width="0.1524" layer="21"/>
-<wire x1="1.615" y1="-0.812" x2="1.615" y2="0.812" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.8" diameter="1.3"/>
-<pad name="2" x="2.54" y="0" drill="0.8" diameter="1.3"/>
-<text x="-2.54" y="1.27" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="1.615" y1="-0.254" x2="1.9" y2="0.254" layer="21"/>
-<rectangle x1="-1.9" y1="-0.254" x2="-1.615" y2="0.254" layer="21"/>
-</package>
-<package name="LAL03" urn="urn:adsk.eagle:footprint:23030/1" library_version="11">
-<description>&lt;b&gt;TAYO YUDEN Inductor&lt;/b&gt;&lt;p&gt;
-Source: je999f5.pdf</description>
-<wire x1="5.08" y1="0" x2="3.705" y2="0" width="0.508" layer="51"/>
-<wire x1="-5.08" y1="0" x2="-3.705" y2="0" width="0.508" layer="51"/>
-<wire x1="-3.415" y1="0.962" x2="-3.161" y2="1.216" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.415" y1="-0.962" x2="-3.161" y2="-1.216" width="0.1524" layer="21" curve="90"/>
-<wire x1="3.161" y1="-1.216" x2="3.415" y2="-0.962" width="0.1524" layer="21" curve="90"/>
-<wire x1="3.161" y1="1.216" x2="3.415" y2="0.962" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.415" y1="-0.962" x2="-3.415" y2="0.962" width="0.1524" layer="21"/>
-<wire x1="-3.161" y1="1.216" x2="-2.78" y2="1.216" width="0.1524" layer="21"/>
-<wire x1="-2.653" y1="1.089" x2="-2.78" y2="1.216" width="0.1524" layer="21"/>
-<wire x1="-3.161" y1="-1.216" x2="-2.78" y2="-1.216" width="0.1524" layer="21"/>
-<wire x1="-2.653" y1="-1.089" x2="-2.78" y2="-1.216" width="0.1524" layer="21"/>
-<wire x1="2.653" y1="1.089" x2="2.78" y2="1.216" width="0.1524" layer="21"/>
-<wire x1="2.653" y1="1.089" x2="-2.653" y2="1.089" width="0.1524" layer="21"/>
-<wire x1="2.653" y1="-1.089" x2="2.78" y2="-1.216" width="0.1524" layer="21"/>
-<wire x1="2.653" y1="-1.089" x2="-2.653" y2="-1.089" width="0.1524" layer="21"/>
-<wire x1="3.161" y1="1.216" x2="2.78" y2="1.216" width="0.1524" layer="21"/>
-<wire x1="3.161" y1="-1.216" x2="2.78" y2="-1.216" width="0.1524" layer="21"/>
-<wire x1="3.415" y1="-0.962" x2="3.415" y2="0.962" width="0.1524" layer="21"/>
-<pad name="1" x="-5.08" y="0" drill="0.8" diameter="1.3"/>
-<pad name="2" x="5.08" y="0" drill="0.8" diameter="1.3"/>
-<text x="-3.175" y="1.905" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-0.635" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="3.415" y1="-0.254" x2="3.7" y2="0.254" layer="21"/>
-<rectangle x1="-3.7" y1="-0.254" x2="-3.415" y2="0.254" layer="21"/>
-</package>
-<package name="LAL03KH" urn="urn:adsk.eagle:footprint:23031/1" library_version="11">
-<description>&lt;b&gt;TAYO YUDEN Inductor&lt;/b&gt;&lt;p&gt;
-Source: je999f5.pdf</description>
-<wire x1="5" y1="0" x2="4.405" y2="0" width="0.508" layer="51"/>
-<wire x1="-5" y1="0" x2="-4.405" y2="0" width="0.508" layer="51"/>
-<wire x1="-4.115" y1="0.962" x2="-3.861" y2="1.216" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.115" y1="-0.962" x2="-3.861" y2="-1.216" width="0.1524" layer="21" curve="90"/>
-<wire x1="3.861" y1="-1.216" x2="4.115" y2="-0.962" width="0.1524" layer="21" curve="90"/>
-<wire x1="3.861" y1="1.216" x2="4.115" y2="0.962" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.115" y1="-0.962" x2="-4.115" y2="0.962" width="0.1524" layer="21"/>
-<wire x1="-3.861" y1="1.216" x2="-3.48" y2="1.216" width="0.1524" layer="21"/>
-<wire x1="-3.353" y1="1.089" x2="-3.48" y2="1.216" width="0.1524" layer="21"/>
-<wire x1="-3.861" y1="-1.216" x2="-3.48" y2="-1.216" width="0.1524" layer="21"/>
-<wire x1="-3.353" y1="-1.089" x2="-3.48" y2="-1.216" width="0.1524" layer="21"/>
-<wire x1="3.353" y1="1.089" x2="3.48" y2="1.216" width="0.1524" layer="21"/>
-<wire x1="3.353" y1="1.089" x2="-3.353" y2="1.089" width="0.1524" layer="21"/>
-<wire x1="3.353" y1="-1.089" x2="3.48" y2="-1.216" width="0.1524" layer="21"/>
-<wire x1="3.353" y1="-1.089" x2="-3.353" y2="-1.089" width="0.1524" layer="21"/>
-<wire x1="3.861" y1="1.216" x2="3.48" y2="1.216" width="0.1524" layer="21"/>
-<wire x1="3.861" y1="-1.216" x2="3.48" y2="-1.216" width="0.1524" layer="21"/>
-<wire x1="4.115" y1="-0.962" x2="4.115" y2="0.962" width="0.1524" layer="21"/>
-<pad name="1" x="-5" y="0" drill="0.8" diameter="1.3"/>
-<pad name="2" x="5" y="0" drill="0.8" diameter="1.3"/>
-<text x="-3.81" y="1.905" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.175" y="-0.635" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="4.115" y1="-0.254" x2="4.4" y2="0.254" layer="21"/>
-<rectangle x1="-4.4" y1="-0.254" x2="-4.115" y2="0.254" layer="21"/>
-</package>
-<package name="LAL04" urn="urn:adsk.eagle:footprint:23032/1" library_version="11">
-<description>&lt;b&gt;TAYO YUDEN Inductor&lt;/b&gt;&lt;p&gt;
-Source: je999f5.pdf</description>
-<wire x1="6.35" y1="0" x2="5.13" y2="0" width="0.508" layer="51"/>
-<wire x1="-6.35" y1="0" x2="-5.105" y2="0" width="0.508" layer="51"/>
-<wire x1="-4.815" y1="1.662" x2="-4.561" y2="1.916" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.815" y1="-1.662" x2="-4.561" y2="-1.916" width="0.1524" layer="21" curve="90"/>
-<wire x1="4.586" y1="-1.916" x2="4.84" y2="-1.662" width="0.1524" layer="21" curve="90"/>
-<wire x1="4.586" y1="1.916" x2="4.84" y2="1.662" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.815" y1="-1.662" x2="-4.815" y2="1.662" width="0.1524" layer="21"/>
-<wire x1="-4.561" y1="1.916" x2="-4.18" y2="1.916" width="0.1524" layer="21"/>
-<wire x1="-4.053" y1="1.789" x2="-4.18" y2="1.916" width="0.1524" layer="21"/>
-<wire x1="-4.561" y1="-1.916" x2="-4.18" y2="-1.916" width="0.1524" layer="21"/>
-<wire x1="-4.053" y1="-1.789" x2="-4.18" y2="-1.916" width="0.1524" layer="21"/>
-<wire x1="4.078" y1="1.789" x2="4.205" y2="1.916" width="0.1524" layer="21"/>
-<wire x1="4.078" y1="1.789" x2="-4.053" y2="1.789" width="0.1524" layer="21"/>
-<wire x1="4.078" y1="-1.789" x2="4.205" y2="-1.916" width="0.1524" layer="21"/>
-<wire x1="4.078" y1="-1.789" x2="-4.053" y2="-1.789" width="0.1524" layer="21"/>
-<wire x1="4.586" y1="1.916" x2="4.205" y2="1.916" width="0.1524" layer="21"/>
-<wire x1="4.586" y1="-1.916" x2="4.205" y2="-1.916" width="0.1524" layer="21"/>
-<wire x1="4.84" y1="-1.662" x2="4.84" y2="1.662" width="0.1524" layer="21"/>
-<pad name="1" x="-6.35" y="0" drill="0.8" diameter="1.3"/>
-<pad name="2" x="6.35" y="0" drill="0.8" diameter="1.3"/>
-<text x="-4.445" y="2.54" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-0.635" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="4.84" y1="-0.254" x2="5.125" y2="0.254" layer="21"/>
-<rectangle x1="-5.1" y1="-0.254" x2="-4.815" y2="0.254" layer="21"/>
-</package>
-<package name="LAL04KB" urn="urn:adsk.eagle:footprint:23033/1" library_version="11">
-<description>&lt;b&gt;TAYO YUDEN Inductor&lt;/b&gt;&lt;p&gt;
-Source: je999f5.pdf</description>
-<wire x1="6.25" y1="0" x2="5.13" y2="0" width="0.508" layer="51"/>
-<wire x1="-6.25" y1="0" x2="-5.105" y2="0" width="0.508" layer="51"/>
-<wire x1="-4.815" y1="1.662" x2="-4.561" y2="1.916" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.815" y1="-1.662" x2="-4.561" y2="-1.916" width="0.1524" layer="21" curve="90"/>
-<wire x1="4.586" y1="-1.916" x2="4.84" y2="-1.662" width="0.1524" layer="21" curve="90"/>
-<wire x1="4.586" y1="1.916" x2="4.84" y2="1.662" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-4.815" y1="-1.662" x2="-4.815" y2="1.662" width="0.1524" layer="21"/>
-<wire x1="-4.561" y1="1.916" x2="-4.18" y2="1.916" width="0.1524" layer="21"/>
-<wire x1="-4.053" y1="1.789" x2="-4.18" y2="1.916" width="0.1524" layer="21"/>
-<wire x1="-4.561" y1="-1.916" x2="-4.18" y2="-1.916" width="0.1524" layer="21"/>
-<wire x1="-4.053" y1="-1.789" x2="-4.18" y2="-1.916" width="0.1524" layer="21"/>
-<wire x1="4.078" y1="1.789" x2="4.205" y2="1.916" width="0.1524" layer="21"/>
-<wire x1="4.078" y1="1.789" x2="-4.053" y2="1.789" width="0.1524" layer="21"/>
-<wire x1="4.078" y1="-1.789" x2="4.205" y2="-1.916" width="0.1524" layer="21"/>
-<wire x1="4.078" y1="-1.789" x2="-4.053" y2="-1.789" width="0.1524" layer="21"/>
-<wire x1="4.586" y1="1.916" x2="4.205" y2="1.916" width="0.1524" layer="21"/>
-<wire x1="4.586" y1="-1.916" x2="4.205" y2="-1.916" width="0.1524" layer="21"/>
-<wire x1="4.84" y1="-1.662" x2="4.84" y2="1.662" width="0.1524" layer="21"/>
-<pad name="1" x="-6.25" y="0" drill="0.8" diameter="1.3"/>
-<pad name="2" x="6.25" y="0" drill="0.8" diameter="1.3"/>
-<text x="-4.445" y="2.54" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.81" y="-0.635" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="4.84" y1="-0.254" x2="5.125" y2="0.254" layer="21"/>
-<rectangle x1="-5.1" y1="-0.254" x2="-4.815" y2="0.254" layer="21"/>
-</package>
-<package name="LAN02KR" urn="urn:adsk.eagle:footprint:23034/1" library_version="11">
-<description>&lt;b&gt;TAYO YUDEN Inductor&lt;/b&gt;&lt;p&gt;
-Source: je999f5.pdf</description>
-<wire x1="2.5" y1="0" x2="1.905" y2="0" width="0.508" layer="51"/>
-<wire x1="-2.5" y1="0" x2="-1.905" y2="0" width="0.508" layer="51"/>
-<wire x1="-1.615" y1="0.862" x2="-1.361" y2="1.116" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.615" y1="-0.862" x2="-1.361" y2="-1.116" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.361" y1="-1.116" x2="1.615" y2="-0.862" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.361" y1="1.116" x2="1.615" y2="0.862" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.615" y1="-0.862" x2="-1.615" y2="0.862" width="0.1524" layer="21"/>
-<wire x1="-1.361" y1="1.116" x2="-0.98" y2="1.116" width="0.1524" layer="21"/>
-<wire x1="-0.853" y1="0.989" x2="-0.98" y2="1.116" width="0.1524" layer="21"/>
-<wire x1="-1.361" y1="-1.116" x2="-0.98" y2="-1.116" width="0.1524" layer="21"/>
-<wire x1="-0.853" y1="-0.989" x2="-0.98" y2="-1.116" width="0.1524" layer="21"/>
-<wire x1="0.853" y1="0.989" x2="0.98" y2="1.116" width="0.1524" layer="21"/>
-<wire x1="0.853" y1="0.989" x2="-0.853" y2="0.989" width="0.1524" layer="21"/>
-<wire x1="0.853" y1="-0.989" x2="0.98" y2="-1.116" width="0.1524" layer="21"/>
-<wire x1="0.853" y1="-0.989" x2="-0.853" y2="-0.989" width="0.1524" layer="21"/>
-<wire x1="1.361" y1="1.116" x2="0.98" y2="1.116" width="0.1524" layer="21"/>
-<wire x1="1.361" y1="-1.116" x2="0.98" y2="-1.116" width="0.1524" layer="21"/>
-<wire x1="1.615" y1="-0.862" x2="1.615" y2="0.862" width="0.1524" layer="21"/>
-<pad name="1" x="-2.5" y="0" drill="0.8" diameter="1.3"/>
-<pad name="2" x="2.5" y="0" drill="0.8" diameter="1.3"/>
-<text x="-2.54" y="1.27" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="1.615" y1="-0.254" x2="1.9" y2="0.254" layer="21"/>
-<rectangle x1="-1.9" y1="-0.254" x2="-1.615" y2="0.254" layer="21"/>
-</package>
-<package name="LAP02KR" urn="urn:adsk.eagle:footprint:23035/1" library_version="11">
-<description>&lt;b&gt;TAYO YUDEN Inductor&lt;/b&gt;&lt;p&gt;
-Source: je999f5.pdf</description>
-<wire x1="2.5" y1="0" x2="1.905" y2="0" width="0.508" layer="51"/>
-<wire x1="-2.5" y1="0" x2="-1.905" y2="0" width="0.508" layer="51"/>
-<wire x1="-1.615" y1="0.812" x2="-1.361" y2="1.066" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.615" y1="-0.812" x2="-1.361" y2="-1.066" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.361" y1="-1.066" x2="1.615" y2="-0.812" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.361" y1="1.066" x2="1.615" y2="0.812" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.615" y1="-0.812" x2="-1.615" y2="0.812" width="0.1524" layer="21"/>
-<wire x1="-1.361" y1="1.066" x2="-0.98" y2="1.066" width="0.1524" layer="21"/>
-<wire x1="-0.853" y1="0.939" x2="-0.98" y2="1.066" width="0.1524" layer="21"/>
-<wire x1="-1.361" y1="-1.066" x2="-0.98" y2="-1.066" width="0.1524" layer="21"/>
-<wire x1="-0.853" y1="-0.939" x2="-0.98" y2="-1.066" width="0.1524" layer="21"/>
-<wire x1="0.853" y1="0.939" x2="0.98" y2="1.066" width="0.1524" layer="21"/>
-<wire x1="0.853" y1="0.939" x2="-0.853" y2="0.939" width="0.1524" layer="21"/>
-<wire x1="0.853" y1="-0.939" x2="0.98" y2="-1.066" width="0.1524" layer="21"/>
-<wire x1="0.853" y1="-0.939" x2="-0.853" y2="-0.939" width="0.1524" layer="21"/>
-<wire x1="1.361" y1="1.066" x2="0.98" y2="1.066" width="0.1524" layer="21"/>
-<wire x1="1.361" y1="-1.066" x2="0.98" y2="-1.066" width="0.1524" layer="21"/>
-<wire x1="1.615" y1="-0.812" x2="1.615" y2="0.812" width="0.1524" layer="21"/>
-<pad name="1" x="-2.5" y="0" drill="0.8" diameter="1.3"/>
-<pad name="2" x="2.5" y="0" drill="0.8" diameter="1.3"/>
-<text x="-2.54" y="1.27" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="1.615" y1="-0.254" x2="1.9" y2="0.254" layer="21"/>
-<rectangle x1="-1.9" y1="-0.254" x2="-1.615" y2="0.254" layer="21"/>
-</package>
-<package name="TFI0204" urn="urn:adsk.eagle:footprint:23036/1" library_version="11">
-<description>&lt;b&gt;Axial Conformal Coated Inductor&lt;/b&gt;&lt;p&gt;
-Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
-<wire x1="3.81" y1="0" x2="2.54" y2="0" width="0.508" layer="51"/>
-<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.508" layer="51"/>
-<wire x1="-2.165" y1="0.812" x2="-1.911" y2="1.066" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.165" y1="-0.812" x2="-1.911" y2="-1.066" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.911" y1="-1.066" x2="2.165" y2="-0.812" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.911" y1="1.066" x2="2.165" y2="0.812" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.165" y1="-0.812" x2="-2.165" y2="0.812" width="0.1524" layer="21"/>
-<wire x1="-1.911" y1="1.066" x2="-1.53" y2="1.066" width="0.1524" layer="21"/>
-<wire x1="-1.403" y1="0.939" x2="-1.53" y2="1.066" width="0.1524" layer="21"/>
-<wire x1="-1.911" y1="-1.066" x2="-1.53" y2="-1.066" width="0.1524" layer="21"/>
-<wire x1="-1.403" y1="-0.939" x2="-1.53" y2="-1.066" width="0.1524" layer="21"/>
-<wire x1="1.403" y1="0.939" x2="1.53" y2="1.066" width="0.1524" layer="21"/>
-<wire x1="1.403" y1="0.939" x2="-1.403" y2="0.939" width="0.1524" layer="21"/>
-<wire x1="1.403" y1="-0.939" x2="1.53" y2="-1.066" width="0.1524" layer="21"/>
-<wire x1="1.403" y1="-0.939" x2="-1.403" y2="-0.939" width="0.1524" layer="21"/>
-<wire x1="1.911" y1="1.066" x2="1.53" y2="1.066" width="0.1524" layer="21"/>
-<wire x1="1.911" y1="-1.066" x2="1.53" y2="-1.066" width="0.1524" layer="21"/>
-<wire x1="2.165" y1="-0.812" x2="2.165" y2="0.812" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="0.9" diameter="1.5"/>
-<pad name="2" x="3.81" y="0" drill="0.9" diameter="1.5"/>
-<text x="-2.54" y="1.2954" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.6256" y="-0.4826" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="2.165" y1="-0.254" x2="2.546" y2="0.254" layer="21"/>
-<rectangle x1="-2.546" y1="-0.254" x2="-2.165" y2="0.254" layer="21"/>
-</package>
-<package name="TFI0305" urn="urn:adsk.eagle:footprint:23037/1" library_version="11">
-<description>&lt;b&gt;Axial Conformal Coated Inductor&lt;/b&gt;&lt;p&gt;
-Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
-<wire x1="3.81" y1="0" x2="2.79" y2="0" width="0.508" layer="51"/>
-<wire x1="-3.81" y1="0" x2="-2.79" y2="0" width="0.508" layer="51"/>
-<wire x1="-2.415" y1="1.162" x2="-2.161" y2="1.416" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.415" y1="-1.162" x2="-2.161" y2="-1.416" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.161" y1="-1.416" x2="2.415" y2="-1.162" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.161" y1="1.416" x2="2.415" y2="1.162" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.415" y1="-1.162" x2="-2.415" y2="1.162" width="0.1524" layer="21"/>
-<wire x1="-2.161" y1="1.416" x2="-1.78" y2="1.416" width="0.1524" layer="21"/>
-<wire x1="-1.653" y1="1.289" x2="-1.78" y2="1.416" width="0.1524" layer="21"/>
-<wire x1="-2.161" y1="-1.416" x2="-1.78" y2="-1.416" width="0.1524" layer="21"/>
-<wire x1="-1.653" y1="-1.289" x2="-1.78" y2="-1.416" width="0.1524" layer="21"/>
-<wire x1="1.653" y1="1.289" x2="1.78" y2="1.416" width="0.1524" layer="21"/>
-<wire x1="1.653" y1="1.289" x2="-1.653" y2="1.289" width="0.1524" layer="21"/>
-<wire x1="1.653" y1="-1.289" x2="1.78" y2="-1.416" width="0.1524" layer="21"/>
-<wire x1="1.653" y1="-1.289" x2="-1.653" y2="-1.289" width="0.1524" layer="21"/>
-<wire x1="2.161" y1="1.416" x2="1.78" y2="1.416" width="0.1524" layer="21"/>
-<wire x1="2.161" y1="-1.416" x2="1.78" y2="-1.416" width="0.1524" layer="21"/>
-<wire x1="2.415" y1="-1.162" x2="2.415" y2="1.162" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="0.9" diameter="1.5"/>
-<pad name="2" x="3.81" y="0" drill="0.9" diameter="1.5"/>
-<text x="-2.54" y="1.6454" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.8756" y="-0.4826" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="2.415" y1="-0.254" x2="2.796" y2="0.254" layer="21"/>
-<rectangle x1="-2.796" y1="-0.254" x2="-2.415" y2="0.254" layer="21"/>
-</package>
-<package name="TFI0307" urn="urn:adsk.eagle:footprint:23038/1" library_version="11">
-<description>&lt;b&gt;Axial Conformal Coated Inductor&lt;/b&gt;&lt;p&gt;
-Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
-<wire x1="4.445" y1="0" x2="3.79" y2="0" width="0.508" layer="51"/>
-<wire x1="-4.445" y1="0" x2="-3.79" y2="0" width="0.508" layer="51"/>
-<wire x1="-3.415" y1="1.162" x2="-3.161" y2="1.416" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.415" y1="-1.162" x2="-3.161" y2="-1.416" width="0.1524" layer="21" curve="90"/>
-<wire x1="3.161" y1="-1.416" x2="3.415" y2="-1.162" width="0.1524" layer="21" curve="90"/>
-<wire x1="3.161" y1="1.416" x2="3.415" y2="1.162" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-3.415" y1="-1.162" x2="-3.415" y2="1.162" width="0.1524" layer="21"/>
-<wire x1="-3.161" y1="1.416" x2="-2.78" y2="1.416" width="0.1524" layer="21"/>
-<wire x1="-2.653" y1="1.289" x2="-2.78" y2="1.416" width="0.1524" layer="21"/>
-<wire x1="-3.161" y1="-1.416" x2="-2.78" y2="-1.416" width="0.1524" layer="21"/>
-<wire x1="-2.653" y1="-1.289" x2="-2.78" y2="-1.416" width="0.1524" layer="21"/>
-<wire x1="2.653" y1="1.289" x2="2.78" y2="1.416" width="0.1524" layer="21"/>
-<wire x1="2.653" y1="1.289" x2="-2.653" y2="1.289" width="0.1524" layer="21"/>
-<wire x1="2.653" y1="-1.289" x2="2.78" y2="-1.416" width="0.1524" layer="21"/>
-<wire x1="2.653" y1="-1.289" x2="-2.653" y2="-1.289" width="0.1524" layer="21"/>
-<wire x1="3.161" y1="1.416" x2="2.78" y2="1.416" width="0.1524" layer="21"/>
-<wire x1="3.161" y1="-1.416" x2="2.78" y2="-1.416" width="0.1524" layer="21"/>
-<wire x1="3.415" y1="-1.162" x2="3.415" y2="1.162" width="0.1524" layer="21"/>
-<pad name="1" x="-4.445" y="0" drill="0.9" diameter="1.5"/>
-<pad name="2" x="4.445" y="0" drill="0.9" diameter="1.5"/>
-<text x="-2.54" y="1.6454" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.8756" y="-0.4826" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="3.415" y1="-0.254" x2="3.796" y2="0.254" layer="21"/>
-<rectangle x1="-3.796" y1="-0.254" x2="-3.415" y2="0.254" layer="21"/>
-</package>
-<package name="TFI0410" urn="urn:adsk.eagle:footprint:23039/1" library_version="11">
-<description>&lt;b&gt;Axial Conformal Coated Inductor&lt;/b&gt;&lt;p&gt;
-Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
-<wire x1="6.35" y1="0" x2="5.54" y2="0" width="0.508" layer="51"/>
-<wire x1="-6.35" y1="0" x2="-5.54" y2="0" width="0.508" layer="51"/>
-<wire x1="-5.165" y1="1.662" x2="-4.911" y2="1.916" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-5.165" y1="-1.662" x2="-4.911" y2="-1.916" width="0.1524" layer="21" curve="90"/>
-<wire x1="4.911" y1="-1.916" x2="5.165" y2="-1.662" width="0.1524" layer="21" curve="90"/>
-<wire x1="4.911" y1="1.916" x2="5.165" y2="1.662" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-5.165" y1="-1.662" x2="-5.165" y2="1.662" width="0.1524" layer="21"/>
-<wire x1="-4.911" y1="1.916" x2="-4.53" y2="1.916" width="0.1524" layer="21"/>
-<wire x1="-4.403" y1="1.789" x2="-4.53" y2="1.916" width="0.1524" layer="21"/>
-<wire x1="-4.911" y1="-1.916" x2="-4.53" y2="-1.916" width="0.1524" layer="21"/>
-<wire x1="-4.403" y1="-1.789" x2="-4.53" y2="-1.916" width="0.1524" layer="21"/>
-<wire x1="4.403" y1="1.789" x2="4.53" y2="1.916" width="0.1524" layer="21"/>
-<wire x1="4.403" y1="1.789" x2="-4.403" y2="1.789" width="0.1524" layer="21"/>
-<wire x1="4.403" y1="-1.789" x2="4.53" y2="-1.916" width="0.1524" layer="21"/>
-<wire x1="4.403" y1="-1.789" x2="-4.403" y2="-1.789" width="0.1524" layer="21"/>
-<wire x1="4.911" y1="1.916" x2="4.53" y2="1.916" width="0.1524" layer="21"/>
-<wire x1="4.911" y1="-1.916" x2="4.53" y2="-1.916" width="0.1524" layer="21"/>
-<wire x1="5.165" y1="-1.662" x2="5.165" y2="1.662" width="0.1524" layer="21"/>
-<pad name="1" x="-6.35" y="0" drill="1" diameter="1.6"/>
-<pad name="2" x="6.35" y="0" drill="1" diameter="1.6"/>
-<text x="-2.54" y="2.1454" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.8756" y="-0.4826" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="5.165" y1="-0.254" x2="5.546" y2="0.254" layer="21"/>
-<rectangle x1="-5.546" y1="-0.254" x2="-5.165" y2="0.254" layer="21"/>
-</package>
-<package name="TFI0510" urn="urn:adsk.eagle:footprint:23040/1" library_version="11">
-<description>&lt;b&gt;Axial Conformal Coated Inductor&lt;/b&gt;&lt;p&gt;
-Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
-<wire x1="7.62" y1="0" x2="6.315" y2="0" width="0.508" layer="51"/>
-<wire x1="-7.62" y1="0" x2="-6.29" y2="0" width="0.508" layer="51"/>
-<wire x1="-5.915" y1="2.162" x2="-5.661" y2="2.416" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-5.915" y1="-2.187" x2="-5.661" y2="-2.441" width="0.1524" layer="21" curve="90"/>
-<wire x1="5.686" y1="-2.441" x2="5.94" y2="-2.187" width="0.1524" layer="21" curve="90"/>
-<wire x1="5.686" y1="2.416" x2="5.94" y2="2.162" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-5.915" y1="-2.187" x2="-5.915" y2="2.162" width="0.1524" layer="21"/>
-<wire x1="-5.661" y1="2.416" x2="-5.28" y2="2.416" width="0.1524" layer="21"/>
-<wire x1="-5.153" y1="2.289" x2="-5.28" y2="2.416" width="0.1524" layer="21"/>
-<wire x1="-5.661" y1="-2.441" x2="-5.28" y2="-2.441" width="0.1524" layer="21"/>
-<wire x1="-5.153" y1="-2.314" x2="-5.28" y2="-2.441" width="0.1524" layer="21"/>
-<wire x1="5.178" y1="2.289" x2="5.305" y2="2.416" width="0.1524" layer="21"/>
-<wire x1="5.178" y1="2.289" x2="-5.153" y2="2.289" width="0.1524" layer="21"/>
-<wire x1="5.178" y1="-2.314" x2="5.305" y2="-2.441" width="0.1524" layer="21"/>
-<wire x1="5.178" y1="-2.314" x2="-5.153" y2="-2.314" width="0.1524" layer="21"/>
-<wire x1="5.686" y1="2.416" x2="5.305" y2="2.416" width="0.1524" layer="21"/>
-<wire x1="5.686" y1="-2.441" x2="5.305" y2="-2.441" width="0.1524" layer="21"/>
-<wire x1="5.94" y1="-2.187" x2="5.94" y2="2.162" width="0.1524" layer="21"/>
-<pad name="1" x="-7.62" y="0" drill="1" diameter="1.6"/>
-<pad name="2" x="7.62" y="0" drill="1" diameter="1.6"/>
-<text x="-2.54" y="2.6454" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.8756" y="-0.4826" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="5.94" y1="-0.254" x2="6.321" y2="0.254" layer="21"/>
-<rectangle x1="-6.296" y1="-0.254" x2="-5.915" y2="0.254" layer="21"/>
-</package>
-<package name="6000-XXXX-RC" urn="urn:adsk.eagle:footprint:23041/1" library_version="11">
-<description>&lt;b&gt;Radial Lead RF Chokes&lt;/b&gt;&lt;p&gt;
-Source: www.bourns.com .. 6000_series.pdf</description>
-<circle x="0" y="0" radius="4.4" width="0.2032" layer="21"/>
-<pad name="1" x="-2.5" y="0" drill="0.9" diameter="1.4224"/>
-<pad name="2" x="2.5" y="0" drill="0.9" diameter="1.4224"/>
-<text x="-4.5056" y="4.6326" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.5056" y="-6.4106" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 <packages3d>
-<package3d name="CAPC1005X60" urn="urn:adsk.eagle:package:23626/2" type="model" library_version="11">
-<description>Chip, 1.00 X 0.50 X 0.60 mm body
-&lt;p&gt;Chip package with body size 1.00 X 0.50 X 0.60 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="C0402"/>
-</packageinstances>
-</package3d>
-<package3d name="C0504" urn="urn:adsk.eagle:package:23624/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C0504"/>
-</packageinstances>
-</package3d>
-<package3d name="C0603" urn="urn:adsk.eagle:package:23616/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C0603"/>
-</packageinstances>
-</package3d>
-<package3d name="C0805" urn="urn:adsk.eagle:package:23617/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C0805"/>
-</packageinstances>
-</package3d>
-<package3d name="C1206" urn="urn:adsk.eagle:package:23618/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C1206"/>
-</packageinstances>
-</package3d>
-<package3d name="C1210" urn="urn:adsk.eagle:package:23619/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C1210"/>
-</packageinstances>
-</package3d>
-<package3d name="C1310" urn="urn:adsk.eagle:package:23620/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C1310"/>
-</packageinstances>
-</package3d>
-<package3d name="C1608" urn="urn:adsk.eagle:package:23621/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C1608"/>
-</packageinstances>
-</package3d>
-<package3d name="C1812" urn="urn:adsk.eagle:package:23622/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C1812"/>
-</packageinstances>
-</package3d>
-<package3d name="C1825" urn="urn:adsk.eagle:package:23623/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C1825"/>
-</packageinstances>
-</package3d>
-<package3d name="C2012" urn="urn:adsk.eagle:package:23625/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C2012"/>
-</packageinstances>
-</package3d>
-<package3d name="C3216" urn="urn:adsk.eagle:package:23628/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C3216"/>
-</packageinstances>
-</package3d>
-<package3d name="C3225" urn="urn:adsk.eagle:package:23655/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C3225"/>
-</packageinstances>
-</package3d>
-<package3d name="C4532" urn="urn:adsk.eagle:package:23627/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C4532"/>
-</packageinstances>
-</package3d>
-<package3d name="C4564" urn="urn:adsk.eagle:package:23648/2" type="model" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C4564"/>
-</packageinstances>
-</package3d>
-<package3d name="C025-024X044" urn="urn:adsk.eagle:package:23630/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 2.5 mm, outline 2.4 x 4.4 mm</description>
-<packageinstances>
-<packageinstance name="C025-024X044"/>
-</packageinstances>
-</package3d>
-<package3d name="C025-025X050" urn="urn:adsk.eagle:package:23629/2" type="model" library_version="11">
-<description>CAPACITOR
-grid 2.5 mm, outline 2.5 x 5 mm</description>
-<packageinstances>
-<packageinstance name="C025-025X050"/>
-</packageinstances>
-</package3d>
-<package3d name="C025-030X050" urn="urn:adsk.eagle:package:23631/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 2.5 mm, outline 3 x 5 mm</description>
-<packageinstances>
-<packageinstance name="C025-030X050"/>
-</packageinstances>
-</package3d>
-<package3d name="C025-040X050" urn="urn:adsk.eagle:package:23634/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 2.5 mm, outline 4 x 5 mm</description>
-<packageinstances>
-<packageinstance name="C025-040X050"/>
-</packageinstances>
-</package3d>
-<package3d name="C025-050X050" urn="urn:adsk.eagle:package:23633/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 2.5 mm, outline 5 x 5 mm</description>
-<packageinstances>
-<packageinstance name="C025-050X050"/>
-</packageinstances>
-</package3d>
-<package3d name="C025-060X050" urn="urn:adsk.eagle:package:23632/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 2.5 mm, outline 6 x 5 mm</description>
-<packageinstances>
-<packageinstance name="C025-060X050"/>
-</packageinstances>
-</package3d>
-<package3d name="C025_050-024X070" urn="urn:adsk.eagle:package:23639/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 2.5 mm + 5 mm, outline 2.4 x 7 mm</description>
-<packageinstances>
-<packageinstance name="C025_050-024X070"/>
-</packageinstances>
-</package3d>
-<package3d name="C025_050-025X075" urn="urn:adsk.eagle:package:23641/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 2.5 + 5 mm, outline 2.5 x 7.5 mm</description>
-<packageinstances>
-<packageinstance name="C025_050-025X075"/>
-</packageinstances>
-</package3d>
-<package3d name="C025_050-035X075" urn="urn:adsk.eagle:package:23651/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 2.5 + 5 mm, outline 3.5 x 7.5 mm</description>
-<packageinstances>
-<packageinstance name="C025_050-035X075"/>
-</packageinstances>
-</package3d>
-<package3d name="C025_050-045X075" urn="urn:adsk.eagle:package:23635/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 2.5 + 5 mm, outline 4.5 x 7.5 mm</description>
-<packageinstances>
-<packageinstance name="C025_050-045X075"/>
-</packageinstances>
-</package3d>
-<package3d name="C025_050-055X075" urn="urn:adsk.eagle:package:23636/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 2.5 + 5 mm, outline 5.5 x 7.5 mm</description>
-<packageinstances>
-<packageinstance name="C025_050-055X075"/>
-</packageinstances>
-</package3d>
-<package3d name="C050-024X044" urn="urn:adsk.eagle:package:23643/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 5 mm, outline 2.4 x 4.4 mm</description>
-<packageinstances>
-<packageinstance name="C050-024X044"/>
-</packageinstances>
-</package3d>
-<package3d name="C050-025X075" urn="urn:adsk.eagle:package:23637/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 5 mm, outline 2.5 x 7.5 mm</description>
-<packageinstances>
-<packageinstance name="C050-025X075"/>
-</packageinstances>
-</package3d>
-<package3d name="C050-045X075" urn="urn:adsk.eagle:package:23638/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 5 mm, outline 4.5 x 7.5 mm</description>
-<packageinstances>
-<packageinstance name="C050-045X075"/>
-</packageinstances>
-</package3d>
-<package3d name="C050-030X075" urn="urn:adsk.eagle:package:23640/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 5 mm, outline 3 x 7.5 mm</description>
-<packageinstances>
-<packageinstance name="C050-030X075"/>
-</packageinstances>
-</package3d>
-<package3d name="C050-050X075" urn="urn:adsk.eagle:package:23665/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 5 mm, outline 5 x 7.5 mm</description>
-<packageinstances>
-<packageinstance name="C050-050X075"/>
-</packageinstances>
-</package3d>
-<package3d name="C050-055X075" urn="urn:adsk.eagle:package:23642/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 5 mm, outline 5.5 x 7.5 mm</description>
-<packageinstances>
-<packageinstance name="C050-055X075"/>
-</packageinstances>
-</package3d>
-<package3d name="C050-075X075" urn="urn:adsk.eagle:package:23645/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 5 mm, outline 7.5 x 7.5 mm</description>
-<packageinstances>
-<packageinstance name="C050-075X075"/>
-</packageinstances>
-</package3d>
-<package3d name="C050H075X075" urn="urn:adsk.eagle:package:23644/1" type="box" library_version="11">
-<description>CAPACITOR
-Horizontal, grid 5 mm, outline 7.5 x 7.5 mm</description>
-<packageinstances>
-<packageinstance name="C050H075X075"/>
-</packageinstances>
-</package3d>
-<package3d name="C075-032X103" urn="urn:adsk.eagle:package:23646/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 7.5 mm, outline 3.2 x 10.3 mm</description>
-<packageinstances>
-<packageinstance name="C075-032X103"/>
-</packageinstances>
-</package3d>
-<package3d name="C075-042X103" urn="urn:adsk.eagle:package:23656/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 7.5 mm, outline 4.2 x 10.3 mm</description>
-<packageinstances>
-<packageinstance name="C075-042X103"/>
-</packageinstances>
-</package3d>
-<package3d name="C075-052X106" urn="urn:adsk.eagle:package:23650/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 7.5 mm, outline 5.2 x 10.6 mm</description>
-<packageinstances>
-<packageinstance name="C075-052X106"/>
-</packageinstances>
-</package3d>
-<package3d name="C102-043X133" urn="urn:adsk.eagle:package:23647/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 10.2 mm, outline 4.3 x 13.3 mm</description>
-<packageinstances>
-<packageinstance name="C102-043X133"/>
-</packageinstances>
-</package3d>
-<package3d name="C102-054X133" urn="urn:adsk.eagle:package:23649/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 10.2 mm, outline 5.4 x 13.3 mm</description>
-<packageinstances>
-<packageinstance name="C102-054X133"/>
-</packageinstances>
-</package3d>
-<package3d name="C102-064X133" urn="urn:adsk.eagle:package:23653/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 10.2 mm, outline 6.4 x 13.3 mm</description>
-<packageinstances>
-<packageinstance name="C102-064X133"/>
-</packageinstances>
-</package3d>
-<package3d name="C102_152-062X184" urn="urn:adsk.eagle:package:23652/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 10.2 mm + 15.2 mm, outline 6.2 x 18.4 mm</description>
-<packageinstances>
-<packageinstance name="C102_152-062X184"/>
-</packageinstances>
-</package3d>
-<package3d name="C150-054X183" urn="urn:adsk.eagle:package:23669/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 15 mm, outline 5.4 x 18.3 mm</description>
-<packageinstances>
-<packageinstance name="C150-054X183"/>
-</packageinstances>
-</package3d>
-<package3d name="C150-064X183" urn="urn:adsk.eagle:package:23654/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 15 mm, outline 6.4 x 18.3 mm</description>
-<packageinstances>
-<packageinstance name="C150-064X183"/>
-</packageinstances>
-</package3d>
-<package3d name="C150-072X183" urn="urn:adsk.eagle:package:23657/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 15 mm, outline 7.2 x 18.3 mm</description>
-<packageinstances>
-<packageinstance name="C150-072X183"/>
-</packageinstances>
-</package3d>
-<package3d name="C150-084X183" urn="urn:adsk.eagle:package:23658/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 15 mm, outline 8.4 x 18.3 mm</description>
-<packageinstances>
-<packageinstance name="C150-084X183"/>
-</packageinstances>
-</package3d>
-<package3d name="C150-091X182" urn="urn:adsk.eagle:package:23659/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 15 mm, outline 9.1 x 18.2 mm</description>
-<packageinstances>
-<packageinstance name="C150-091X182"/>
-</packageinstances>
-</package3d>
-<package3d name="C225-062X268" urn="urn:adsk.eagle:package:23661/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 22.5 mm, outline 6.2 x 26.8 mm</description>
-<packageinstances>
-<packageinstance name="C225-062X268"/>
-</packageinstances>
-</package3d>
-<package3d name="C225-074X268" urn="urn:adsk.eagle:package:23660/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 22.5 mm, outline 7.4 x 26.8 mm</description>
-<packageinstances>
-<packageinstance name="C225-074X268"/>
-</packageinstances>
-</package3d>
-<package3d name="C225-087X268" urn="urn:adsk.eagle:package:23662/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 22.5 mm, outline 8.7 x 26.8 mm</description>
-<packageinstances>
-<packageinstance name="C225-087X268"/>
-</packageinstances>
-</package3d>
-<package3d name="C225-108X268" urn="urn:adsk.eagle:package:23663/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 22.5 mm, outline 10.8 x 26.8 mm</description>
-<packageinstances>
-<packageinstance name="C225-108X268"/>
-</packageinstances>
-</package3d>
-<package3d name="C225-113X268" urn="urn:adsk.eagle:package:23667/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 22.5 mm, outline 11.3 x 26.8 mm</description>
-<packageinstances>
-<packageinstance name="C225-113X268"/>
-</packageinstances>
-</package3d>
-<package3d name="C275-093X316" urn="urn:adsk.eagle:package:23701/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 27.5 mm, outline 9.3 x 31.6 mm</description>
-<packageinstances>
-<packageinstance name="C275-093X316"/>
-</packageinstances>
-</package3d>
-<package3d name="C275-113X316" urn="urn:adsk.eagle:package:23673/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 27.5 mm, outline 11.3 x 31.6 mm</description>
-<packageinstances>
-<packageinstance name="C275-113X316"/>
-</packageinstances>
-</package3d>
-<package3d name="C275-134X316" urn="urn:adsk.eagle:package:23664/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 27.5 mm, outline 13.4 x 31.6 mm</description>
-<packageinstances>
-<packageinstance name="C275-134X316"/>
-</packageinstances>
-</package3d>
-<package3d name="C275-205X316" urn="urn:adsk.eagle:package:23666/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 27.5 mm, outline 20.5 x 31.6 mm</description>
-<packageinstances>
-<packageinstance name="C275-205X316"/>
-</packageinstances>
-</package3d>
-<package3d name="C325-137X374" urn="urn:adsk.eagle:package:23672/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 32.5 mm, outline 13.7 x 37.4 mm</description>
-<packageinstances>
-<packageinstance name="C325-137X374"/>
-</packageinstances>
-</package3d>
-<package3d name="C325-162X374" urn="urn:adsk.eagle:package:23670/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 32.5 mm, outline 16.2 x 37.4 mm</description>
-<packageinstances>
-<packageinstance name="C325-162X374"/>
-</packageinstances>
-</package3d>
-<package3d name="C325-182X374" urn="urn:adsk.eagle:package:23668/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 32.5 mm, outline 18.2 x 37.4 mm</description>
-<packageinstances>
-<packageinstance name="C325-182X374"/>
-</packageinstances>
-</package3d>
-<package3d name="C375-192X418" urn="urn:adsk.eagle:package:23674/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 37.5 mm, outline 19.2 x 41.8 mm</description>
-<packageinstances>
-<packageinstance name="C375-192X418"/>
-</packageinstances>
-</package3d>
-<package3d name="C375-203X418" urn="urn:adsk.eagle:package:23671/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 37.5 mm, outline 20.3 x 41.8 mm</description>
-<packageinstances>
-<packageinstance name="C375-203X418"/>
-</packageinstances>
-</package3d>
-<package3d name="C050-035X075" urn="urn:adsk.eagle:package:23677/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 5 mm, outline 3.5 x 7.5 mm</description>
-<packageinstances>
-<packageinstance name="C050-035X075"/>
-</packageinstances>
-</package3d>
-<package3d name="C375-155X418" urn="urn:adsk.eagle:package:23675/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 37.5 mm, outline 15.5 x 41.8 mm</description>
-<packageinstances>
-<packageinstance name="C375-155X418"/>
-</packageinstances>
-</package3d>
-<package3d name="C075-063X106" urn="urn:adsk.eagle:package:23678/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 7.5 mm, outline 6.3 x 10.6 mm</description>
-<packageinstances>
-<packageinstance name="C075-063X106"/>
-</packageinstances>
-</package3d>
-<package3d name="C275-154X316" urn="urn:adsk.eagle:package:23685/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 27.5 mm, outline 15.4 x 31.6 mm</description>
-<packageinstances>
-<packageinstance name="C275-154X316"/>
-</packageinstances>
-</package3d>
-<package3d name="C275-173X316" urn="urn:adsk.eagle:package:23676/1" type="box" library_version="11">
-<description>CAPACITOR
-grid 27.5 mm, outline 17.3 x 31.6 mm</description>
-<packageinstances>
-<packageinstance name="C275-173X316"/>
-</packageinstances>
-</package3d>
-<package3d name="C0402K" urn="urn:adsk.eagle:package:23679/2" type="model" library_version="11">
-<description>Ceramic Chip Capacitor KEMET 0204 reflow solder
-Metric Code Size 1005</description>
-<packageinstances>
-<packageinstance name="C0402K"/>
-</packageinstances>
-</package3d>
-<package3d name="C0603K" urn="urn:adsk.eagle:package:23680/2" type="model" library_version="11">
-<description>Ceramic Chip Capacitor KEMET 0603 reflow solder
-Metric Code Size 1608</description>
-<packageinstances>
-<packageinstance name="C0603K"/>
-</packageinstances>
-</package3d>
-<package3d name="C0805K" urn="urn:adsk.eagle:package:23681/2" type="model" library_version="11">
-<description>Ceramic Chip Capacitor KEMET 0805 reflow solder
-Metric Code Size 2012</description>
-<packageinstances>
-<packageinstance name="C0805K"/>
-</packageinstances>
-</package3d>
-<package3d name="C1206K" urn="urn:adsk.eagle:package:23682/2" type="model" library_version="11">
-<description>Ceramic Chip Capacitor KEMET 1206 reflow solder
-Metric Code Size 3216</description>
-<packageinstances>
-<packageinstance name="C1206K"/>
-</packageinstances>
-</package3d>
-<package3d name="C1210K" urn="urn:adsk.eagle:package:23683/2" type="model" library_version="11">
-<description>Ceramic Chip Capacitor KEMET 1210 reflow solder
-Metric Code Size 3225</description>
-<packageinstances>
-<packageinstance name="C1210K"/>
-</packageinstances>
-</package3d>
-<package3d name="C1812K" urn="urn:adsk.eagle:package:23686/2" type="model" library_version="11">
-<description>Ceramic Chip Capacitor KEMET 1812 reflow solder
-Metric Code Size 4532</description>
-<packageinstances>
-<packageinstance name="C1812K"/>
-</packageinstances>
-</package3d>
-<package3d name="C1825K" urn="urn:adsk.eagle:package:23684/2" type="model" library_version="11">
-<description>Ceramic Chip Capacitor KEMET 1825 reflow solder
-Metric Code Size 4564</description>
-<packageinstances>
-<packageinstance name="C1825K"/>
-</packageinstances>
-</package3d>
-<package3d name="C2220K" urn="urn:adsk.eagle:package:23687/2" type="model" library_version="11">
-<description>Ceramic Chip Capacitor KEMET 2220 reflow solderMetric Code Size 5650</description>
-<packageinstances>
-<packageinstance name="C2220K"/>
-</packageinstances>
-</package3d>
-<package3d name="C2225K" urn="urn:adsk.eagle:package:23692/2" type="model" library_version="11">
-<description>Ceramic Chip Capacitor KEMET 2225 reflow solderMetric Code Size 5664</description>
-<packageinstances>
-<packageinstance name="C2225K"/>
-</packageinstances>
-</package3d>
-<package3d name="C0201" urn="urn:adsk.eagle:package:23690/2" type="model" library_version="11">
-<description>Source: http://www.avxcorp.com/docs/catalogs/cx5r.pdf</description>
-<packageinstances>
-<packageinstance name="C0201"/>
-</packageinstances>
-</package3d>
-<package3d name="C1808" urn="urn:adsk.eagle:package:23689/2" type="model" library_version="11">
-<description>CAPACITOR
-Source: AVX .. aphvc.pdf</description>
-<packageinstances>
-<packageinstance name="C1808"/>
-</packageinstances>
-</package3d>
-<package3d name="C3640" urn="urn:adsk.eagle:package:23693/2" type="model" library_version="11">
-<description>CAPACITOR
-Source: AVX .. aphvc.pdf</description>
-<packageinstances>
-<packageinstance name="C3640"/>
-</packageinstances>
-</package3d>
-<package3d name="C01005" urn="urn:adsk.eagle:package:23691/1" type="box" library_version="11">
-<description>CAPACITOR</description>
-<packageinstances>
-<packageinstance name="C01005"/>
-</packageinstances>
-</package3d>
 <package3d name="R0402" urn="urn:adsk.eagle:package:23547/3" type="model" library_version="11">
 <description>Chip RESISTOR 0402 EIA (1005 Metric)</description>
 <packageinstances>
@@ -9413,380 +6312,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <packageinstance name="R01005"/>
 </packageinstances>
 </package3d>
-<package3d name="L2012C" urn="urn:adsk.eagle:package:23475/2" type="model" library_version="11">
-<description>INDUCTOR</description>
-<packageinstances>
-<packageinstance name="L2012C"/>
-</packageinstances>
-</package3d>
-<package3d name="L2825P" urn="urn:adsk.eagle:package:23480/1" type="box" library_version="11">
-<description>INDUCTOR
-precision wire wound</description>
-<packageinstances>
-<packageinstance name="L2825P"/>
-</packageinstances>
-</package3d>
-<package3d name="L3216C" urn="urn:adsk.eagle:package:23476/2" type="model" library_version="11">
-<description>INDUCTOR</description>
-<packageinstances>
-<packageinstance name="L3216C"/>
-</packageinstances>
-</package3d>
-<package3d name="L3225M" urn="urn:adsk.eagle:package:23477/2" type="model" library_version="11">
-<description>INDUCTOR
-molded</description>
-<packageinstances>
-<packageinstance name="L3225M"/>
-</packageinstances>
-</package3d>
-<package3d name="L3225P" urn="urn:adsk.eagle:package:23479/1" type="box" library_version="11">
-<description>INDUCTOR
-precision wire wound</description>
-<packageinstances>
-<packageinstance name="L3225P"/>
-</packageinstances>
-</package3d>
-<package3d name="L3230M" urn="urn:adsk.eagle:package:23481/3" type="model" library_version="11">
-<description>INDUCTOR
-molded</description>
-<packageinstances>
-<packageinstance name="L3230M"/>
-</packageinstances>
-</package3d>
-<package3d name="L4035M" urn="urn:adsk.eagle:package:23478/2" type="model" library_version="11">
-<description>INDUCTOR
-molded</description>
-<packageinstances>
-<packageinstance name="L4035M"/>
-</packageinstances>
-</package3d>
-<package3d name="L4516C" urn="urn:adsk.eagle:package:23482/2" type="model" library_version="11">
-<description>INDUCTOR</description>
-<packageinstances>
-<packageinstance name="L4516C"/>
-</packageinstances>
-</package3d>
-<package3d name="L4532M" urn="urn:adsk.eagle:package:23483/2" type="model" library_version="11">
-<description>INDUCTOR
-molded</description>
-<packageinstances>
-<packageinstance name="L4532M"/>
-</packageinstances>
-</package3d>
-<package3d name="L4532P" urn="urn:adsk.eagle:package:23484/1" type="box" library_version="11">
-<description>INDUCTOR
-precision wire wound</description>
-<packageinstances>
-<packageinstance name="L4532P"/>
-</packageinstances>
-</package3d>
-<package3d name="L5038P" urn="urn:adsk.eagle:package:23485/1" type="box" library_version="11">
-<description>INDUCTOR
-precision wire wound</description>
-<packageinstances>
-<packageinstance name="L5038P"/>
-</packageinstances>
-</package3d>
-<package3d name="L5650M" urn="urn:adsk.eagle:package:23487/2" type="model" library_version="11">
-<description>INDUCTOR
-molded</description>
-<packageinstances>
-<packageinstance name="L5650M"/>
-</packageinstances>
-</package3d>
-<package3d name="L8530M" urn="urn:adsk.eagle:package:23486/2" type="model" library_version="11">
-<description>INDUCTOR
-molded</description>
-<packageinstances>
-<packageinstance name="L8530M"/>
-</packageinstances>
-</package3d>
-<package3d name="L1812" urn="urn:adsk.eagle:package:23494/2" type="model" library_version="11">
-<description>INDUCTOR
-chip</description>
-<packageinstances>
-<packageinstance name="L1812"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ3-U1" urn="urn:adsk.eagle:package:23496/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ3-U1"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ3-U2" urn="urn:adsk.eagle:package:23497/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ3-U2"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ4-U1" urn="urn:adsk.eagle:package:23499/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ4-U1"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ4-U2" urn="urn:adsk.eagle:package:23501/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ4-U2"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ5-U1" urn="urn:adsk.eagle:package:23500/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ5-U1"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ5-U2" urn="urn:adsk.eagle:package:23511/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ5-U2"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ6-U1" urn="urn:adsk.eagle:package:23509/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ6-U1"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ6-U2" urn="urn:adsk.eagle:package:23510/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ6-U2"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ7-U1" urn="urn:adsk.eagle:package:23512/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ7-U1"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ7-U2" urn="urn:adsk.eagle:package:23505/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ7-U2"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ8-U1" urn="urn:adsk.eagle:package:23503/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ8-U1"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ8-U2" urn="urn:adsk.eagle:package:23504/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ8-U2"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ9-U1" urn="urn:adsk.eagle:package:23506/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ9-U1"/>
-</packageinstances>
-</package3d>
-<package3d name="TJ9-U2" urn="urn:adsk.eagle:package:23508/1" type="box" library_version="11">
-<description>Inductor
-Source: TJ-Serie Vishay.pdf</description>
-<packageinstances>
-<packageinstance name="TJ9-U2"/>
-</packageinstances>
-</package3d>
-<package3d name="POWER-CHOKE_WE-TPC" urn="urn:adsk.eagle:package:25966/1" type="box" library_version="11">
-<description>POWER-CHOKE WE-TPC
-Würth Elektronik, Partnumber: 744053220
-Source: WE-TPC 744053220.pdf</description>
-<packageinstances>
-<packageinstance name="POWER-CHOKE_WE-TPC"/>
-</packageinstances>
-</package3d>
-<package3d name="CEP125" urn="urn:adsk.eagle:package:25968/1" type="box" library_version="11">
-<description>POWER INDUCTORS (SMT Type)
-Source: www.sumida.com/products/pdf/CEP125.pdf</description>
-<packageinstances>
-<packageinstance name="CEP125"/>
-</packageinstances>
-</package3d>
-<package3d name="L0201" urn="urn:adsk.eagle:package:23513/2" type="model" library_version="11">
-<description>NIS02 Chip Inductor
-Source: http://www.niccomp.com/Catalog/nis.pdf</description>
-<packageinstances>
-<packageinstance name="L0201"/>
-</packageinstances>
-</package3d>
-<package3d name="PIS2816" urn="urn:adsk.eagle:package:23515/1" type="box" library_version="11">
-<description>PIS 2826 Inductor
-Source: http://www.stetco.com/products/inductors/pdf/PIS2816.pdf</description>
-<packageinstances>
-<packageinstance name="PIS2816"/>
-</packageinstances>
-</package3d>
-<package3d name="IR-2" urn="urn:adsk.eagle:package:23525/1" type="box" library_version="11">
-<description>Vishay Dale Inductor
-Source: www.vishay.com .. ir.pdf</description>
-<packageinstances>
-<packageinstance name="IR-2"/>
-</packageinstances>
-</package3d>
-<package3d name="IR-4" urn="urn:adsk.eagle:package:23516/1" type="box" library_version="11">
-<description>Vishay Dale Inductor
-Source: www.vishay.com .. ir.pdf</description>
-<packageinstances>
-<packageinstance name="IR-4"/>
-</packageinstances>
-</package3d>
-<package3d name="IRF-1" urn="urn:adsk.eagle:package:23517/1" type="box" library_version="11">
-<description>Vishay Dale Inductor
-Source: www.vishay.com .. irf.pdf</description>
-<packageinstances>
-<packageinstance name="IRF-1"/>
-</packageinstances>
-</package3d>
-<package3d name="IRF-3" urn="urn:adsk.eagle:package:23536/1" type="box" library_version="11">
-<description>Vishay Dale Inductor
-Source: www.vishay.com .. irf.pdf</description>
-<packageinstances>
-<packageinstance name="IRF-3"/>
-</packageinstances>
-</package3d>
-<package3d name="IRF24" urn="urn:adsk.eagle:package:23533/1" type="box" library_version="11">
-<description>Vishay Dale Inductor
-Source: www.vishay.com .. irf24.pdf</description>
-<packageinstances>
-<packageinstance name="IRF24"/>
-</packageinstances>
-</package3d>
-<package3d name="IRF36" urn="urn:adsk.eagle:package:23522/1" type="box" library_version="11">
-<description>Vishay Dale Inductor
-Source: www.vishay.com .. irf36.pdf</description>
-<packageinstances>
-<packageinstance name="IRF36"/>
-</packageinstances>
-</package3d>
-<package3d name="IRF46" urn="urn:adsk.eagle:package:23520/1" type="box" library_version="11">
-<description>Vishay Dale Inductor
-Source: www.vishay.com .. irf46.pdf</description>
-<packageinstances>
-<packageinstance name="IRF46"/>
-</packageinstances>
-</package3d>
-<package3d name="LAL02" urn="urn:adsk.eagle:package:23535/1" type="box" library_version="11">
-<description>TAYO YUDEN Inductor
-Source: je999f5.pdf</description>
-<packageinstances>
-<packageinstance name="LAL02"/>
-</packageinstances>
-</package3d>
-<package3d name="LAL03" urn="urn:adsk.eagle:package:23523/1" type="box" library_version="11">
-<description>TAYO YUDEN Inductor
-Source: je999f5.pdf</description>
-<packageinstances>
-<packageinstance name="LAL03"/>
-</packageinstances>
-</package3d>
-<package3d name="LAL03KH" urn="urn:adsk.eagle:package:23524/1" type="box" library_version="11">
-<description>TAYO YUDEN Inductor
-Source: je999f5.pdf</description>
-<packageinstances>
-<packageinstance name="LAL03KH"/>
-</packageinstances>
-</package3d>
-<package3d name="LAL04" urn="urn:adsk.eagle:package:23526/1" type="box" library_version="11">
-<description>TAYO YUDEN Inductor
-Source: je999f5.pdf</description>
-<packageinstances>
-<packageinstance name="LAL04"/>
-</packageinstances>
-</package3d>
-<package3d name="LAL04KB" urn="urn:adsk.eagle:package:23527/1" type="box" library_version="11">
-<description>TAYO YUDEN Inductor
-Source: je999f5.pdf</description>
-<packageinstances>
-<packageinstance name="LAL04KB"/>
-</packageinstances>
-</package3d>
-<package3d name="LAN02KR" urn="urn:adsk.eagle:package:23528/1" type="box" library_version="11">
-<description>TAYO YUDEN Inductor
-Source: je999f5.pdf</description>
-<packageinstances>
-<packageinstance name="LAN02KR"/>
-</packageinstances>
-</package3d>
-<package3d name="LAP02KR" urn="urn:adsk.eagle:package:23546/1" type="box" library_version="11">
-<description>TAYO YUDEN Inductor
-Source: je999f5.pdf</description>
-<packageinstances>
-<packageinstance name="LAP02KR"/>
-</packageinstances>
-</package3d>
-<package3d name="TFI0204" urn="urn:adsk.eagle:package:23530/1" type="box" library_version="11">
-<description>Axial Conformal Coated Inductor
-Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
-<packageinstances>
-<packageinstance name="TFI0204"/>
-</packageinstances>
-</package3d>
-<package3d name="TFI0305" urn="urn:adsk.eagle:package:23529/1" type="box" library_version="11">
-<description>Axial Conformal Coated Inductor
-Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
-<packageinstances>
-<packageinstance name="TFI0305"/>
-</packageinstances>
-</package3d>
-<package3d name="TFI0307" urn="urn:adsk.eagle:package:23534/1" type="box" library_version="11">
-<description>Axial Conformal Coated Inductor
-Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
-<packageinstances>
-<packageinstance name="TFI0307"/>
-</packageinstances>
-</package3d>
-<package3d name="TFI0410" urn="urn:adsk.eagle:package:23531/1" type="box" library_version="11">
-<description>Axial Conformal Coated Inductor
-Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
-<packageinstances>
-<packageinstance name="TFI0410"/>
-</packageinstances>
-</package3d>
-<package3d name="TFI0510" urn="urn:adsk.eagle:package:23532/1" type="box" library_version="11">
-<description>Axial Conformal Coated Inductor
-Source: TOP MAGNETICS CORPORATION .. tfi.pdf</description>
-<packageinstances>
-<packageinstance name="TFI0510"/>
-</packageinstances>
-</package3d>
-<package3d name="6000-XXXX-RC" urn="urn:adsk.eagle:package:23538/1" type="box" library_version="11">
-<description>Radial Lead RF Chokes
-Source: www.bourns.com .. 6000_series.pdf</description>
-<packageinstances>
-<packageinstance name="6000-XXXX-RC"/>
-</packageinstances>
-</package3d>
 </packages3d>
 <symbols>
-<symbol name="C-US" urn="urn:adsk.eagle:symbol:23201/1" library_version="11">
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
-<wire x1="-2.4668" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.373024"/>
-<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
 <symbol name="R-US" urn="urn:adsk.eagle:symbol:23200/1" library_version="11">
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
 <wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
@@ -9802,1206 +6329,8 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="L-US" urn="urn:adsk.eagle:symbol:23202/1" library_version="11">
-<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90"/>
-<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90"/>
-<text x="-1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="C-US" urn="urn:adsk.eagle:component:23794/44" prefix="C" uservalue="yes" library_version="11">
-<description>&lt;B&gt;CAPACITOR&lt;/B&gt;, American symbol</description>
-<gates>
-<gate name="G$1" symbol="C-US" x="0" y="0"/>
-</gates>
-<devices>
-<device name="C0402" package="C0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23626/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="16" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C0504" package="C0504">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23624/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C0603" package="C0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23616/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="37" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C0805" package="C0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23617/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="63" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C1206" package="C1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23618/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="24" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C1210" package="C1210">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23619/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="6" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C1310" package="C1310">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23620/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C1608" package="C1608">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23621/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C1812" package="C1812">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23622/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C1825" package="C1825">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23623/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C2012" package="C2012">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23625/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C3216" package="C3216">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23628/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C3225" package="C3225">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23655/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C4532" package="C4532">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23627/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C4564" package="C4564">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23648/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="025-024X044" package="C025-024X044">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23630/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="17" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="025-025X050" package="C025-025X050">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23629/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="025-030X050" package="C025-030X050">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23631/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="1" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="025-040X050" package="C025-040X050">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23634/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="025-050X050" package="C025-050X050">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23633/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="7" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="025-060X050" package="C025-060X050">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23632/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="1" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C025_050-024X070" package="C025_050-024X070">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23639/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="025_050-025X075" package="C025_050-025X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23641/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="025_050-035X075" package="C025_050-035X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23651/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="025_050-045X075" package="C025_050-045X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23635/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="025_050-055X075" package="C025_050-055X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23636/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="050-024X044" package="C050-024X044">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23643/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="14" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="050-025X075" package="C050-025X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23637/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="050-045X075" package="C050-045X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23638/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="2" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="050-030X075" package="C050-030X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23640/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="5" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="050-050X075" package="C050-050X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23665/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="050-055X075" package="C050-055X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23642/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="050-075X075" package="C050-075X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23645/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="1" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="050H075X075" package="C050H075X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23644/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="075-032X103" package="C075-032X103">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23646/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="7" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="075-042X103" package="C075-042X103">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23656/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="1" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="075-052X106" package="C075-052X106">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23650/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="102-043X133" package="C102-043X133">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23647/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="102-054X133" package="C102-054X133">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23649/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="102-064X133" package="C102-064X133">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23653/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="102_152-062X184" package="C102_152-062X184">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23652/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="150-054X183" package="C150-054X183">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23669/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="150-064X183" package="C150-064X183">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23654/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="150-072X183" package="C150-072X183">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23657/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="150-084X183" package="C150-084X183">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23658/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="150-091X182" package="C150-091X182">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23659/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="225-062X268" package="C225-062X268">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23661/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="225-074X268" package="C225-074X268">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23660/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="225-087X268" package="C225-087X268">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23662/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="225-108X268" package="C225-108X268">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23663/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="225-113X268" package="C225-113X268">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23667/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="275-093X316" package="C275-093X316">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23701/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="275-113X316" package="C275-113X316">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23673/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="275-134X316" package="C275-134X316">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23664/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="275-205X316" package="C275-205X316">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23666/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="325-137X374" package="C325-137X374">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23672/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="325-162X374" package="C325-162X374">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23670/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="325-182X374" package="C325-182X374">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23668/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="375-192X418" package="C375-192X418">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23674/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="375-203X418" package="C375-203X418">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23671/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="050-035X075" package="C050-035X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23677/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="375-155X418" package="C375-155X418">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23675/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="075-063X106" package="C075-063X106">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23678/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="1" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="275-154X316" package="C275-154X316">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23685/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="275-173X316" package="C275-173X316">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23676/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C0402K" package="C0402K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23679/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="4" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C0603K" package="C0603K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23680/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="5" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C0805K" package="C0805K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23681/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="19" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C1206K" package="C1206K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23682/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="2" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C1210K" package="C1210K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23683/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C1812K" package="C1812K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23686/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C1825K" package="C1825K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23684/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C2220K" package="C2220K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23687/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C2225K" package="C2225K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23692/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C0201" package="C0201">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23690/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="3" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C1808" package="C1808">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23689/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="C3640" package="C3640">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23693/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="01005" package="C01005">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23691/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="2" constant="no"/>
-<attribute name="SPICEPREFIX" value="C" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-<spice>
-<pinmapping spiceprefix="C">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-</deviceset>
 <deviceset name="R-US_" urn="urn:adsk.eagle:component:23792/22" prefix="R" uservalue="yes" library_version="11">
 <description>&lt;B&gt;RESISTOR&lt;/B&gt;, American symbol</description>
 <gates>
@@ -12291,935 +7620,6 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 </pinmapping>
 </spice>
 </deviceset>
-<deviceset name="L-US" urn="urn:adsk.eagle:component:23790/8" prefix="L" uservalue="yes" library_version="11">
-<description>&lt;B&gt;INDUCTOR&lt;/B&gt;, American symbol</description>
-<gates>
-<gate name="G$1" symbol="L-US" x="0" y="0"/>
-</gates>
-<devices>
-<device name="L2012C" package="L2012C">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23475/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="6" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L2825P" package="L2825P">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23480/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="3" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L3216C" package="L3216C">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23476/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="3" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L3225M" package="L3225M">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23477/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="11" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L3225P" package="L3225P">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23479/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="1" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L3230M" package="L3230M">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23481/3"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L4035M" package="L4035M">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23478/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L4516C" package="L4516C">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23482/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L4532C" package="L4532M">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23483/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L4532P" package="L4532P">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23484/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L5038P" package="L5038P">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23485/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L5650M" package="L5650M">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23487/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L8530M" package="L8530M">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23486/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="0204/5" package="0204/5">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23488/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="0204/7" package="0204/7">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23498/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="8" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="0204V" package="0204V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23495/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="0207/10" package="0207/10">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23491/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="6" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="0207/12" package="0207/12">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23489/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="0207/15" package="0207/15">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23492/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="0207/2V" package="0207/2V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23490/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="0207/5V" package="0207/5V">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23502/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="0207/7" package="0207/7">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23493/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="2" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L1812" package="L1812">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23494/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="3" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ3-U1" package="TJ3-U1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23496/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ3-U2" package="TJ3-U2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23497/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ4-U1" package="TJ4-U1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23499/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ4-U2" package="TJ4-U2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23501/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ5-U1" package="TJ5-U1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23500/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ5-U2" package="TJ5-U2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23511/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ6-U1" package="TJ6-U1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23509/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ6-U2" package="TJ6-U2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23510/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ7-U1" package="TJ7-U1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23512/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ7-U2" package="TJ7-U2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23505/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ8-U1" package="TJ8-U1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23503/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ8-U2" package="TJ8-U2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23504/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ9-U1" package="TJ9-U1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23506/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TJ9-U2" package="TJ9-U2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23508/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="WE-TPC" package="POWER-CHOKE_WE-TPC">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:25966/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="CEP125" package="CEP125">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:25968/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="L0201" package="L0201">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23513/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="PIS2816" package="PIS2816">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23515/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="IR-2" package="IR-2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23525/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="IR-4" package="IR-4">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23516/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="IRF-1" package="IRF-1">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23517/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="IRF-3" package="IRF-3">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23536/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="IRF-24" package="IRF24">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23533/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="IRF-36" package="IRF36">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23522/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="IRF-46" package="IRF46">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23520/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="LAL02" package="LAL02">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23535/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="LAL03" package="LAL03">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23523/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="LAL03KH" package="LAL03KH">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23524/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="LAL04" package="LAL04">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23526/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="LAL04KB" package="LAL04KB">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23527/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="LAN02KR" package="LAN02KR">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23528/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="1" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="LAP02KR" package="LAP02KR">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23546/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TFI0204" package="TFI0204">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23530/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TFI0305" package="TFI0305">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23529/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TFI0307" package="TFI0307">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23534/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="1" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TFI0410" package="TFI0410">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23531/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="TFI0510" package="TFI0510">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23532/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="6000-XXX-RC" package="6000-XXXX-RC">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:23538/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="5" constant="no"/>
-<attribute name="SPICEPREFIX" value="L" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-<spice>
-<pinmapping spiceprefix="L">
-<pinmap gate="G$1" pin="1" pinorder="1"/>
-<pinmap gate="G$1" pin="2" pinorder="2"/>
-</pinmapping>
-</spice>
-</deviceset>
 </devicesets>
 </library>
 <library name="B2B-PH-K-S">
@@ -13959,6 +8359,3915 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="JLC PCB Basic Parts_loc">
+<description>&lt;h1&gt;(JL@C) JLC PCB Basic Parts Eagle Library with LCSC Part Numbers&lt;/h1&gt; &lt;h2&gt;by Combinatix, &lt;a href='https://github.com/Combinatix/JLCPCB-Basic-Parts/'&gt;https://github.com/Combinatix/JLCPCB-Basic-Parts/&lt;/a&gt;&lt;/h2&gt; &lt;h3&gt;This library contains a selection of &lt;i&gt;BASIC&lt;/i&gt; parts supplied by JLC PCB manufacturer, including their order codes (LCSC Part Number)&lt;/h3&gt; &lt;hr&gt; &lt;p&gt;Every part has these attributes:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;LCSC_DATASHEET&lt;/b&gt; = Datasheet url for the selected part&lt;/li&gt; &lt;li&gt;&lt;b&gt;LCSC_PART&lt;/b&gt; = LCSC Part numbers - it matches the products listed at &lt;a href="https://jlcpcb.com/parts"&gt;https://jlcpcb.com/parts&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;b&gt;LCSC_PRICE1_EUR&lt;/b&gt; = Price of EACH, if specified by JLC PCB in their export csv&lt;/li&gt; &lt;li&gt;&lt;b&gt;LCSC_ROTATION_CCW&lt;/b&gt; = Rotation correction that ULP script reads during CPL export. This can solve a package rotation incompatibility&lt;/li&gt; &lt;li&gt;&lt;b&gt;PROPERTIES&lt;/b&gt; = Part's basic properties for your quick reference.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Catalog Last Update: 2022-01-15&lt;/p&gt; &lt;b&gt;Version History:&lt;/b&gt; &lt;p&gt;2021-12-01: Added Dual Opamps (SOIC 8), Bug fixes (rotation problems)&lt;/p&gt; &lt;p&gt;2021-12-01: Added SMD Inductors 0402 - 1206. Updated and unified parts descriptions to be more consistent&lt;/p&gt; &lt;p&gt;2021-11-30: First BETA release. Library contains SMD Resistors, Capacitors, Diodes, SOT-23 Transistors&lt;/p&gt; &lt;p&gt;&lt;/p&gt;</description>
+<packages>
+<package name="R0603" urn="urn:adsk.eagle:footprint:23044/1">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
+<package name="R0402" urn="urn:adsk.eagle:footprint:23043/3">
+<description>&lt;b&gt;Chip RESISTOR 0402 EIA (1005 Metric)&lt;/b&gt;</description>
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<wire x1="-1" y1="0.483" x2="1" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1" y1="0.483" x2="1" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="1" y1="-0.483" x2="-1" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1" y1="-0.483" x2="-1" y2="0.483" width="0.0508" layer="39"/>
+<smd name="1" x="-0.5" y="0" dx="0.6" dy="0.7" layer="1"/>
+<smd name="2" x="0.5" y="0" dx="0.6" dy="0.7" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.35" x2="0.1999" y2="0.35" layer="35"/>
+</package>
+<package name="R0805" urn="urn:adsk.eagle:footprint:23045/1">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+</package>
+<package name="R1206" urn="urn:adsk.eagle:footprint:23047/1">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="0.9525" y1="-0.8128" x2="-0.9652" y2="-0.8128" width="0.1524" layer="51"/>
+<wire x1="0.9525" y1="0.8128" x2="-0.9652" y2="0.8128" width="0.1524" layer="51"/>
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.6891" y1="-0.8763" x2="-0.9525" y2="0.8763" layer="51"/>
+<rectangle x1="0.9525" y1="-0.8763" x2="1.6891" y2="0.8763" layer="51"/>
+<rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
+</package>
+<package name="C0603" urn="urn:adsk.eagle:footprint:23123/1" locally_modified="yes">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-1.473" y1="0.729" x2="1.473" y2="0.729" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.729" x2="1.473" y2="-0.729" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.729" x2="-1.473" y2="-0.729" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.729" x2="-1.473" y2="0.729" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="C0402" urn="urn:adsk.eagle:footprint:23121/1" locally_modified="yes">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<wire x1="-1.219" y1="0.61" x2="1.219" y2="0.61" width="0.0508" layer="39"/>
+<wire x1="1.219" y1="0.61" x2="1.219" y2="-0.61" width="0.0508" layer="39"/>
+<wire x1="1.219" y1="-0.61" x2="-1.219" y2="-0.61" width="0.0508" layer="39"/>
+<wire x1="-1.219" y1="-0.61" x2="-1.219" y2="0.61" width="0.0508" layer="39"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="C0805" urn="urn:adsk.eagle:footprint:23124/1">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+</package>
+<package name="C1206" urn="urn:adsk.eagle:footprint:23125/1">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="R0603" urn="urn:adsk.eagle:package:23555/3" type="model">
+<description>RESISTOR</description>
+<packageinstances>
+<packageinstance name="R0603"/>
+</packageinstances>
+</package3d>
+<package3d name="R0402" urn="urn:adsk.eagle:package:23547/3" type="model">
+<description>Chip RESISTOR 0402 EIA (1005 Metric)</description>
+<packageinstances>
+<packageinstance name="R0402"/>
+</packageinstances>
+</package3d>
+<package3d name="R0805" urn="urn:adsk.eagle:package:23553/2" type="model">
+<description>RESISTOR</description>
+<packageinstances>
+<packageinstance name="R0805"/>
+</packageinstances>
+</package3d>
+<package3d name="R1206" urn="urn:adsk.eagle:package:23540/2" type="model">
+<description>RESISTOR</description>
+<packageinstances>
+<packageinstance name="R1206"/>
+</packageinstances>
+</package3d>
+<package3d name="C0603" urn="urn:adsk.eagle:package:23616/2" type="model">
+<description>CAPACITOR</description>
+<packageinstances>
+<packageinstance name="C0603"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPC1005X60" urn="urn:adsk.eagle:package:23626/2" type="model">
+<description>Chip, 1.00 X 0.50 X 0.60 mm body &lt;p&gt;Chip package with body size 1.00 X 0.50 X 0.60 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="C0402"/>
+</packageinstances>
+</package3d>
+<package3d name="C0805" urn="urn:adsk.eagle:package:23617/2" type="model">
+<description>CAPACITOR</description>
+<packageinstances>
+<packageinstance name="C0805"/>
+</packageinstances>
+</package3d>
+<package3d name="C1206" urn="urn:adsk.eagle:package:23618/2" type="model">
+<description>CAPACITOR</description>
+<packageinstances>
+<packageinstance name="C1206"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="R-EU">
+<description>&lt;h1&gt;Resistor&lt;/h1&gt; EU symbol</description>
+<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="C-EU">
+<description>&lt;h1&gt;Capacitor&lt;/h1&gt; EU symbol, non-polarized</description>
+<wire x1="0" y1="0" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-2.032" width="0.1524" layer="94"/>
+<text x="1.524" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.524" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="-2.032" x2="2.032" y2="-1.524" layer="94"/>
+<rectangle x1="-2.032" y1="-1.016" x2="2.032" y2="-0.508" layer="94"/>
+<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="L-EU">
+<description>&lt;h1&gt;Inductor&lt;/h1&gt;&lt;p&gt;European symbol&lt;/p&gt;</description>
+<text x="-1.4986" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="3.302" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.016" y1="-3.556" x2="1.016" y2="3.556" layer="94"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="R_" prefix="R">
+<description>&lt;h1&gt;Resistor&lt;/h1&gt; &lt;p&gt;General purpose SMD Resistor&lt;/p&gt;</description>
+<gates>
+<gate name="R1" symbol="R-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_0402" package="R0402">
+<connects>
+<connect gate="R1" pin="1" pad="1"/>
+<connect gate="R1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23547/3"/>
+</package3dinstances>
+<technologies>
+<technology name="0R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0402WGF0000TCE_C17168.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17168" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="987433" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±800ppm -55°C~+155°C 0Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="1.2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF1201TCE_C25862.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25862" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="121125" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 1.2kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="1.5K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF1501TCE_C25867.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25867" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="312925" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 1.5kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="100K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF1003TCE_C25741.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25741" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="423883" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 100kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="100R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF1000TCE_C25076.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25076" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1672116" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±200ppm -55°C~+155°C 100Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="10K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25744" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="11564817" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 10kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="10M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0402WGF1005TCE_C26082.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C26082" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="167325" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±200ppm -55°C~+155°C 10MOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="10R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF100JTCE_C25077.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25077" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="439143" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±200ppm -55°C~+155°C 10Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="120K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF1203TCE_C25750.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25750" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="135452" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 120kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="120R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF1200TCE_C25079.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25079" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="478854" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 120Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="12K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF1202TCE_C25752.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25752" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="49975" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 12kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="150K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF1503TCE_C25755.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25755" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="128267" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 150kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="150R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF1500TCE_C25082.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25082" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="180794" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 150Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="15K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF1502TCE_C25756.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25756" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="460460" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 15kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="18K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF1802TCE_C25762.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25762" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="15841" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 18kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="1K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C11702" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="3758383" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 1kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="1M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0402WGF1004TCE_C26083.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C26083" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1171974" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 1MOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="1R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF100KTCE_C25086.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25086" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="22037" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±200ppm -55°C~+155°C 1Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="2.2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF2201TCE_C25879.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25879" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="387501" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 2.2kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="2.4K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF2401TCE_C25882.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25882" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="28975" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 2.4kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="200K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF2003TCE_C25764.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25764" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="420957" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 200kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="200R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF2000TCE_C25087.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25087" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="664974" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 200Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="20K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF2002TCE_C25765.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25765" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="376032" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 20kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="220K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF2203TCE_C25767.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25767" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="115680" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 220kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="220R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF2200TCE_C25091.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25091" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="710444" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 220Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="22K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF2202TCE_C25768.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25768" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="64025" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 22kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="22R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25092" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="992925" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±200ppm -55°C~+155°C 22Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="24K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF2402TCE_C25769.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25769" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="100393" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 24kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="27K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF2702TCE_C25771.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25771" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="171573" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 27kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0402WGF2001TCE_C4109.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4109" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="914869" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 2kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="3.3K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF3301TCE_C25890.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25890" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="184727" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 3.3kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="3.9K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260330_UNI-ROYAL-Uniroyal-Elec-0402WGF3901TCE_C51721.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C51721" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="125163" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 3.9kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="300K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF3003TCE_C25774.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25774" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="19669" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 300kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="300R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF3000TCE_C25102.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25102" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="185262" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 300Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="330K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF3303TCE_C25778.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25778" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="15043" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 330kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="330R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF3300TCE_C25104.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25104" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="431435" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 330Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="33K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF3302TCE_C25779.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25779" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="435778" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 33kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="33R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF330JTCE_C25105.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25105" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1292085" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 33Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="39K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF3902TCE_C25783.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25783" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="7735" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 39kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="4.7K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF4701TCE_C25900.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25900" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="2784412" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 4.7kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="470K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF4703TCE_C25790.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25790" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="80139" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 470kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="470R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF4700TCE_C25117.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25117" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="83930" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 470Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="47K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF4702TCE_C25792.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25792" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1322764" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 47kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="47R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF470JTCE_C25118.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25118" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="292838" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±200ppm -55°C~+155°C 47Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="49.9K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF4992TCE_C25897.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25897" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="293887" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 49.9kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="49.9R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF499JTCE_C25120.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25120" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="164247" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 49.9Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="5.1K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25905" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1228443" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 5.1kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="5.6K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF5601TCE_C25908.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25908" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="73576" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 5.6kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="510K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0402WGF5103TCE_C11616.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C11616" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="205581" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 510kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="510R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF5100TCE_C25123.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25123" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="133820" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 510Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="51K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF5102TCE_C25794.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25794" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="153472" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 51kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="51R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF510JTCE_C25125.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25125" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="243950" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 51Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="56K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF5602TCE_C25796.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25796" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="116685" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 56kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="6.8K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0402WGF6801TCE_C25917.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25917" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="231083" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 6.8kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="680R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF6800TCE_C25130.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25130" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="24118" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 680Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="68K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260230_UNI-ROYAL-Uniroyal-Elec-0402WGF6802TCE_C36871.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C36871" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="61795" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 68kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="7.5K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0402WGF7501TCE_C25918.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25918" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="136568" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 7.5kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="75K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0402WGF7502TCE_C25798.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25798" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="100400" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 75kOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="75R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0402WGF750JTCE_C25133.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25133" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="382107" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 75Ohm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="8.2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0402WGF8201TCE_C25924.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25924" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="91259" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/16W Thick Film Resistors 50V ±100ppm -55°C~+155°C 8.2kOhm 0402  ROHS" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_0603" package="R0603">
+<connects>
+<connect gate="R1" pin="1" pad="1"/>
+<connect gate="R1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23555/3"/>
+</package3dinstances>
+<technologies>
+<technology name="0R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF0000T5E_C21189.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C21189" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="891306" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V -55°C~+155°C 0Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="1.1K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1101T5E_C22764.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22764" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="123057" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1.1kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="1.2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1201T5E_C22765.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22765" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="476320" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1.2kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="1.5K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1501T5E_C22843.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22843" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="894371" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1.5kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="1.5M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF1504T5E_C4172.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4172" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="18940" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1.5MOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="1.8K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF1801T5E_C4177.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4177" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="356941" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1.8kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="100K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0603WAF1003T5E_C25803.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25803" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="5826279" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 100kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="100R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1000T5E_C22775.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22775" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="3700009" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±200ppm -55°C~+155°C 100Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="10K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25804" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="7979018" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 10kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="10M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF1005T5E_C7250.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C7250" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="225158" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 10MOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="10R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF100JT5E_C22859.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22859" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="2733989" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±400ppm -55°C~+155°C 10Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="110K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0603WAF1103T5E_C25805.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25805" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="86411" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 110kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="11K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0603WAF1102T5E_C25950.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25950" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="103724" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 11kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="120K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0603WAF1203T5E_C25808.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25808" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="362242" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 120kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="120R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1200T5E_C22787.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22787" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="181977" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 120Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="12K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1202T5E_C22790.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22790" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="256802" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 12kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="130K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1303T5E_C22795.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22795" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="107177" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 130kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="13K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1302T5E_C22797.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22797" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="102990" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 13kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="150K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1503T5E_C22807.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22807" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="285183" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 150kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="150R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1500T5E_C22808.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22808" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="466893" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 150Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="15K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1502T5E_C22809.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22809" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="394790" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 15kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="15R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF150JT5E_C22810.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22810" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="45246" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 15Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="160K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1603T5E_C22813.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22813" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="84424" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 160kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="180K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1803T5E_C22827.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22827" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="175164" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 180kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="180R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1800T5E_C22828.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22828" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="137249" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 180Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="18K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0603WAF1802T5E_C25810.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25810" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="156018" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 18kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="1K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C21190" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="5175299" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="1M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF1004T5E_C22935.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22935" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1411723" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 1MOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="1R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF100KT5E_C22936.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22936" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="226847" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±400ppm -55°C~+155°C 1Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="2.2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF2201T5E_C4190.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4190" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="331536" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2.2kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="2.2M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF2204T5E_C22938.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22938" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="13336" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2.2MOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="2.2R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF220KT5E_C22939.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22939" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="322355" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±400ppm -55°C~+155°C 2.2Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="2.4K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF2401T5E_C22940.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22940" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="447666" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2.4kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="2.7K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF2701T5E_C13167.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C13167" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="65542" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2.7kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="200K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0603WAF2003T5E_C25811.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25811" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="665451" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 200kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="200R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF2000T5E_C8218.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C8218" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="301734" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 200Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="20K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF2002T5E_C4184.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4184" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="2014241" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 20kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="20R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-0603WAF200JT5E_C22950.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22950" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="40713" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 20Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="220K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2203T5E_C22961.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22961" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="192313" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 220kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="220R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2200T5E_C22962.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22962" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="607613" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 220Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="22K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260230_UNI-ROYAL-Uniroyal-Elec-0603WAF2202T5E_C31850.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C31850" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="342507" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 22kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="22R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252330_UNI-ROYAL-Uniroyal-Elec-0603WAF220JT5E_C23345.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23345" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1173608" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 22Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="240K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF2403T5E_C4197.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4197" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="28297" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 240kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="240R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0603WAF2400T5E_C23350.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23350" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="173950" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 240Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="24K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0603WAF2402T5E_C23352.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23352" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="118657" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 24kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="270K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2703T5E_C22965.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22965" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="36231" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 270kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="270R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2700T5E_C22966.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22966" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="315292" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 270Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="27K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2702T5E_C22967.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22967" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="133243" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 27kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="27R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0603WAF270JT5E_C25190.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25190" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="107838" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±200ppm -55°C~+155°C 27Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2001T5E_C22975.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22975" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="3372290" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="2M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF2004T5E_C22976.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22976" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="53230" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 2MOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="2R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF200KT5E_C22977.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22977" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="338085" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±400ppm -55°C~+155°C 2Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="3.3K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3301T5E_C22978.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22978" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1921362" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 3.3kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="3.6K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3601T5E_C22980.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22980" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="282702" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 3.6kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="3.9K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3901T5E_C23018.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23018" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="210846" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 3.9kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="300K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3003T5E_C23024.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23024" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="150642" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 300kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="300R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3000T5E_C23025.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23025" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="81005" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 300Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="30K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3002T5E_C22984.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22984" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="586743" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 30kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="330K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3303T5E_C23137.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23137" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="216883" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 330kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="330R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3300T5E_C23138.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23138" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="862746" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 330Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="33K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF3302T5E_C4216.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4216" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="246127" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 33kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="33R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF330JT5E_C23140.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23140" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="610469" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 33Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="360K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3603T5E_C23146.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23146" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="21609" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 360kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="360R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0603WAF3600T5E_C25194.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25194" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="182256" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 360Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="36K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3602T5E_C23147.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23147" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="32807" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 36kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="390K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3903T5E_C23150.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23150" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="19336" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 390kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="390R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3900T5E_C23151.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23151" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="16644" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 390Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="39K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3902T5E_C23153.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23153" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="105898" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 39kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="3K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF3001T5E_C4211.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4211" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="740793" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 3kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="3M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF3004T5E_C23156.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23156" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="172072" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 3MOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="4.3K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF4301T5E_C23159.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23159" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="160828" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 4.3kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="4.7K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF4701T5E_C23162.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23162" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="3103173" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 4.7kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="4.7M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF4704T5E_C23163.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23163" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="15487" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 4.7MOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="4.7R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF470KT5E_C23164.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23164" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="239404" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±400ppm -55°C~+155°C 4.7Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="4.99K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF4991T5E_C23046.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23046" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="156833" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 4.99kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="40.2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF4022T5E_C12447.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C12447" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="100097" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 40.2kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="430K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0603WAF4303T5E_C25969.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25969" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="39197" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 430kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="430R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF4300T5E_C23170.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23170" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="18794" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 430Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="43K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF4302T5E_C23172.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23172" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="47219" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 43kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="470K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF4703T5E_C23178.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23178" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="577528" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 470kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="470R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF4700T5E_C23179.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23179" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="666559" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 470Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="47K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0603WAF4702T5E_C25819.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25819" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1052947" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 47kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="47R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF470JT5E_C23182.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23182" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="687203" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 47Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="49.9K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF4992T5E_C23184.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23184" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="390676" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 49.9kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="49.9R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF499JT5E_C23185.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23185" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="505010" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 49.9Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="5.1K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF5101T5E_C23186.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23186" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="2912883" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 5.1kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="5.1M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF5104T5E_C13320.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C13320" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="9989" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 5.1MOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="5.1R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0603WAF510KT5E_C25197.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25197" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="51559" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±200ppm -55°C~+155°C 5.1Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="5.6K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF5601T5E_C23189.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23189" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="186030" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 5.6kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="510K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF5103T5E_C23192.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23192" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="210743" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 510kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="510R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF5100T5E_C23193.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23193" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1494419" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 510Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="51K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF5102T5E_C23196.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23196" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="568423" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 51kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="51R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF510JT5E_C23197.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23197" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="578447" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 51Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="560K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF5603T5E_C23203.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23203" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="27128" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 560kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="560R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF5600T5E_C23204.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23204" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="205741" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 560Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="56K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF5602T5E_C23206.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23206" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="334461" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 56kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="56R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0603WAF560JT5E_C25196.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25196" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="82739" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±200ppm -55°C~+155°C 56Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="6.2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF6201T5E_C4260.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4260" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="176806" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 6.2kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="6.8K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF6801T5E_C23212.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23212" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="213701" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 6.8kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="620R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF6200T5E_C23220.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23220" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="121281" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 620Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="62K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF6202T5E_C23221.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23221" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="19557" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 62kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="680K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0603WAF6803T5E_C25822.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25822" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="134268" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 680kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="680R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF6800T5E_C23228.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23228" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="501788" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 680Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="68K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF6802T5E_C23231.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23231" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="138814" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 68kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="68R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0603WAF680JT5E_C27592.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C27592" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="22064" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 68Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="7.5K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF7501T5E_C23234.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23234" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="230039" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 7.5kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="750K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF7503T5E_C23240.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23240" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="33321" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 750kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="750R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF7500T5E_C23241.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23241" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="59351" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 750Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="75K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252130_UNI-ROYAL-Uniroyal-Elec-0603WAF7502T5E_C23242.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23242" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="131965" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 75kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="75R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0603WAF750JT5E_C4275.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4275" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="329042" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±200ppm -55°C~+155°C 75Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="8.2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0603WAF8201T5E_C25981.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25981" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="15822" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 8.2kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="820R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0603WAF8200T5E_C23253.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23253" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="181317" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 820Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="82K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0603WAF8202T5E_C23254.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23254" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="103891" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 82kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="82R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0603WAF820JT5E_C23255.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23255" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="149533" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 82Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="9.1K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0603WAF9101T5E_C23260.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23260" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="149726" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 9.1kOhm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="91K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0603WAF9102T5E_C23265.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23265" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="83900" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 91kOhm 0603  ROHS" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_0805" package="R0805">
+<connects>
+<connect gate="R1" pin="1" pad="1"/>
+<connect gate="R1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23553/2"/>
+</package3dinstances>
+<technologies>
+<technology name="0R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F0000T5E_C17477.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17477" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="429252" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±800ppm -55°C~+155°C 0Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="1.2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1201T5E_C17379.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17379" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="75424" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 1.2kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="1.5K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1501T5E_C4310.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4310" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="513812" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 1.5kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="1.8K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1801T5E_C17398.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17398" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="115868" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 1.8kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="100K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260430_UNI-ROYAL-Uniroyal-Elec-0805W8F1003T5E_C149504.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C149504" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="424960" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 100kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="100R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1000T5E_C17408.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17408" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1593241" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 100Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="10K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1002T5E_C17414.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17414" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="6121674" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 10kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="10M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0805W8F1005T5E_C26108.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C26108" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="34879" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 10MOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="10R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F100JT5E_C17415.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17415" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="868321" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±200ppm -55°C~+155°C 10Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="11K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1102T5E_C17429.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17429" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="9230" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 11kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="120K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1203T5E_C17436.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17436" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="120757" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 120kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="120R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1200T5E_C17437.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17437" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="176379" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 120Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="12K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1202T5E_C17444.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17444" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="377828" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 12kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="13K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1302T5E_C17455.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17455" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="8949" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 13kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="150K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1503T5E_C17470.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17470" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="43111" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 150kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="150R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1500T5E_C17471.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17471" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="68204" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 150Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="15K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1502T5E_C17475.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17475" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="422716" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 15kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="15R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F150JT5E_C17480.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17480" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="70445" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 15Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="16K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1602T5E_C17490.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17490" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="5214" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 16kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="180K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1803T5E_C17501.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17501" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="124684" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 180kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="180R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0805W8F1800T5E_C25270.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25270" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="35532" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 180Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="18K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1802T5E_C17506.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17506" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="162232" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 18kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="1K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1001T5E_C17513.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17513" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="4700749" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 1kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="1M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F1004T5E_C17514.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17514" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="380564" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 1MOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="1R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252230_UNI-ROYAL-Uniroyal-Elec-0805W8F100KT5E_C25271.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25271" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="83002" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±400ppm -55°C~+155°C 1Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="2.2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2201T5E_C17520.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17520" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="360536" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 2.2kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="2.2M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0805W8F2204T5E_C26113.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C26113" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="17952" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 2.2MOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="2.2R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F220KT5E_C17521.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17521" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="20001" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±400ppm -55°C~+155°C 2.2Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="2.4K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2401T5E_C17526.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17526" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="120922" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 2.4kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="2.7K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2701T5E_C17530.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17530" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="92844" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 2.7kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="200K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2003T5E_C17539.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17539" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="71260" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 200kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="200R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17540" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="191249" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 200Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="20K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F2002T5E_C4328.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4328" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1300647" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 20kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="20R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F200JT5E_C17544.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17544" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="65096" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±200ppm -55°C~+155°C 20Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="220K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2203T5E_C17556.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17556" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="29082" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 220kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="220R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2200T5E_C17557.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17557" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="440728" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 220Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="22K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2202T5E_C17560.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17560" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="181083" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 22kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="22R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F220JT5E_C17561.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17561" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="326615" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 22Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="240R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2400T5E_C17572.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17572" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="43460" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 240Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="24K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2402T5E_C17575.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17575" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="146564" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 24kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="270K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2703T5E_C17589.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17589" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="11422" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 270kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="270R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2700T5E_C17590.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17590" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="61946" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 270Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="27K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2702T5E_C17593.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17593" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="106968" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 27kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="27R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F270JT5E_C17594.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17594" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="11156" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 27Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F2001T5E_C17604.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17604" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="629462" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 2kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="2M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0805W8F2004T5E_C26112.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C26112" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="46532" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 2MOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="2R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F200KT5E_C17606.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17606" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="119171" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±400ppm -55°C~+155°C 2Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="3.3K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0805W8F3301T5E_C26010.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C26010" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="217144" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 3.3kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="3.6K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-0805W8F3601T5E_C18359.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C18359" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="21390" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 3.6kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="3.9K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F3901T5E_C17614.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17614" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="161737" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 3.9kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="300K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F3003T5E_C17616.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17616" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="75096" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 300kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="300R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F3000T5E_C17617.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17617" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="102996" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 300Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="30K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F3002T5E_C17621.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17621" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="163632" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 30kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="330K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F3303T5E_C17629.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17629" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="26296" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 330kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="330R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F3300T5E_C17630.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17630" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="567449" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 330Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="33K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F3302T5E_C17633.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17633" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="40110" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 33kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="33R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F330JT5E_C17634.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17634" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="348529" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±200ppm -55°C~+155°C 33Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="36K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F3602T5E_C4360.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4360" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="41042" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 36kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="390K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F3903T5E_C17656.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17656" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="7742" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 390kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="390R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F3900T5E_C17655.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17655" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="65586" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 390Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="39K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260030_UNI-ROYAL-Uniroyal-Elec-0805W8F3902T5E_C25826.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25826" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="31212" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 39kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="3K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F3001T5E_C17661.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17661" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="268252" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 3kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="4.3K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F4301T5E_C17667.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17667" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="53189" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 4.3kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="4.7K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F4701T5E_C17673.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17673" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1562660" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 4.7kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="4.7R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F470KT5E_C17675.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17675" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="181985" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±200ppm -55°C~+155°C 4.7Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="4.99K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F4991T5E_C17677.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17677" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="124867" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 4.99kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="43K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F4302T5E_C17695.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17695" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="26063" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 43kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="470K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F4703T5E_C17709.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17709" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="250845" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 470kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="470R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17710" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="384157" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 470Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="47K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F4702T5E_C17713.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17713" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="723102" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 47kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="47R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F470JT5E_C17714.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17714" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="198135" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±200ppm -55°C~+155°C 47Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="49.9K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F4992T5E_C17719.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17719" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="133709" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 49.9kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="49.9R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F499JT5E_C17720.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17720" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="276724" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 49.9Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="5.1K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C27834" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="2117928" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 5.1kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="5.1R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F510KT5E_C17724.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17724" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="37856" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±400ppm -55°C~+155°C 5.1Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="5.6K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-0805W8F5601T5E_C4382.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4382" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="310397" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 5.6kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="510K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F5103T5E_C17733.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17733" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="122653" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 510kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="510R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F5100T5E_C17734.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17734" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="471168" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 510Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="51K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F5102T5E_C17737.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17737" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="504227" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 51kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="51R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F510JT5E_C17738.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17738" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="181378" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 51Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="560R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110260130_UNI-ROYAL-Uniroyal-Elec-0805W8F5600T5E_C28636.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C28636" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="38931" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 560Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="56K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F5602T5E_C17756.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17756" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="49272" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 56kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="56R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F560JT5E_C17757.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17757" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="39966" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 56Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="6.2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F6201T5E_C17767.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17767" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="120042" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 6.2kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="6.8K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F6801T5E_C17772.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17772" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="131269" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 6.8kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="62K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F6202T5E_C17783.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17783" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="54591" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 62kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="680K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F6803T5E_C17797.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17797" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="7865" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 680kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="680R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F6800T5E_C17798.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17798" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="143314" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 680Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="68K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F6802T5E_C17801.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17801" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="225277" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 68kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="68R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251830_UNI-ROYAL-Uniroyal-Elec-0805W8F680JT5E_C17802.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17802" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="40706" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±200ppm -55°C~+155°C 68Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="7.5K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-0805W8F7501T5E_C17807.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17807" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="170168" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 7.5kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="750R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-0805W8F7500T5E_C17818.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17818" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="89599" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 750Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="75K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-0805W8F7502T5E_C17819.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17819" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="14207" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 75kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="8.2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-0805W8F8201T5E_C17828.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17828" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="104986" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/8W Thick Film Resistors 150V ±100ppm -55°C~+155°C 8.2kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="820R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-0805W8F8200T5E_C17837.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17837" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="14474" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 820Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="82K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-0805W8F8202T5E_C17840.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17840" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="126151" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 82kOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="9.1K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-0805W8F9101T5E_C17855.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17855" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="30172" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 125mW Thick Film Resistors 150V ±100ppm -55°C~+155°C 9.1kOhm 0805  ROHS" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_1206" package="R1206">
+<connects>
+<connect gate="R1" pin="1" pad="1"/>
+<connect gate="R1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23540/2"/>
+</package3dinstances>
+<technologies>
+<technology name="0R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F0000T5E_C17888.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17888" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="399166" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±800ppm -55°C~+155°C 0Ohm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="1.2M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252030_UNI-ROYAL-Uniroyal-Elec-1206W4F1204T5E_C22107.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22107" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="80611" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/4W Thick Film Resistors 200V ±100ppm -55°C~+155°C 1.2MOhm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="100K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F1003T5E_C17900.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17900" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="679391" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/4W Thick Film Resistors 200V ±100ppm -55°C~+155°C 100kOhm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="100M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110252330_UNI-ROYAL-Uniroyal-Elec-1206W4F100LT5E_C25334.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C25334" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="32845" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±800ppm -55°C~+155°C 100mOhm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="100R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F1000T5E_C17901.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17901" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="724229" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/4W Thick Film Resistors 200V ±100ppm -55°C~+155°C 100Ohm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="10K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F1002T5E_C17902.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17902" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="562963" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/4W Thick Film Resistors 200V ±100ppm -55°C~+155°C 10kOhm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="10R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F100JT5E_C17903.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17903" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="456345" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±400ppm -55°C~+155°C 10Ohm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="120R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F1200T5E_C17909.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17909" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="77220" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/4W Thick Film Resistors 200V ±100ppm -55°C~+155°C 120Ohm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="180R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F1800T5E_C17924.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17924" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="20567" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±100ppm -55°C~+155°C 180Ohm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="1K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251730_UNI-ROYAL-Uniroyal-Elec-1206W4F1001T5_C4410.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C4410" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="132098" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/4W Thick Film Resistors 200V -55°C~+155°C 1kOhm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="1M">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F1004T5E_C17927.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17927" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1365519" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/4W Thick Film Resistors 200V ±100ppm -55°C~+155°C 1MOhm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="1R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F100KT5E_C17928.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17928" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="555258" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±800ppm -55°C~+155°C 1Ohm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="20R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F200JT5E_C17955.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17955" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="169289" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/4W Thick Film Resistors 200V ±100ppm -55°C~+155°C 20Ohm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="22R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F220JT5E_C17958.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17958" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="127532" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/4W Thick Film Resistors 200V ±100ppm -55°C~+155°C 22Ohm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="2K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F2001T5E_C17944.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17944" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="142604" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/4W Thick Film Resistors 200V ±100ppm -55°C~+155°C 2kOhm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="300R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F3000T5E_C17887.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17887" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="38519" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/4W Thick Film Resistors 200V ±100ppm -55°C~+155°C 300Ohm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="4.7K">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F4701T5E_C17936.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17936" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="161665" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 250mW Thick Film Resistors 200V ±100ppm -55°C~+155°C 4.7kOhm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="750R">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110251930_UNI-ROYAL-Uniroyal-Elec-1206W4F7500T5E_C17985.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C17985" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="30926" constant="no"/>
+<attribute name="PROPERTIES" value="±1% 1/4W Thick Film Resistors 200V ±100ppm -55°C~+155°C 750Ohm 1206  ROHS" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C_" prefix="C">
+<description>&lt;h1&gt;Capacitor&lt;/h1&gt; &lt;p&gt;General purpose SMD Capacitor&lt;/p&gt;</description>
+<gates>
+<gate name="C1" symbol="C-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_0402" package="C0402">
+<connects>
+<connect gate="C1" pin="1" pad="1"/>
+<connect gate="C1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23626/2"/>
+</package3dinstances>
+<technologies>
+<technology name="1.5PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151132_FH-Guangdong-Fenghua-Advanced-Tech-0402CG1R5C500NT_C1552.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1552" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="156501" constant="no"/>
+<attribute name="PROPERTIES" value="50V 1.5pF C0G ±0.25pF 0402  ROHS" constant="no"/>
+</technology>
+<technology name="100NF/16V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1525" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="7852677" constant="no"/>
+<attribute name="PROPERTIES" value="16V 100nF X7R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="100NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191222_Samsung-Electro-Mechanics-CL05B104KB54PNC_C307331.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C307331" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="959347" constant="no"/>
+<attribute name="PROPERTIES" value="50V 100nF X7R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="100PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810151218_FH-Guangdong-Fenghua-Advanced-Tech-0402CG101J500NT_C1546.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1546" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1032388" constant="no"/>
+<attribute name="PROPERTIES" value="50V 100pF C0G ±5% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="10NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191223_Samsung-Electro-Mechanics-CL05B103KB5NNNC_C15195.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C15195" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="7659158" constant="no"/>
+<attribute name="PROPERTIES" value="50V 10nF X7R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="10PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191220_Samsung-Electro-Mechanics-CL05C100JB5NNNC_C32949.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C32949" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="197356" constant="no"/>
+<attribute name="PROPERTIES" value="50V 10pF C0G ±5% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="10UF/6.3V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191215_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C15525" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1727946" constant="no"/>
+<attribute name="PROPERTIES" value="6.3V 10uF X5R ±20% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="12PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402CG120J500NT_C1547.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1547" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="103909" constant="no"/>
+<attribute name="PROPERTIES" value="50V 12pF C0G ±5% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="150PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810302110_FH-Guangdong-Fenghua-Advanced-Tech-0402B151K500NT_C1527.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1527" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="5377" constant="no"/>
+<attribute name="PROPERTIES" value="50V 150pF X7R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="15PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810111610_FH-Guangdong-Fenghua-Advanced-Tech-0402CG150J500NT_C1548.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1548" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="769350" constant="no"/>
+<attribute name="PROPERTIES" value="50V 15pF C0G ±5% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="18PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141814_FH-Guangdong-Fenghua-Advanced-Tech-0402CG180J500NT_C1549.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1549" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="143023" constant="no"/>
+<attribute name="PROPERTIES" value="50V 18pF C0G ±5% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="1NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1809291524_FH-Guangdong-Fenghua-Advanced-Tech-0402B102K500NT_C1523.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1523" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="312153" constant="no"/>
+<attribute name="PROPERTIES" value="50V 1nF X7R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="1PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402CG1R0C500NT_C1550.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1550" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="4662154" constant="no"/>
+<attribute name="PROPERTIES" value="50V 1pF C0G ±0.25pF 0402  ROHS" constant="no"/>
+</technology>
+<technology name="1UF/25V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811091611_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C52923" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="6404174" constant="no"/>
+<attribute name="PROPERTIES" value="25V 1uF X5R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="2.2NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402B222K500NT_C1531.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1531" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="188650" constant="no"/>
+<attribute name="PROPERTIES" value="50V 2.2nF X7R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="2.2PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141843_FH-Guangdong-Fenghua-Advanced-Tech-0402CG2R2C500NT_C1559.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1559" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="210263" constant="no"/>
+<attribute name="PROPERTIES" value="50V 2.2pF C0G ±0.25pF 0402  ROHS" constant="no"/>
+</technology>
+<technology name="2.2UF/6.3V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811021410_Samsung-Electro-Mechanics-CL05A225MQ5NSNC_C12530.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C12530" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="937098" constant="no"/>
+<attribute name="PROPERTIES" value="6.3V 2.2uF X5R ±20% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="2.7PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402CG2R7C500NT_C1561.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1561" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="16592" constant="no"/>
+<attribute name="PROPERTIES" value="50V 2.7pF C0G ±0.25pF 0402  ROHS" constant="no"/>
+</technology>
+<technology name="20PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402CG200J500NT_C1554.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1554" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="4018132" constant="no"/>
+<attribute name="PROPERTIES" value="50V 20pF C0G ±5% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="220NF/16V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810251021_Samsung-Electro-Mechanics-CL05B224KO5NNNC-_C16772.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C16772" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="24406" constant="no"/>
+<attribute name="PROPERTIES" value="16V 220nF X7R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="220PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151132_FH-Guangdong-Fenghua-Advanced-Tech-0402B221K500NT_C1530.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1530" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1593430" constant="no"/>
+<attribute name="PROPERTIES" value="50V 220pF X7R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="22NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402B223K500NT_C1532.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1532" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="117809" constant="no"/>
+<attribute name="PROPERTIES" value="50V 22nF X7R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="22PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402CG220J500NT_C1555.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1555" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="273478" constant="no"/>
+<attribute name="PROPERTIES" value="50V 22pF C0G ±5% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="27PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402CG270J500NT_C1557.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1557" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="750259" constant="no"/>
+<attribute name="PROPERTIES" value="50V 27pF C0G ±5% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="3.3NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191211_Samsung-Electro-Mechanics-CL05B332KB5NNNC_C26404.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C26404" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="7731" constant="no"/>
+<attribute name="PROPERTIES" value="50V 3.3nF X7R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="3.3PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402CG3R3C500NT_C1565.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1565" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="113539" constant="no"/>
+<attribute name="PROPERTIES" value="50V 3.3pF C0G ±0.25pF 0402  ROHS" constant="no"/>
+</technology>
+<technology name="30PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402CG300J500NT_C1570.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1570" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="42657" constant="no"/>
+<attribute name="PROPERTIES" value="50V 30pF C0G ±5% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="330PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810192025_Samsung-Electro-Mechanics-CL05C331JB5NNNC_C13533.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C13533" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="37162" constant="no"/>
+<attribute name="PROPERTIES" value="50V 330pF C0G ±5% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="33NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141711_FH-Guangdong-Fenghua-Advanced-Tech-0402F333M500NT_C1585.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1585" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="26614" constant="no"/>
+<attribute name="PROPERTIES" value="Y5V ±20% 33nF 50V 0402  ROHS" constant="no"/>
+</technology>
+<technology name="33PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141731_FH-Guangdong-Fenghua-Advanced-Tech-0402CG330J500NT_C1562.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1562" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1133835" constant="no"/>
+<attribute name="PROPERTIES" value="50V 33pF C0G ±5% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="4.7NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811031110_FH-Guangdong-Fenghua-Advanced-Tech-0402B472K500NT_C1538.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1538" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="406196" constant="no"/>
+<attribute name="PROPERTIES" value="50V 4.7nF X7R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="4.7PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402CG4R7C500NT_C1569.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1569" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="217505" constant="no"/>
+<attribute name="PROPERTIES" value="50V 4.7pF C0G ±0.25pF 0402  ROHS" constant="no"/>
+</technology>
+<technology name="4.7UF/10V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191211_Samsung-Electro-Mechanics-CL05A475MP5NRNC_C23733.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23733" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="424928" constant="no"/>
+<attribute name="PROPERTIES" value="10V 4.7uF X5R ±20% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="470NF/10V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191214_Samsung-Electro-Mechanics-CL05A474KP5NNNC-_C47339.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C47339" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="131868" constant="no"/>
+<attribute name="PROPERTIES" value="10V 470nF X5R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="470PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402B471K500NT_C1537.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1537" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="29330" constant="no"/>
+<attribute name="PROPERTIES" value="50V 470pF X7R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="47PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151132_FH-Guangdong-Fenghua-Advanced-Tech-0402CG470J500NT_C1567.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1567" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="269226" constant="no"/>
+<attribute name="PROPERTIES" value="50V 47pF C0G ±5% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="6.8NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402B682K500NT_C1542.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1542" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="102093" constant="no"/>
+<attribute name="PROPERTIES" value="50V 6.8nF X7R ±10% 0402  ROHS" constant="no"/>
+</technology>
+<technology name="6.8PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811141710_FH-Guangdong-Fenghua-Advanced-Tech-0402CG6R8C500NT_C1576.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1576" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="110389" constant="no"/>
+<attribute name="PROPERTIES" value="50V 6.8pF C0G ±0.25pF 0402  ROHS" constant="no"/>
+</technology>
+<technology name="68PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191215_Samsung-Electro-Mechanics-CL05C680JB5NNNC_C14441.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C14441" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="35465" constant="no"/>
+<attribute name="PROPERTIES" value="50V 68pF C0G ±5% 0402  ROHS" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_0603" package="C0603">
+<connects>
+<connect gate="C1" pin="1" pad="1"/>
+<connect gate="C1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23616/2"/>
+</package3dinstances>
+<technologies>
+<technology name="1.5NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061810_FH-Guangdong-Fenghua-Advanced-Tech-0603B152K500NT_C1595.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1595" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="968125" constant="no"/>
+<attribute name="PROPERTIES" value="50V 1.5nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="100NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1809301912_YAGEO-CC0603KRX7R9BB104_C14663.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C14663" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="7111530" constant="no"/>
+<attribute name="PROPERTIES" value="50V 100nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="100PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151136_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C14858" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="2152181" constant="no"/>
+<attribute name="PROPERTIES" value="50V 100pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="10NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2102081402_FH-Guangdong-Fenghua-Advanced-Tech-0603B103K500NT_C57112.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C57112" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="3812119" constant="no"/>
+<attribute name="PROPERTIES" value="50V 10nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="10PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261513_Samsung-Electro-Mechanics-CL10C100JB8NNNC_C1634.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1634" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="83514" constant="no"/>
+<attribute name="PROPERTIES" value="50V 10pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="10UF/10V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C19702" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="2089400" constant="no"/>
+<attribute name="PROPERTIES" value="10V 10uF X5R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="10UF/25V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811110921_Samsung-Electro-Mechanics-CL10A106MA8NRNC_C96446.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C96446" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="119091" constant="no"/>
+<attribute name="PROPERTIES" value="X5R 25V ±20% 10uF 0603  ROHS" constant="no"/>
+</technology>
+<technology name="12PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261515_Samsung-Electro-Mechanics-CL10C120JB8NNNC_C38523.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C38523" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="87030" constant="no"/>
+<attribute name="PROPERTIES" value="50V 12pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="150PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061810_FH-Guangdong-Fenghua-Advanced-Tech-0603B151K500NT_C1594.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1594" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="53373" constant="no"/>
+<attribute name="PROPERTIES" value="50V 150pF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="15NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061810_FH-Guangdong-Fenghua-Advanced-Tech-0603B153K500NT_C1596.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1596" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="8147" constant="no"/>
+<attribute name="PROPERTIES" value="50V 15nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="15PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261515_Samsung-Electro-Mechanics-CL10C150JB8NNNC_C1644.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1644" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="189543" constant="no"/>
+<attribute name="PROPERTIES" value="50V 15pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="18PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261621_Samsung-Electro-Mechanics-CL10C180JB8NNNC_C1647.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1647" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="52140" constant="no"/>
+<attribute name="PROPERTIES" value="50V 18pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="1NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811071810_Samsung-Electro-Mechanics-CL10B102KB8NNNC_C1588.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1588" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="2243141" constant="no"/>
+<attribute name="PROPERTIES" value="50V 1nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="1PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261512_Samsung-Electro-Mechanics-CL10C010CB8NNNC_C23969.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23969" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="4168" constant="no"/>
+<attribute name="PROPERTIES" value="50V 1pF C0G ±0.25pF 0603  ROHS" constant="no"/>
+</technology>
+<technology name="1UF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261812_Samsung-Electro-Mechanics-CL10A105KB8NNNC_C15849.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C15849" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="14650365" constant="no"/>
+<attribute name="PROPERTIES" value="50V 1uF X5R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="2.2NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810301614_FH-Guangdong-Fenghua-Advanced-Tech-0603B222K500NT_C1604.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1604" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="273964" constant="no"/>
+<attribute name="PROPERTIES" value="50V 2.2nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="2.2UF/16V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810271109_Samsung-Electro-Mechanics-CL10A225KO8NNNC_C23630.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C23630" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1324345" constant="no"/>
+<attribute name="PROPERTIES" value="16V 2.2uF X5R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="2.7NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151136_FH-Guangdong-Fenghua-Advanced-Tech-0603B272K500NT_C1609.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1609" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="55268" constant="no"/>
+<attribute name="PROPERTIES" value="50V 2.7nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="2.7PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261513_Samsung-Electro-Mechanics-CL10C2R7CB8NNNC_C16149.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C16149" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="9592" constant="no"/>
+<attribute name="PROPERTIES" value="50V 2.7pF C0G ±0.25pF 0603  ROHS" constant="no"/>
+</technology>
+<technology name="200PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061810_FH-Guangdong-Fenghua-Advanced-Tech-0603B201K500NT_C1600.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1600" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="46839" constant="no"/>
+<attribute name="PROPERTIES" value="50V 200pF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="20PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261514_Samsung-Electro-Mechanics-CL10C200JB8NNNC_C1648.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1648" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="274374" constant="no"/>
+<attribute name="PROPERTIES" value="50V 20pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="220NF/25V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261513_Samsung-Electro-Mechanics-CL10B224KA8NNNC_C21120.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C21120" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="545148" constant="no"/>
+<attribute name="PROPERTIES" value="25V 220nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="220PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261515_Samsung-Electro-Mechanics-CL10B221KB8NNNC_C1603.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1603" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="33678" constant="no"/>
+<attribute name="PROPERTIES" value="50V 220pF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="22NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811101610_Samsung-Electro-Mechanics-CL10B223KB8NNNC_C21122.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C21122" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="336043" constant="no"/>
+<attribute name="PROPERTIES" value="50V 22nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="22PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810121815_Samsung-Electro-Mechanics-CL10C220JB8NNNC_C1653.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1653" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="538610" constant="no"/>
+<attribute name="PROPERTIES" value="50V 22pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="22UF/6.3V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151138_Samsung-Electro-Mechanics-CL10A226MQ8NRNC_C59461.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C59461" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="6685052" constant="no"/>
+<attribute name="PROPERTIES" value="6.3V 22uF X5R ±20% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="27PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261514_Samsung-Electro-Mechanics-CL10C270JB8NNNC_C1656.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1656" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="8136" constant="no"/>
+<attribute name="PROPERTIES" value="50V 27pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="3.3NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261513_Samsung-Electro-Mechanics-CL10B332KB8NNNC_C1613.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1613" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="55111" constant="no"/>
+<attribute name="PROPERTIES" value="50V 3.3nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="30PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1809300925_Samsung-Electro-Mechanics-CL10C300JB8NNNC_C22397.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C22397" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="59202" constant="no"/>
+<attribute name="PROPERTIES" value="50V 30pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="330NF/25V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061811_FH-Guangdong-Fenghua-Advanced-Tech-0603B334K250NT_C1615.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1615" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="38890" constant="no"/>
+<attribute name="PROPERTIES" value="25V 330nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="330PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261512_Samsung-Electro-Mechanics-CL10C331JB8NNNC_C1664.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1664" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="76549" constant="no"/>
+<attribute name="PROPERTIES" value="50V 330pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="33NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261514_Samsung-Electro-Mechanics-CL10B333KB8NNNC_C21117.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C21117" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="135190" constant="no"/>
+<attribute name="PROPERTIES" value="50V 33nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="33PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151146_Samsung-Electro-Mechanics-CL10C330JB8NNNC_C1663.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1663" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="3029" constant="no"/>
+<attribute name="PROPERTIES" value="50V 33pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="3PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061821_FH-Guangdong-Fenghua-Advanced-Tech-0603CG3R0C500NT_C46219.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C46219" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="3532006" constant="no"/>
+<attribute name="PROPERTIES" value="50V 3pF C0G ±0.25pF 0603  ROHS" constant="no"/>
+</technology>
+<technology name="4.7NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061811_FH-Guangdong-Fenghua-Advanced-Tech-0603B472K500NT_C53987.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C53987" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="179917" constant="no"/>
+<attribute name="PROPERTIES" value="50V 4.7nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="4.7PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261624_FH-Guangdong-Fenghua-Advanced-Tech-0603CG4R7C500NT_C1669.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1669" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1338830" constant="no"/>
+<attribute name="PROPERTIES" value="50V 4.7pF C0G ±0.25pF 0603  ROHS" constant="no"/>
+</technology>
+<technology name="4.7UF/16V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261514_Samsung-Electro-Mechanics-CL10A475KO8NNNC_C19666.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C19666" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="2027167" constant="no"/>
+<attribute name="PROPERTIES" value="16V 4.7uF X5R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="470NF/25V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261513_Samsung-Electro-Mechanics-CL10B474KA8NNNC_C1623.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1623" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="737714" constant="no"/>
+<attribute name="PROPERTIES" value="25V 470nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="470PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810302011_FH-Guangdong-Fenghua-Advanced-Tech-0603B471K500NT_C1620.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1620" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="120237" constant="no"/>
+<attribute name="PROPERTIES" value="50V 470pF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="47NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261614_Samsung-Electro-Mechanics-CL10B473KB8NNNC_C1622.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1622" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="152232" constant="no"/>
+<attribute name="PROPERTIES" value="50V 47nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="47PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261610_Samsung-Electro-Mechanics-CL10C470JB8NNNC_C1671.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1671" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="95931" constant="no"/>
+<attribute name="PROPERTIES" value="50V 47pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="56PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261515_Samsung-Electro-Mechanics-CL10C560JB8NNNC_C39148.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C39148" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="27514" constant="no"/>
+<attribute name="PROPERTIES" value="50V 56pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="6.8NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061811_FH-Guangdong-Fenghua-Advanced-Tech-0603B682K500NT_C1631.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1631" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="179789" constant="no"/>
+<attribute name="PROPERTIES" value="50V 6.8nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="6.8PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061822_FH-Guangdong-Fenghua-Advanced-Tech-0603CG6R8C500NT_C1679.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1679" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="3679197" constant="no"/>
+<attribute name="PROPERTIES" value="50V 6.8pF C0G ±0.25pF 0603  ROHS" constant="no"/>
+</technology>
+<technology name="680PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061822_FH-Guangdong-Fenghua-Advanced-Tech-0603B681K500NT_C1630.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1630" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="86513" constant="no"/>
+<attribute name="PROPERTIES" value="50V 680pF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="68NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811072020_Samsung-Electro-Mechanics-CL10B683KB8NNNC_C31658.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C31658" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="19607" constant="no"/>
+<attribute name="PROPERTIES" value="50V 68nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="68PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261521_Samsung-Electro-Mechanics-CL10C680JB8NNNC_C28262.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C28262" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="34680" constant="no"/>
+<attribute name="PROPERTIES" value="50V 68pF C0G ±5% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="6PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061822_FH-Guangdong-Fenghua-Advanced-Tech-0603CG6R0C500NT_C37474.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C37474" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="130037" constant="no"/>
+<attribute name="PROPERTIES" value="50V 6pF C0G ±0.25pF 0603  ROHS" constant="no"/>
+</technology>
+<technology name="8.2NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810262007_Samsung-Electro-Mechanics-CL10B822KB8NNNC_C27920.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C27920" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="4531" constant="no"/>
+<attribute name="PROPERTIES" value="50V 8.2nF X7R ±10% 0603  ROHS" constant="no"/>
+</technology>
+<technology name="8.2PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061811_FH-Guangdong-Fenghua-Advanced-Tech-0603CG8R2C500NT_C1685.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1685" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="4823" constant="no"/>
+<attribute name="PROPERTIES" value="50V 8.2pF C0G ±0.25pF 0603  ROHS" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_0805" package="C0805">
+<connects>
+<connect gate="C1" pin="1" pad="1"/>
+<connect gate="C1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23617/2"/>
+</package3dinstances>
+<technologies>
+<technology name="1.5NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061723_FH-Guangdong-Fenghua-Advanced-Tech-0805B152K500NT_C1717.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1717" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="36317" constant="no"/>
+<attribute name="PROPERTIES" value="50V 1.5nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="100NF/100V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191216_Samsung-Electro-Mechanics-CL21B104KCFNNNE_C28233.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C28233" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1245695" constant="no"/>
+<attribute name="PROPERTIES" value="100V 100nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="100NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810101813_YAGEO-CC0805KRX7R9BB104_C49678.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C49678" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="3328509" constant="no"/>
+<attribute name="PROPERTIES" value="50V 100nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="100PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810241824_Samsung-Electro-Mechanics-CL21C101JBANNNC_C1790.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1790" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="360745" constant="no"/>
+<attribute name="PROPERTIES" value="50V 100pF C0G ±5% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="10NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151136_Samsung-Electro-Mechanics-CL21B103KBANNNC_C1710.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1710" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="886408" constant="no"/>
+<attribute name="PROPERTIES" value="50V 10nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="10PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191223_Samsung-Electro-Mechanics-CL21C100JBANNNC_C1785.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1785" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="47327" constant="no"/>
+<attribute name="PROPERTIES" value="50V 10pF C0G ±5% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="10UF/25V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811121310_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C15850" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1370441" constant="no"/>
+<attribute name="PROPERTIES" value="X5R 25V ±10% 10uF 0805  ROHS" constant="no"/>
+</technology>
+<technology name="10UF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2004251506_Murata-Electronics-GRM21BR61H106KE43L_C440198.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C440198" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="71215" constant="no"/>
+<attribute name="PROPERTIES" value="50V 10uF X5R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="12PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061723_FH-Guangdong-Fenghua-Advanced-Tech-0805CG120J500NT_C1792.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1792" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="36360" constant="no"/>
+<attribute name="PROPERTIES" value="50V 12pF C0G ±5% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="150PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061722_FH-Guangdong-Fenghua-Advanced-Tech-0805B151K500NT_C1716.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1716" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="11929" constant="no"/>
+<attribute name="PROPERTIES" value="50V 150pF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="15PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810241241_Samsung-Electro-Mechanics-CL21C150JBANNNC_C1794.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1794" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="32529" constant="no"/>
+<attribute name="PROPERTIES" value="50V 15pF C0G ±5% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="18PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811091217_FH-Guangdong-Fenghua-Advanced-Tech-0805CG180J500NT_C1797.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1797" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="71851" constant="no"/>
+<attribute name="PROPERTIES" value="50V 18pF C0G ±5% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="1NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1808311543_Samsung-Electro-Mechanics-CL21B102KBCNNNC_C46653.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C46653" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="203361" constant="no"/>
+<attribute name="PROPERTIES" value="50V 1nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="1UF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191216_Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C28323" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="6961318" constant="no"/>
+<attribute name="PROPERTIES" value="50V 1uF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="2.2NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191215_Samsung-Electro-Mechanics-CL21C222JBFNNNE_C28260.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C28260" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="27130" constant="no"/>
+<attribute name="PROPERTIES" value="50V 2.2nF C0G ±5% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="2.2UF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811101411_FH-Guangdong-Fenghua-Advanced-Tech-0805F225M500NT_C49217.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C49217" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="654398" constant="no"/>
+<attribute name="PROPERTIES" value="50V 2.2uF Y5V ±20% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="20PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191220_Samsung-Electro-Mechanics-CL21C200JBANNNC_C1798.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1798" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="64875" constant="no"/>
+<attribute name="PROPERTIES" value="50V 20pF C0G ±5% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="220NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191222_Samsung-Electro-Mechanics-CL21B224KBFNNNE_C5378.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C5378" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="293675" constant="no"/>
+<attribute name="PROPERTIES" value="50V 220nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="220PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191219_Samsung-Electro-Mechanics-CL21B221KBANNNC_C53172.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C53172" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="39010" constant="no"/>
+<attribute name="PROPERTIES" value="50V 220pF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="22NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191222_Samsung-Electro-Mechanics-CL21B223KBANNNC_C1729.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1729" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="169058" constant="no"/>
+<attribute name="PROPERTIES" value="50V 22nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="22PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810271113_Samsung-Electro-Mechanics-CL21C220JBANNNC_C1804.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1804" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="54012" constant="no"/>
+<attribute name="PROPERTIES" value="50V 22pF C0G ±5% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="22UF/25V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811151152_Samsung-Electro-Mechanics-CL21A226MAQNNNE_C45783.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C45783" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1218863" constant="no"/>
+<attribute name="PROPERTIES" value="X5R 25V ±20% 22uF 0805  ROHS" constant="no"/>
+</technology>
+<technology name="3.3NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191220_Samsung-Electro-Mechanics-CL21B332KBANNNC-_C53175.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C53175" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="5956" constant="no"/>
+<attribute name="PROPERTIES" value="50V 3.3nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="30PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191214_Samsung-Electro-Mechanics-CL21C300JBANNNC_C1809.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1809" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="3097" constant="no"/>
+<attribute name="PROPERTIES" value="50V 30pF C0G ±5% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="330NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811071214_FH-Guangdong-Fenghua-Advanced-Tech-0805B334K500NT_C1740.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1740" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="7936" constant="no"/>
+<attribute name="PROPERTIES" value="50V 330nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="330PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191220_Samsung-Electro-Mechanics-CL21B331KBANNNC_C51207.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C51207" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1889" constant="no"/>
+<attribute name="PROPERTIES" value="50V 330pF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="33NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061723_FH-Guangdong-Fenghua-Advanced-Tech-0805B333K500NT_C1739.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1739" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="34059" constant="no"/>
+<attribute name="PROPERTIES" value="50V 33nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="33PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191222_Samsung-Electro-Mechanics-CL21C330JBANNNC_C1814.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1814" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="0" constant="no"/>
+<attribute name="PROPERTIES" value="50V 33pF C0G ±5% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="4.7NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061719_FH-Guangdong-Fenghua-Advanced-Tech-0805B472K500NT_C1744.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1744" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="210851" constant="no"/>
+<attribute name="PROPERTIES" value="50V 4.7nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="4.7UF/25V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810261822_Samsung-Electro-Mechanics-CL21A475KAQNNNE_C1779.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1779" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="2892119" constant="no"/>
+<attribute name="PROPERTIES" value="25V 4.7uF X5R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="470NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810251812_Samsung-Electro-Mechanics-CL21B474KBFNNNE_C13967.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C13967" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="58437" constant="no"/>
+<attribute name="PROPERTIES" value="50V 470nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="470PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811110920_FH-Guangdong-Fenghua-Advanced-Tech-0805B471K500NT_C1743.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1743" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="155633" constant="no"/>
+<attribute name="PROPERTIES" value="50V 470pF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="47NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811091614_Samsung-Electro-Mechanics-CL21B473KBCNNNC_C53134.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C53134" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="82817" constant="no"/>
+<attribute name="PROPERTIES" value="50V 47nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="47PF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810191215_Samsung-Electro-Mechanics-CL21C470JBANNNC_C14857.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C14857" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="51597" constant="no"/>
+<attribute name="PROPERTIES" value="50V 47pF C0G ±5% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="47UF/6.3V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811091612_Samsung-Electro-Mechanics-CL21A476MQYNNNE_C16780.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C16780" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="757408" constant="no"/>
+<attribute name="PROPERTIES" value="6.3V 47uF X5R ±20% 0805  ROHS" constant="no"/>
+</technology>
+<technology name="6.8NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061724_FH-Guangdong-Fenghua-Advanced-Tech-0805B682K500NT_C1755.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1755" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="21310" constant="no"/>
+<attribute name="PROPERTIES" value="50V 6.8nF X7R ±10% 0805  ROHS" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_1206" package="C1206">
+<connects>
+<connect gate="C1" pin="1" pad="1"/>
+<connect gate="C1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23618/2"/>
+</package3dinstances>
+<technologies>
+<technology name="100NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810221109_Samsung-Electro-Mechanics-CL31B104KBCNNNC_C24497.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C24497" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="536240" constant="no"/>
+<attribute name="PROPERTIES" value="50V 100nF X7R ±10% 1206  ROHS" constant="no"/>
+</technology>
+<technology name="100UF/6.3V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810301816_Samsung-Electro-Mechanics-CL31A107MQHNNNE_C15008.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C15008" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="547696" constant="no"/>
+<attribute name="PROPERTIES" value="6.3V 100uF X5R ±20% 1206  ROHS" constant="no"/>
+</technology>
+<technology name="10NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811051111_FH-Guangdong-Fenghua-Advanced-Tech-1206B103K500NT_C1846.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1846" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="28382" constant="no"/>
+<attribute name="PROPERTIES" value="50V 10nF X7R ±10% 1206  ROHS" constant="no"/>
+</technology>
+<technology name="10UF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810221112_Samsung-Electro-Mechanics-CL31A106KBHNNNE_C13585.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C13585" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="3998322" constant="no"/>
+<attribute name="PROPERTIES" value="50V 10uF X5R ±10% 1206  ROHS" constant="no"/>
+</technology>
+<technology name="1NF/2KV">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810311314_FH-Guangdong-Fenghua-Advanced-Tech-1206B102K202NT_C9196.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C9196" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="8943689" constant="no"/>
+<attribute name="PROPERTIES" value="2kV 1nF X7R ±10% 1206  ROHS" constant="no"/>
+</technology>
+<technology name="1NF/500V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810221111_Samsung-Electro-Mechanics-CL31B102KGFNNNE_C35216.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C35216" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="8254" constant="no"/>
+<attribute name="PROPERTIES" value="500V 1nF X7R ±10% 1206  ROHS" constant="no"/>
+</technology>
+<technology name="1UF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810271109_Samsung-Electro-Mechanics-CL31B105KBHNNNE_C1848.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1848" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="5587768" constant="no"/>
+<attribute name="PROPERTIES" value="50V 1uF X7R ±10% 1206  ROHS" constant="no"/>
+</technology>
+<technology name="2.2UF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811072012_Samsung-Electro-Mechanics-CL31B225KBHNNNE_C50254.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C50254" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="187224" constant="no"/>
+<attribute name="PROPERTIES" value="50V 2.2uF X7R ±10% 1206  ROHS" constant="no"/>
+</technology>
+<technology name="220NF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810311313_FH-Guangdong-Fenghua-Advanced-Tech-1206B224K500NT_C1857.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1857" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="13850" constant="no"/>
+<attribute name="PROPERTIES" value="50V 220nF X7R ±10% 1206  ROHS" constant="no"/>
+</technology>
+<technology name="22UF/10V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810221121_Samsung-Electro-Mechanics-CL31A226KPHNNNE_C5672.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C5672" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1286694" constant="no"/>
+<attribute name="PROPERTIES" value="10V 22uF X5R ±10% 1206  ROHS" constant="no"/>
+</technology>
+<technology name="22UF/25V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811031514_Samsung-Electro-Mechanics-CL31A226KAHNNNE_C12891.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C12891" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="317536" constant="no"/>
+<attribute name="PROPERTIES" value="25V 22uF X5R ±10% 1206  ROHS" constant="no"/>
+</technology>
+<technology name="4.7UF/50V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811091112_FH-Guangdong-Fenghua-Advanced-Tech-1206B475K500NT_C29823.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C29823" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="223402" constant="no"/>
+<attribute name="PROPERTIES" value="50V 4.7uF X7R ±10% 1206  ROHS" constant="no"/>
+</technology>
+<technology name="47UF/10V">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810221121_Samsung-Electro-Mechanics-CL31A476MPHNNNE_C96123.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C96123" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="279828" constant="no"/>
+<attribute name="PROPERTIES" value="10V 47uF X5R ±20% 1206  ROHS" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L_" prefix="L">
+<description>&lt;h1&gt;Inductor&lt;/h1&gt; &lt;p&gt;General purpose SMD Inductors&lt;/p&gt;</description>
+<gates>
+<gate name="L1" symbol="L-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_0402" package="R0402">
+<connects>
+<connect gate="L1" pin="1" pad="1"/>
+<connect gate="L1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23547/3"/>
+</package3dinstances>
+<technologies>
+<technology name="10N">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110081230_Sunlord-SDCL1005C10NJTDF_C27147.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C27147" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="41630" constant="no"/>
+<attribute name="PROPERTIES" value="ManuPN: SDCL1005C10NJTDF 300mA 10nH ±5% 400mOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="15N">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110081230_Sunlord-SDCL1005C15NJTDF_C27143.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C27143" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="158440" constant="no"/>
+<attribute name="PROPERTIES" value="ManuPN: SDCL1005C15NJTDF 300mA 15nH ±5% 500mOhm 0402  ROHS" constant="no"/>
+</technology>
+<technology name="3N9">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110081230_Sunlord-SDCL1005C3N9STDF_C14033.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C14033" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="18569" constant="no"/>
+<attribute name="PROPERTIES" value="ManuPN: SDCL1005C3N9STDF 300mA 3.9nH ±3% 200mOhm 0402  ROHS" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_0603" package="R0603">
+<connects>
+<connect gate="L1" pin="1" pad="1"/>
+<connect gate="L1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23555/3"/>
+</package3dinstances>
+<technologies>
+<technology name="100">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110081230_Sunlord-SDFL1608S100KTF_C1035.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1035" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="131397" constant="no"/>
+<attribute name="PROPERTIES" value="ManuPN: SDFL1608S100KTF 3mA 10uH ±10% 1.85Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="4R7">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110081230_Sunlord-SDFL1608Q4R7KTF_C1034.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1034" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="65359" constant="no"/>
+<attribute name="PROPERTIES" value="ManuPN: SDFL1608Q4R7KTF 15mA 4.7uH ±10% 2.1Ohm 0603  ROHS" constant="no"/>
+</technology>
+<technology name="68N">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110081230_Sunlord-SDCL1608C68NJTDF_C13415.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C13415" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="59378" constant="no"/>
+<attribute name="PROPERTIES" value="ManuPN: SDCL1608C68NJTDF 300mA 68nH ±5% 850mOhm 0603  ROHS" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_0805" package="R0805">
+<connects>
+<connect gate="L1" pin="1" pad="1"/>
+<connect gate="L1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23553/2"/>
+</package3dinstances>
+<technologies>
+<technology name="100">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110081230_Sunlord-SDFL2012S100KTF_C1046.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1046" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="91347" constant="no"/>
+<attribute name="PROPERTIES" value="ManuPN: SDFL2012S100KTF 15mA 10uH ±10% 1.15Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="101">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810162253_TDK-MLF2012C101KT000_C68035.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C68035" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="1968" constant="no"/>
+<attribute name="PROPERTIES" value="ManuPN: MLF2012C101KT000 2mA 100uH ±10% 2.5Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="1R0">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110081230_Sunlord-SDFL2012Q1R0KTF_C1042.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1042" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="44995" constant="no"/>
+<attribute name="PROPERTIES" value="ManuPN: SDFL2012Q1R0KTF 50mA 1uH ±10% 400mOhm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="220">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110081230_Sunlord-SDFL2012T220KTF_C32375.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C32375" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="7125" constant="no"/>
+<attribute name="PROPERTIES" value="ManuPN: SDFL2012T220KTF 5mA 22uH ±10% 1.1Ohm 0805  ROHS" constant="no"/>
+</technology>
+<technology name="2R2">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1811061719_FH-Guangdong-Fenghua-Advanced-Tech-CMI201209U2R2KT_C1043.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1043" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="37908" constant="no"/>
+<attribute name="PROPERTIES" value="ManuPN: CMI201209U2R2KT 50mA 2.2uH ±10% 600mOhm 0805  ROHS" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_1206" package="R1206">
+<connects>
+<connect gate="L1" pin="1" pad="1"/>
+<connect gate="L1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:23540/2"/>
+</package3dinstances>
+<technologies>
+<technology name="100">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810311314_FH-Guangdong-Fenghua-Advanced-Tech-CMI321609X100KT_C1051.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1051" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="156395" constant="no"/>
+<attribute name="PROPERTIES" value="ManuPN: CMI321609X100KT 25mA 10uH ±10% 800mOhm 1206  ROHS" constant="no"/>
+</technology>
+<technology name="4R7">
+<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/1810311322_FH-Guangdong-Fenghua-Advanced-Tech-CMI321609U4R7KT_C1049.pdf" constant="no"/>
+<attribute name="LCSC_PART" value="C1049" constant="no"/>
+<attribute name="LCSC_PRICE1_EUR" value="" constant="no"/>
+<attribute name="LCSC_ROTATION_CCW" value="0" constant="no"/>
+<attribute name="LCSC_STOCK" value="6470" constant="no"/>
+<attribute name="PROPERTIES" value="ManuPN: CMI321609U4R7KT 25mA 4.7uH ±10% 650mOhm 1206  ROHS" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -14039,44 +12348,78 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <part name="U6" library="LMR33630ADDA" deviceset="LMR33630ADDA" device=""/>
 <part name="U7" library="BQ24074RGTR" deviceset="BQ24074RGTR" device=""/>
 <part name="BATTERY" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-1" device="" package3d_urn="urn:adsk.eagle:package:8339/1"/>
-<part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7uF"/>
-<part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
-<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="4.7uF"/>
-<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1.18k"/>
-<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1.13k"/>
-<part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
-<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
+<part name="C15" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="4.7PF/50V" value="4.7uF"/>
+<part name="C16" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="1UF/50V" value="1uF"/>
+<part name="C17" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="4.7UF/16V" value="4.7uF"/>
+<part name="R13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1.18k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="LCSC_PART" value="C861193"/>
+</part>
+<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1.13k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="LCSC_PART" value="C137782"/>
+</part>
+<part name="R15" library="JLC PCB Basic Parts_loc" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="1K" value="1k"/>
+<part name="R16" library="JLC PCB Basic Parts_loc" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="1K" value="1k"/>
 <part name="D6" library="ce-capstone" library_urn="urn:adsk.eagle:library:52044969" deviceset="SML-P12MTT86" device="" package3d_urn="urn:adsk.eagle:package:52045011/1"/>
 <part name="D7" library="ce-capstone" library_urn="urn:adsk.eagle:library:52044969" deviceset="SML-P12VTT86" device="" package3d_urn="urn:adsk.eagle:package:52045011/1"/>
-<part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF"/>
-<part name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF"/>
-<part name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF"/>
-<part name="C28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF"/>
-<part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1uF"/>
-<part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="220nF"/>
-<part name="C32" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
-<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
-<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
-<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="24.9k"/>
-<part name="L2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-US" device="L3225M" package3d_urn="urn:adsk.eagle:package:23477/2" value="8uH"/>
-<part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value=".1uF"/>
+<part name="C18" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="22UF/6.3V" value="22uF"/>
+<part name="C26" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="22UF/6.3V" value="22uF"/>
+<part name="C27" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="22UF/6.3V" value="22uF"/>
+<part name="C28" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="22UF/6.3V" value="22uF"/>
+<part name="C30" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="1UF/50V" value="1uF"/>
+<part name="C31" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="220NF/25V" value="220nF"/>
+<part name="C32" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="10UF/10V" value="10uF"/>
+<part name="R17" library="JLC PCB Basic Parts_loc" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="100K" value="100k"/>
+<part name="R18" library="JLC PCB Basic Parts_loc" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="100K" value="100k"/>
+<part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="24.9k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="LCSC_PART" value="C2654014"/>
+</part>
+<part name="C29" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="100NF/50V" value=".1uF"/>
 <part name="J9" library="B2B-PH-K-S" deviceset="B2B-PH-K-S" device=""/>
-<part name="C33" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF"/>
-<part name="C34" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF"/>
-<part name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
-<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="732k"/>
-<part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
-<part name="L3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-US" device="L3225M" package3d_urn="urn:adsk.eagle:package:23477/2" value="1uH"/>
-<part name="L4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-US" device="L3225M" package3d_urn="urn:adsk.eagle:package:23477/2" value="2.2uH"/>
-<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
-<part name="C36" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF"/>
-<part name="C37" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
-<part name="C38" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="3.3nF"/>
+<part name="C33" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="22UF/6.3V" value="22uF"/>
+<part name="C34" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="22UF/6.3V" value="22uF"/>
+<part name="C35" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="10UF/10V" value="10uF"/>
+<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="732k">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="LCSC_PART" value="C403344"/>
+</part>
+<part name="R21" library="JLC PCB Basic Parts_loc" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="100K" value="100k"/>
+<part name="L3" library="JLC PCB Basic Parts_loc" deviceset="L_" device="_0805" package3d_urn="urn:adsk.eagle:package:23553/2" technology="1R0" value="1uH"/>
+<part name="L4" library="JLC PCB Basic Parts_loc" deviceset="L_" device="_0805" package3d_urn="urn:adsk.eagle:package:23553/2" technology="2R2" value="2.2uH"/>
+<part name="R22" library="JLC PCB Basic Parts_loc" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="100K" value="100k"/>
+<part name="C36" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="22UF/6.3V" value="22uF"/>
+<part name="C37" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="10UF/10V" value="10uF"/>
+<part name="C38" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="3.3NF/50V" value="3.3nF"/>
 <part name="U$5" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
 <part name="D8" library="SS34LWH" deviceset="SS34LWH" device=""/>
 <part name="D9" library="SS34LWH" deviceset="SS34LWH" device=""/>
 <part name="D10" library="SS34LWH" deviceset="SS34LWH" device=""/>
-<part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
+<part name="R23" library="JLC PCB Basic Parts_loc" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="10K" value="10k"/>
+<part name="C3" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="22UF/6.3V" value="22uF"/>
+<part name="L5" library="JLC PCB Basic Parts_loc" deviceset="L_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="4R7"/>
+<part name="L6" library="JLC PCB Basic Parts_loc" deviceset="L_" device="_0805" package3d_urn="urn:adsk.eagle:package:23553/2" technology="2R2"/>
 </parts>
 <sheets>
 <sheet>
@@ -14303,31 +12646,33 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <attribute name="VALUE" x="300.99" y="20.32" size="1.778" layer="96"/>
 <attribute name="NAME" x="300.99" y="33.782" size="1.778" layer="95"/>
 </instance>
-<instance part="C15" gate="G$1" x="322.58" y="22.86" smashed="yes" rot="R180">
+<instance part="C15" gate="C1" x="322.58" y="22.86" smashed="yes" rot="R180">
 <attribute name="NAME" x="321.564" y="22.225" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="321.564" y="27.051" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C16" gate="G$1" x="335.28" y="40.64" smashed="yes" rot="R180">
+<instance part="C16" gate="C1" x="335.28" y="40.64" smashed="yes" rot="R180">
 <attribute name="NAME" x="334.264" y="40.005" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="334.264" y="44.831" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C17" gate="G$1" x="393.7" y="15.24" smashed="yes">
+<instance part="C17" gate="C1" x="393.7" y="15.24" smashed="yes">
 <attribute name="NAME" x="394.716" y="15.875" size="1.778" layer="95"/>
 <attribute name="VALUE" x="394.716" y="11.049" size="1.778" layer="96"/>
 </instance>
 <instance part="R13" gate="G$1" x="327.66" y="15.24" smashed="yes">
 <attribute name="NAME" x="323.85" y="16.7386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="323.85" y="11.938" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="327.66" y="15.24" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R14" gate="G$1" x="327.66" y="7.62" smashed="yes">
 <attribute name="NAME" x="323.85" y="9.1186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="323.85" y="4.318" size="1.778" layer="96"/>
+<attribute name="LCSC_PART" x="327.66" y="7.62" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R15" gate="G$1" x="393.7" y="33.02" smashed="yes">
+<instance part="R15" gate="R1" x="393.7" y="33.02" smashed="yes">
 <attribute name="NAME" x="389.89" y="34.5186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="389.89" y="29.718" size="1.778" layer="96"/>
 </instance>
-<instance part="R16" gate="G$1" x="393.7" y="40.64" smashed="yes">
+<instance part="R16" gate="R1" x="393.7" y="40.64" smashed="yes">
 <attribute name="NAME" x="389.89" y="42.1386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="389.89" y="37.338" size="1.778" layer="96"/>
 </instance>
@@ -14337,51 +12682,48 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <instance part="D7" gate="G$1" x="386.08" y="33.02" smashed="yes" rot="R270">
 <attribute name="NAME" x="378.968" y="34.544" size="1.778" layer="95"/>
 </instance>
-<instance part="C18" gate="G$1" x="294.64" y="101.6" smashed="yes">
+<instance part="C18" gate="C1" x="294.64" y="101.6" smashed="yes">
 <attribute name="NAME" x="295.656" y="102.235" size="1.778" layer="95"/>
 <attribute name="VALUE" x="295.656" y="97.409" size="1.778" layer="96"/>
 </instance>
-<instance part="C26" gate="G$1" x="304.8" y="101.6" smashed="yes">
+<instance part="C26" gate="C1" x="304.8" y="101.6" smashed="yes">
 <attribute name="NAME" x="305.816" y="102.235" size="1.778" layer="95"/>
 <attribute name="VALUE" x="305.816" y="97.409" size="1.778" layer="96"/>
 </instance>
-<instance part="C27" gate="G$1" x="314.96" y="101.6" smashed="yes">
+<instance part="C27" gate="C1" x="314.96" y="101.6" smashed="yes">
 <attribute name="NAME" x="315.976" y="102.235" size="1.778" layer="95"/>
 <attribute name="VALUE" x="315.976" y="97.409" size="1.778" layer="96"/>
 </instance>
-<instance part="C28" gate="G$1" x="325.12" y="101.6" smashed="yes">
+<instance part="C28" gate="C1" x="325.12" y="101.6" smashed="yes">
 <attribute name="NAME" x="326.136" y="102.235" size="1.778" layer="95"/>
 <attribute name="VALUE" x="326.136" y="97.409" size="1.778" layer="96"/>
 </instance>
-<instance part="C30" gate="G$1" x="406.4" y="121.92" smashed="yes" rot="R180">
+<instance part="C30" gate="C1" x="406.4" y="121.92" smashed="yes" rot="R180">
 <attribute name="NAME" x="405.384" y="121.285" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="405.384" y="126.111" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C31" gate="G$1" x="347.98" y="129.54" smashed="yes">
+<instance part="C31" gate="C1" x="347.98" y="129.54" smashed="yes">
 <attribute name="NAME" x="348.996" y="130.175" size="1.778" layer="95"/>
 <attribute name="VALUE" x="348.996" y="125.349" size="1.778" layer="96"/>
 </instance>
-<instance part="C32" gate="G$1" x="340.36" y="129.54" smashed="yes">
+<instance part="C32" gate="C1" x="340.36" y="129.54" smashed="yes">
 <attribute name="NAME" x="341.376" y="130.175" size="1.778" layer="95"/>
 <attribute name="VALUE" x="341.376" y="125.349" size="1.778" layer="96"/>
 </instance>
-<instance part="R17" gate="G$1" x="332.74" y="111.76" smashed="yes" rot="R90">
+<instance part="R17" gate="R1" x="332.74" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="331.2414" y="107.95" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="336.042" y="107.95" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R18" gate="G$1" x="416.56" y="119.38" smashed="yes" rot="R180">
+<instance part="R18" gate="R1" x="416.56" y="119.38" smashed="yes" rot="R180">
 <attribute name="NAME" x="420.37" y="117.8814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="420.37" y="122.682" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R19" gate="G$1" x="322.58" y="116.84" smashed="yes" rot="R180">
 <attribute name="NAME" x="326.39" y="115.3414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="326.39" y="120.142" size="1.778" layer="96" rot="R180"/>
+<attribute name="LCSC_PART" x="322.58" y="116.84" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="L2" gate="G$1" x="340.36" y="104.14" smashed="yes" rot="R90">
-<attribute name="NAME" x="345.44" y="102.87" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="345.44" y="107.95" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="C29" gate="G$1" x="353.06" y="104.14" smashed="yes" rot="R90">
+<instance part="C29" gate="C1" x="353.06" y="104.14" smashed="yes" rot="R90">
 <attribute name="NAME" x="352.425" y="105.156" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="357.251" y="105.156" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -14389,47 +12731,48 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <attribute name="NAME" x="320.54" y="124.46" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="320.04" y="134.62" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C33" gate="G$1" x="492.76" y="81.28" smashed="yes">
+<instance part="C33" gate="C1" x="492.76" y="81.28" smashed="yes">
 <attribute name="NAME" x="493.776" y="81.915" size="1.778" layer="95"/>
 <attribute name="VALUE" x="493.776" y="77.089" size="1.778" layer="96"/>
 </instance>
-<instance part="C34" gate="G$1" x="502.92" y="81.28" smashed="yes">
+<instance part="C34" gate="C1" x="502.92" y="81.28" smashed="yes">
 <attribute name="NAME" x="503.936" y="81.915" size="1.778" layer="95"/>
 <attribute name="VALUE" x="503.936" y="77.089" size="1.778" layer="96"/>
 </instance>
-<instance part="C35" gate="G$1" x="447.04" y="96.52" smashed="yes">
+<instance part="C35" gate="C1" x="447.04" y="96.52" smashed="yes">
 <attribute name="NAME" x="448.056" y="97.155" size="1.778" layer="95"/>
 <attribute name="VALUE" x="448.056" y="92.329" size="1.778" layer="96"/>
 </instance>
 <instance part="R20" gate="G$1" x="502.92" y="96.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="501.4214" y="92.71" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="506.222" y="92.71" size="1.778" layer="96" rot="R90"/>
+<attribute name="LCSC_PART" x="502.92" y="96.52" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="R21" gate="G$1" x="502.92" y="111.76" smashed="yes" rot="R90">
+<instance part="R21" gate="R1" x="502.92" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="501.4214" y="107.95" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="506.222" y="107.95" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="L3" gate="G$1" x="472.44" y="99.06" smashed="yes" rot="R270">
+<instance part="L3" gate="L1" x="472.44" y="99.06" smashed="yes" rot="R270">
 <attribute name="NAME" x="467.36" y="100.33" size="1.778" layer="95"/>
 <attribute name="VALUE" x="467.36" y="95.25" size="1.778" layer="96"/>
 </instance>
-<instance part="L4" gate="G$1" x="490.22" y="38.1" smashed="yes" rot="R90">
+<instance part="L4" gate="L1" x="490.22" y="38.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="495.3" y="36.83" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="495.3" y="41.91" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R22" gate="G$1" x="502.92" y="33.02" smashed="yes" rot="R90">
+<instance part="R22" gate="R1" x="502.92" y="33.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="501.4214" y="29.21" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="506.222" y="29.21" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C36" gate="G$1" x="510.54" y="33.02" smashed="yes">
+<instance part="C36" gate="C1" x="510.54" y="33.02" smashed="yes">
 <attribute name="NAME" x="511.556" y="33.655" size="1.778" layer="95"/>
 <attribute name="VALUE" x="511.556" y="28.829" size="1.778" layer="96"/>
 </instance>
-<instance part="C37" gate="G$1" x="419.1" y="33.02" smashed="yes">
+<instance part="C37" gate="C1" x="419.1" y="33.02" smashed="yes">
 <attribute name="NAME" x="420.116" y="33.655" size="1.778" layer="95"/>
 <attribute name="VALUE" x="420.116" y="28.829" size="1.778" layer="96"/>
 </instance>
-<instance part="C38" gate="G$1" x="429.26" y="22.86" smashed="yes">
+<instance part="C38" gate="C1" x="429.26" y="22.86" smashed="yes">
 <attribute name="NAME" x="430.276" y="23.495" size="1.778" layer="95"/>
 <attribute name="VALUE" x="430.276" y="18.669" size="1.778" layer="96"/>
 </instance>
@@ -14446,9 +12789,21 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <attribute name="NAME" x="200.66" y="76.2" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="203.2" y="85.09" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R23" gate="G$1" x="327.66" y="30.48" smashed="yes">
+<instance part="R23" gate="R1" x="327.66" y="30.48" smashed="yes">
 <attribute name="NAME" x="323.85" y="31.9786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="323.85" y="27.178" size="1.778" layer="96"/>
+</instance>
+<instance part="C3" gate="C1" x="513.08" y="81.28" smashed="yes">
+<attribute name="NAME" x="514.096" y="81.915" size="1.778" layer="95"/>
+<attribute name="VALUE" x="514.096" y="77.089" size="1.778" layer="96"/>
+</instance>
+<instance part="L5" gate="L1" x="337.82" y="104.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="341.63" y="102.6414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="341.63" y="107.442" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="L6" gate="L1" x="342.9" y="96.52" smashed="yes">
+<attribute name="NAME" x="341.4014" y="92.71" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="346.202" y="92.71" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -14723,16 +13078,16 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <label x="0" y="-93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="L4" gate="G$1" pin="2"/>
-<pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="497.84" y1="38.1" x2="502.92" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="L4" gate="L1" pin="2"/>
+<pinref part="R22" gate="R1" pin="2"/>
+<wire x1="495.3" y1="38.1" x2="502.92" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="VOS"/>
-<wire x1="480.06" y1="35.56" x2="497.84" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="497.84" y1="35.56" x2="497.84" y2="38.1" width="0.1524" layer="91"/>
-<junction x="497.84" y="38.1"/>
+<wire x1="480.06" y1="35.56" x2="495.3" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="495.3" y1="35.56" x2="495.3" y2="38.1" width="0.1524" layer="91"/>
+<junction x="495.3" y="38.1"/>
 <wire x1="502.92" y1="38.1" x2="510.54" y2="38.1" width="0.1524" layer="91"/>
 <junction x="502.92" y="38.1"/>
-<pinref part="C36" gate="G$1" pin="1"/>
+<pinref part="C36" gate="C1" pin="1"/>
 <wire x1="510.54" y1="35.56" x2="510.54" y2="38.1" width="0.1524" layer="91"/>
 <junction x="510.54" y="38.1"/>
 <label x="518.16" y="38.1" size="1.778" layer="95"/>
@@ -14992,15 +13347,15 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="BATTERY" gate="G$1" pin="2"/>
 <wire x1="309.88" y1="27.94" x2="320.04" y2="27.94" width="0.1524" layer="91"/>
 <label x="312.42" y="27.94" size="1.778" layer="95"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-<pinref part="R23" gate="G$1" pin="1"/>
+<pinref part="C15" gate="C1" pin="2"/>
+<pinref part="R23" gate="R1" pin="1"/>
 <wire x1="320.04" y1="27.94" x2="322.58" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="30.48" x2="320.04" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="30.48" x2="320.04" y2="27.94" width="0.1524" layer="91"/>
 <junction x="320.04" y="27.94"/>
 </segment>
 <segment>
-<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="C17" gate="C1" pin="2"/>
 <wire x1="393.7" y1="10.16" x2="393.7" y2="5.08" width="0.1524" layer="91"/>
 <label x="393.7" y="5.08" size="1.778" layer="95"/>
 </segment>
@@ -15016,18 +13371,18 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <label x="312.42" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C16" gate="G$1" pin="2"/>
+<pinref part="C16" gate="C1" pin="2"/>
 <wire x1="335.28" y1="45.72" x2="335.28" y2="50.8" width="0.1524" layer="91"/>
 <label x="332.74" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C18" gate="G$1" pin="2"/>
-<pinref part="C28" gate="G$1" pin="2"/>
+<pinref part="C18" gate="C1" pin="2"/>
+<pinref part="C28" gate="C1" pin="2"/>
 <wire x1="294.64" y1="96.52" x2="304.8" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C26" gate="G$1" pin="2"/>
+<pinref part="C26" gate="C1" pin="2"/>
 <wire x1="304.8" y1="96.52" x2="309.88" y2="96.52" width="0.1524" layer="91"/>
 <junction x="304.8" y="96.52"/>
-<pinref part="C27" gate="G$1" pin="2"/>
+<pinref part="C27" gate="C1" pin="2"/>
 <wire x1="309.88" y1="96.52" x2="314.96" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="96.52" x2="325.12" y2="96.52" width="0.1524" layer="91"/>
 <junction x="314.96" y="96.52"/>
@@ -15041,35 +13396,39 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <label x="307.34" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C30" gate="G$1" pin="2"/>
+<pinref part="C30" gate="C1" pin="2"/>
 <wire x1="406.4" y1="127" x2="406.4" y2="132.08" width="0.1524" layer="91"/>
 <label x="403.86" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C31" gate="G$1" pin="2"/>
+<pinref part="C31" gate="C1" pin="2"/>
 <wire x1="347.98" y1="124.46" x2="340.36" y2="124.46" width="0.1524" layer="91"/>
 <label x="332.74" y="124.46" size="1.778" layer="95"/>
 <pinref part="J9" gate="G$1" pin="1"/>
 <wire x1="340.36" y1="124.46" x2="325.12" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="325.12" y1="127" x2="325.12" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="C32" gate="G$1" pin="2"/>
+<pinref part="C32" gate="C1" pin="2"/>
 <junction x="340.36" y="124.46"/>
 </segment>
 <segment>
-<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="R21" gate="R1" pin="2"/>
 <wire x1="502.92" y1="116.84" x2="502.92" y2="119.38" width="0.1524" layer="91"/>
 <label x="500.38" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="GND"/>
 <wire x1="490.22" y1="71.12" x2="492.76" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="C33" gate="G$1" pin="2"/>
+<pinref part="C33" gate="C1" pin="2"/>
 <wire x1="492.76" y1="71.12" x2="502.92" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="492.76" y1="76.2" x2="492.76" y2="71.12" width="0.1524" layer="91"/>
 <junction x="492.76" y="71.12"/>
-<pinref part="C34" gate="G$1" pin="2"/>
+<pinref part="C34" gate="C1" pin="2"/>
 <wire x1="502.92" y1="71.12" x2="502.92" y2="76.2" width="0.1524" layer="91"/>
 <label x="497.84" y="71.12" size="1.778" layer="95"/>
+<pinref part="C3" gate="C1" pin="2"/>
+<wire x1="513.08" y1="76.2" x2="513.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="513.08" y1="71.12" x2="502.92" y2="71.12" width="0.1524" layer="91"/>
+<junction x="502.92" y="71.12"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="MODE"/>
@@ -15077,7 +13436,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <label x="447.04" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C35" gate="G$1" pin="2"/>
+<pinref part="C35" gate="C1" pin="2"/>
 <wire x1="447.04" y1="91.44" x2="447.04" y2="88.9" width="0.1524" layer="91"/>
 <label x="444.5" y="86.36" size="1.778" layer="95"/>
 </segment>
@@ -15099,7 +13458,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <wire x1="490.22" y1="10.16" x2="490.22" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C36" gate="G$1" pin="2"/>
+<pinref part="C36" gate="C1" pin="2"/>
 <wire x1="510.54" y1="27.94" x2="510.54" y2="25.4" width="0.1524" layer="91"/>
 <label x="508" y="22.86" size="1.778" layer="95"/>
 </segment>
@@ -15114,9 +13473,9 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <label x="436.88" y="10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C38" gate="G$1" pin="2"/>
+<pinref part="C38" gate="C1" pin="2"/>
 <wire x1="429.26" y1="17.78" x2="424.18" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C37" gate="G$1" pin="2"/>
+<pinref part="C37" gate="C1" pin="2"/>
 <wire x1="424.18" y1="17.78" x2="419.1" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="419.1" y1="17.78" x2="419.1" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="424.18" y1="17.78" x2="424.18" y2="12.7" width="0.1524" layer="91"/>
@@ -15143,17 +13502,21 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <segment>
 <pinref part="U5" gate="G$1" pin="VOUT"/>
 <wire x1="490.22" y1="88.9" x2="492.76" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="C33" gate="G$1" pin="1"/>
+<pinref part="C33" gate="C1" pin="1"/>
 <wire x1="492.76" y1="88.9" x2="502.92" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="492.76" y1="83.82" x2="492.76" y2="88.9" width="0.1524" layer="91"/>
 <junction x="492.76" y="88.9"/>
-<pinref part="C34" gate="G$1" pin="1"/>
+<pinref part="C34" gate="C1" pin="1"/>
 <wire x1="502.92" y1="83.82" x2="502.92" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="1"/>
 <wire x1="502.92" y1="88.9" x2="502.92" y2="91.44" width="0.1524" layer="91"/>
 <junction x="502.92" y="88.9"/>
-<wire x1="502.92" y1="88.9" x2="515.62" y2="88.9" width="0.1524" layer="91"/>
-<label x="510.54" y="88.9" size="1.778" layer="95"/>
+<wire x1="502.92" y1="88.9" x2="513.08" y2="88.9" width="0.1524" layer="91"/>
+<label x="518.16" y="88.9" size="1.778" layer="95"/>
+<pinref part="C3" gate="C1" pin="1"/>
+<wire x1="513.08" y1="88.9" x2="515.62" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="513.08" y1="83.82" x2="513.08" y2="88.9" width="0.1524" layer="91"/>
+<junction x="513.08" y="88.9"/>
 </segment>
 </net>
 <net name="5V_IN" class="0">
@@ -15166,7 +13529,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="U7" gate="G$1" pin="IN"/>
 <wire x1="342.9" y1="35.56" x2="335.28" y2="35.56" width="0.1524" layer="91"/>
 <label x="322.58" y="35.56" size="1.778" layer="95"/>
-<pinref part="C16" gate="G$1" pin="1"/>
+<pinref part="C16" gate="C1" pin="1"/>
 <wire x1="335.28" y1="35.56" x2="320.04" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="335.28" y1="38.1" x2="335.28" y2="35.56" width="0.1524" layer="91"/>
 <junction x="335.28" y="35.56"/>
@@ -15182,7 +13545,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <label x="287.02" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="R16" gate="R1" pin="2"/>
 <wire x1="398.78" y1="40.64" x2="398.78" y2="50.8" width="0.1524" layer="91"/>
 <label x="396.24" y="50.8" size="1.778" layer="95"/>
 </segment>
@@ -15584,7 +13947,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="U7" gate="G$1" pin="TS"/>
 <wire x1="342.9" y1="30.48" x2="332.74" y2="30.48" width="0.1524" layer="91"/>
 <label x="332.74" y="30.48" size="1.778" layer="95"/>
-<pinref part="R23" gate="G$1" pin="2"/>
+<pinref part="R23" gate="R1" pin="2"/>
 </segment>
 </net>
 <net name="BAT" class="0">
@@ -15595,7 +13958,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <wire x1="340.36" y1="22.86" x2="340.36" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U7" gate="G$1" pin="BAT_2"/>
 <wire x1="340.36" y1="25.4" x2="342.9" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="1"/>
+<pinref part="C15" gate="C1" pin="1"/>
 <wire x1="340.36" y1="22.86" x2="340.36" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="20.32" x2="322.58" y2="20.32" width="0.1524" layer="91"/>
 <junction x="340.36" y="22.86"/>
@@ -15612,9 +13975,9 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <wire x1="393.7" y1="27.94" x2="393.7" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="U7" gate="G$1" pin="EN2"/>
 <wire x1="393.7" y1="17.78" x2="378.46" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="1"/>
+<pinref part="C17" gate="C1" pin="1"/>
 <junction x="393.7" y="17.78"/>
-<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="R15" gate="R1" pin="2"/>
 <wire x1="393.7" y1="27.94" x2="398.78" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="398.78" y1="27.94" x2="398.78" y2="33.02" width="0.1524" layer="91"/>
 <junction x="393.7" y="27.94"/>
@@ -15626,11 +13989,11 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <junction x="378.46" y="27.94"/>
 </segment>
 <segment>
-<pinref part="L3" gate="G$1" pin="2"/>
+<pinref part="L3" gate="L1" pin="2"/>
 <pinref part="U5" gate="G$1" pin="VIN"/>
-<wire x1="464.82" y1="99.06" x2="454.66" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="467.36" y1="99.06" x2="454.66" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="454.66" y1="99.06" x2="454.66" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="C35" gate="G$1" pin="1"/>
+<pinref part="C35" gate="C1" pin="1"/>
 <wire x1="454.66" y1="99.06" x2="447.04" y2="99.06" width="0.1524" layer="91"/>
 <junction x="454.66" y="99.06"/>
 <wire x1="454.66" y1="99.06" x2="454.66" y2="104.14" width="0.1524" layer="91"/>
@@ -15649,7 +14012,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="U4" gate="G$1" pin="AVIN"/>
 <wire x1="444.5" y1="35.56" x2="439.42" y2="35.56" width="0.1524" layer="91"/>
 <junction x="439.42" y="35.56"/>
-<pinref part="C37" gate="G$1" pin="1"/>
+<pinref part="C37" gate="C1" pin="1"/>
 <wire x1="439.42" y1="35.56" x2="419.1" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="419.1" y1="35.56" x2="411.48" y2="35.56" width="0.1524" layer="91"/>
 <junction x="419.1" y="35.56"/>
@@ -15675,13 +14038,13 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R16" gate="R1" pin="1"/>
 <pinref part="D6" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="R15" gate="R1" pin="1"/>
 <pinref part="D7" gate="G$1" pin="A"/>
 </segment>
 </net>
@@ -15704,23 +14067,23 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 </net>
 <net name="SW" class="0">
 <segment>
-<pinref part="L4" gate="G$1" pin="1"/>
+<pinref part="L4" gate="L1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="SW"/>
-<wire x1="482.6" y1="38.1" x2="480.06" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="485.14" y1="38.1" x2="480.06" y2="38.1" width="0.1524" layer="91"/>
 <label x="480.06" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BOOT" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="BOOT"/>
-<pinref part="C29" gate="G$1" pin="2"/>
+<pinref part="C29" gate="C1" pin="2"/>
 <wire x1="360.68" y1="104.14" x2="358.14" y2="104.14" width="0.1524" layer="91"/>
 <label x="358.14" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FB" class="0">
 <segment>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="R17" gate="R1" pin="2"/>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="332.74" y1="116.84" x2="327.66" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="U6" gate="G$1" pin="FB"/>
@@ -15734,9 +14097,9 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <net name="VCC" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="VCC"/>
-<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="R18" gate="R1" pin="2"/>
 <wire x1="396.24" y1="119.38" x2="406.4" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="C30" gate="G$1" pin="1"/>
+<pinref part="C30" gate="C1" pin="1"/>
 <wire x1="406.4" y1="119.38" x2="411.48" y2="119.38" width="0.1524" layer="91"/>
 <junction x="406.4" y="119.38"/>
 <label x="396.24" y="121.92" size="1.778" layer="95"/>
@@ -15747,7 +14110,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="U4" gate="G$1" pin="PG"/>
 <wire x1="480.06" y1="30.48" x2="497.84" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="30.48" x2="497.84" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="R22" gate="R1" pin="1"/>
 <wire x1="497.84" y1="27.94" x2="502.92" y2="27.94" width="0.1524" layer="91"/>
 <label x="485.14" y="30.48" size="1.778" layer="95"/>
 </segment>
@@ -15759,9 +14122,9 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <wire x1="347.98" y1="132.08" x2="340.36" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="132.08" x2="325.12" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="325.12" y1="129.54" x2="325.12" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="C31" gate="G$1" pin="1"/>
+<pinref part="C31" gate="C1" pin="1"/>
 <junction x="347.98" y="132.08"/>
-<pinref part="C32" gate="G$1" pin="1"/>
+<pinref part="C32" gate="C1" pin="1"/>
 <junction x="340.36" y="132.08"/>
 <label x="330.2" y="132.08" size="1.778" layer="95"/>
 <wire x1="358.14" y1="129.54" x2="358.14" y2="132.08" width="0.1524" layer="91"/>
@@ -15771,7 +14134,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <net name="SS/TR" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="SS/TR"/>
-<pinref part="C38" gate="G$1" pin="1"/>
+<pinref part="C38" gate="C1" pin="1"/>
 <wire x1="444.5" y1="25.4" x2="429.26" y2="25.4" width="0.1524" layer="91"/>
 <label x="436.88" y="25.4" size="1.778" layer="95"/>
 </segment>
@@ -15786,9 +14149,9 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <net name="SW2" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="SW"/>
-<pinref part="L3" gate="G$1" pin="1"/>
+<pinref part="L3" gate="L1" pin="1"/>
 <wire x1="490.22" y1="91.44" x2="490.22" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="490.22" y1="99.06" x2="480.06" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="490.22" y1="99.06" x2="477.52" y2="99.06" width="0.1524" layer="91"/>
 <label x="487.68" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -15797,7 +14160,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="U5" gate="G$1" pin="FB"/>
 <wire x1="454.66" y1="83.82" x2="439.42" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="439.42" y1="83.82" x2="439.42" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="R21" gate="R1" pin="1"/>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="502.92" y1="101.6" x2="502.92" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="439.42" y1="106.68" x2="502.92" y2="106.68" width="0.1524" layer="91"/>
@@ -15807,7 +14170,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 </net>
 <net name="PG2" class="0">
 <segment>
-<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="R18" gate="R1" pin="1"/>
 <pinref part="U6" gate="G$1" pin="PG"/>
 <wire x1="421.64" y1="119.38" x2="421.64" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="421.64" y1="114.3" x2="396.24" y2="114.3" width="0.1524" layer="91"/>
@@ -15818,12 +14181,14 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <segment>
 <pinref part="U6" gate="G$1" pin="SW"/>
 <wire x1="360.68" y1="99.06" x2="347.98" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="L2" gate="G$1" pin="2"/>
 <wire x1="347.98" y1="104.14" x2="347.98" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="C29" gate="G$1" pin="1"/>
+<pinref part="C29" gate="C1" pin="1"/>
 <wire x1="350.52" y1="104.14" x2="347.98" y2="104.14" width="0.1524" layer="91"/>
-<junction x="347.98" y="104.14"/>
 <label x="353.06" y="99.06" size="1.778" layer="95"/>
+<pinref part="L6" gate="L1" pin="2"/>
+<wire x1="342.9" y1="91.44" x2="347.98" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="91.44" x2="347.98" y2="99.06" width="0.1524" layer="91"/>
+<junction x="347.98" y="99.06"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -15838,29 +14203,6 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="D8" gate="G$1" pin="K"/>
 </segment>
 </net>
-<net name="5V_IN_SOLAR" class="0">
-<segment>
-<pinref part="C28" gate="G$1" pin="1"/>
-<wire x1="325.12" y1="104.14" x2="314.96" y2="104.14" width="0.1524" layer="91"/>
-<label x="287.02" y="104.14" size="1.778" layer="95"/>
-<wire x1="314.96" y1="104.14" x2="304.8" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="104.14" x2="294.64" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="104.14" x2="287.02" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="325.12" y1="104.14" x2="332.74" y2="104.14" width="0.1524" layer="91"/>
-<junction x="325.12" y="104.14"/>
-<pinref part="C18" gate="G$1" pin="1"/>
-<junction x="294.64" y="104.14"/>
-<pinref part="C26" gate="G$1" pin="1"/>
-<junction x="304.8" y="104.14"/>
-<pinref part="C27" gate="G$1" pin="1"/>
-<junction x="314.96" y="104.14"/>
-<pinref part="L2" gate="G$1" pin="1"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="332.74" y1="104.14" x2="332.74" y2="106.68" width="0.1524" layer="91"/>
-<junction x="332.74" y="104.14"/>
-<pinref part="D9" gate="G$1" pin="A"/>
-</segment>
-</net>
 <net name="5V_IN_USB" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="VUSB"/>
@@ -15868,6 +14210,36 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <label x="205.74" y="78.74" size="1.778" layer="95"/>
 <pinref part="D10" gate="G$1" pin="A"/>
 <junction x="205.74" y="78.74"/>
+</segment>
+</net>
+<net name="5V_IN_SOLAR" class="0">
+<segment>
+<pinref part="C28" gate="C1" pin="1"/>
+<wire x1="325.12" y1="104.14" x2="314.96" y2="104.14" width="0.1524" layer="91"/>
+<label x="287.02" y="104.14" size="1.778" layer="95"/>
+<wire x1="314.96" y1="104.14" x2="304.8" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="104.14" x2="294.64" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="104.14" x2="287.02" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="104.14" x2="332.74" y2="104.14" width="0.1524" layer="91"/>
+<junction x="325.12" y="104.14"/>
+<pinref part="C18" gate="C1" pin="1"/>
+<junction x="294.64" y="104.14"/>
+<pinref part="C26" gate="C1" pin="1"/>
+<junction x="304.8" y="104.14"/>
+<pinref part="C27" gate="C1" pin="1"/>
+<junction x="314.96" y="104.14"/>
+<pinref part="R17" gate="R1" pin="1"/>
+<wire x1="332.74" y1="104.14" x2="332.74" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="D9" gate="G$1" pin="A"/>
+<pinref part="L5" gate="L1" pin="1"/>
+<junction x="332.74" y="104.14"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="L5" gate="L1" pin="2"/>
+<pinref part="L6" gate="L1" pin="1"/>
+<wire x1="342.9" y1="104.14" x2="342.9" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
