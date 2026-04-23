@@ -12435,6 +12435,66 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="DFE252012P-1R5M_P2">
+<packages>
+<package name="INDC2520X120N">
+<text x="-1.96" y="-1.45" size="0.5" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-1.96" y="1.45" size="0.5" layer="25">&gt;NAME</text>
+<wire x1="1.35" y1="-1.1" x2="-1.35" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="1.35" y1="1.1" x2="-1.35" y2="1.1" width="0.127" layer="51"/>
+<wire x1="1.35" y1="-1.1" x2="1.35" y2="1.1" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="-1.1" x2="-1.35" y2="1.1" width="0.127" layer="51"/>
+<wire x1="-0.15" y1="1.1" x2="0.15" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-0.15" y1="-1.1" x2="0.15" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-1.958" y1="-1.358" x2="1.958" y2="-1.358" width="0.05" layer="39"/>
+<wire x1="-1.958" y1="1.358" x2="1.958" y2="1.358" width="0.05" layer="39"/>
+<wire x1="-1.958" y1="-1.358" x2="-1.958" y2="1.358" width="0.05" layer="39"/>
+<wire x1="1.958" y1="-1.358" x2="1.958" y2="1.358" width="0.05" layer="39"/>
+<smd name="1" x="-1.09" y="0" dx="1.24" dy="2.22" layer="1"/>
+<smd name="2" x="1.09" y="0" dx="1.24" dy="2.22" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DFE252012P-1R5M=P2">
+<text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DFE252012P-1R5M=P2" prefix="L">
+<description> &lt;a href="https://pricing.snapeda.com/parts/DFE252012P-1R5M%3DP2/Murata%20Electronics/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DFE252012P-1R5M=P2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="INDC2520X120N">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/DFE252012P-1R5M=P2/Murata+Electronics+North+America/view-part/?ref=eda"/>
+<attribute name="DESCRIPTION" value="                                                      Inductor with Inductance: 1.5uH Tol. +/-20%, Package: 1008 (2520)                                              "/>
+<attribute name="MF" value="Murata Electronics"/>
+<attribute name="MP" value="DFE252012P-1R5M=P2"/>
+<attribute name="PACKAGE" value="2520 Murata"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/DFE252012P-1R5M=P2/Murata+Electronics+North+America/view-part/?ref=snap"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12576,8 +12636,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R24" library="JLC PCB Basic Parts_loc" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="100K"/>
 <part name="R25" library="JLC PCB Basic Parts_loc" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="680K"/>
 <part name="R26" library="JLC PCB Basic Parts_loc" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="130K"/>
-<part name="L8" library="JLC PCB Basic Parts_loc" deviceset="L_" device="_0805" package3d_urn="urn:adsk.eagle:package:23553/2" technology="1R0"/>
 <part name="J5" library="B2B-PH-K-S" deviceset="B2B-PH-K-S" device=""/>
+<part name="L2" library="DFE252012P-1R5M_P2" deviceset="DFE252012P-1R5M=P2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12935,10 +12995,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </instance>
 <instance part="R25" gate="R1" x="403.86" y="109.22" smashed="yes"/>
 <instance part="R26" gate="R1" x="414.02" y="106.68" smashed="yes" rot="R180"/>
-<instance part="L8" gate="L1" x="337.82" y="93.98" smashed="yes"/>
 <instance part="J5" gate="G$1" x="302.26" y="114.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="307.84" y="109.22" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="307.34" y="119.38" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="L2" gate="G$1" x="335.28" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="330.2" y="83.82" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="332.74" y="83.82" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -14307,16 +14370,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="N$19" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="L1"/>
-<wire x1="347.98" y1="99.06" x2="337.82" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="L8" gate="L1" pin="1"/>
+<wire x1="347.98" y1="99.06" x2="335.28" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="L2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="L2"/>
-<pinref part="L8" gate="L1" pin="2"/>
-<wire x1="347.98" y1="88.9" x2="347.98" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="88.9" x2="347.98" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="83.82" x2="347.98" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="83.82" x2="347.98" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="L2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$23" class="0">

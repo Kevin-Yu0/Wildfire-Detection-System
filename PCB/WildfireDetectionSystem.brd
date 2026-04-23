@@ -3298,6 +3298,26 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package>
 </packages>
 </library>
+<library name="DFE252012P-1R5M_P2">
+<packages>
+<package name="INDC2520X120N">
+<text x="-1.96" y="-1.45" size="0.5" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-1.96" y="1.45" size="0.5" layer="25">&gt;NAME</text>
+<wire x1="1.35" y1="-1.1" x2="-1.35" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="1.35" y1="1.1" x2="-1.35" y2="1.1" width="0.127" layer="51"/>
+<wire x1="1.35" y1="-1.1" x2="1.35" y2="1.1" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="-1.1" x2="-1.35" y2="1.1" width="0.127" layer="51"/>
+<wire x1="-0.15" y1="1.1" x2="0.15" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-0.15" y1="-1.1" x2="0.15" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-1.958" y1="-1.358" x2="1.958" y2="-1.358" width="0.05" layer="39"/>
+<wire x1="-1.958" y1="1.358" x2="1.958" y2="1.358" width="0.05" layer="39"/>
+<wire x1="-1.958" y1="-1.358" x2="-1.958" y2="1.358" width="0.05" layer="39"/>
+<wire x1="1.958" y1="-1.358" x2="1.958" y2="1.358" width="0.05" layer="39"/>
+<smd name="1" x="-1.09" y="0" dx="1.24" dy="2.22" layer="1"/>
+<smd name="2" x="1.09" y="0" dx="1.24" dy="2.22" layer="1"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4285,14 +4305,6 @@ design rules under a new name.</description>
 <attribute name="LCSC_STOCK" value="107177" x="16.9" y="-8.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PROPERTIES" value="±1% 1/10W Thick Film Resistors 75V ±100ppm -55°C~+155°C 130kOhm 0603  ROHS" x="16.9" y="-8.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="L8" library="JLC PCB Basic Parts_loc" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="L_1R0_0805" x="16.4" y="-12.5" smashed="yes" rot="R90">
-<attribute name="LCSC_DATASHEET" value="https://datasheet.lcsc.com/lcsc/2110081230_Sunlord-SDFL2012Q1R0KTF_C1042.pdf" x="16.4" y="-12.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PART" value="C1042" x="16.4" y="-12.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_PRICE1_EUR" value="" x="16.4" y="-12.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_ROTATION_CCW" value="0" x="16.4" y="-12.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="LCSC_STOCK" value="44995" x="16.4" y="-12.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PROPERTIES" value="ManuPN: SDFL2012Q1R0KTF 50mA 1uH ±10% 400mOhm 0805  ROHS" x="16.4" y="-12.5" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
 <element name="J5" library="B2B-PH-K-S" package="JST_B2B-PH-K-S" value="B2B-PH-K-S" x="4.1" y="-2.6" smashed="yes" rot="R270">
 <attribute name="AVAILABILITY" value="In Stock" x="4.1" y="-2.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/B2B-PH-K-S/JST/view-part/?ref=eda" x="4.1" y="-2.6" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4303,6 +4315,16 @@ design rules under a new name.</description>
 <attribute name="PRICE" value="None" x="4.1" y="-2.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PURCHASE-URL" value="https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=473612&amp;manufacturer=JST Sales&amp;part_name=B2B-PH-K-S&amp;search_term=b2b-ph-k-s" x="4.1" y="-2.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/B2B-PH-K-S/JST/view-part/?ref=snap" x="4.1" y="-2.6" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="L2" library="DFE252012P-1R5M_P2" package="INDC2520X120N" value="DFE252012P-1R5M=P2" x="16.071" y="-12.381" smashed="yes" rot="R270">
+<attribute name="AVAILABILITY" value="In Stock" x="16.071" y="-12.381" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/DFE252012P-1R5M=P2/Murata+Electronics+North+America/view-part/?ref=eda" x="16.071" y="-12.381" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DESCRIPTION" value="                                                      Inductor with Inductance: 1.5uH Tol. +/-20%, Package: 1008 (2520)                                              " x="16.071" y="-12.381" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Murata Electronics" x="16.071" y="-12.381" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MP" value="DFE252012P-1R5M=P2" x="16.071" y="-12.381" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PACKAGE" value="2520 Murata" x="16.071" y="-12.381" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PRICE" value="None" x="16.071" y="-12.381" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/DFE252012P-1R5M=P2/Murata+Electronics+North+America/view-part/?ref=snap" x="16.071" y="-12.381" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 </elements>
 <signals>
@@ -4824,9 +4846,9 @@ design rules under a new name.</description>
 <wire x1="5.25" y1="-9.7" x2="5.25" y2="-10.85" width="0.2032" layer="1"/>
 <wire x1="5.25" y1="-10.85" x2="5.4" y2="-11" width="0.2032" layer="1"/>
 <via x="5.4" y="-11" extent="1-16" drill="0.35"/>
-<wire x1="14.7" y1="-11.4" x2="15" y2="-11.7" width="0.2032" layer="1"/>
-<wire x1="14.7" y1="-11.4" x2="13.95" y2="-11.4" width="0.2032" layer="1"/>
-<via x="15" y="-11.7" extent="1-16" drill="0.35"/>
+<wire x1="13.95" y1="-11.4" x2="13.95" y2="-11.35" width="0.2032" layer="1"/>
+<wire x1="13.95" y1="-11.35" x2="12.8" y2="-10.2" width="0.2032" layer="1"/>
+<via x="12.8" y="-10.2" extent="1-16" drill="0.35"/>
 <wire x1="25.85" y1="-15.6" x2="25.35" y2="-15.6" width="0.2032" layer="1"/>
 <wire x1="25.85" y1="-12.8" x2="25.35" y2="-12.8" width="0.2032" layer="1"/>
 <wire x1="25.35" y1="-12.8" x2="24.85" y2="-12.8" width="0.2032" layer="1"/>
@@ -4999,11 +5021,7 @@ design rules under a new name.</description>
 <wire x1="8.2" y1="7.252" x2="8.2" y2="7.825" width="0.3048" layer="1"/>
 <contactref element="U7" pad="13"/>
 <contactref element="C16" pad="1"/>
-<wire x1="9.95" y1="-11.465" x2="9.95" y2="-9.6" width="0.3048" layer="1"/>
-<wire x1="9.95" y1="-9.6" x2="10.05" y2="-9.5" width="0.3048" layer="1"/>
-<wire x1="10" y1="-9.65" x2="9.95" y2="-9.6" width="0.3048" layer="1"/>
 <contactref element="D9" pad="C"/>
-<wire x1="10.05" y1="-9.5" x2="9.225" y2="-8.675" width="0.3048" layer="1"/>
 <wire x1="9.225" y1="-8.675" x2="9.225" y2="-7.2" width="0.3048" layer="1"/>
 <wire x1="9.225" y1="-7.2" x2="9" y2="-6.975" width="0.3048" layer="1"/>
 <wire x1="9" y1="-6.975" x2="9" y2="-3" width="0.3048" layer="1"/>
@@ -5011,8 +5029,10 @@ design rules under a new name.</description>
 <wire x1="9" y1="-3" x2="9" y2="1.1" width="0.3048" layer="16"/>
 <via x="9" y="1.1" extent="1-16" drill="0.35"/>
 <wire x1="9" y1="1.1" x2="8.1" y2="2" width="0.3048" layer="1"/>
-<wire x1="8.1" y1="2" x2="8.1" y2="4.1" width="0.3048" layer="1"/>
-<wire x1="8.1" y1="4.1" x2="8.1" y2="5.6" width="0.3048" layer="1"/>
+<wire x1="8.1" y1="2" x2="8.1" y2="5.6" width="0.3048" layer="1"/>
+<wire x1="9.95" y1="-11.465" x2="9.95" y2="-9.6" width="0.3048" layer="1"/>
+<wire x1="9.95" y1="-9.6" x2="10.05" y2="-9.5" width="0.3048" layer="1"/>
+<wire x1="10.05" y1="-9.5" x2="9.225" y2="-8.675" width="0.3048" layer="1"/>
 </signal>
 <signal name="PC14-OSC32-IN">
 <contactref element="Y2" pad="2"/>
@@ -5599,15 +5619,15 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$19">
 <contactref element="U2" pad="11"/>
-<contactref element="L8" pad="1"/>
-<wire x1="18.525" y1="-12.8" x2="17.05" y2="-12.8" width="0.2032" layer="1"/>
-<wire x1="17.05" y1="-12.8" x2="16.4" y2="-13.45" width="0.2032" layer="1"/>
+<contactref element="L2" pad="2"/>
+<wire x1="18.525" y1="-12.8" x2="16.742" y2="-12.8" width="0.2032" layer="1"/>
+<wire x1="16.742" y1="-12.8" x2="16.071" y2="-13.471" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$20">
 <contactref element="U2" pad="9"/>
-<contactref element="L8" pad="2"/>
-<wire x1="18.525" y1="-11.8" x2="16.65" y2="-11.8" width="0.2032" layer="1"/>
-<wire x1="16.65" y1="-11.8" x2="16.4" y2="-11.55" width="0.2032" layer="1"/>
+<contactref element="L2" pad="1"/>
+<wire x1="18.525" y1="-11.8" x2="16.58" y2="-11.8" width="0.2032" layer="1"/>
+<wire x1="16.58" y1="-11.8" x2="16.071" y2="-11.291" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$23">
 <contactref element="U2" pad="5"/>
