@@ -2456,138 +2456,6 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32l476je.pdf"&gt
 </deviceset>
 </devicesets>
 </library>
-<library name="24LC32AT-I_SN" urn="urn:adsk.eagle:library:52044924">
-<packages>
-<package name="SOIC127P794X203-8N" urn="urn:adsk.eagle:footprint:52044925/1" library_version="1">
-<wire x1="-2.6924" y1="1.651" x2="-2.6924" y2="2.159" width="0.1524" layer="51"/>
-<wire x1="-2.6924" y1="2.159" x2="-4.1148" y2="2.159" width="0.1524" layer="51"/>
-<wire x1="-4.1148" y1="2.159" x2="-4.1148" y2="1.651" width="0.1524" layer="51"/>
-<wire x1="-4.1148" y1="1.651" x2="-2.6924" y2="1.651" width="0.1524" layer="51"/>
-<wire x1="-2.6924" y1="0.381" x2="-2.6924" y2="0.889" width="0.1524" layer="51"/>
-<wire x1="-2.6924" y1="0.889" x2="-4.1148" y2="0.889" width="0.1524" layer="51"/>
-<wire x1="-4.1148" y1="0.889" x2="-4.1148" y2="0.381" width="0.1524" layer="51"/>
-<wire x1="-4.1148" y1="0.381" x2="-2.6924" y2="0.381" width="0.1524" layer="51"/>
-<wire x1="-2.6924" y1="-0.889" x2="-2.6924" y2="-0.381" width="0.1524" layer="51"/>
-<wire x1="-2.6924" y1="-0.381" x2="-4.1148" y2="-0.381" width="0.1524" layer="51"/>
-<wire x1="-4.1148" y1="-0.381" x2="-4.1148" y2="-0.889" width="0.1524" layer="51"/>
-<wire x1="-4.1148" y1="-0.889" x2="-2.6924" y2="-0.889" width="0.1524" layer="51"/>
-<wire x1="-2.6924" y1="-2.159" x2="-2.6924" y2="-1.651" width="0.1524" layer="51"/>
-<wire x1="-2.6924" y1="-1.651" x2="-4.1148" y2="-1.651" width="0.1524" layer="51"/>
-<wire x1="-4.1148" y1="-1.651" x2="-4.1148" y2="-2.159" width="0.1524" layer="51"/>
-<wire x1="-4.1148" y1="-2.159" x2="-2.6924" y2="-2.159" width="0.1524" layer="51"/>
-<wire x1="2.6924" y1="-1.651" x2="2.6924" y2="-2.159" width="0.1524" layer="51"/>
-<wire x1="2.6924" y1="-2.159" x2="4.1148" y2="-2.159" width="0.1524" layer="51"/>
-<wire x1="4.1148" y1="-2.159" x2="4.1148" y2="-1.651" width="0.1524" layer="51"/>
-<wire x1="4.1148" y1="-1.651" x2="2.6924" y2="-1.651" width="0.1524" layer="51"/>
-<wire x1="2.6924" y1="-0.381" x2="2.6924" y2="-0.889" width="0.1524" layer="51"/>
-<wire x1="2.6924" y1="-0.889" x2="4.1148" y2="-0.889" width="0.1524" layer="51"/>
-<wire x1="4.1148" y1="-0.889" x2="4.1148" y2="-0.381" width="0.1524" layer="51"/>
-<wire x1="4.1148" y1="-0.381" x2="2.6924" y2="-0.381" width="0.1524" layer="51"/>
-<wire x1="2.6924" y1="0.889" x2="2.6924" y2="0.381" width="0.1524" layer="51"/>
-<wire x1="2.6924" y1="0.381" x2="4.1148" y2="0.381" width="0.1524" layer="51"/>
-<wire x1="4.1148" y1="0.381" x2="4.1148" y2="0.889" width="0.1524" layer="51"/>
-<wire x1="4.1148" y1="0.889" x2="2.6924" y2="0.889" width="0.1524" layer="51"/>
-<wire x1="2.6924" y1="2.159" x2="2.6924" y2="1.651" width="0.1524" layer="51"/>
-<wire x1="2.6924" y1="1.651" x2="4.1148" y2="1.651" width="0.1524" layer="51"/>
-<wire x1="4.1148" y1="1.651" x2="4.1148" y2="2.159" width="0.1524" layer="51"/>
-<wire x1="4.1148" y1="2.159" x2="2.6924" y2="2.159" width="0.1524" layer="51"/>
-<wire x1="-2.6924" y1="-2.667" x2="2.6924" y2="-2.667" width="0.1524" layer="51"/>
-<wire x1="2.6924" y1="-2.667" x2="2.6924" y2="2.667" width="0.1524" layer="51"/>
-<wire x1="2.6924" y1="2.667" x2="0.3048" y2="2.667" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="2.667" x2="-0.3048" y2="2.667" width="0.1524" layer="51"/>
-<wire x1="-0.3048" y1="2.667" x2="-2.6924" y2="2.667" width="0.1524" layer="51"/>
-<wire x1="-2.6924" y1="2.667" x2="-2.6924" y2="-2.667" width="0.1524" layer="51"/>
-<wire x1="0.3048" y1="2.667" x2="-0.3048" y2="2.667" width="0" layer="51" curve="-180"/>
-<wire x1="2.6924" y1="2.286" x2="2.6924" y2="2.667" width="0.1524" layer="21"/>
-<wire x1="2.6924" y1="1.016" x2="2.6924" y2="1.524" width="0.1524" layer="21"/>
-<wire x1="2.6924" y1="-0.254" x2="2.6924" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="2.6924" y1="-1.524" x2="2.6924" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-2.6924" y1="-2.286" x2="-2.6924" y2="-2.667" width="0.1524" layer="21"/>
-<wire x1="-2.6924" y1="-1.016" x2="-2.6924" y2="-1.524" width="0.1524" layer="21"/>
-<wire x1="-2.6924" y1="0.254" x2="-2.6924" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="-2.6924" y1="-2.667" x2="2.6924" y2="-2.667" width="0.1524" layer="21"/>
-<wire x1="2.6924" y1="-2.667" x2="2.6924" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="2.6924" y1="2.667" x2="0.3048" y2="2.667" width="0.1524" layer="21"/>
-<wire x1="0.3048" y1="2.667" x2="-0.3048" y2="2.667" width="0.1524" layer="21"/>
-<wire x1="-0.3048" y1="2.667" x2="-2.6924" y2="2.667" width="0.1524" layer="21"/>
-<wire x1="-2.6924" y1="2.667" x2="-2.6924" y2="2.286" width="0.1524" layer="21"/>
-<wire x1="-2.6924" y1="1.524" x2="-2.6924" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="0.3048" y1="2.667" x2="-0.3048" y2="2.667" width="0" layer="21" curve="-180"/>
-<text x="-4.57626875" y="2.33898125" size="1.271190625" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-4.578590625" y="2.34016875" size="1.27183125" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-4.623590625" y="3.175540625" size="2.083159375" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-5.446209375" y="-5.29351875" size="2.08686875" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-<smd name="1" x="-3.7592" y="1.905" dx="1.4732" dy="0.5588" layer="1"/>
-<smd name="2" x="-3.7592" y="0.635" dx="1.4732" dy="0.5588" layer="1"/>
-<smd name="3" x="-3.7592" y="-0.635" dx="1.4732" dy="0.5588" layer="1"/>
-<smd name="4" x="-3.7592" y="-1.905" dx="1.4732" dy="0.5588" layer="1"/>
-<smd name="5" x="3.7592" y="-1.905" dx="1.4732" dy="0.5588" layer="1"/>
-<smd name="6" x="3.7592" y="-0.635" dx="1.4732" dy="0.5588" layer="1"/>
-<smd name="7" x="3.7592" y="0.635" dx="1.4732" dy="0.5588" layer="1"/>
-<smd name="8" x="3.7592" y="1.905" dx="1.4732" dy="0.5588" layer="1"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="SOIC127P794X203-8N" urn="urn:adsk.eagle:package:52044927/1" type="box" library_version="1">
-<packageinstances>
-<packageinstance name="SOIC127P794X203-8N"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="24LC32AT-I/SN" urn="urn:adsk.eagle:symbol:52044926/1" library_version="1">
-<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-20.32" width="0.4064" layer="94"/>
-<wire x1="-12.7" y1="-20.32" x2="12.7" y2="-20.32" width="0.4064" layer="94"/>
-<wire x1="12.7" y1="-20.32" x2="12.7" y2="12.7" width="0.4064" layer="94"/>
-<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.4064" layer="94"/>
-<text x="-5.33971875" y="14.9004" size="2.08503125" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-6.48611875" y="-23.0702" size="2.08573125" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-<pin name="VCC" x="-17.78" y="7.62" length="middle" direction="pwr"/>
-<pin name="SCL" x="-17.78" y="2.54" length="middle" direction="in"/>
-<pin name="WP" x="-17.78" y="0" length="middle" direction="in"/>
-<pin name="A0" x="-17.78" y="-5.08" length="middle" direction="in"/>
-<pin name="A1" x="-17.78" y="-7.62" length="middle" direction="in"/>
-<pin name="A2" x="-17.78" y="-10.16" length="middle" direction="in"/>
-<pin name="VSS" x="-17.78" y="-15.24" length="middle" direction="pas"/>
-<pin name="SDA" x="17.78" y="7.62" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="24LC32AT-I/SN" urn="urn:adsk.eagle:component:52044928/1" library_version="1">
-<gates>
-<gate name="A" symbol="24LC32AT-I/SN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOIC127P794X203-8N">
-<connects>
-<connect gate="A" pin="A0" pad="1"/>
-<connect gate="A" pin="A1" pad="2"/>
-<connect gate="A" pin="A2" pad="3"/>
-<connect gate="A" pin="SCL" pad="6"/>
-<connect gate="A" pin="SDA" pad="5"/>
-<connect gate="A" pin="VCC" pad="8"/>
-<connect gate="A" pin="VSS" pad="4"/>
-<connect gate="A" pin="WP" pad="7"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:52044927/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/24LC32AT-I/SN/Microchip+Technology/view-part/?ref=eda"/>
-<attribute name="DESCRIPTION" value="                                                      32K, 4K X 8, 2.5V SER EE IND8 SOIC 3.90mm(.150in) T/R | Microchip Technology Inc. 24LC32AT-I/SN                                              "/>
-<attribute name="DIGIKEY_PART_NUMBER" value="24LC32AT-I/SNCT-ND"/>
-<attribute name="MF" value="Microchip Technology"/>
-<attribute name="MP" value="24LC32AT-I/SN"/>
-<attribute name="PACKAGE" value="SOIC-8 Microchip"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/24LC32AT-I/SN/Microchip+Technology/view-part/?ref=snap"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="CL05B104KO5NNNC" urn="urn:adsk.eagle:library:52044934">
 <packages>
 <package name="CAPC1005X55N" urn="urn:adsk.eagle:footprint:52044935/1" library_version="1" library_locally_modified="yes">
@@ -7527,80 +7395,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SS34LWH">
-<packages>
-<package name="SODFL3718X102N">
-<wire x1="-1.375" y1="0.9" x2="-1.375" y2="-0.9" width="0.127" layer="51"/>
-<wire x1="-1.375" y1="-0.9" x2="1.375" y2="-0.9" width="0.127" layer="51"/>
-<wire x1="1.375" y1="-0.9" x2="1.375" y2="0.9" width="0.127" layer="51"/>
-<wire x1="1.375" y1="0.9" x2="-1.375" y2="0.9" width="0.127" layer="51"/>
-<wire x1="-1.375" y1="0.9" x2="-1.375" y2="0.895" width="0.127" layer="21"/>
-<wire x1="-1.375" y1="-0.9" x2="-1.375" y2="-0.895" width="0.127" layer="21"/>
-<wire x1="1.375" y1="0.895" x2="1.375" y2="0.9" width="0.127" layer="21"/>
-<wire x1="1.375" y1="-0.9" x2="1.375" y2="-0.895" width="0.127" layer="21"/>
-<wire x1="-1.375" y1="-0.9" x2="1.375" y2="-0.9" width="0.127" layer="21"/>
-<wire x1="1.375" y1="0.9" x2="-1.375" y2="0.9" width="0.127" layer="21"/>
-<wire x1="-2.365" y1="1.15" x2="-2.365" y2="-1.15" width="0.05" layer="39"/>
-<wire x1="-2.365" y1="-1.15" x2="2.365" y2="-1.15" width="0.05" layer="39"/>
-<wire x1="2.365" y1="-1.15" x2="2.365" y2="1.15" width="0.05" layer="39"/>
-<wire x1="2.365" y1="1.15" x2="-2.365" y2="1.15" width="0.05" layer="39"/>
-<circle x="-2.715" y="0" radius="0.1" width="0.2" layer="21"/>
-<circle x="-2.715" y="0" radius="0.1" width="0.2" layer="51"/>
-<text x="-2.365" y="1.65" size="1" layer="25">&gt;NAME</text>
-<text x="-2.365" y="-1.65" size="1" layer="27" align="top-left">&gt;VALUE</text>
-<smd name="C" x="-1.575" y="0" dx="1.08" dy="1.09" layer="1"/>
-<smd name="A" x="1.575" y="0" dx="1.08" dy="1.09" layer="1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SS34LWH">
-<text x="-5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<pin name="K" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SS34LWH" prefix="D">
-<description> &lt;a href="https://pricing.snapeda.com/parts/SS34LWH/Taiwan%20Semiconductor/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SS34LWH" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SODFL3718X102N">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="K" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="In Stock"/>
-<attribute name="CHECK_PRICES" value="https://www.snapeda.com/parts/SS34LWH/taiwan/view-part/?ref=eda"/>
-<attribute name="DESCRIPTION" value="                                                      3A, 40V, Automotive Planar Schottky                                              "/>
-<attribute name="MF" value="Taiwan Semiconductor"/>
-<attribute name="MP" value="SS34LWH"/>
-<attribute name="PACKAGE" value="SOD-123W-2 Taiwan Semiconductor"/>
-<attribute name="PRICE" value="None"/>
-<attribute name="SNAPEDA_LINK" value="https://www.snapeda.com/parts/SS34LWH/taiwan/view-part/?ref=snap"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="BQ24074RGTR">
 <packages>
 <package name="QFN50P300X300X100-17N">
@@ -12495,6 +12289,142 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="MICROCHIP_24LC32AT-I_SN_LCSC_C615715">
+<packages>
+<package name="SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL">
+<smd name="5" x="1.905" y="2.57" dx="0.588" dy="2.045" layer="1" roundness="100"/>
+<smd name="6" x="0.635" y="2.57" dx="0.588" dy="2.045" layer="1" roundness="100"/>
+<smd name="7" x="-0.635" y="2.57" dx="0.588" dy="2.045" layer="1" roundness="100"/>
+<smd name="8" x="-1.905" y="2.57" dx="0.588" dy="2.045" layer="1" roundness="100"/>
+<smd name="4" x="1.905" y="-2.57" dx="0.588" dy="2.045" layer="1" roundness="100"/>
+<smd name="3" x="0.635" y="-2.57" dx="0.588" dy="2.045" layer="1" roundness="100"/>
+<smd name="2" x="-0.635" y="-2.57" dx="0.588" dy="2.045" layer="1" roundness="100"/>
+<smd name="1" x="-1.905" y="-2.57" dx="0.588" dy="2.045" layer="1" roundness="100"/>
+<wire x1="-2.5262" y1="-1.5214" x2="-2.5262" y2="1.5214" width="0.1524" layer="21"/>
+<wire x1="-2.5262" y1="1.5214" x2="2.5262" y2="1.5214" width="0.1524" layer="21"/>
+<wire x1="2.5262" y1="1.5214" x2="2.5262" y2="-1.5214" width="0.1524" layer="21"/>
+<wire x1="2.5262" y1="-1.5214" x2="-2.5262" y2="-1.5214" width="0.1524" layer="21"/>
+<circle x="-2.4501" y="-3" radius="0.03" width="0.06" layer="51"/>
+<circle x="-1.905" y="-3.4" radius="0.1501" width="0.3" layer="48"/>
+<circle x="-1.905" y="-0.7691" radius="0.1501" width="0.3" layer="21"/>
+<circle x="-2.6515" y="-2.7724" radius="0.1501" width="0.3" layer="21"/>
+<text x="0" y="4.07" size="1.27" layer="25" align="center">&gt;Name</text>
+<text x="0" y="-4.07" size="1.27" layer="27" align="center">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="24LC32AT-I_SN">
+<wire x1="-6.35" y1="6.2992" x2="6.35" y2="6.2992" width="0.254" layer="94"/>
+<wire x1="6.35" y1="6.2992" x2="6.35" y2="-6.4008" width="0.254" layer="94"/>
+<wire x1="6.35" y1="-6.4008" x2="-6.35" y2="-6.4008" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-6.4008" x2="-6.35" y2="6.2992" width="0.254" layer="94"/>
+<circle x="-5.08" y="5.0292" radius="0.381" width="0.254" layer="94"/>
+<pin name="A0" x="-8.89" y="3.7592" length="short" direction="pas"/>
+<pin name="A1" x="-8.89" y="1.2192" length="short" direction="pas"/>
+<pin name="A2" x="-8.89" y="-1.3208" length="short" direction="pas"/>
+<pin name="VSS" x="-8.89" y="-3.8608" length="short" direction="pas"/>
+<pin name="SDA" x="8.89" y="-3.8608" length="short" direction="pas" rot="R180"/>
+<pin name="SCL" x="8.89" y="-1.3208" length="short" direction="pas" rot="R180"/>
+<pin name="WP" x="8.89" y="1.2192" length="short" direction="pas" rot="R180"/>
+<pin name="VCC" x="8.89" y="3.7592" length="short" direction="pas" rot="R180"/>
+<text x="0" y="8.2992" size="1.778" layer="95">&gt;Name</text>
+<text x="0" y="-8.4008" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="24LC32AT-I_SN" prefix="U">
+<description>Datasheet: https://www.lcsc.com/datasheet/C615715.pdf</description>
+<gates>
+<gate name="G$1" symbol="24LC32AT-I_SN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL">
+<connects>
+<connect gate="G$1" pin="A0" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+<connect gate="G$1" pin="WP" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MICROCHIP(美国微芯)"/>
+<attribute name="MPN" value="24LC32AT-I/SN"/>
+<attribute name="OC_LCSC" value="C615715"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="MDD_DSK34_LCSC_C41029">
+<packages>
+<package name="SOD-123_L2.8-W1.8-LS3.7-RD">
+<smd name="2" x="1.6924" y="0" dx="0.95" dy="1.15" layer="1"/>
+<smd name="1" x="-1.6924" y="0" dx="0.95" dy="1.15" layer="1"/>
+<wire x1="-1.58" y1="-0.7551" x2="-1.4062" y2="-0.7551" width="0.152" layer="21"/>
+<wire x1="-1.58" y1="0.7551" x2="-1.4062" y2="0.7551" width="0.152" layer="21"/>
+<wire x1="-1.58" y1="0.7551" x2="-1.58" y2="0.8662" width="0.152" layer="21"/>
+<wire x1="-1.58" y1="0.8662" x2="-1.4062" y2="0.8662" width="0.152" layer="21"/>
+<wire x1="-1.4062" y1="-0.8662" x2="-1.58" y2="-0.8662" width="0.152" layer="21"/>
+<wire x1="-1.58" y1="-0.8662" x2="-1.58" y2="-0.7551" width="0.152" layer="21"/>
+<wire x1="-1.4062" y1="-0.7551" x2="-1.4062" y2="-0.8662" width="0.152" layer="21"/>
+<wire x1="-1.4062" y1="0.8662" x2="-1.4062" y2="0.7551" width="0.152" layer="21"/>
+<wire x1="-0.8271" y1="0.8662" x2="-0.8271" y2="-0.8662" width="0.152" layer="21"/>
+<wire x1="-0.97" y1="0.8662" x2="-0.97" y2="-0.8662" width="0.1524" layer="21"/>
+<wire x1="-1.4062" y1="0.8662" x2="1.4062" y2="0.8662" width="0.1524" layer="21"/>
+<wire x1="1.4062" y1="0.8662" x2="1.4062" y2="0.6982" width="0.1524" layer="21"/>
+<wire x1="-1.4062" y1="-0.8662" x2="1.4062" y2="-0.8662" width="0.1524" layer="21"/>
+<wire x1="1.4062" y1="-0.8662" x2="1.4062" y2="-0.6982" width="0.1524" layer="21"/>
+<circle x="-1.8504" y="-0.8999" radius="0.03" width="0.06" layer="51"/>
+<text x="0" y="1.5" size="1.27" layer="25" align="center">&gt;Name</text>
+<text x="0" y="-1.5" size="1.27" layer="27" align="center">&gt;Value</text>
+</package>
+</packages>
+<symbols>
+<symbol name="DSK34">
+<wire x1="-2.032" y1="1.651" x2="-2.032" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="1.905" x2="-1.524" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="1.905" x2="-1.524" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="-1.905" x2="-1.016" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.905" x2="-1.016" y2="-1.651" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.651" x2="-1.27" y2="0.127" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0.127" x2="1.27" y2="-1.651" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.651" x2="1.27" y2="1.651" width="0.254" layer="94"/>
+<pin name="A" x="5.08" y="0.127" length="middle" direction="pas" rot="R180"/>
+<pin name="K" x="-5.08" y="0.127" length="middle" direction="pas"/>
+<text x="0" y="2.127" size="1.778" layer="95">&gt;Name</text>
+<text x="0" y="-1.873" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DSK34" prefix="D">
+<description>Datasheet: https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_DSK34_C41029.html</description>
+<gates>
+<gate name="G$1" symbol="DSK34" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD-123_L2.8-W1.8-LS3.7-RD">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="K" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MDD(辰达半导体)"/>
+<attribute name="MPN" value="DSK34"/>
+<attribute name="OC_LCSC" value="C41029"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12552,7 +12482,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="J3" library="B4B-XH-A" library_urn="urn:adsk.eagle:library:52044914" deviceset="B4B-XH-A" device="" package3d_urn="urn:adsk.eagle:package:52044917/3"/>
 <part name="J4" library="B5B-XH-A" library_urn="urn:adsk.eagle:library:52044919" deviceset="B5B-XH-A" device="" package3d_urn="urn:adsk.eagle:package:52044922/2"/>
 <part name="D5" library="ce-capstone" library_urn="urn:adsk.eagle:library:52044969" deviceset="SML-P12MTT86" device="" package3d_urn="urn:adsk.eagle:package:52045011/1"/>
-<part name="U$1" library="24LC32AT-I_SN" library_urn="urn:adsk.eagle:library:52044924" deviceset="24LC32AT-I/SN" device="" package3d_urn="urn:adsk.eagle:package:52044927/1"/>
+<part name="U$1" library="MICROCHIP_24LC32AT-I_SN_LCSC_C615715" deviceset="24LC32AT-I_SN" device=""/>
 <part name="C1" library="CL05B104KO5NNNC" library_urn="urn:adsk.eagle:library:52044934" deviceset="CL05B104KO5NNNC" device="" package3d_urn="urn:adsk.eagle:package:52044937/2"/>
 <part name="C2" library="CL10C200JB8NNNC" library_urn="urn:adsk.eagle:library:52044939" deviceset="CL10C200JB8NNNC" device="" package3d_urn="urn:adsk.eagle:package:52044942/2"/>
 <part name="C21" library="CL10C200JB8NNNC" library_urn="urn:adsk.eagle:library:52044939" deviceset="CL10C200JB8NNNC" device="" package3d_urn="urn:adsk.eagle:package:52044942/2"/>
@@ -12619,8 +12549,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="C37" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="10UF/10V" value="10uF"/>
 <part name="C38" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="3.3NF/50V" value="3.3nF"/>
 <part name="U$5" library="NC_MARKER" deviceset="NC_MARKER" device=""/>
-<part name="D9" library="SS34LWH" deviceset="SS34LWH" device=""/>
-<part name="D10" library="SS34LWH" deviceset="SS34LWH" device=""/>
+<part name="D9" library="MDD_DSK34_LCSC_C41029" deviceset="DSK34" device=""/>
+<part name="D10" library="MDD_DSK34_LCSC_C41029" deviceset="DSK34" device=""/>
 <part name="R23" library="JLC PCB Basic Parts_loc" deviceset="R_" device="_0603" package3d_urn="urn:adsk.eagle:package:23555/3" technology="10K" value="10k"/>
 <part name="C3" library="JLC PCB Basic Parts_loc" deviceset="C_" device="_0603" package3d_urn="urn:adsk.eagle:package:23616/2" technology="22UF/6.3V" value="22uF"/>
 <part name="U2" library="TPS63070RNMT" deviceset="TPS63070RNMT" device=""/>
@@ -12785,9 +12715,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="D5" gate="G$1" x="228.6" y="-33.02" smashed="yes" rot="R90">
 <attribute name="NAME" x="233.172" y="-29.464" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="U$1" gate="A" x="162.56" y="20.32" smashed="yes">
-<attribute name="NAME" x="157.22028125" y="35.2204" size="2.08503125" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="156.07388125" y="-2.7502" size="2.08573125" layer="96" ratio="10" rot="SR0"/>
+<instance part="U$1" gate="G$1" x="160.02" y="20.32" smashed="yes">
+<attribute name="NAME" x="154.68028125" y="35.2204" size="2.08503125" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="153.53388125" y="-2.7502" size="2.08573125" layer="96" ratio="10" rot="SR0"/>
 </instance>
 <instance part="C1" gate="G$1" x="203.2" y="106.68" smashed="yes" rot="R270">
 <attribute name="NAME" x="205.74" y="105.41093125" size="1.77843125" layer="95"/>
@@ -12942,13 +12872,13 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <attribute name="VALUE" x="435.356" y="11.049" size="1.778" layer="96"/>
 </instance>
 <instance part="U$5" gate="G$1" x="381" y="-10.16" smashed="yes" rot="R180"/>
-<instance part="D9" gate="G$1" x="424.18" y="121.92" smashed="yes">
-<attribute name="NAME" x="419.1" y="124.46" size="1.778" layer="95"/>
-<attribute name="VALUE" x="419.1" y="118.11" size="1.778" layer="96"/>
+<instance part="D9" gate="G$1" x="424.18" y="121.92" smashed="yes" rot="R180">
+<attribute name="NAME" x="429.26" y="119.38" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="429.26" y="125.73" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D10" gate="G$1" x="200.66" y="78.74" smashed="yes" rot="R180">
-<attribute name="NAME" x="200.66" y="76.2" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="203.2" y="85.09" size="1.778" layer="96" rot="R180"/>
+<instance part="D10" gate="G$1" x="200.66" y="78.74" smashed="yes">
+<attribute name="NAME" x="200.66" y="81.28" size="1.778" layer="95"/>
+<attribute name="VALUE" x="198.12" y="72.39" size="1.778" layer="96"/>
 </instance>
 <instance part="R23" gate="R1" x="322.58" y="7.62" smashed="yes">
 <attribute name="NAME" x="318.77" y="9.1186" size="1.778" layer="95"/>
@@ -13261,9 +13191,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="D4" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="VCC"/>
-<wire x1="144.78" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
-<label x="134.62" y="27.94" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
+<label x="180.34" y="22.86" size="1.778" layer="95"/>
+<wire x1="168.91" y1="24.0792" x2="180.34" y2="24.0792" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="STLINK_INTERFACE" gate="1" pin="5"/>
@@ -13479,22 +13409,19 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="236.22" y="-20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="VSS"/>
-<wire x1="144.78" y1="5.08" x2="132.08" y2="5.08" width="0.1524" layer="91"/>
-<label x="134.62" y="5.08" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="VSS"/>
+<label x="137.16" y="15.24" size="1.778" layer="95"/>
+<wire x1="151.13" y1="16.4592" x2="137.16" y2="16.4592" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="WP"/>
-<pinref part="U$1" gate="A" pin="A0"/>
-<wire x1="144.78" y1="20.32" x2="144.78" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="A1"/>
-<wire x1="144.78" y1="15.24" x2="144.78" y2="12.7" width="0.1524" layer="91"/>
-<junction x="144.78" y="15.24"/>
-<pinref part="U$1" gate="A" pin="A2"/>
-<wire x1="144.78" y1="12.7" x2="144.78" y2="10.16" width="0.1524" layer="91"/>
-<junction x="144.78" y="12.7"/>
-<wire x1="144.78" y1="12.7" x2="137.16" y2="12.7" width="0.1524" layer="91"/>
-<label x="137.16" y="12.7" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="A0"/>
+<pinref part="U$1" gate="G$1" pin="A1"/>
+<wire x1="151.13" y1="24.0792" x2="151.13" y2="21.5392" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="A2"/>
+<wire x1="151.13" y1="21.5392" x2="151.13" y2="18.9992" width="0.1524" layer="91"/>
+<junction x="151.13" y="21.5392"/>
+<label x="137.16" y="22.86" size="1.778" layer="95"/>
+<wire x1="151.13" y1="21.5392" x2="137.16" y2="21.5392" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="STLINK_INTERFACE" gate="1" pin="1"/>
@@ -13698,6 +13625,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="383.54" y1="104.14" x2="391.16" y2="104.14" width="0.1524" layer="91"/>
 <label x="386.08" y="104.14" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="WP"/>
+<wire x1="168.91" y1="21.5392" x2="180.34" y2="21.5392" width="0.1524" layer="91"/>
+<label x="180.34" y="20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="5V" class="0">
 <segment>
@@ -13738,7 +13670,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="D10" gate="G$1" pin="K"/>
-<wire x1="195.58" y1="78.74" x2="187.96" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="78.867" x2="187.96" y2="78.74" width="0.1524" layer="91"/>
 <label x="187.96" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -13752,7 +13684,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="D9" gate="G$1" pin="K"/>
-<wire x1="429.26" y1="121.92" x2="429.26" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="429.26" y1="121.793" x2="429.26" y2="129.54" width="0.1524" layer="91"/>
 <label x="426.72" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -14023,9 +13955,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="200.66" y="-40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="SCL"/>
-<wire x1="144.78" y1="22.86" x2="132.08" y2="22.86" width="0.1524" layer="91"/>
-<label x="134.62" y="22.86" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="SCL"/>
+<label x="180.34" y="17.78" size="1.778" layer="95"/>
+<wire x1="168.91" y1="18.9992" x2="180.34" y2="18.9992" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPS_SDA" class="0">
@@ -14035,9 +13967,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="200.66" y="-43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="A" pin="SDA"/>
-<wire x1="180.34" y1="27.94" x2="195.58" y2="27.94" width="0.1524" layer="91"/>
-<label x="182.88" y="27.94" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="SDA"/>
+<label x="180.34" y="15.24" size="1.778" layer="95"/>
+<wire x1="168.91" y1="16.4592" x2="180.34" y2="16.4592" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -14334,10 +14266,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="5V_IN_USB" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="VUSB"/>
-<wire x1="218.44" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="78.74" x2="205.74" y2="78.867" width="0.1524" layer="91"/>
 <label x="205.74" y="78.74" size="1.778" layer="95"/>
 <pinref part="D10" gate="G$1" pin="A"/>
-<junction x="205.74" y="78.74"/>
+<junction x="205.74" y="78.867"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -14426,7 +14358,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="C42" gate="C1" pin="1"/>
 <wire x1="406.4" y1="121.92" x2="411.48" y2="121.92" width="0.1524" layer="91"/>
 <junction x="406.4" y="121.92"/>
-<wire x1="411.48" y1="121.92" x2="419.1" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="411.48" y1="121.92" x2="419.1" y2="121.793" width="0.1524" layer="91"/>
 <junction x="411.48" y="121.92"/>
 <pinref part="R24" gate="R1" pin="2"/>
 <wire x1="396.24" y1="111.76" x2="396.24" y2="114.3" width="0.1524" layer="91"/>
@@ -14450,6 +14382,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <approved hash="208,1,220.98,91.44,GND,sup,,,,"/>
 <approved hash="208,1,205.74,68.58,GND,sup,,,,"/>
 <approved hash="208,1,104.14,15.24,GND,sup,,,,"/>
+<approved hash="208,1,383.54,104.14,GND,out,,,,"/>
 <approved hash="206,1,373.38,5.08,SYS,,,,,"/>
 <approved hash="206,1,373.38,2.54,SYS,,,,,"/>
 </errors>
