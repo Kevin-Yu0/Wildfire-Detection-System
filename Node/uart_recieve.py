@@ -1,5 +1,5 @@
 """
-hub_receiver.py — LoRa base station receiver (POC / ACK testing)
+uart_recieve.py — LoRa base station receiver (POC / ACK testing)
 
 Packet format received from node:
   D,<node_id>,<seq>,<temp_i>,<hum_i>,<press_i>,<co_i>,<co2_i>
