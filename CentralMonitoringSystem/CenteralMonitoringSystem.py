@@ -64,8 +64,8 @@ class CentralMonitoringStation:
     LOCATION_LEN_BYTE = 8 + HEADER_LEN_BYTES
     BASE_LEN_BYTES = 17 + HEADER_LEN_BYTES
 
-    LOCATION_PAYLOAD_FORMAT = "<B B B i i i"
-    BASE_PAYLOAD_FORMAT = "<B B B h h i i i B i"
+    LOCATION_PAYLOAD_FORMAT = "<B B B i i H"
+    BASE_PAYLOAD_FORMAT = "<B B B h h i i i B H"
 
     _HEX_RE = re.compile(r"^[0-9a-fA-F]+$")
     NODE_MAP_FILE = os.path.join(os.path.dirname(__file__), "node_locations.json")
