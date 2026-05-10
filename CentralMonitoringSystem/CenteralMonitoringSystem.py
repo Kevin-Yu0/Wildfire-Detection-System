@@ -44,16 +44,19 @@ import struct
 from datetime import datetime
 from typing import Optional, Dict, Any, Tuple
 
+PORT = '/dev/tty.usbserial-2140'
+BAUD = 115200
+
 
 class CentralMonitoringStation:
     """Encapsulates LoRa serial reading, payload parsing, and Supabase insertion."""
 
-    # class-level defaults from environment
+    # class-level defaults; environment variables can still override these
     SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
     SUPABASE_KEY = os.environ["SUPABASE_KEY"]
     TABLE = os.environ.get("TABLE_NAME", "Wildfire_Sensor_Data")
-    PORT = os.environ.get("LORA_PORT", "COM5")
-    BAUD = int(os.environ.get("LORA_BAUD", "115200"))
+    PORT = os.environ.get("LORA_PORT", PORT)
+    BAUD = int(os.environ.get("LORA_BAUD", str(BAUD)))
     PRINT_RAW = os.environ.get("PRINT_RAW", "0") == "1"
     DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
 
