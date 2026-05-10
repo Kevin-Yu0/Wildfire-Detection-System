@@ -1,5 +1,5 @@
 """
-lora_to_supabase.py
+CenteralMonitoringSystem.py
 
 Base station bridge program:
 LoRa RX module (RYLR998) -> UART -> RYLS135 (USB-UART) -> Python -> Supabase REST -> Database
