@@ -18,6 +18,9 @@ Alternating-bit protocol (per node):
 
 import serial
 import time
+import os
+import requests
+from datetime import datetime, timezone
 
 PORT = '/dev/tty.usbserial-2140'
 BAUD = 115200
@@ -27,6 +30,41 @@ BAUD = 115200
 # Keyed by node_id (int).  Value is the next expected seq bit (0 or 1).
 # ------------------------------------------------------------------
 node_expected_seq: dict[int, int] = {}
+
+# ------------------------------------------------------------------
+# Supabase configuration (set these environment variables before running)
+# ------------------------------------------------------------------
+SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
+SUPABASE_KEY = os.environ["SUPABASE_KEY"]
+TABLE = "Wildfire_Sensor_Data"
+
+
+def insert_to_supabase(data: dict) -> None:
+    row = {
+        "created_at":  datetime.now(timezone.utc).isoformat(),
+        "Long":        None,
+        "Lat":         None,
+        "Temperature": data["temperature"],
+        "Humidity":    data["humidity"],
+        "Pressure":    data["pressure"],
+        "CO":          data["co_ppm"],
+        "CO2":         data["co2_ppm"],
+        "Timestamp":   datetime.now(timezone.utc).strftime("%H:%M:%S"),
+        "Fire":        "true" if (data["temperature"] > 38 and data["humidity"] < 20 and data["co_ppm"] > 20) else "false",
+        "SensorID":    1,
+    }
+    url = f"{SUPABASE_URL}/rest/v1/{TABLE}"
+    headers = {
+        "apikey":        SUPABASE_KEY,
+        "Authorization": f"Bearer {SUPABASE_KEY}",
+        "Content-Type":  "application/json",
+        "Prefer":        "return=representation",
+    }
+    response = requests.post(url, headers=headers, json=row, timeout=15)
+    if not response.ok:
+        print(f"  [supabase] insert failed ({response.status_code}): {response.text}")
+    else:
+        print(f"  [supabase] row inserted OK")
 
 
 def send_ack(ser: serial.Serial, node_id: int, seq: int) -> None:
@@ -195,6 +233,7 @@ while True:
         node_expected_seq[node_id] = expected ^ 1
         print_telemetry(data, rssi, snr, duplicate=False)
         send_ack(ser, node_id, seq)
+        insert_to_supabase(data)
     else:
         # Duplicate (node retransmitted because it missed our previous ACK)
         # ACK again with the same seq so the node can move on, but don't
