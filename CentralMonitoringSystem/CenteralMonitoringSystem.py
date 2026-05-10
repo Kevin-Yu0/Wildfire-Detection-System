@@ -133,7 +133,30 @@ class CentralMonitoringStation:
     def predict_fire(self) -> float:
         """Placeholder for fire prediction logic based on sensor data."""
         return 0.0
-    
+
+    def print_telemetry_base(self, data: Dict[str, Any], pck_info: Dict[str, Any], meta: Dict[str, Any], duplicate: bool = False) -> None:
+        tag = "  [DUPLICATE — ACK only]" if duplicate else ""
+        print("─" * 52)
+        print(f"  Node     {pck_info['send_id']}   seq={pck_info['packet_number']}{tag}")
+        print(f"  Temp     {data['Temperature']:.2f} °C")
+        print(f"  Humidity {data['Humidity']:.2f} %RH")
+        print(f"  Pressure {data['Pressure']:.2f} hPa")
+        print(f"  CO       {data['CO']:.2f} ppm")
+        print(f"  CO2      {data['CO2']:.2f} ppm")
+        print(f"  Fire     {data['Fire']:.2f}")
+        if meta.get("rssi") is not None:
+            print(f"  RSSI     {meta['rssi']} dBm   SNR {meta['snr']} dB")
+        print("─" * 52)
+
+    def print_telemetry_location(self, data: Dict[str, Any], pck_info: Dict[str, Any], meta: Dict[str, Any]) -> None:
+        print("─" * 52)
+        print(f"  Node     {pck_info['send_id']}   seq={pck_info['packet_number']}  [LOCATION]")
+        print(f"  Lon      {data['Long']:.5f}")
+        print(f"  Lat      {data['Lat']:.5f}")
+        if meta.get("rssi") is not None:
+            print(f"  RSSI     {meta['rssi']} dBm   SNR {meta['snr']} dB")
+        print("─" * 52)
+
     def reply_to_sender(self, ser: serial.Serial, dest_id: int, pkt_num: int, message: int, pck_type: int = 2) -> None:
         """Send a reply message back to the sender.
         Packet type 2 is for replies
@@ -155,6 +178,7 @@ class CentralMonitoringStation:
 
         byte_payload = bytes.fromhex(s)
         if len(byte_payload) == self.LOCATION_LEN_BYTE:
+            payload_type = "LOCATION"
             send_id, dest_id, type_pkt_num, lon_i, lat_i, crc16 = struct.unpack(
                 self.LOCATION_PAYLOAD_FORMAT, byte_payload
             )
@@ -164,6 +188,7 @@ class CentralMonitoringStation:
             self.node_locations[send_id] = (lon, lat)
 
         elif len(byte_payload) == self.BASE_LEN_BYTES:
+            payload_type = "BASE"
             send_id, dest_id, type_pkt_num, temp_i, hum_i, pres_i, co_i, co2_i, fire_u8, crc16 = struct.unpack(
                 self.BASE_PAYLOAD_FORMAT, byte_payload
             )
@@ -205,6 +230,7 @@ class CentralMonitoringStation:
             "dest_id": dest_id,
             "packet_type": pck_type,
             "packet_number": pkt_num,
+            "payload_type": payload_type,
         }
         self.save_node_locations()
         return payload, pck_info
@@ -219,9 +245,9 @@ class CentralMonitoringStation:
                     for k, v in raw.items()
                     if isinstance(v, (list, tuple)) and len(v) == 2
                 }
-                print(f"[INFO] Loaded {len(self.node_locations)} node locations from {self.NODE_MAP_FILE}")
+                print(f"✓ Loaded {len(self.node_locations)} node locations from {self.NODE_MAP_FILE}")
             except Exception as e:
-                print(f"[WARN] Could not load node locations: {e}")
+                print(f"  Could not load node locations: {e}")
                 self.node_locations = {}
         else:
             self.node_locations = {}
@@ -231,7 +257,7 @@ class CentralMonitoringStation:
             with open(self.NODE_MAP_FILE, "w", encoding="utf-8") as f:
                 json.dump({str(k): list(v) for k, v in self.node_locations.items()}, f, indent=2)
         except Exception as e:
-            print(f"[WARN] Could not save node locations: {e}")
+            print(f"  Could not save node locations: {e}")
 
     def parse_rcv_line(self, line: str) -> Optional[Tuple[Dict[str, Any], Dict[str, Any], Dict[str, Any]]]:
         line = line.strip()
@@ -299,19 +325,47 @@ class CentralMonitoringStation:
     def open_serial_forever(self) -> serial.Serial:
         while True:
             try:
+                print(f"Opening {self.port} at {self.baud} baud...")
                 ser = serial.Serial(self.port, self.baud, timeout=1)
                 time.sleep(0.5)
-                print(f"[OK] Serial connected: {self.port} @ {self.baud}")
+
+                # Basic module check
+                ser.write(b"AT\r\n")
+                time.sleep(0.5)
+                resp = ser.read(ser.in_waiting)
+                print(f"Module response: {resp}")
+
+                if b"+OK" not in resp and b"AT" not in resp:
+                    print("✗ No response from LoRa module — check wiring / port")
+                    ser.close()
+                    time.sleep(self.open_retry_sec)
+                    continue
+
+                print("✓ Module responding")
+
+                commands = [
+                    "AT+BAND=915000000",
+                    f"AT+ADDRESS={self.ID}",
+                    "AT+NETWORKID=3",
+                    "AT+PARAMETER=9,7,1,12",
+                    "AT+MODE=0",
+                ]
+                for cmd in commands:
+                    ser.write((cmd + "\r\n").encode())
+                    time.sleep(0.3)
+                    r = ser.read(ser.in_waiting).decode("utf-8", errors="ignore")
+                    print(f"  {cmd}  ->  {r.strip()}")
+
+                print("\nHub ready — listening for node packets...\n")
                 return ser
+
             except Exception as e:
-                print(f"[WARN] Cannot open serial port {self.port}: {e}")
+                print(f"✗ Cannot open serial port {self.port}: {e}")
                 time.sleep(self.open_retry_sec)
 
     def run(self) -> None:
-        print("[INFO] Starting Central Monitoring Station")
-        print(
-            f"[INFO] PORT={self.port} BAUD={self.baud} TABLE={self.table} DRY_RUN={self.dry_run}"
-        )
+        print("Starting Central Monitoring Station")
+        print(f"PORT={self.port}  BAUD={self.baud}  TABLE={self.table}  DRY_RUN={self.dry_run}\n")
 
         ser = self.open_serial_forever()
         while True:
@@ -321,7 +375,7 @@ class CentralMonitoringStation:
                     continue
 
                 if self.print_raw:
-                    print(f"[RX] {raw_line}")
+                    print(f"[dbg] {raw_line}")
 
                 parsed = self.parse_rcv_line(raw_line)
                 if parsed is None:
@@ -329,26 +383,29 @@ class CentralMonitoringStation:
 
                 data, pck_info, meta = parsed
                 data["Fire"] = self.predict_fire()
+
+                is_duplicate = (not self.dry_run) and (self.packet_number != pck_info["packet_number"])
+
+                if pck_info["payload_type"] == "LOCATION":
+                    self.print_telemetry_location(data, pck_info, meta)
+                else:
+                    self.print_telemetry_base(data, pck_info, meta, duplicate=is_duplicate)
+
                 if self.dry_run:
-                    print(f"[PARSED] {data}")
                     continue
 
-                # only accept packets in order to avoid duplicates and out-of-order issues
-                # the sender probably did not receive our ACK if they resent, so we resend the ACK for the previous packet number (which is what they should be resending)
-                if self.packet_number != pck_info["packet_number"]:
-                    print(f"Packet number mismatch: expected {self.packet_number} but got {pck_info['packet_number']}. Throwing away packet.")
+                if is_duplicate:
                     previous_ack = 1 if self.packet_number == 1 else 0
                     self.reply_to_sender(ser, dest_id=pck_info["send_id"], pkt_num=pck_info["packet_number"], message=previous_ack)
                     continue
 
-                # if all is well, reply with ACK, insert into DB, and increment expected packet number
                 self.supabase_insert_row(data)
-                print("[DB] Inserted row")
+                print("  ✓ row inserted")
                 self.reply_to_sender(ser, dest_id=pck_info["send_id"], pkt_num=pck_info["packet_number"], message=1)
                 self.packet_number = (self.packet_number + 1) % 2
 
             except (serial.SerialException, OSError) as e:
-                print(f"[ERR] Serial error: {e}. Reconnecting...")
+                print(f"✗ Serial error: {e} — reconnecting...")
                 try:
                     ser.close()
                 except Exception:
@@ -356,17 +413,17 @@ class CentralMonitoringStation:
                 ser = self.open_serial_forever()
 
             except requests.RequestException as e:
-                print(f"[ERR] Supabase/network error: {e}. Retrying...")
+                print(f"✗ Network error: {e} — retrying...")
                 time.sleep(self.network_retry_sec)
 
             except ValueError as e:
                 # Case of bad CRC or LoRa error, reply with NACK
-                print(f"[DROP] {e}")
+                print(f"  [NACK] {e}")
                 self.reply_to_sender(ser, dest_id=pck_info["send_id"], pkt_num=pck_info["packet_number"], message=0)
                 time.sleep(0.05)
 
             except Exception as e:
-                print(f"[ERR] {e}")
+                print(f"✗ {e}")
                 time.sleep(0.2)
 
 # =======================
