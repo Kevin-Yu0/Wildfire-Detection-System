@@ -41,7 +41,6 @@ import requests
 import argparse
 import re
 import struct
-import threading
 from datetime import datetime
 from typing import Optional, Dict, Any, Tuple
 
@@ -103,9 +102,6 @@ class CentralMonitoringStation:
 
         # expected next packet number
         self.packet_number = 0
-
-        self.manual_fire_status: Optional[float] = None
-        self.fire_lock = threading.Lock()
 
     def __enter__(self) -> "CentralMonitoringStation":
         return self
@@ -311,47 +307,11 @@ class CentralMonitoringStation:
                 print(f"[WARN] Cannot open serial port {self.port}: {e}")
                 time.sleep(self.open_retry_sec)
 
-    def input_fire_override_loop(self) -> None:
-        while True:
-            try:
-                user_input = input("Set Fire Value: ").strip()
-                if not user_input:
-                    continue
-
-                if user_input.lower() == "auto":
-                    with self.fire_lock:
-                        self.manual_fire_status = None
-                    print("[FIRE] Auto mode enabled")
-                    continue
-
-                value = float(user_input)
-                if not (0.0 <= value <= 1.0):
-                    print("[FIRE] Invalid input. Enter a value from 0.00 to 1.00, or type auto")
-                    continue
-
-                value = round(value, 2)
-                with self.fire_lock:
-                    self.manual_fire_status = value
-                print(f"[FIRE] Manual override set to {value:.2f}")
-            except ValueError:
-                print("[FIRE] Invalid input. Enter a value from 0.00 to 1.00, or type auto")
-            except Exception as e:
-                print(f"[FIRE] Input error: {e}")
-                time.sleep(0.2)
-
-    def get_fire_value(self) -> float:
-        with self.fire_lock:
-            if self.manual_fire_status is not None:
-                return self.manual_fire_status
-        return self.predict_fire()
-
     def run(self) -> None:
         print("[INFO] Starting Central Monitoring Station")
         print(
             f"[INFO] PORT={self.port} BAUD={self.baud} TABLE={self.table} DRY_RUN={self.dry_run}"
         )
-
-        threading.Thread(target=self.input_fire_override_loop, daemon=True).start()
 
         ser = self.open_serial_forever()
         while True:
@@ -368,7 +328,7 @@ class CentralMonitoringStation:
                     continue
 
                 data, pck_info, meta = parsed
-                data["Fire"] = self.get_fire_value()
+                data["Fire"] = self.predict_fire()
                 if self.dry_run:
                     print(f"[PARSED] {data}")
                     continue
