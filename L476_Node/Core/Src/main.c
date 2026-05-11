@@ -4,7 +4,7 @@
   * @file    main.c
   * @brief   L476_Node — Wildfire Detection Node
   *          Target: STM32L476RGTx
-  *
+  *	 Show last update date and time here, last update: Mon. May 11 2026 2:32 PST
   *  Adapted from blinky (STM32L412RBTxP). Key changes:
   *    - huart1 (USART1 PB6/PB7) = LoRa        (was huart2 on L412 PCB)
   *    - huart2 (USART2 PA2/PA3) = CO2 S88      (was huart1 on L412 PCB)
@@ -29,7 +29,7 @@
 
 /* SenseAir S88 (USART2, huart2) Modbus RTU */
 #define S88_BAUD_RATE        9600
-#define S88_MODBUS_ADDR      0xFE
+#define S88_MODBUS_ADDR      0xFE   // was 0xFE
 #define S88_READ_INPUT_REG   0x04
 #define S88_CO2_REG          0x0003
 #define S88_DIR_GPIO_Port    GPIOB
@@ -46,7 +46,7 @@
 #define LORA_RF_POWER        14
 
 /* BME280 (I2C1, hi2c1, PB8/PB9) */
-#define BME280_I2C_ADDR      (0x77 << 1)
+#define BME280_I2C_ADDR      (0x76 << 1)
 #define BME280_REG_ID         0xD0
 #define BME280_REG_RESET      0xE0
 #define BME280_REG_CTRL_HUM   0xF2
@@ -55,11 +55,7 @@
 #define BME280_REG_PRESS_MSB  0xF7
 
 /* DFRobot SEN0466 Gravity Gas Sensor (I2C2, hi2c2, PB10/PB11) */
-#define GAS_I2C_ADDR              (0x74 << 1)
-#define CMD_CHANGE_GET_METHOD      0x78
-#define CMD_GET_GAS_CONCENTRATION  0x86
-#define MODE_PASSIVITY             0x04
-#define GAS_TYPE_CO                0x04
+
 
 /* ======== protocol ======== */
 #define PKT_TYPE_DATA        0x01       /* packet category: node -> hub */
@@ -135,7 +131,7 @@ static uint8_t s88_read_co2(uint16_t *co2_ppm)
     if (HAL_UART_Transmit(&huart2, cmd, 8, 200) != HAL_OK) { s88_set_rx(); g_co2_err = 1; return 0; }
     s88_set_rx();
     s88_uart_clear_errors();
-    if (HAL_UART_Receive(&huart2, rx, 7, 500)  != HAL_OK) { g_co2_err = 2; return 0; }
+    if (HAL_UART_Receive(&huart2, rx, 7, 2000) != HAL_OK) { g_co2_err = 2; return 0; }
     if (rx[1] != S88_READ_INPUT_REG || rx[2] != 0x02)     { g_co2_err = 3; return 0; }
 
     uint16_t crc_calc = s88_crc16(rx, 5);
@@ -150,67 +146,43 @@ static uint8_t s88_read_co2(uint16_t *co2_ppm)
 static uint8_t s88_init(void)
 {
     uint16_t tmp = 0;
-    HAL_Delay(100);
+    HAL_Delay(10000);
     s88_set_rx();
     g_s88_ready = s88_read_co2(&tmp) ? 1 : 0;
     return g_s88_ready;
 }
 
-/* ======== DFRobot gas sensor — hi2c2 (PB10/PB11) ======== */
-static uint8_t gas_checksum(uint8_t *data, uint8_t len)
+/* ======== DFRobot CO gas sensor — huart3 (USART3, PB10/PB11) @ 9600 ======== */
+static uint8_t co_checksum(const uint8_t *data, uint8_t len)
 {
     uint8_t sum = 0;
     for (uint8_t i = 1; i < (uint8_t)(len - 1); i++) sum += data[i];
     return (uint8_t)((~sum) + 1);
 }
 
-static void gas_pack_cmd(uint8_t *buf, uint8_t cmd, uint8_t *params, uint8_t param_len)
-{
-    buf[0] = 0xFF; buf[1] = 0x01; buf[2] = cmd;
-    for (uint8_t i = 0; i < 6; i++)
-        buf[3 + i] = (params && i < param_len) ? params[i] : 0x00;
-    buf[9] = gas_checksum(buf, 10);
-}
-
-static int gas_write(uint8_t *data, uint8_t len)
-{
-    return (HAL_I2C_Master_Transmit(&hi2c2, GAS_I2C_ADDR, data, len, 100) == HAL_OK) ? 0 : -1;
-}
-
-static int gas_read(uint8_t *data, uint8_t len)
-{
-    return (HAL_I2C_Master_Receive(&hi2c2, GAS_I2C_ADDR, data, len, 100) == HAL_OK) ? 0 : -1;
-}
-
 static uint8_t gas_init_co_only(void)
 {
-    if (HAL_I2C_IsDeviceReady(&hi2c2, GAS_I2C_ADDR, 3, 100) != HAL_OK) return 0;
-    uint8_t cmd[10];
-    uint8_t params[6] = {MODE_PASSIVITY, 0, 0, 0, 0, 0};
-    gas_pack_cmd(cmd, CMD_CHANGE_GET_METHOD, params, 1);
-    if (gas_write(cmd, 10) != 0) return 0;
-    HAL_Delay(50);
+    /* switch to Q&A mode: FF 01 78 04 00 00 00 00 83 */
+    uint8_t cmd[9] = {0xFF, 0x01, 0x78, 0x04, 0x00, 0x00, 0x00, 0x00, 0x83};
+    uint8_t ack[9];
+    HAL_Delay(500);
+    __HAL_UART_CLEAR_OREFLAG(&huart3);
+    if (HAL_UART_Transmit(&huart3, cmd, 9, 200) != HAL_OK) return 0;
+    if (HAL_UART_Receive(&huart3, ack, 9, 1500) != HAL_OK) return 0;
+    if (ack[0] != 0xFF || ack[1] != 0x78 || ack[2] != 0x01) return 0;
     return 1;
 }
 
 static uint8_t gas_read_co_ppm(float *co_ppm)
 {
-    uint8_t cmd[10], resp[9];
-    gas_pack_cmd(cmd, CMD_GET_GAS_CONCENTRATION, NULL, 0);
-    if (gas_write(cmd, 10) != 0) return 0;
-    HAL_Delay(50);
-    if (gas_read(resp, 9) != 0) return 0;
-    if (resp[8] != gas_checksum(resp, 9)) return 0;
-
-    uint16_t raw            = (uint16_t)((resp[2] << 8) | resp[3]);
-    uint8_t  gas_type_code  = resp[4];
-    uint8_t  decimal_digits = resp[5];
-    if (gas_type_code != GAS_TYPE_CO) return 0;
-
-    float v = (float)raw;
-    if      (decimal_digits == 1) v *= 0.1f;
-    else if (decimal_digits == 2) v *= 0.01f;
-    *co_ppm = v;
+    /* request: FF 01 86 00 00 00 00 00 79 */
+    uint8_t cmd[9] = {0xFF, 0x01, 0x86, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79};
+    uint8_t rx[9];
+    if (HAL_UART_Transmit(&huart3, cmd, 9, 200) != HAL_OK) return 0;
+    if (HAL_UART_Receive(&huart3, rx, 9, 1000) != HAL_OK) return 0;
+    if (rx[0] != 0xFF || rx[1] != 0x86) return 0;
+    if (co_checksum(rx, 9) != rx[8]) return 0;
+    *co_ppm = (float)((rx[2] << 8) | rx[3]);
     return 1;
 }
 
@@ -600,9 +572,10 @@ int main(void)
     MX_GPIO_Init();
     MX_USART1_UART_Init();   /* LoRa   — PB6/PB7 */
     MX_USART2_UART_Init();   /* CO2    — PA2/PA3 */
-    MX_USART3_UART_Init();   /* GPS    — PC4/PC5 */
+    MX_USART3_UART_Init();   /* CO gas  — PB10/PB11 */
+    //MX_USART3_UART_Init();   /* GPS    — PC4/PC5 */
     MX_I2C1_Init();          /* BME280 — PB8/PB9 */
-    MX_I2C2_Init();          /* Gas    — PB10/PB11 */
+    //MX_I2C2_Init();          /* Gas    — PB10/PB11 */
 
     /* ---- USART1: LoRa module (PB6/PB7) @ 115200 ---- */
     HAL_UART_DeInit(&huart1);
@@ -631,6 +604,20 @@ int main(void)
     huart2.Init.OneBitSampling        = UART_ONE_BIT_SAMPLE_DISABLE;
     huart2.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
     HAL_UART_Init(&huart2);
+
+    /* ---- USART3: CO gas sensor (PB10/PB11) @ 9600 ---- */
+    HAL_UART_DeInit(&huart3);
+    huart3.Instance          = USART3;
+    huart3.Init.BaudRate     = 9600;
+    huart3.Init.WordLength   = UART_WORDLENGTH_8B;
+    huart3.Init.StopBits     = UART_STOPBITS_1;
+    huart3.Init.Parity       = UART_PARITY_NONE;
+    huart3.Init.Mode         = UART_MODE_TX_RX;
+    huart3.Init.HwFlowCtl    = UART_HWCONTROL_NONE;
+    huart3.Init.OverSampling = UART_OVERSAMPLING_16;
+    huart3.Init.OneBitSampling        = UART_ONE_BIT_SAMPLE_DISABLE;
+    huart3.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+    HAL_UART_Init(&huart3);
 
     HAL_Delay(1000);
 
