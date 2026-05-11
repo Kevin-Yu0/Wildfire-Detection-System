@@ -44,7 +44,7 @@ import struct
 from datetime import datetime
 from typing import Optional, Dict, Any, Tuple
 
-PORT = '/dev/tty.usbserial-2140'
+PORT = '/dev/tty.usbserial-130'
 BAUD = 115200
 
 
@@ -52,8 +52,8 @@ class CentralMonitoringStation:
     """Encapsulates LoRa serial reading, payload parsing, and Supabase insertion."""
 
     # class-level defaults; environment variables can still override these
-    SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
-    SUPABASE_KEY = os.environ["SUPABASE_KEY"]
+    SUPABASE_URL = "https://yzankkkdstzranyazqgt.supabase.co"
+    SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl6YW5ra2tkc3R6cmFueWF6cWd0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2Nzk5MDI4NywiZXhwIjoyMDgzNTY2Mjg3fQ.s_gE3DEvyGBl8iSPLBvY6nhdp8eU_OsuX9mMgVXrGYk"
     TABLE = os.environ.get("TABLE_NAME", "Wildfire_Sensor_Data")
     PORT = os.environ.get("LORA_PORT", PORT)
     BAUD = int(os.environ.get("LORA_BAUD", str(BAUD)))
@@ -171,7 +171,7 @@ class CentralMonitoringStation:
         crc16 = self.crc16_ccitt(payload)
         full_payload = payload + struct.pack("<H", crc16)
         hex_payload = full_payload.hex()
-        cmd = f"AT+SEND={dest_id}, {len(full_payload)}, {hex_payload}\r\n"
+        cmd = f"AT+SEND={dest_id},{len(hex_payload)},{hex_payload}\r\n"
         ser.write(cmd.encode("utf-8"))
 
     def parse_payload_packed_hex(self, payload_hex: str) -> Tuple[Dict[str, Any], Dict[str, Any]]:
@@ -362,6 +362,9 @@ class CentralMonitoringStation:
                 print("\nHub ready — listening for node packets...\n")
                 return ser
 
+            except KeyboardInterrupt:
+                raise
+
             except Exception as e:
                 print(f"✗ Cannot open serial port {self.port}: {e}")
                 time.sleep(self.open_retry_sec)
@@ -398,14 +401,16 @@ class CentralMonitoringStation:
                     continue
 
                 if is_duplicate:
-                    previous_ack = 1 if self.packet_number == 1 else 0
-                    self.reply_to_sender(ser, dest_id=pck_info["send_id"], pkt_num=pck_info["packet_number"], message=previous_ack)
+                    self.reply_to_sender(ser, dest_id=pck_info["send_id"], pkt_num=pck_info["packet_number"], message=1)
                     continue
 
                 self.supabase_insert_row(data)
                 print("  ✓ row inserted")
                 self.reply_to_sender(ser, dest_id=pck_info["send_id"], pkt_num=pck_info["packet_number"], message=1)
                 self.packet_number = (self.packet_number + 1) % 2
+
+            except KeyboardInterrupt:
+                raise
 
             except (serial.SerialException, OSError) as e:
                 print(f"✗ Serial error: {e} — reconnecting...")
@@ -463,7 +468,10 @@ def main() -> None:
         init_kwargs["dry_run"] = args.dry_run
 
     central_monitoring_station = CentralMonitoringStation(**init_kwargs)
-    central_monitoring_station.run()
+    try:
+        central_monitoring_station.run()
+    except KeyboardInterrupt:
+        print("\nStopped.")
 
 
 if __name__ == "__main__":
