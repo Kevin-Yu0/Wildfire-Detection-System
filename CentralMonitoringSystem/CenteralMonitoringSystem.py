@@ -52,8 +52,8 @@ class CentralMonitoringStation:
     """Encapsulates LoRa serial reading, payload parsing, and Supabase insertion."""
 
     # class-level defaults; environment variables can still override these
-    SUPABASE_URL = "https://yzankkkdstzranyazqgt.supabase.co"
-    SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl6YW5ra2tkc3R6cmFueWF6cWd0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2Nzk5MDI4NywiZXhwIjoyMDgzNTY2Mjg3fQ.s_gE3DEvyGBl8iSPLBvY6nhdp8eU_OsuX9mMgVXrGYk"
+    SUPABASE_URL = ""
+    SUPABASE_KEY = ""
     TABLE = os.environ.get("TABLE_NAME", "Wildfire_Sensor_Data")
     PORT = os.environ.get("LORA_PORT", PORT)
     BAUD = int(os.environ.get("LORA_BAUD", str(BAUD)))
