@@ -52,7 +52,7 @@ class CentralMonitoringStation:
     """Encapsulates LoRa serial reading, payload parsing, and Supabase insertion."""
 
     # class-level defaults; environment variables can still override these
-    SUPABASE_URL = ""
+    SUPABASE_URL = "https://yzankkkdstzranyazqgt.supabase.co"
     SUPABASE_KEY = ""
     TABLE = os.environ.get("TABLE_NAME", "Wildfire_Sensor_Data")
     PORT = os.environ.get("LORA_PORT", PORT)
@@ -351,6 +351,7 @@ class CentralMonitoringStation:
                     f"AT+ADDRESS={self.ID}",
                     "AT+NETWORKID=3",
                     "AT+PARAMETER=9,7,1,12",
+                    "AT+CRFOP=14",
                     "AT+MODE=0",
                 ]
                 for cmd in commands:
