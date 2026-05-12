@@ -24,7 +24,7 @@
 #include <stdlib.h>
 
 /* ======== configuration ======== */
-#define SEND_PERIOD_MS       20000
+#define SEND_PERIOD_MS       10000
 #define LOCATION_PERIOD_MS   20000      /* GPS location packet interval in ms (20 s demo; 600000 for production) */
 
 /* SenseAir S88 (USART2, huart2) Modbus RTU */
@@ -605,7 +605,7 @@ int main(void)
     huart2.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
     HAL_UART_Init(&huart2);
 
-    /* ---- USART3: CO gas sensor (PB10/PB11) @ 9600 ---- */
+    /* ---- USART3: GPS NEO-6M (PC4/PC5) @ 9600 ---- */
     HAL_UART_DeInit(&huart3);
     huart3.Instance          = USART3;
     huart3.Init.BaudRate     = 9600;
@@ -649,7 +649,8 @@ int main(void)
         /* send GPS location packet every LOCATION_PERIOD_MS (only when fix valid) */
         if ((now - last_location) >= LOCATION_PERIOD_MS) {
             last_location += LOCATION_PERIOD_MS;
-            if (g_gps_valid) send_location_packet();
+            //if (g_gps_valid) //ML: i commented this out
+            send_location_packet();
         }
 
         /* send sensor BASE packet every SEND_PERIOD_MS */
@@ -664,7 +665,7 @@ int main(void)
             float    out_temp_c    = ok_bme ? g_temperature_c          : 0.0f;
             float    out_hum_rh    = ok_bme ? g_humidity_rh            : 0.0f;
             float    out_press_hpa = ok_bme ? (g_pressure_pa / 100.0f) : 0.0f;
-            float    out_co_ppm    = ok_co  ? g_co_ppm                 : 0.0f;
+            float    out_co_ppm    = ok_co  ? g_co_ppm                 : 99.0f; //set to 99, because a 0ppm indicates a good reading
             uint16_t out_co2_ppm   = ok_co2 ? g_co2_ppm : (60000u + g_co2_err);
 
             send_base_packet(out_temp_c, out_hum_rh, out_press_hpa,
