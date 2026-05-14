@@ -305,6 +305,10 @@ table.dtbl tbody tr:last-child td { border-bottom: none; }
 .fh-card:hover .fh-arrow { text-decoration: underline; }
 .fh-date {
   font-size: 14px; font-weight: 600; color: var(--navy);
+  margin-bottom: 4px;
+}
+.fh-points {
+  font-family: var(--font-mono); font-size: 11px; color: var(--ash);
   margin-bottom: 10px;
 }
 .fh-grid {

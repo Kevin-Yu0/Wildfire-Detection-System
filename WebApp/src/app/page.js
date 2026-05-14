@@ -21,6 +21,119 @@ const fmt = (iso) => {
 };
 const coord = (n) => (n != null ? Number(n).toFixed(4) : "—");
 
+/* ── Geo distance in feet (Haversine) ── */
+const distFeet = (lat1, lng1, lat2, lng2) => {
+  const R = 20902231; // Earth radius in feet
+  const toRad = (d) => (d * Math.PI) / 180;
+  const dLat = toRad(lat2 - lat1);
+  const dLng = toRad(lng2 - lng1);
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+};
+
+/* ── Cluster fire points within ~20 feet into single map markers ── */
+const clusterFirePoints = (fireRows, radiusFeet = 20) => {
+  const clusters = [];
+  const used = new Set();
+
+  for (let i = 0; i < fireRows.length; i++) {
+    if (used.has(i)) continue;
+    const cluster = [fireRows[i]];
+    used.add(i);
+
+    for (let j = i + 1; j < fireRows.length; j++) {
+      if (used.has(j)) continue;
+      const d = distFeet(
+        Number(fireRows[i].Lat), Number(fireRows[i].Long),
+        Number(fireRows[j].Lat), Number(fireRows[j].Long)
+      );
+      if (d <= radiusFeet) {
+        cluster.push(fireRows[j]);
+        used.add(j);
+      }
+    }
+
+    // Average position, keep worst readings
+    const avgLat = cluster.reduce((s, r) => s + Number(r.Lat), 0) / cluster.length;
+    const avgLng = cluster.reduce((s, r) => s + Number(r.Long), 0) / cluster.length;
+    const maxTemp = Math.max(...cluster.map((r) => Number(r.Temperature) || 0));
+    const maxCO2 = Math.max(...cluster.map((r) => Number(r.CO2) || 0));
+
+    clusters.push({
+      lat: avgLat,
+      lng: avgLng,
+      count: cluster.length,
+      points: cluster,
+      maxTemp,
+      maxCO2,
+      // Use most recent point as representative
+      representative: cluster.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))[0],
+    });
+  }
+  return clusters;
+};
+
+/* ── Group clusters into incidents: clusters within 6 data points in time = same incident ── */
+const groupIntoIncidents = (clusters) => {
+  if (clusters.length === 0) return [];
+
+  // Sort all clusters by their most recent timestamp
+  const sorted = [...clusters].sort(
+    (a, b) => new Date(b.representative.created_at) - new Date(a.representative.created_at)
+  );
+
+  const incidents = [];
+  let currentIncident = { clusters: [sorted[0]], points: [...sorted[0].points] };
+
+  for (let i = 1; i < sorted.length; i++) {
+    const prev = sorted[i - 1].representative;
+    const curr = sorted[i].representative;
+
+    // Check if within ~20 feet AND within 6 data points in time
+    const nearby = distFeet(
+      Number(prev.Lat), Number(prev.Long),
+      Number(curr.Lat), Number(curr.Long)
+    ) <= 100; // broader radius for incident grouping
+
+    // Check time gap — if consecutive readings are close in time, same incident
+    const timeDiffMs = Math.abs(new Date(prev.created_at) - new Date(curr.created_at));
+    const closeInTime = timeDiffMs < 6 * 30 * 1000; // ~6 readings × 30 sec each = 3 min
+
+    if (nearby && closeInTime) {
+      currentIncident.clusters.push(sorted[i]);
+      currentIncident.points.push(...sorted[i].points);
+    } else {
+      incidents.push(currentIncident);
+      currentIncident = { clusters: [sorted[i]], points: [...sorted[i].points] };
+    }
+  }
+  incidents.push(currentIncident);
+
+  // Compute summary for each incident
+  return incidents.map((inc, idx) => {
+    const allPts = inc.points;
+    const avgLat = allPts.reduce((s, r) => s + Number(r.Lat), 0) / allPts.length;
+    const avgLng = allPts.reduce((s, r) => s + Number(r.Long), 0) / allPts.length;
+    const newest = allPts.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))[0];
+    const oldest = allPts[allPts.length - 1];
+    return {
+      id: idx,
+      lat: avgLat,
+      lng: avgLng,
+      count: allPts.length,
+      points: allPts,
+      representative: newest,
+      startTime: oldest.created_at,
+      endTime: newest.created_at,
+      maxTemp: Math.max(...allPts.map((r) => Number(r.Temperature) || 0)),
+      maxCO2: Math.max(...allPts.map((r) => Number(r.CO2) || 0)),
+      avgHumidity: (allPts.reduce((s, r) => s + (Number(r.Humidity) || 0), 0) / allPts.length).toFixed(1),
+    };
+  });
+};
+
 /* ── SVG icons (inline so no extra files needed) ── */
 const ExpandIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
@@ -49,6 +162,7 @@ export default function Home() {
 
   /* fire detail modal */
   const [fireDetail, setFireDetail] = useState(null); // the clicked fire row
+  const [fireIncident, setFireIncident] = useState(null); // the incident this fire belongs to
   const [chartData, setChartData] = useState([]);     // historical data for that location
   const [chartLoading, setChartLoading] = useState(false);
   const [activeChart, setActiveChart] = useState("Temperature"); // which metric to show
@@ -74,6 +188,14 @@ export default function Home() {
     return {
       url: "https://maps.google.com/mapfiles/kml/shapes/firedept.png",
       scaledSize: new window.google.maps.Size(30, 30),
+    };
+  }, [isLoaded]);
+
+  const sensorIcon = useMemo(() => {
+    if (!isLoaded) return undefined;
+    return {
+      url: "https://maps.google.com/mapfiles/kml/paddle/grn-circle.png",
+      scaledSize: new window.google.maps.Size(20, 20),
     };
   }, [isLoaded]);
 
@@ -161,11 +283,60 @@ export default function Home() {
     return { n, fires, avgTemp, maxCO2, avgHum, maxTemp };
   }, [rows]);
 
-  /* ── all fire incidents (for history list) ── */
-  const fireHistory = useMemo(() => {
-    return rows
-      .filter((r) => isFire(r.Fire))
-      .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+  /* ── all fire incidents (clustered + grouped) ── */
+  const fireRows = useMemo(() => {
+    return rows.filter((r) => isFire(r.Fire) && !(Number(r.Lat) === 0 && Number(r.Long) === 0));
+  }, [rows]);
+
+  const fireClusters = useMemo(() => clusterFirePoints(fireRows, 20), [fireRows]);
+  const incidents = useMemo(() => groupIntoIncidents(fireClusters), [fireClusters]);
+  const incidentCount = incidents.length;
+
+  /* ── Unified sensor nodes: one marker per location, merge fire+normal within 20ft ── */
+  const sensorNodes = useMemo(() => {
+    const validRows = rows.filter((r) => {
+      const lat = Number(r.Lat);
+      const lng = Number(r.Long);
+      return Number.isFinite(lat) && Number.isFinite(lng) && !(lat === 0 && lng === 0);
+    });
+
+    // Group all readings by proximity (~20 feet)
+    const nodes = [];
+    const used = new Set();
+
+    for (let i = 0; i < validRows.length; i++) {
+      if (used.has(i)) continue;
+      const group = [validRows[i]];
+      used.add(i);
+
+      for (let j = i + 1; j < validRows.length; j++) {
+        if (used.has(j)) continue;
+        const d = distFeet(
+          Number(validRows[i].Lat), Number(validRows[i].Long),
+          Number(validRows[j].Lat), Number(validRows[j].Long)
+        );
+        if (d <= 20) {
+          group.push(validRows[j]);
+          used.add(j);
+        }
+      }
+
+      const avgLat = group.reduce((s, r) => s + Number(r.Lat), 0) / group.length;
+      const avgLng = group.reduce((s, r) => s + Number(r.Long), 0) / group.length;
+      const hasFire = group.some((r) => isFire(r.Fire));
+      const representative = group.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))[0];
+
+      nodes.push({
+        lat: avgLat,
+        lng: avgLng,
+        hasFire,
+        count: group.length,
+        points: group,
+        representative,
+      });
+    }
+
+    return nodes;
   }, [rows]);
 
   const resetFilters = () => {
@@ -201,8 +372,9 @@ export default function Home() {
   }, []);
 
   /* ── open fire detail modal ── */
-  const openFireDetail = useCallback((row) => {
+  const openFireDetail = useCallback((row, incident = null) => {
     setFireDetail(row);
+    setFireIncident(incident);
     setActiveChart("Temperature");
     setChartFromDT("");
     setChartToDT("");
@@ -218,6 +390,7 @@ export default function Home() {
 
   const closeFireDetail = () => {
     setFireDetail(null);
+    setFireIncident(null);
     setChartData([]);
     setChartFromDT("");
     setChartToDT("");
@@ -275,21 +448,25 @@ export default function Home() {
         fullscreenControl: false, // we have our own
       }}
     >
-      {rows.map((r, i) => {
-        const lat = Number(r.Lat);
-        const lng = Number(r.Long);
-        if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
-        if (lat === 0 && lng === 0) return null;
-        if (!isFire(r.Fire)) return null; // only show fires on the map
-        return (
-          <Marker
-            key={r.created_at + "-" + i}
-            position={{ lat, lng }}
-            icon={fireIcon}
-            onClick={() => openFireDetail(r)}
-          />
-        );
-      })}
+      {/* Unified sensor node markers — fire icon if fire detected, green otherwise */}
+      {sensorNodes.map((node, i) => (
+        <Marker
+          key={"node-" + i}
+          position={{ lat: node.lat, lng: node.lng }}
+          icon={node.hasFire ? fireIcon : sensorIcon}
+          onClick={() => {
+            if (node.hasFire) {
+              // Find the matching incident for this node
+              const matchingInc = incidents.find((inc) =>
+                distFeet(inc.lat, inc.lng, node.lat, node.lng) <= 50
+              );
+              openFireDetail(node.representative, matchingInc || null);
+            } else {
+              setSelected(node.representative);
+            }
+          }}
+        />
+      ))}
 
       {selected && (
         <InfoWindow
@@ -349,20 +526,12 @@ export default function Home() {
               <div className="stat-lbl">Total Readings</div>
             </div>
             <div className="stat-pill alert fade-in d2">
-              <div className="stat-val">{stats.fires}</div>
-              <div className="stat-lbl">Fire Detections</div>
+              <div className="stat-val">{incidentCount}</div>
+              <div className="stat-lbl">Fire Incidents</div>
             </div>
             <div className="stat-pill fade-in d3">
-              <div className="stat-val">{stats.avgTemp}°</div>
-              <div className="stat-lbl">Avg Temp</div>
-            </div>
-            <div className="stat-pill fade-in d4">
               <div className="stat-val">{stats.maxCO2}</div>
               <div className="stat-lbl">Peak CO₂</div>
-            </div>
-            <div className="stat-pill fade-in d5">
-              <div className="stat-val">{stats.avgHum}%</div>
-              <div className="stat-lbl">Avg Humidity</div>
             </div>
           </div>
         </div>
@@ -393,7 +562,10 @@ export default function Home() {
             {/* Legend */}
             <div className="map-legend">
               <div className="legend-item">
-                <span className="legend-dot fire" /> Active Fire Detection
+                <span className="legend-dot fire" /> Fire Incident
+              </div>
+              <div className="legend-item">
+                <span className="legend-dot ok" /> Sensor Node
               </div>
             </div>
           </div>
@@ -407,10 +579,10 @@ export default function Home() {
               <div className="card-body">
                 <div className="mini-stats">
                   <div className="mini-stat">
-                    <div className={`mini-stat-val${stats.fires > 0 ? " danger" : ""}`}>
-                      {stats.fires}
+                    <div className={`mini-stat-val${incidentCount > 0 ? " danger" : ""}`}>
+                      {incidentCount}
                     </div>
-                    <div className="mini-stat-lbl">🔥 Fires</div>
+                    <div className="mini-stat-lbl">🔥 Incidents</div>
                   </div>
                   <div className="mini-stat">
                     <div className="mini-stat-val">{stats.n}</div>
@@ -433,47 +605,48 @@ export default function Home() {
               <div className="card-head">
                 <h3>Fire History</h3>
                 <span className="badge" style={{ fontSize: 11 }}>
-                  {fireHistory.length} incident{fireHistory.length !== 1 ? "s" : ""}
+                  {incidents.length} incident{incidents.length !== 1 ? "s" : ""}
                 </span>
               </div>
               <div className="card-body" style={{ padding: 0 }}>
-                {fireHistory.length === 0 ? (
+                {incidents.length === 0 ? (
                   <div style={{ padding: "24px 18px", textAlign: "center", color: "var(--ash)", fontSize: 13 }}>
                     No fire incidents recorded.
                   </div>
                 ) : (
                   <div className="fire-history-list">
-                    {fireHistory.map((f, i) => (
+                    {incidents.map((inc, i) => (
                       <button
-                        key={f.created_at + "-" + i}
+                        key={"inc-" + i}
                         className="fh-card"
-                        onClick={() => openFireDetail(f)}
+                        onClick={() => openFireDetail(inc.representative, inc)}
                       >
                         <div className="fh-top">
-                          <span className="fh-badge">🔥 Incident #{fireHistory.length - i}</span>
+                          <span className="fh-badge">🔥 Incident #{incidents.length - i}</span>
                           <span className="fh-arrow">View chart →</span>
                         </div>
-                        <div className="fh-date">{fmt(f.created_at)}</div>
+                        <div className="fh-date">{fmt(inc.representative.created_at)}</div>
+                        <div className="fh-points">{inc.count} data point{inc.count !== 1 ? "s" : ""}</div>
                         <div className="fh-grid">
                           <div className="fh-cell">
-                            <span className="fh-cell-lbl">Temp</span>
-                            <span className="fh-cell-val hot">{f.Temperature ?? "—"}°</span>
+                            <span className="fh-cell-lbl">Max Temp</span>
+                            <span className="fh-cell-val hot">{inc.maxTemp.toFixed(1)}°</span>
                           </div>
                           <div className="fh-cell">
-                            <span className="fh-cell-lbl">CO₂</span>
-                            <span className="fh-cell-val hot">{f.CO2 ?? "—"}</span>
+                            <span className="fh-cell-lbl">Max CO₂</span>
+                            <span className="fh-cell-val hot">{inc.maxCO2.toFixed(0)}</span>
                           </div>
                           <div className="fh-cell">
-                            <span className="fh-cell-lbl">Humidity</span>
-                            <span className="fh-cell-val">{f.Humidity ?? "—"}%</span>
+                            <span className="fh-cell-lbl">Avg Humidity</span>
+                            <span className="fh-cell-val">{inc.avgHumidity}%</span>
                           </div>
                           <div className="fh-cell">
-                            <span className="fh-cell-lbl">CO</span>
-                            <span className="fh-cell-val">{f.CO ?? "—"}</span>
+                            <span className="fh-cell-lbl">Points</span>
+                            <span className="fh-cell-val">{inc.count}</span>
                           </div>
                         </div>
                         <div className="fh-location">
-                          📍 {coord(f.Lat)}, {coord(f.Long)}
+                          📍 {coord(inc.lat)}, {coord(inc.lng)}
                         </div>
                       </button>
                     ))}
@@ -603,6 +776,14 @@ export default function Home() {
                 <p className="modal-subtitle">
                   Location: {coord(fireDetail.Lat)}, {coord(fireDetail.Long)} · Detected: {fmt(fireDetail.created_at)}
                 </p>
+                {fireIncident && (
+                  <p className="modal-subtitle" style={{ marginTop: 4 }}>
+                    {fireIncident.count} data point{fireIncident.count !== 1 ? "s" : ""} in this incident
+                    {fireIncident.startTime !== fireIncident.endTime && (
+                      <> · {fmt(fireIncident.startTime)} → {fmt(fireIncident.endTime)}</>
+                    )}
+                  </p>
+                )}
               </div>
             </div>
 
