@@ -16,9 +16,6 @@ Optional env vars:
   LORA_PORT   (e.g. "COM5" on Windows, "/dev/tty.usbserial-XXXX" on macOS, "/dev/ttyUSB0" on Linux)
   LORA_BAUD   (default 115200)
   TABLE_NAME  (default "Wildfire_Sensor_Data")
-  PRINT_RAW   ("1" to print every raw serial line, default "1")
-  DRY_RUN     ("1" to parse but NOT insert into Supabase, default "0")
-  STORE_META  ("1" to include src_addr/rssi/snr if your table has those columns, default "0")
 
 Packet types
 Location
@@ -35,16 +32,19 @@ Base
 
 import os
 import json
+from pyexpat import features
 import time
 import serial
 import requests
 import argparse
 import re
 import struct
+import joblib
+import pandas as pd
 from datetime import datetime
 from typing import Optional, Dict, Any, Tuple
 
-PORT = '/dev/tty.usbserial-130'
+PORT = 'COM8'
 BAUD = 115200
 
 
@@ -53,12 +53,10 @@ class CentralMonitoringStation:
 
     # class-level defaults; environment variables can still override these
     SUPABASE_URL = "https://yzankkkdstzranyazqgt.supabase.co"
-    SUPABASE_KEY = ""
+    SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
     TABLE = os.environ.get("TABLE_NAME", "Wildfire_Sensor_Data")
     PORT = os.environ.get("LORA_PORT", PORT)
     BAUD = int(os.environ.get("LORA_BAUD", str(BAUD)))
-    PRINT_RAW = os.environ.get("PRINT_RAW", "0") == "1"
-    DRY_RUN = os.environ.get("DRY_RUN", "0") == "1"
 
     OPEN_SERIAL_RETRY_SEC = 2
     NETWORK_RETRY_SEC = 2
@@ -80,8 +78,6 @@ class CentralMonitoringStation:
         table: str = TABLE,
         port: str = PORT,
         baud: int = BAUD,
-        print_raw: bool = PRINT_RAW,
-        dry_run: bool = DRY_RUN,
         open_retry_sec: int = OPEN_SERIAL_RETRY_SEC,
         network_retry_sec: int = NETWORK_RETRY_SEC,
     ):
@@ -90,8 +86,6 @@ class CentralMonitoringStation:
         self.table = table
         self.port = port
         self.baud = baud
-        self.print_raw = print_raw
-        self.dry_run = dry_run
         self.open_retry_sec = open_retry_sec
         self.network_retry_sec = network_retry_sec
         self.session = requests.Session()
@@ -105,6 +99,16 @@ class CentralMonitoringStation:
 
         # expected next packet number
         self.packet_number = 0
+
+        # Load ML model for fire prediction
+        try:
+            self.model = joblib.load("fire_model.joblib")
+            self.scaler = joblib.load("fire_scaler.joblib")
+            print("✓ ML model and scaler loaded successfully")
+        except Exception as e:
+            print(f"✗ Could not load ML model or scaler: {e}")
+            self.model = None
+            self.scaler = None
 
     def __enter__(self) -> "CentralMonitoringStation":
         return self
@@ -133,9 +137,19 @@ class CentralMonitoringStation:
                     crc = (crc << 1) & 0xFFFF
         return crc
 
-    def predict_fire(self) -> float:
-        """Placeholder for fire prediction logic based on sensor data."""
-        return 0.0
+    def predict_fire(self, temp: float, hum: float, pres: float, co: float, co2: float) -> float:
+        features = pd.DataFrame([{
+        "temperature": temp,
+        "humidity": hum,
+        "pressure": pres,
+        "co_ppm": co,
+        "co2_ppm": co2
+        }])
+
+        features_scaled = self.scaler.transform(features)
+        risk = self.model.predict(features_scaled)[0] 
+        risk = max(0.0, min(1.0, risk))
+        return float(risk)
 
     def print_telemetry_base(self, data: Dict[str, Any], pck_info: Dict[str, Any], meta: Dict[str, Any], duplicate: bool = False) -> None:
         tag = "  [DUPLICATE — ACK only]" if duplicate else ""
@@ -153,7 +167,7 @@ class CentralMonitoringStation:
 
     def print_telemetry_location(self, data: Dict[str, Any], pck_info: Dict[str, Any], meta: Dict[str, Any]) -> None:
         print("─" * 52)
-        print(f"  Node     {pck_info['send_id']}   seq={pck_info['packet_number']}  [LOCATION]")
+        print(f"  Node     {pck_info['send_id']}   [LOCATION]")
         print(f"  Lon      {data['Long']:.5f}")
         print(f"  Lat      {data['Lat']:.5f}")
         if meta.get("rssi") is not None:
@@ -188,7 +202,8 @@ class CentralMonitoringStation:
             lon = lon_i / 100000.0
             lat = lat_i / 100000.0
             temp = hum = pres = co = co2 = 0.0
-            self.node_locations[send_id] = (lon, lat)
+            if send_id not in self.node_locations:
+                self.node_locations[send_id] = (lon, lat)
 
         elif len(byte_payload) == self.BASE_LEN_BYTES:
             payload_type = "BASE"
@@ -215,7 +230,7 @@ class CentralMonitoringStation:
             raise ValueError(f"CRC16 mismatch: calculated {crc_val:04X} vs received {crc16:04X}")
 
         ts = self.local_time_hhmmss()
-        fire = self.predict_fire()
+        fire = self.predict_fire(temp, hum, pres, co, co2)
 
         payload = {
             "Long": lon,
@@ -257,8 +272,26 @@ class CentralMonitoringStation:
 
     def save_node_locations(self) -> None:
         try:
+            new_data = {str(k): list(v) for k, v in self.node_locations.items()}
+
+            # If file exists, merge instead of overwrite
+            if os.path.exists(self.NODE_MAP_FILE):
+                with open(self.NODE_MAP_FILE, "r", encoding="utf-8") as f:
+                    existing_data = json.load(f)
+
+                # only add missing keys
+                for k, v in new_data.items():
+                    if k not in existing_data:
+                        existing_data[k] = v
+
+                data_to_save = existing_data
+            else:
+                data_to_save = new_data
+
+            # write back once
             with open(self.NODE_MAP_FILE, "w", encoding="utf-8") as f:
-                json.dump({str(k): list(v) for k, v in self.node_locations.items()}, f, indent=2)
+                json.dump(data_to_save, f, indent=2)
+
         except Exception as e:
             print(f"  Could not save node locations: {e}")
 
@@ -313,7 +346,7 @@ class CentralMonitoringStation:
         payload, pkt_info = self.parse_payload_packed_hex(payload)
         return payload, pkt_info, meta
 
-    def supabase_insert_row(self, row: Dict[str, Any]) -> None:
+    def supabase_insert_row(self, row: Dict[str, Any], meta: Dict[str, Any]) -> None:
         url = f"{self.supabase_url}/rest/v1/{self.table}"
         headers = {
             "apikey": self.supabase_key,
@@ -321,9 +354,18 @@ class CentralMonitoringStation:
             "Content-Type": "application/json",
             "Prefer": "return=minimal",
         }
+        # Include metadata if the table has those columns
+        if "src_addr" in meta:
+            row["SensorID"] = meta["src_addr"]
+        if "rssi" in meta:
+            row["RSSI"] = meta["rssi"]
+        if "snr" in meta:
+            row["SNR"] = meta["snr"]
         resp = self.session.post(url, headers=headers, json=row, timeout=15)
         if not resp.ok:
-            raise RuntimeError(f"Supabase insert failed ({resp.status_code}): {resp.text}")
+            print(f"Supabase insert failed ({resp.status_code}): {resp.text}")
+        else:
+            print("  ✓ row inserted")
 
     def open_serial_forever(self) -> serial.Serial:
         while True:
@@ -360,7 +402,7 @@ class CentralMonitoringStation:
                     r = ser.read(ser.in_waiting).decode("utf-8", errors="ignore")
                     print(f"  {cmd}  ->  {r.strip()}")
 
-                print("\nHub ready — listening for node packets...\n")
+                print("\nSystem ready — listening for node packets...\n")
                 return ser
 
             except KeyboardInterrupt:
@@ -372,7 +414,7 @@ class CentralMonitoringStation:
 
     def run(self) -> None:
         print("Starting Central Monitoring Station")
-        print(f"PORT={self.port}  BAUD={self.baud}  TABLE={self.table}  DRY_RUN={self.dry_run}\n")
+        print(f"PORT={self.port}  BAUD={self.baud}  TABLE={self.table}\n")
 
         ser = self.open_serial_forever()
         while True:
@@ -381,32 +423,26 @@ class CentralMonitoringStation:
                 if not raw_line:
                     continue
 
-                if self.print_raw:
-                    print(f"[dbg] {raw_line}")
-
                 parsed = self.parse_rcv_line(raw_line)
                 if parsed is None:
                     continue
 
                 data, pck_info, meta = parsed
-                data["Fire"] = self.predict_fire()
 
-                is_duplicate = (not self.dry_run) and (self.packet_number != pck_info["packet_number"])
+                is_duplicate = (self.packet_number != pck_info["packet_number"])
 
                 if pck_info["payload_type"] == "LOCATION":
                     self.print_telemetry_location(data, pck_info, meta)
                 else:
                     self.print_telemetry_base(data, pck_info, meta, duplicate=is_duplicate)
 
-                if self.dry_run:
-                    continue
-
                 if is_duplicate:
                     self.reply_to_sender(ser, dest_id=pck_info["send_id"], pkt_num=pck_info["packet_number"], message=1)
                     continue
+                
+                if pck_info["payload_type"] == "BASE":
+                    self.supabase_insert_row(data, meta)
 
-                self.supabase_insert_row(data)
-                print("  ✓ row inserted")
                 self.reply_to_sender(ser, dest_id=pck_info["send_id"], pkt_num=pck_info["packet_number"], message=1)
                 self.packet_number = (self.packet_number + 1) % 2
 
@@ -444,8 +480,6 @@ def parse_args():
     parser.add_argument("--port", default=None, help="Serial port (e.g., COM5 or /dev/tty.usbserial-XXXX)")
     parser.add_argument("--baud", type=int, default=None, help="Serial baud rate (default 115200)")
     parser.add_argument("--table", default=None, help="Supabase table name")
-    parser.add_argument("--print-raw", action="store_true", default=None, help="Print raw serial lines")
-    parser.add_argument("--dry-run", action="store_true", default=None, help="Parse but do not insert into Supabase")
     return parser.parse_args()
 
 
@@ -463,10 +497,6 @@ def main() -> None:
         init_kwargs["port"] = args.port
     if args.baud is not None:
         init_kwargs["baud"] = args.baud
-    if args.print_raw is not None:
-        init_kwargs["print_raw"] = args.print_raw
-    if args.dry_run is not None:
-        init_kwargs["dry_run"] = args.dry_run
 
     central_monitoring_station = CentralMonitoringStation(**init_kwargs)
     try:
