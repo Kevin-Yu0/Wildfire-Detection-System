@@ -98,7 +98,7 @@ class CentralMonitoringStation:
         self.ID = 0
 
         # expected next packet number
-        self.packet_number = 0
+        self.packet_number: Dict[int, int] = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
 
         # Load ML model for fire prediction
         try:
@@ -272,7 +272,7 @@ class CentralMonitoringStation:
 
     def save_node_locations(self) -> None:
         try:
-            new_data = {str(k): list(v) for k, v in self.node_locations.items()}
+            new_data = {str(k): list(v) for k, v in self.node_locations.items() if v != (0.0, 0.0)}
 
             # If file exists, merge instead of overwrite
             if os.path.exists(self.NODE_MAP_FILE):
@@ -429,7 +429,7 @@ class CentralMonitoringStation:
 
                 data, pck_info, meta = parsed
 
-                is_duplicate = (self.packet_number != pck_info["packet_number"])
+                is_duplicate = (self.packet_number[pck_info["send_id"]] != pck_info["packet_number"])
 
                 if pck_info["payload_type"] == "LOCATION":
                     self.print_telemetry_location(data, pck_info, meta)
@@ -444,7 +444,7 @@ class CentralMonitoringStation:
                     self.supabase_insert_row(data, meta)
 
                 self.reply_to_sender(ser, dest_id=pck_info["send_id"], pkt_num=pck_info["packet_number"], message=1)
-                self.packet_number = (self.packet_number + 1) % 2
+                self.packet_number[pck_info["send_id"]] = (self.packet_number[pck_info["send_id"]] + 1) % 2
 
             except KeyboardInterrupt:
                 raise
