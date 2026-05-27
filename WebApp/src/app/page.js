@@ -23,7 +23,7 @@ const coord = (n) => (n != null ? Number(n).toFixed(4) : "—");
 
 /* ── Geo distance in feet (Haversine) ── */
 const distFeet = (lat1, lng1, lat2, lng2) => {
-  const R = 20902231; // Earth radius in feet
+  const R = 20902231;
   const toRad = (d) => (d * Math.PI) / 180;
   const dLat = toRad(lat2 - lat1);
   const dLng = toRad(lng2 - lng1);
@@ -33,7 +33,7 @@ const distFeet = (lat1, lng1, lat2, lng2) => {
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 };
 
-/* ── Cluster fire points within ~20 feet into single map markers ── */
+/* ── Cluster fire points within ~20 feet ── */
 const clusterFirePoints = (fireRows, radiusFeet = 20) => {
   const clusters = [];
   const used = new Set();
@@ -55,7 +55,6 @@ const clusterFirePoints = (fireRows, radiusFeet = 20) => {
       }
     }
 
-    // Average position, keep worst readings
     const avgLat = cluster.reduce((s, r) => s + Number(r.Lat), 0) / cluster.length;
     const avgLng = cluster.reduce((s, r) => s + Number(r.Long), 0) / cluster.length;
     const maxTemp = Math.max(...cluster.map((r) => Number(r.Temperature) || 0));
@@ -68,18 +67,16 @@ const clusterFirePoints = (fireRows, radiusFeet = 20) => {
       points: cluster,
       maxTemp,
       maxCO2,
-      // Use most recent point as representative
       representative: cluster.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))[0],
     });
   }
   return clusters;
 };
 
-/* ── Group clusters into incidents: clusters within 6 data points in time = same incident ── */
+/* ── Group clusters into incidents ── */
 const groupIntoIncidents = (clusters) => {
   if (clusters.length === 0) return [];
 
-  // Sort all clusters by their most recent timestamp
   const sorted = [...clusters].sort(
     (a, b) => new Date(b.representative.created_at) - new Date(a.representative.created_at)
   );
@@ -91,15 +88,13 @@ const groupIntoIncidents = (clusters) => {
     const prev = sorted[i - 1].representative;
     const curr = sorted[i].representative;
 
-    // Check if within ~20 feet AND within 6 data points in time
     const nearby = distFeet(
       Number(prev.Lat), Number(prev.Long),
       Number(curr.Lat), Number(curr.Long)
-    ) <= 100; // broader radius for incident grouping
+    ) <= 100;
 
-    // Check time gap — if consecutive readings are close in time, same incident
     const timeDiffMs = Math.abs(new Date(prev.created_at) - new Date(curr.created_at));
-    const closeInTime = timeDiffMs < 6 * 30 * 1000; // ~6 readings × 30 sec each = 3 min
+    const closeInTime = timeDiffMs < 6 * 30 * 1000;
 
     if (nearby && closeInTime) {
       currentIncident.clusters.push(sorted[i]);
@@ -111,7 +106,6 @@ const groupIntoIncidents = (clusters) => {
   }
   incidents.push(currentIncident);
 
-  // Compute summary for each incident
   return incidents.map((inc, idx) => {
     const allPts = inc.points;
     const avgLat = allPts.reduce((s, r) => s + Number(r.Lat), 0) / allPts.length;
@@ -134,7 +128,7 @@ const groupIntoIncidents = (clusters) => {
   });
 };
 
-/* ── SVG icons (inline so no extra files needed) ── */
+/* ── SVG icons ── */
 const ExpandIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
     strokeLinecap="round" strokeLinejoin="round">
@@ -160,18 +154,15 @@ export default function Home() {
   const [mapExpanded, setMapExpanded] = useState(false);
   const [lastUpdated, setLastUpdated] = useState(null);
 
-  /* fire detail modal */
-  const [fireDetail, setFireDetail] = useState(null); // the clicked fire row
-  const [fireIncident, setFireIncident] = useState(null); // the incident this fire belongs to
-  const [chartData, setChartData] = useState([]);     // historical data for that location
+  const [fireDetail, setFireDetail] = useState(null);
+  const [fireIncident, setFireIncident] = useState(null);
+  const [chartData, setChartData] = useState([]);
   const [chartLoading, setChartLoading] = useState(false);
-  const [activeChart, setActiveChart] = useState("Temperature"); // which metric to show
+  const [activeChart, setActiveChart] = useState("Temperature");
 
-  /* chart-specific time filters (inside modal only) */
   const [chartFromDT, setChartFromDT] = useState("");
   const [chartToDT, setChartToDT] = useState("");
 
-  /* sidebar filters (location only — no time range) */
   const [latMin, setLatMin] = useState("");
   const [latMax, setLatMax] = useState("");
   const [lngMin, setLngMin] = useState("");
@@ -199,13 +190,11 @@ export default function Home() {
     };
   }, [isLoaded]);
 
-  /* ── fetch ── */
   const loadData = useCallback(async (showSpinner = false) => {
     if (showSpinner) setLoading(true);
 
-    const fields = 'created_at, "Lat", "Long", "Temperature", "Humidity", "Pressure", "CO", "CO2", "Timestamp", "Fire"';
+    const fields = 'created_at, "Lat", "Long", "Temperature", "Humidity", "Pressure", "CO", "CO2", "Timestamp", "Fire", "SensorID", "RSSI", "SNR"';
 
-    // Query 1: get latest 500 readings (for table + stats)
     let q = supabase
       .from("Wildfire_Sensor_Data")
       .select(fields)
@@ -217,26 +206,40 @@ export default function Home() {
     if (lngMin !== "") q = q.gte("Long", Number(lngMin));
     if (lngMax !== "") q = q.lte("Long", Number(lngMax));
 
-    // Query 2: ALWAYS get ALL fire rows (so map never misses a fire)
     const fireQ = supabase
       .from("Wildfire_Sensor_Data")
       .select(fields)
       .eq("Fire", 1);
 
-    const [mainResult, fireResult] = await Promise.all([q, fireQ]);
+    const geoQ = supabase
+      .from("Wildfire_Sensor_Data")
+      .select(fields)
+      .neq("Lat", 0)
+      .neq("Long", 0)
+      .limit(2000);
+
+    const [mainResult, fireResult, geoResult] = await Promise.all([q, fireQ, geoQ]);
 
     if (mainResult.error) console.error("Supabase error:", mainResult.error);
     if (fireResult.error) console.error("Supabase fire query error:", fireResult.error);
+    if (geoResult.error) console.error("Supabase geo query error:", geoResult.error);
 
     const mainData = mainResult.data ?? [];
     const fireData = fireResult.data ?? [];
+    const geoData = geoResult.data ?? [];
 
-    // Merge: add any fire rows not already in mainData
     const mainKeys = new Set(mainData.map((r) => r.created_at));
     const merged = [...mainData];
     for (const fr of fireData) {
       if (!mainKeys.has(fr.created_at)) {
         merged.push(fr);
+        mainKeys.add(fr.created_at);
+      }
+    }
+    for (const gr of geoData) {
+      if (!mainKeys.has(gr.created_at)) {
+        merged.push(gr);
+        mainKeys.add(gr.created_at);
       }
     }
 
@@ -245,16 +248,14 @@ export default function Home() {
     setLastUpdated(new Date());
   }, [latMin, latMax, lngMin, lngMax]);
 
-  /* ── auto-refresh: poll every 5 seconds ── */
   useEffect(() => {
-    loadData(true); // initial load with spinner
+    loadData(true);
     const interval = setInterval(() => {
-      loadData(false); // silent refresh
+      loadData(false);
     }, 5000);
     return () => clearInterval(interval);
   }, [loadData]);
 
-  /* ── Supabase realtime: instant updates on INSERT/UPDATE/DELETE ── */
   useEffect(() => {
     const channel = supabase
       .channel("wildfire-realtime")
@@ -262,7 +263,7 @@ export default function Home() {
         "postgres_changes",
         { event: "*", schema: "public", table: "Wildfire_Sensor_Data" },
         () => {
-          loadData(false); // re-fetch on any change
+          loadData(false);
         }
       )
       .subscribe();
@@ -272,7 +273,6 @@ export default function Home() {
     };
   }, [loadData]);
 
-  /* ── derived stats ── */
   const stats = useMemo(() => {
     const n = rows.length;
     const fires = rows.filter((r) => isFire(r.Fire)).length;
@@ -283,7 +283,6 @@ export default function Home() {
     return { n, fires, avgTemp, maxCO2, avgHum, maxTemp };
   }, [rows]);
 
-  /* ── all fire incidents (clustered + grouped) ── */
   const fireRows = useMemo(() => {
     return rows.filter((r) => isFire(r.Fire) && !(Number(r.Lat) === 0 && Number(r.Long) === 0));
   }, [rows]);
@@ -292,7 +291,6 @@ export default function Home() {
   const incidents = useMemo(() => groupIntoIncidents(fireClusters), [fireClusters]);
   const incidentCount = incidents.length;
 
-  /* ── Unified sensor nodes: one marker per location, merge fire+normal within 20ft ── */
   const sensorNodes = useMemo(() => {
     const validRows = rows.filter((r) => {
       const lat = Number(r.Lat);
@@ -300,40 +298,50 @@ export default function Home() {
       return Number.isFinite(lat) && Number.isFinite(lng) && !(lat === 0 && lng === 0);
     });
 
-    // Group all readings by proximity (~20 feet)
+    const bySensor = {};
+    for (const r of validRows) {
+      const sid = r.SensorID ?? "unknown";
+      if (!bySensor[sid]) bySensor[sid] = [];
+      bySensor[sid].push(r);
+    }
+
     const nodes = [];
-    const used = new Set();
 
-    for (let i = 0; i < validRows.length; i++) {
-      if (used.has(i)) continue;
-      const group = [validRows[i]];
-      used.add(i);
+    for (const [sensorId, sensorRows] of Object.entries(bySensor)) {
+      const used = new Set();
 
-      for (let j = i + 1; j < validRows.length; j++) {
-        if (used.has(j)) continue;
-        const d = distFeet(
-          Number(validRows[i].Lat), Number(validRows[i].Long),
-          Number(validRows[j].Lat), Number(validRows[j].Long)
-        );
-        if (d <= 20) {
-          group.push(validRows[j]);
-          used.add(j);
+      for (let i = 0; i < sensorRows.length; i++) {
+        if (used.has(i)) continue;
+        const group = [sensorRows[i]];
+        used.add(i);
+
+        for (let j = i + 1; j < sensorRows.length; j++) {
+          if (used.has(j)) continue;
+          const d = distFeet(
+            Number(sensorRows[i].Lat), Number(sensorRows[i].Long),
+            Number(sensorRows[j].Lat), Number(sensorRows[j].Long)
+          );
+          if (d <= 20) {
+            group.push(sensorRows[j]);
+            used.add(j);
+          }
         }
+
+        const avgLat = group.reduce((s, r) => s + Number(r.Lat), 0) / group.length;
+        const avgLng = group.reduce((s, r) => s + Number(r.Long), 0) / group.length;
+        const hasFire = group.some((r) => isFire(r.Fire));
+        const representative = group.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))[0];
+
+        nodes.push({
+          sensorId,
+          lat: avgLat,
+          lng: avgLng,
+          hasFire,
+          count: group.length,
+          points: group,
+          representative,
+        });
       }
-
-      const avgLat = group.reduce((s, r) => s + Number(r.Lat), 0) / group.length;
-      const avgLng = group.reduce((s, r) => s + Number(r.Long), 0) / group.length;
-      const hasFire = group.some((r) => isFire(r.Fire));
-      const representative = group.sort((a, b) => new Date(b.created_at) - new Date(a.created_at))[0];
-
-      nodes.push({
-        lat: avgLat,
-        lng: avgLng,
-        hasFire,
-        count: group.length,
-        points: group,
-        representative,
-      });
     }
 
     return nodes;
@@ -343,23 +351,28 @@ export default function Home() {
     setLatMin(""); setLatMax(""); setLngMin(""); setLngMax("");
   };
 
-  /* ── fetch chart data for a fire location ── */
   const fetchChartData = useCallback(async (row, from, to) => {
     setChartLoading(true);
     const lat = Number(row.Lat);
     const lng = Number(row.Long);
+    const sensorId = row.SensorID;
+
+    const delta = 0.0003;
 
     let q = supabase
       .from("Wildfire_Sensor_Data")
-      .select('created_at, "Temperature", "Humidity", "Pressure", "CO", "CO2", "Fire"')
-      .gte("Lat", lat - 0.05)
-      .lte("Lat", lat + 0.05)
-      .gte("Long", lng - 0.05)
-      .lte("Long", lng + 0.05)
+      .select('created_at, "Lat", "Long", "Temperature", "Humidity", "Pressure", "CO", "CO2", "Fire", "SensorID"')
+      .gte("Lat", lat - delta)
+      .lte("Lat", lat + delta)
+      .gte("Long", lng - delta)
+      .lte("Long", lng + delta)
       .order("created_at", { ascending: true })
       .limit(500);
 
-    // Apply chart time filters
+    if (sensorId != null) {
+      q = q.eq("SensorID", sensorId);
+    }
+
     const f = toISO(from);
     const t = toISO(to);
     if (f) q = q.gte("created_at", f);
@@ -367,11 +380,17 @@ export default function Home() {
 
     const { data, error } = await q;
     if (error) console.error("Chart data error:", error);
-    setChartData(data ?? []);
+
+    const filtered = (data ?? []).filter((d) => {
+      const dlat = Number(d.Lat);
+      const dlng = Number(d.Long);
+      return !(dlat === 0 && dlng === 0);
+    });
+
+    setChartData(filtered);
     setChartLoading(false);
   }, []);
 
-  /* ── open fire detail modal ── */
   const openFireDetail = useCallback((row, incident = null) => {
     setFireDetail(row);
     setFireIncident(incident);
@@ -381,7 +400,6 @@ export default function Home() {
     fetchChartData(row, "", "");
   }, [fetchChartData]);
 
-  /* ── refresh chart with new time filters ── */
   const refreshChart = useCallback(() => {
     if (fireDetail) {
       fetchChartData(fireDetail, chartFromDT, chartToDT);
@@ -396,7 +414,6 @@ export default function Home() {
     setChartToDT("");
   };
 
-  /* ESC to close expanded map or modal */
   useEffect(() => {
     const handler = (e) => {
       if (e.key === "Escape") {
@@ -408,13 +425,11 @@ export default function Home() {
     return () => window.removeEventListener("keydown", handler);
   }, [fireDetail]);
 
-  /* lock body scroll when map is expanded */
   useEffect(() => {
     document.body.style.overflow = mapExpanded ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [mapExpanded]);
 
-  /* ── loading ── */
   if (!isLoaded) {
     return (
       <div className="loader-screen">
@@ -426,37 +441,34 @@ export default function Home() {
     );
   }
 
-  /* ── shared map element (rendered once, placed in card) ── */
+  /* ── map element with DEFAULT Google colors (no custom styles) ── */
   const mapElement = (
     <GoogleMap
       mapContainerClassName="map-google"
       center={mapCenter}
       zoom={6}
       options={{
-        styles: [
-          { featureType: "water", stylers: [{ color: "#cad2d9" }] },
-          { featureType: "landscape", stylers: [{ color: "#e8e5df" }] },
-          { featureType: "poi", stylers: [{ visibility: "off" }] },
-          { featureType: "transit", stylers: [{ visibility: "off" }] },
-          { featureType: "road", stylers: [{ color: "#d6d1ca" }] },
-          { featureType: "administrative", elementType: "labels.text.fill", stylers: [{ color: "#6b7280" }] },
-        ],
         disableDefaultUI: false,
         zoomControl: true,
         streetViewControl: false,
         mapTypeControl: false,
-        fullscreenControl: false, // we have our own
+        fullscreenControl: false,
       }}
     >
-      {/* Unified sensor node markers — fire icon if fire detected, green otherwise */}
       {sensorNodes.map((node, i) => (
         <Marker
-          key={"node-" + i}
+          key={"node-" + node.sensorId + "-" + i}
           position={{ lat: node.lat, lng: node.lng }}
           icon={node.hasFire ? fireIcon : sensorIcon}
+          label={{
+            text: `S${node.sensorId}`,
+            color: node.hasFire ? "#fff" : "#1a2332",
+            fontSize: "10px",
+            fontWeight: "bold",
+            className: "marker-label",
+          }}
           onClick={() => {
             if (node.hasFire) {
-              // Find the matching incident for this node
               const matchingInc = incidents.find((inc) =>
                 distFeet(inc.lat, inc.lng, node.lat, node.lng) <= 50
               );
@@ -487,12 +499,8 @@ export default function Home() {
     </GoogleMap>
   );
 
-  /* ═══════════════════════════════════════
-     RENDER
-     ═══════════════════════════════════════ */
   return (
     <>
-      {/* ───── NAVBAR ───── */}
       <nav className="navbar">
         <div className="navbar-inner">
           <a href="/" className="navbar-brand">
@@ -512,7 +520,6 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* ───── HERO STATS ───── */}
       <section className="hero">
         <div className="hero-inner">
           <h1 className="fade-in">Current Incidents</h1>
@@ -537,17 +544,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ───── BODY ───── */}
       <div className="page-body">
-
-        {/* ── TOP ROW: Map + Sidebar ── */}
         <div className="top-row">
-
-          {/* MAP CARD */}
           <div className={`map-card${mapExpanded ? " expanded" : ""}`}>
             {mapElement}
 
-            {/* Toolbar: expand / collapse */}
             <div className="map-toolbar">
               <button
                 className="map-btn"
@@ -559,7 +560,6 @@ export default function Home() {
               </button>
             </div>
 
-            {/* Legend */}
             <div className="map-legend">
               <div className="legend-item">
                 <span className="legend-dot fire" /> Fire Incident
@@ -570,10 +570,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* SIDEBAR */}
           <aside className="sidebar">
-
-            {/* Quick Stats */}
             <div className="card">
               <div className="card-head"><h3>Live Stats</h3></div>
               <div className="card-body">
@@ -600,7 +597,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Fire History */}
             <div className="card">
               <div className="card-head">
                 <h3>Fire History</h3>
@@ -655,11 +651,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Filters */}
             <div className="card">
               <div className="card-head"><h3>Filters</h3></div>
               <div className="card-body">
-
                 <div className="fg">
                   <span className="fg-label">Location Bounds</span>
                   <div className="fg-row">
@@ -679,9 +673,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <button className="btn-primary" onClick={loadData}>
-                  Apply Filters
-                </button>
+                <button className="btn-primary" onClick={loadData}>Apply Filters</button>
                 <button className="btn-ghost" onClick={() => { resetFilters(); setTimeout(loadData, 50); }}>
                   Reset All
                 </button>
@@ -700,7 +692,6 @@ export default function Home() {
           </aside>
         </div>
 
-        {/* ── DATA TABLE ── */}
         <div className="table-card" id="data-table">
           <div className="table-top">
             <h2>All Sensor Readings</h2>
@@ -763,16 +754,21 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ───── FIRE DETAIL MODAL ───── */}
       {fireDetail && (
         <div className="modal-overlay" onClick={closeFireDetail}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={closeFireDetail}>✕</button>
 
-            {/* Header */}
             <div className="modal-header">
               <div>
-                <h2 className="modal-title">🔥 Fire Incident Detail</h2>
+                <h2 className="modal-title">
+                  🔥 Fire Incident Detail
+                  {fireDetail.SensorID != null && (
+                    <span style={{ marginLeft: 12, fontSize: 14, fontFamily: "var(--font-mono)", color: "var(--ember)", background: "rgba(232,76,48,.1)", padding: "3px 10px", borderRadius: 100, border: "1px solid rgba(232,76,48,.25)" }}>
+                      Sensor #{fireDetail.SensorID}
+                    </span>
+                  )}
+                </h2>
                 <p className="modal-subtitle">
                   Location: {coord(fireDetail.Lat)}, {coord(fireDetail.Long)} · Detected: {fmt(fireDetail.created_at)}
                 </p>
@@ -787,7 +783,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Sensor readings at time of fire */}
             <div className="modal-stats">
               <div className="modal-stat">
                 <div className="modal-stat-val hot">{fireDetail.Temperature ?? "—"}°</div>
@@ -811,7 +806,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Time range filter for chart */}
             <div className="chart-time-filter">
               <span className="fg-label" style={{ margin: 0, whiteSpace: "nowrap" }}>Time Range</span>
               <input
@@ -841,7 +835,6 @@ export default function Home() {
               )}
             </div>
 
-            {/* Chart tabs */}
             <div className="chart-tabs">
               {["Temperature", "CO2", "Humidity", "CO", "Pressure"].map((metric) => (
                 <button
@@ -854,7 +847,6 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Chart area */}
             <div className="chart-area">
               {chartLoading ? (
                 <div style={{ textAlign: "center", padding: 40 }}>
@@ -870,7 +862,6 @@ export default function Home() {
               )}
             </div>
 
-            {/* Data count */}
             <p style={{ fontSize: 12, color: "var(--ash)", textAlign: "center", marginTop: 12 }}>
               Showing {chartData.length} readings from this sensor location
             </p>
@@ -878,7 +869,6 @@ export default function Home() {
         </div>
       )}
 
-      {/* ───── FOOTER ───── */}
       <footer className="site-footer">
         <div className="footer-inner">
           <span>EmberWatch · Wildfire Detection System · Built with Next.js</span>
@@ -895,7 +885,7 @@ export default function Home() {
 }
 
 /* ═══════════════════════════════════════════════════════
-   MINI CHART — pure canvas line chart (no libraries)
+   MINI CHART
    ═══════════════════════════════════════════════════════ */
 function MiniChart({ data, metric }) {
   const canvasRef = useCallback(
@@ -910,7 +900,6 @@ function MiniChart({ data, metric }) {
       const W = rect.width;
       const H = rect.height;
 
-      // Extract values
       const values = data.map((d) => Number(d[metric]) || 0);
       const times = data.map((d) => new Date(d.created_at));
       const firePoints = data.map((d) => Number(d.Fire) === 1);
@@ -925,10 +914,8 @@ function MiniChart({ data, metric }) {
       const x = (i) => pad.left + (i / (values.length - 1)) * chartW;
       const y = (v) => pad.top + chartH - ((v - minVal) / range) * chartH;
 
-      // Clear
       ctx.clearRect(0, 0, W, H);
 
-      // Background grid
       ctx.strokeStyle = "#e2e8f0";
       ctx.lineWidth = 0.5;
       const gridLines = 5;
@@ -939,7 +926,6 @@ function MiniChart({ data, metric }) {
         ctx.lineTo(W - pad.right, gy);
         ctx.stroke();
 
-        // Y-axis labels
         const label = (maxVal - (range / gridLines) * i).toFixed(1);
         ctx.fillStyle = "#94a3b8";
         ctx.font = "11px JetBrains Mono, monospace";
@@ -947,7 +933,6 @@ function MiniChart({ data, metric }) {
         ctx.fillText(label, pad.left - 8, gy + 4);
       }
 
-      // X-axis labels (show ~5 timestamps)
       ctx.fillStyle = "#94a3b8";
       ctx.font = "10px DM Sans, sans-serif";
       ctx.textAlign = "center";
@@ -958,7 +943,6 @@ function MiniChart({ data, metric }) {
         ctx.fillText(label, x(i), H - pad.bottom + 20);
       }
 
-      // Area fill
       ctx.beginPath();
       ctx.moveTo(x(0), y(values[0]));
       for (let i = 1; i < values.length; i++) {
@@ -973,7 +957,6 @@ function MiniChart({ data, metric }) {
       ctx.fillStyle = grad;
       ctx.fill();
 
-      // Line
       ctx.beginPath();
       ctx.moveTo(x(0), y(values[0]));
       for (let i = 1; i < values.length; i++) {
@@ -984,7 +967,6 @@ function MiniChart({ data, metric }) {
       ctx.lineJoin = "round";
       ctx.stroke();
 
-      // Fire points — highlight where Fire=1
       for (let i = 0; i < values.length; i++) {
         if (firePoints[i]) {
           ctx.beginPath();
@@ -997,7 +979,6 @@ function MiniChart({ data, metric }) {
         }
       }
 
-      // Title
       ctx.fillStyle = "#1a2332";
       ctx.font = "bold 13px DM Sans, sans-serif";
       ctx.textAlign = "left";
